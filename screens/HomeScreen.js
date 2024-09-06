@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, StyleSheet, FlatList, ActivityIndicator, Animated } from 'react-native';
+import { View, StyleSheet, FlatList, ActivityIndicator, Animated, SafeAreaView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
 import PokemonInformation from '../components/PokemonInformation';
@@ -65,7 +65,7 @@ const HomeScreenComponent = () => {
   );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Banner scrollY={scrollY} />
       <Animated.FlatList
         ref={flatListRef}
@@ -78,7 +78,7 @@ const HomeScreenComponent = () => {
         ListFooterComponent={renderFooter}
         onScroll={handleScroll}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -98,11 +98,12 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f1f1f1',
   },
   contentContainer: {
     padding: 16,
-    paddingTop: 70, // Add padding to the top to create space for the banner
+    paddingTop: 30, // Add padding to the top to create space for the banner
+    marginTop: 30, // Adjust margin to reduce the gap
   },
 });
 
