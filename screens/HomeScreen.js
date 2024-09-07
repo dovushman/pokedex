@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { View, StyleSheet, Animated, SafeAreaView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
-import PokemonInformation from '../components/PokemonInformation';
+import PokemonInformation from './PokemonInformation';
 import Banner from '../components/Banner';
 
 const Stack = createStackNavigator();
@@ -38,7 +38,7 @@ const HomeScreenComponent = ({ route }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Banner scrollY={scrollY} />
+      {/* <Banner scrollY={scrollY} /> */}
       <Animated.FlatList
         ref={flatListRef}
         contentContainerStyle={styles.contentContainer}
@@ -54,7 +54,7 @@ const HomeScreenComponent = ({ route }) => {
 const HomeScreen = ({ route }) => {
   return (
     <Stack.Navigator initialRouteName="HomeScreenComponent">
-      <Stack.Screen name="HomeScreenComponent" component={HomeScreenComponent} initialParams={route.params} />
+      <Stack.Screen name="Pokedex" component={HomeScreenComponent} initialParams={route.params} />
       <Stack.Screen
         name="PokemonInformation"
         component={PokemonInformation}

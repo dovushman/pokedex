@@ -11,3 +11,13 @@ export const getPokemon = async (pokemonName) => {
 	throw error;
   }
 };
+
+export const getPokemonSpecies = async (pokemonName) => {
+  try {
+	const response = await axios.get(`${API_URL}/pokemon-species/${pokemonName}`);
+	return response.data;
+  } catch (error) {
+	console.error('Error fetching Pokémon species data:', error);
+	throw error;
+  }
+};

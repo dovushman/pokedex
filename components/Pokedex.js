@@ -26,9 +26,6 @@ const typeColors = {
 const Pokedex = ({ pokemon }) => {
   const navigation = useNavigation();
 
-  // Log the received pokemon data
-  // console.log('Pokemon:', pokemon);
-
   const types = pokemon.types.map((type) => (
     <Text
       key={type}
@@ -59,21 +56,27 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 8,
+    padding: 12,
     borderWidth: 1,
     borderColor: '#ddd',
-    borderRadius: 8,
-    marginBottom: 8,
+    borderRadius: 12,
+    marginBottom: 12,
     backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 5,
   },
   imageContainer: {
     flexDirection: 'column',
     alignItems: 'center',
-    marginRight: 8,
+    marginRight: 12,
   },
   number: {
     fontSize: 14,
     fontWeight: 'bold',
+    color: '#666',
   },
   infoContainer: {
     flexDirection: 'column',
@@ -88,8 +91,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textTransform: 'capitalize',
     color: '#fff',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
     borderRadius: 4,
     marginRight: 4,
   },
@@ -97,10 +100,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textTransform: 'capitalize',
+    color: '#333',
   },
   image: {
     width: 60,
     height: 60,
+    borderRadius: 30,
   },
 });
 
