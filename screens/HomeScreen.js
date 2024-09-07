@@ -1,49 +1,25 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { View, StyleSheet, FlatList, ActivityIndicator, Animated, SafeAreaView } from 'react-native';
+import React, { useRef, useEffect } from 'react';
+import { View, StyleSheet, Animated, SafeAreaView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
 import PokemonInformation from '../components/PokemonInformation';
 import Banner from '../components/Banner';
-import { getPokemon } from '../services/api';
 
 const Stack = createStackNavigator();
 
-const HomeScreenComponent = () => {
-  const [pokemonIds, setPokemonIds] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [offset, setOffset] = useState(0);
-  const limit = 20; // Number of Pokémon to fetch at a time
+const HomeScreenComponent = ({ route }) => {
+  const { data: pokemonData } = route.params || {}; // Add a fallback to avoid undefined
+
   const flatListRef = useRef(null);
   const scrollY = useRef(new Animated.Value(0)).current;
   const previousScrollY = useRef(0); // Track previous scroll position
 
   useEffect(() => {
-    loadMorePokemon();
-  }, []);
-
-  const loadMorePokemon = async () => {
-    if (loading) return;
-    setLoading(true);
-    try {
-      const newPokemonIds = await fetchPokemonIds(offset, limit);
-      setPokemonIds((prevIds) => [...prevIds, ...newPokemonIds]);
-      setOffset((prevOffset) => prevOffset + limit);
-    } catch (error) {
-      console.error('Error loading more Pokémon:', error);
-    }
-    setLoading(false);
-  };
-
-  const fetchPokemonIds = async (offset, limit) => {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`);
-    const data = await response.json();
-    return data.results.map(pokemon => pokemon.url.split('/').slice(-2, -1)[0]);
-  };
-
-  const renderFooter = () => {
-    if (!loading) return null;
-    return <ActivityIndicator style={{ margin: 16 }} />;
-  };
+    // Log the received data
+    // console.log('Received Pokemon Data:', pokemonData);
+    // console.log('Is Array:', Array.isArray(pokemonData));
+    // console.log('Data Length:', pokemonData ? pokemonData.length : 'undefined');
+  }, [pokemonData]);
 
   const handleScroll = Animated.event(
     [{ nativeEvent: { contentOffset: { y: scrollY } } }],
@@ -70,22 +46,31 @@ const HomeScreenComponent = () => {
       <Animated.FlatList
         ref={flatListRef}
         contentContainerStyle={styles.contentContainer}
-        data={pokemonIds}
-        keyExtractor={(item) => item.toString()}
-        renderItem={({ item }) => <Pokedex pokemonId={item} />}
-        onEndReached={loadMorePokemon}
-        onEndReachedThreshold={0.5}
-        ListFooterComponent={renderFooter}
+        data={pokemonData || []} // Add a fallback to avoid undefined
+        keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
+        renderItem={({ item }) => <Pokedex pokemon={item} />}
         onScroll={handleScroll}
       />
     </SafeAreaView>
   );
 };
 
-const HomeScreen = () => {
+// const HomeScreen = ({ route }) => {
+//   return (
+//     <Stack.Navigator initialRouteName="HomeScreenComponent">
+//       <Stack.Screen name="HomeScreenComponent" component={HomeScreenComponent} />
+//       <Stack.Screen
+//         name="PokemonInformation"
+//         component={PokemonInformation}
+//         options={{ headerShown: false }} // Hide the header for PokemonInformation screen
+//       />
+//     </Stack.Navigator>
+//   );
+// };
+const HomeScreen = ({ route }) => {
   return (
     <Stack.Navigator initialRouteName="HomeScreenComponent">
-      <Stack.Screen name="HomeScreenComponent" component={HomeScreenComponent} options={{ headerShown: false }} />
+      <Stack.Screen name="HomeScreenComponent" component={HomeScreenComponent} initialParams={route.params} />
       <Stack.Screen
         name="PokemonInformation"
         component={PokemonInformation}
