@@ -15,10 +15,6 @@ const HomeScreenComponent = ({ route }) => {
   const previousScrollY = useRef(0); // Track previous scroll position
 
   useEffect(() => {
-    // Log the received data
-    // console.log('Received Pokemon Data:', pokemonData);
-    // console.log('Is Array:', Array.isArray(pokemonData));
-    // console.log('Data Length:', pokemonData ? pokemonData.length : 'undefined');
   }, [pokemonData]);
 
   const handleScroll = Animated.event(
@@ -55,18 +51,6 @@ const HomeScreenComponent = ({ route }) => {
   );
 };
 
-// const HomeScreen = ({ route }) => {
-//   return (
-//     <Stack.Navigator initialRouteName="HomeScreenComponent">
-//       <Stack.Screen name="HomeScreenComponent" component={HomeScreenComponent} />
-//       <Stack.Screen
-//         name="PokemonInformation"
-//         component={PokemonInformation}
-//         options={{ headerShown: false }} // Hide the header for PokemonInformation screen
-//       />
-//     </Stack.Navigator>
-//   );
-// };
 const HomeScreen = ({ route }) => {
   return (
     <Stack.Navigator initialRouteName="HomeScreenComponent">

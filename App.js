@@ -9,12 +9,6 @@ import FetchDataSplashScreen from './screens/FetchDataSplashScreen'; // Import t
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-// const MainTabs = () => (
-//   <Tab.Navigator screenOptions={{ headerShown: false }}>
-//     <Tab.Screen name="Home" component={HomeScreen} />
-//     <Tab.Screen name="Details" component={DetailsScreen} />
-//   </Tab.Navigator>
-// );
 const MainTabs = ({ route }) => (
   <Tab.Navigator screenOptions={{ headerShown: false }}>
     <Tab.Screen name="Home" component={HomeScreen} initialParams={route.params} />

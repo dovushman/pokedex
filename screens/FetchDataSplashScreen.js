@@ -4,32 +4,7 @@ import * as Progress from 'react-native-progress';
 
 const FetchDataSplashScreen = ({ navigation }) => {
   const [progress, setProgress] = useState(0);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       // Load the JSON file using require
-  //       const data = require('../assets/pokemonData.json');
-
-  //       // Log the fetched data
-  //       // console.log('Fetched Data:', data);
-
-  //       // Simulate progress
-  //       for (let i = 0; i <= 100; i++) {
-  //         setProgress(i / 100);
-  //         await new Promise(resolve => setTimeout(resolve, 10));
-  //       }
-
-  //       // Log the data being passed to Home
-  //       // console.log('Data passed to Home:', data);
-  //       navigation.replace('MainTabs', { screen: 'Home', params: { data } });
-  //     } catch (error) {
-  //       console.error('Error fetching data:', error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, [navigation]);
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
