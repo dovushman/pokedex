@@ -22,7 +22,7 @@ const Banner = ({ scrollY }) => {
     <Animated.View style={[styles.banner, { opacity: bannerOpacity }]}>
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.bannerContent}>
-          <Text style={styles.bannerText}>Pokedex</Text>
+          <Text style={styles.bannerText}>PocketDex</Text>
         </View>
       </SafeAreaView>
     </Animated.View>

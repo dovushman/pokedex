@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import typeColors from '../utils/typeColors'; // Import typeColors
@@ -6,14 +6,14 @@ import typeColors from '../utils/typeColors'; // Import typeColors
 const Pokedex = ({ pokemon }) => {
   const navigation = useNavigation();
 
-  const types = pokemon.types.map((type) => (
+  const types = useMemo(() => pokemon.types.map((type) => (
     <Text
       key={type}
       style={[styles.type, { backgroundColor: typeColors[type] }]}
     >
       {type}
     </Text>
-  ));
+  )), [pokemon.types]);
 
   return (
     <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('PokemonInformation', { pokemonId: pokemon.id })}>
@@ -89,4 +89,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Pokedex;
+export default React.memo(Pokedex);
