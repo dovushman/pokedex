@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Modal, TextInput, Button } from 'react-native';
+import axios from 'axios';
 
 const DescriptionModal = ({ visible, onClose }) => {
   const [description, setDescription] = useState('');
 
-  const handleDescriptionSubmit = () => {
-    // Handle the description submission (e.g., save it or send it to a server)
-    console.log('Description:', description);
+  const handleDescriptionSubmit = async () => {
+    try {
+      const response = await axios.post('http://localhost:5001/description', { description });
+      console.log('Response from backend:', response.data);
+    } catch (error) {
+      console.error('Error sending description to backend:', error);
+    }
     onClose();
   };
 
