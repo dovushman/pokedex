@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
+import SearchScreen from './screens/SearchScreen';
 import FetchDataSplashScreen from './screens/FetchDataSplashScreen'; // Import the FetchDataSplashScreen
 
 const Tab = createBottomTabNavigator();
@@ -12,6 +13,7 @@ const Stack = createStackNavigator();
 const MainTabs = ({ route }) => (
   <Tab.Navigator screenOptions={{ headerShown: false }}>
     <Tab.Screen name="Home" component={HomeScreen} initialParams={route.params} />
+    <Tab.Screen name="Search" component={SearchScreen} />
     <Tab.Screen name="Details" component={DetailsScreen} />
   </Tab.Navigator>
 );
