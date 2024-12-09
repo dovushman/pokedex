@@ -1,25 +1,70 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome'; 
-import Ionicons from 'react-native-vector-icons/Ionicons'; 
-import Foundation from 'react-native-vector-icons/Foundation'; 
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { FontAwesome, Ionicons, Foundation } from '@expo/vector-icons';
 import DescriptionModal from '../components/DescriptionModal'; // Import the DescriptionModal
+import { launchImageLibrary, launchCamera } from 'react-native-image-picker';
+import axios from 'axios';
 
 const SearchScreen = () => {
   const [descriptionModalVisible, setDescriptionModalVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleSelectImage = () => {
+    launchImageLibrary({ mediaType: 'photo' }, async (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else {
+        const uri = response.assets[0].uri;
+        setSelectedImage(uri);
+
+        // Create a form data object to send the image
+        const formData = new FormData();
+        formData.append('image', {
+          uri,
+          type: 'image/jpeg', // or the appropriate type based on the selected image
+          name: 'upload.jpg', // or the appropriate name based on the selected image
+        });
+
+        try {
+          const uploadResponse = await axios.post('http://localhost:5001/upload', formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          });
+          console.log('Image upload response:', uploadResponse.data);
+        } catch (error) {
+          console.error('Error uploading image:', error);
+        }
+      }
+    });
+  };
+
+  const handleCaptureImage = () => {
+    launchCamera({ mediaType: 'photo' }, (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled camera');
+      } else if (response.error) {
+        console.log('Camera Error: ', response.error);
+      } else {
+        setSelectedImage(response.assets[0].uri);
+      }
+    });
+  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Who's That Pokemon!</Text>
       <View style={styles.row}>
-        <View style={styles.card}>
+        <TouchableOpacity style={styles.card} onPress={handleSelectImage}>
           <FontAwesome name="image" size={80} color="#000" style={styles.icon} />
           <Text style={styles.cardText}>Upload Image</Text>
-        </View>
-        <View style={styles.card}>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.card} onPress={handleCaptureImage}>
           <FontAwesome name="camera" size={80} color="#000" style={styles.icon} />
           <Text style={styles.cardText}>Camera</Text>
-        </View>
+        </TouchableOpacity>
       </View>
       <View style={styles.row}>
         <TouchableOpacity style={styles.card} onPress={() => setDescriptionModalVisible(true)}>
@@ -31,7 +76,13 @@ const SearchScreen = () => {
           <Text style={styles.cardText}>Recommend</Text>
         </View>
       </View>
-
+  
+      {selectedImage && (
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: selectedImage }} style={styles.image} />
+        </View>
+      )}
+  
       <DescriptionModal
         visible={descriptionModalVisible}
         onClose={() => setDescriptionModalVisible(false)}
@@ -43,10 +94,9 @@ const SearchScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f1f1f1',
-    alignItems: 'center',
     justifyContent: 'center',
-    padding: 16,
+    alignItems: 'center',
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 24,
@@ -55,31 +105,34 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     width: '100%',
-    marginBottom: 10,
+    marginBottom: 20,
   },
   card: {
-    flex: 1,
-    backgroundColor: '#f8f8f8',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 150,
+    height: 150,
+    backgroundColor: '#f0f0f0',
     borderRadius: 10,
-    padding: 20,
-    marginHorizontal: 5,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-    height: 150, 
-    alignItems: 'center', 
-    justifyContent: 'center', 
-  },
-  cardText: {
-    fontSize: 18,
-    marginTop: 10, 
+    padding: 10,
   },
   icon: {
-    marginBottom: 10, 
+    marginBottom: 10,
+  },
+  cardText: {
+    fontSize: 16,
+    textAlign: 'center',
+  },
+  imageContainer: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  image: {
+    width: 200,
+    height: 200,
+    borderRadius: 10,
   },
 });
 
