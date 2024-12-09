@@ -1,56 +1,72 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { FontAwesome, Ionicons, Foundation } from '@expo/vector-icons';
-import DescriptionModal from '../components/DescriptionModal'; // Import the DescriptionModal
-import { launchImageLibrary, launchCamera } from 'react-native-image-picker';
+import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
+import DescriptionModal from '../components/DescriptionModal'; // Import the DescriptionModal
 
 const SearchScreen = () => {
   const [descriptionModalVisible, setDescriptionModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleSelectImage = () => {
-    launchImageLibrary({ mediaType: 'photo' }, async (response) => {
-      if (response.didCancel) {
-        console.log('User cancelled image picker');
-      } else if (response.error) {
-        console.log('ImagePicker Error: ', response.error);
-      } else {
-        const uri = response.assets[0].uri;
-        setSelectedImage(uri);
+  const handleSelectImage = async () => {
+    // Request permission to access media library
+    const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
 
-        // Create a form data object to send the image
-        const formData = new FormData();
-        formData.append('image', {
-          uri,
-          type: 'image/jpeg', // or the appropriate type based on the selected image
-          name: 'upload.jpg', // or the appropriate name based on the selected image
-        });
+    if (permissionResult.granted === false) {
+      alert("You've refused to allow this app to access your photos!");
+      return;
+    }
 
-        try {
-          const uploadResponse = await axios.post('http://localhost:5001/upload', formData, {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
-          });
-          console.log('Image upload response:', uploadResponse.data);
-        } catch (error) {
-          console.error('Error uploading image:', error);
-        }
-      }
+    const result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
     });
+
+    if (!result.cancelled) {
+      setSelectedImage(result.uri);
+
+      // Create a form data object to send the image
+      const formData = new FormData();
+      formData.append('image', {
+        uri: result.uri,
+        type: 'image/jpeg', // or the appropriate type based on the selected image
+        name: 'upload.jpg', // or the appropriate name based on the selected image
+      });
+
+      try {
+        const uploadResponse = await axios.post('http://localhost:5001/upload', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        });
+        console.log('Image upload response:', uploadResponse.data);
+      } catch (error) {
+        console.error('Error uploading image:', error);
+      }
+    }
   };
 
-  const handleCaptureImage = () => {
-    launchCamera({ mediaType: 'photo' }, (response) => {
-      if (response.didCancel) {
-        console.log('User cancelled camera');
-      } else if (response.error) {
-        console.log('Camera Error: ', response.error);
-      } else {
-        setSelectedImage(response.assets[0].uri);
-      }
+  const handleCaptureImage = async () => {
+    // Request permission to access camera
+    const permissionResult = await ImagePicker.requestCameraPermissionsAsync();
+
+    if (permissionResult.granted === false) {
+      alert("You've refused to allow this app to access your camera!");
+      return;
+    }
+
+    const result = await ImagePicker.launchCameraAsync({
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
     });
+
+    if (!result.cancelled) {
+      setSelectedImage(result.uri);
+    }
   };
 
   return (
@@ -76,13 +92,13 @@ const SearchScreen = () => {
           <Text style={styles.cardText}>Recommend</Text>
         </View>
       </View>
-  
+
       {selectedImage && (
         <View style={styles.imageContainer}>
           <Image source={{ uri: selectedImage }} style={styles.image} />
         </View>
       )}
-  
+
       <DescriptionModal
         visible={descriptionModalVisible}
         onClose={() => setDescriptionModalVisible(false)}
