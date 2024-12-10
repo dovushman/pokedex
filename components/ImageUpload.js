@@ -42,7 +42,6 @@
 //     return null;
 //   }
 // };
-
 import axios from 'axios';
 import * as ImagePicker from 'expo-image-picker';
 
@@ -56,7 +55,7 @@ export const handleSelectImage = async () => {
 
   // Open image picker
   let result = await ImagePicker.launchImageLibraryAsync({
-    mediaTypes: ImagePicker.MediaTypeOptions.Images, // Use MediaTypeOptions for better clarity
+    mediaTypes: [ImagePicker.MediaType.Image], // Correct usage here
     allowsEditing: true,
     aspect: [4, 3],
     quality: 1,
@@ -68,9 +67,9 @@ export const handleSelectImage = async () => {
     // Prepare the FormData to send to the backend
     const formData = new FormData();
     const imageUri = result.assets[0].uri;
-    
+
     // Convert image URI to a proper file object
-    const localUri = imageUri.replace('file://', '');
+    const localUri = imageUri; // No need to modify the URI
     const filename = localUri.split('/').pop();
     const fileType = filename.split('.').pop(); // Extract file extension
 
@@ -99,6 +98,7 @@ export const handleSelectImage = async () => {
     return null;
   }
 };
+
 
 
 // // ImageUpload.js

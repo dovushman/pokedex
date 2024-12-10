@@ -116,17 +116,17 @@
 
 // export default SearchScreen;
 
-
-
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { FontAwesome, Ionicons, Foundation } from '@expo/vector-icons';
 import { handleSelectImage } from '../components/ImageUpload'; // Import the image upload function
 import DescriptionModal from '../components/DescriptionModal'; // Import the DescriptionModal
+import axios from 'axios';
 
 const SearchScreen = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [descriptionModalVisible, setDescriptionModalVisible] = useState(false);
+  const [description, setDescription] = useState(""); // State to hold the description text
 
   const handleCaptureImage = async () => {
     let result = await ImagePicker.launchCameraAsync({
@@ -145,6 +145,22 @@ const SearchScreen = () => {
     const uri = await handleSelectImage();
     if (uri) {
       setSelectedImage(uri);
+    }
+  };
+
+  const handleDescriptionSubmit = async () => {
+    if (description.trim()) {
+      try {
+        const response = await axios.post('http://localhost:5001/description', { description });
+        console.log('Description response:', response.data);
+
+        // Handle response (e.g., show identified Pokémon list or other data)
+        // You can show identified Pokémon or some confirmation here
+      } catch (error) {
+        console.error('Error submitting description:', error);
+      }
+    } else {
+      alert("Please enter a description.");
     }
   };
 
@@ -181,6 +197,9 @@ const SearchScreen = () => {
       <DescriptionModal
         visible={descriptionModalVisible}
         onClose={() => setDescriptionModalVisible(false)}
+        description={description}
+        setDescription={setDescription}
+        onSubmit={handleDescriptionSubmit} // Pass the submit function
       />
     </View>
   );
@@ -233,6 +252,7 @@ const styles = StyleSheet.create({
 });
 
 export default SearchScreen;
+
 
 
 
