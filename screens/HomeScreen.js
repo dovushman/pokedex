@@ -26,6 +26,8 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // Track if the filter menu is open
   const [isAnimating, setIsAnimating] = useState(false); // Track if the animation is in progress
   const slideAnim = useRef(new Animated.Value(width)).current; // Initial position of the side panel
+  const searchBarWidth = useRef(new Animated.Value(0)).current; // Initial width of the search bar
+  const searchBarOpacity = useRef(new Animated.Value(0)).current; // Initial opacity of the search bar
 
   const flatListRef = useRef(null);
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -118,55 +120,95 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setFilterGeneration('');
     setFilterLegendary(null);
   };
-return (
-  <SafeAreaView style={styles.container}>
-    <View style={styles.headerContainer}>
-      <Text style={styles.classicHeader}>Pokédex</Text>
-      <View style={styles.iconContainer}>
-        <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
-          <Icon name="search" size={25} color="#fff" style={{ marginRight: 15 }} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={toggleFilterMenu}>
-          <Icon name="filter" size={25} color="#fff" style={{ marginRight: 15 }} />
-        </TouchableOpacity>
+
+  const toggleSearchBar = () => {
+    if (isSearchVisible) {
+      // Animate to close the search bar
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start(() => {
+        setIsSearchVisible(false);
+      });
+    } else {
+      // Animate to open the search bar
+      setIsSearchVisible(true);
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          // toValue: width - 170, // Adjust the value as needed
+          toValue: width - 65,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 1,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start();
+    }
+  };
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headerContainer}>
+        <Text style={styles.classicHeader}>Pokédex</Text>
+        <View style={styles.searchIconContainer}>
+          <TouchableOpacity onPress={toggleSearchBar}>
+            <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
+          </TouchableOpacity>
+          <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search Pokémon"
+              placeholderTextColor="#999"
+              value={searchQuery}
+              onChangeText={handleSetSearchQuery}
+            />
+            <TouchableOpacity onPress={toggleSearchBar}>
+              <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
+            </TouchableOpacity>
+          </Animated.View>
+          <TouchableOpacity onPress={toggleFilterMenu}>
+            <Icon name="filter" size={25} color="#fff" style={{ marginLeft: 15 }} />
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
-    {isSearchVisible && (
-      <TextInput
-        style={styles.searchBar}
-        placeholder="Search Pokémon"
-        placeholderTextColor="#fff"
-        value={searchQuery}
-        onChangeText={handleSetSearchQuery}
+      <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
+      <Animated.FlatList
+        ref={flatListRef}
+        contentContainerStyle={styles.contentContainer}
+        data={filteredData} // Use filtered data
+        keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
+        renderItem={({ item }) => <Pokedex pokemon={item} />}
+        onScroll={handleScroll}
+        onScrollBeginDrag={Keyboard.dismiss} // Dismiss the keyboard when scrolling begins
       />
-    )}
-    <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
-    <Animated.FlatList
-      ref={flatListRef}
-      contentContainerStyle={styles.contentContainer}
-      data={filteredData} // Use filtered data
-      keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
-      renderItem={({ item }) => <Pokedex pokemon={item} />}
-      onScroll={handleScroll}
-      onScrollBeginDrag={Keyboard.dismiss} // Dismiss the keyboard when scrolling begins
-    />
-    <FilterMenu
-      isFilterMenuOpen={isFilterMenuOpen}
-      isAnimating={isAnimating}
-      slideAnim={slideAnim}
-      toggleFilterMenu={toggleFilterMenu}
-      expandedFilter={expandedFilter}
-      toggleFilterSection={toggleFilterSection}
-      selectedTypes={selectedTypes}
-      setSelectedTypes={setSelectedTypes}
-      filterGeneration={filterGeneration}
-      setFilterGeneration={setFilterGeneration}
-      filterLegendary={filterLegendary}
-      setFilterLegendary={setFilterLegendary}
-      clearFilters={clearFilters}
-    />
-  </SafeAreaView>
-);
+      <FilterMenu
+        isFilterMenuOpen={isFilterMenuOpen}
+        isAnimating={isAnimating}
+        slideAnim={slideAnim}
+        toggleFilterMenu={toggleFilterMenu}
+        expandedFilter={expandedFilter}
+        toggleFilterSection={toggleFilterSection}
+        selectedTypes={selectedTypes}
+        setSelectedTypes={setSelectedTypes}
+        filterGeneration={filterGeneration}
+        setFilterGeneration={setFilterGeneration}
+        filterLegendary={filterLegendary}
+        setFilterLegendary={setFilterLegendary}
+        clearFilters={clearFilters}
+      />
+    </SafeAreaView>
+  );
 };
 
 const HomeScreen = ({ route }) => {
@@ -201,22 +243,42 @@ const styles = StyleSheet.create({
     backgroundColor: '#e53935',
   },
   searchWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: '#e53935',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 5,
+    shadowOffset: { width: 0, height: 8 }, // Ensure shadow is only at the bottom
+    shadowOpacity: 0.6,
+    shadowRadius: 10,
+    elevation: 15,
+    marginBottom: -8, // Negative margin to make the shadow overhang
+    paddingHorizontal: 16,
+    zIndex: 1, // Ensure the search bar is above other elements
+  },
+  searchIconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#fff',
-    borderRadius: 8,
+    borderRadius: 20,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    position: 'absolute',
+    right: 35, // Adjust to align with the search icon
   },
   searchInput: {
     flex: 1,
     fontSize: 16,
+    color: '#333',
+  },
+  searchIcon: {
+    marginRight: 10,
+  },
+  closeIcon: {
+    marginLeft: 10,
   },
   headerButtons: {
     flexDirection: 'row',
