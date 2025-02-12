@@ -37,15 +37,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 12,
-    borderWidth: 1,
-    borderColor: '#ddd',
+    // borderWidth: 1,
+    // borderColor: '#ddd',
     borderRadius: 12,
     marginBottom: 12,
-    backgroundColor: '#fff',
+    backgroundColor: '#d32f2f',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
     elevation: 5,
   },
   imageContainer: {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   number: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#666',
+    color: 'white',
   },
   infoContainer: {
     flexDirection: 'column',
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textTransform: 'capitalize',
-    color: '#333',
+    color: 'white',
   },
   image: {
     width: 60,

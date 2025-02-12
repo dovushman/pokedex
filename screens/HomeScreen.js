@@ -1,5 +1,6 @@
+
 // import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
-// import { View, StyleSheet, Animated, SafeAreaView, TextInput, TouchableOpacity, Text, Modal } from 'react-native';
+// import { View, StyleSheet, Animated, SafeAreaView, TextInput, TouchableOpacity, Text, Dimensions } from 'react-native';
 // import { createStackNavigator } from '@react-navigation/stack';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 // import Pokedex from '../components/Pokedex';
@@ -8,8 +9,9 @@
 // import Filter from '../components/Filters/Filter';
 // import Dropdown from '../components/Dropdown';
 // import SelectedTypes from '../components/Filters/Selected/SelectedTypes'; // Import SelectedTypes component
-// import { PanGestureHandler, State } from 'react-native-gesture-handler';
+// import FilterMenu from '../components/Filters/FilterMenu'; // Import FilterMenu component
 
+// const { width } = Dimensions.get('window');
 // const Stack = createStackNavigator();
 
 // const HomeScreenComponent = ({ route, navigation }) => {
@@ -18,6 +20,12 @@
 //   const [isSearchVisible, setIsSearchVisible] = useState(false); 
 //   const [isFilterVisible, setIsFilterVisible] = useState(false); 
 //   const [selectedTypes, setSelectedTypes] = useState([]); // Change to array
+//   const [filterGeneration, setFilterGeneration] = useState('');
+//   const [filterLegendary, setFilterLegendary] = useState(null); // null means no filter, true means legendary, false means non-legendary
+//   const [expandedFilter, setExpandedFilter] = useState(''); // Track which filter section is expanded
+//   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // Track if the filter menu is open
+//   const [isAnimating, setIsAnimating] = useState(false); // Track if the animation is in progress
+//   const slideAnim = useRef(new Animated.Value(width)).current; // Initial position of the side panel
 
 //   const flatListRef = useRef(null);
 //   const scrollY = useRef(new Animated.Value(0)).current;
@@ -53,21 +61,6 @@
 //     return filtered;
 //   }, [searchQuery, selectedTypes, pokemonData]);
 
-//   useEffect(() => {
-//     navigation.setOptions({
-//       headerRight: () => (
-//         <View style={styles.headerButtons}>
-//           <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
-//             <Icon name="search" size={25} color="#000" style={{ marginRight: 15 }} />
-//           </TouchableOpacity>
-//           <TouchableOpacity onPress={() => setIsFilterVisible((prev) => !prev)}>
-//             <Icon name="filter" size={25} color="#000" style={{ marginRight: 15 }} />
-//           </TouchableOpacity>
-//         </View>
-//       ),
-//     });
-//   }, [navigation, setIsSearchVisible, setIsFilterVisible]);
-
 //   const handleScroll = Animated.event(
 //     [{ nativeEvent: { contentOffset: { y: scrollY } } }],
 //     {
@@ -87,48 +80,67 @@
 //     }
 //   );
 
-//   const handleGesture = ({ nativeEvent }) => {
-//     if (nativeEvent.state === State.END) {
-//       if (nativeEvent.translationY > 100) {
-//         setIsFilterVisible(false);
-//       }
+//   const toggleFilterMenu = () => {
+//     // Only animate if the filter menu is not already animating
+//     if (isAnimating) return;
+  
+//     setIsAnimating(true);
+  
+//     if (isFilterMenuOpen) {
+//       // Closing animation
+//       Animated.timing(slideAnim, {
+//         toValue: width,
+//         duration: 500, // Duration of the sliding animation
+//         useNativeDriver: true,
+//       }).start(() => {
+//         setIsFilterMenuOpen(false);  // Close the menu after the animation
+//         setIsAnimating(false);  // Mark animation as complete
+//       });
+//     } else {
+//       // Opening animation
+//       setIsFilterMenuOpen(true);  // Open the menu before starting animation
+//       Animated.timing(slideAnim, {
+//         toValue: 0,
+//         duration: 500, // Duration of the sliding animation
+//         useNativeDriver: true,
+//       }).start(() => {
+//         setIsAnimating(false);  // Mark animation as complete
+//       });
 //     }
+//   };
+
+//   const toggleFilterSection = (section) => {
+//     setExpandedFilter((prev) => (prev === section ? '' : section));
+//   };
+
+//   const clearFilters = () => {
+//     setSelectedTypes([]);
+//     setFilterGeneration('');
+//     setFilterLegendary(null);
 //   };
 
 //   return (
 //     <SafeAreaView style={styles.container}>
-//       {isSearchVisible && (
-//         <View style={styles.searchWrapper}>
-//           <View style={styles.searchContainer}>
-//             <TextInput
-//               style={styles.searchInput}
-//               placeholder="Search Pokémon"
-//               value={searchQuery}
-//               onChangeText={handleSetSearchQuery}
-//             />
-//             <TouchableOpacity onPress={() => setSearchQuery('')}>
-//               <Icon name="times" size={20} color="#000" />
-//             </TouchableOpacity>
-//           </View>
+//       <View style={styles.headerContainer}>
+//         <Text style={styles.classicHeader}>Pokédex</Text>
+//         <View style={styles.iconContainer}>
+//           <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
+//             <Icon name="search" size={25} color="#fff" style={{ marginRight: 15 }} />
+//           </TouchableOpacity>
+//           <TouchableOpacity onPress={toggleFilterMenu}>
+//             <Icon name="filter" size={25} color="#fff" style={{ marginRight: 15 }} />
+//           </TouchableOpacity>
 //         </View>
+//       </View>
+//       {isSearchVisible && (
+//         <TextInput
+//           style={styles.searchBar}
+//           placeholder="Search Pokémon"
+//           placeholderTextColor="#fff"
+//           value={searchQuery}
+//           onChangeText={handleSetSearchQuery}
+//         />
 //       )}
-//       <Modal
-//         animationType="slide"
-//         transparent={true}
-//         visible={isFilterVisible}
-//         onRequestClose={() => setIsFilterVisible(false)}
-//       >
-//         <TouchableOpacity style={styles.modalOverlay} onPress={() => setIsFilterVisible(false)} />
-//         <PanGestureHandler onGestureEvent={handleGesture} onHandlerStateChange={handleGesture}>
-//           <Animated.View style={styles.modalContent}>
-//             <View style={styles.handle} />
-//             <TouchableOpacity onPress={() => setIsFilterVisible(false)} style={styles.closeButton}>
-//               <Icon name="times" size={20} color="#000" />
-//             </TouchableOpacity>
-//             <Filter selectedTypes={selectedTypes} setSelectedTypes={handleSetSelectedTypes} />
-//           </Animated.View>
-//         </PanGestureHandler>
-//       </Modal>
 //       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
 //       <Animated.FlatList
 //         ref={flatListRef}
@@ -138,17 +150,33 @@
 //         renderItem={({ item }) => <Pokedex pokemon={item} />}
 //         onScroll={handleScroll}
 //       />
+//       <FilterMenu
+//         isFilterMenuOpen={isFilterMenuOpen}
+//         isAnimating={isAnimating}
+//         slideAnim={slideAnim}
+//         toggleFilterMenu={toggleFilterMenu}
+//         expandedFilter={expandedFilter}
+//         toggleFilterSection={toggleFilterSection}
+//         selectedTypes={selectedTypes}
+//         setSelectedTypes={setSelectedTypes}
+//         filterGeneration={filterGeneration}
+//         setFilterGeneration={setFilterGeneration}
+//         filterLegendary={filterLegendary}
+//         setFilterLegendary={setFilterLegendary}
+//         clearFilters={clearFilters}
+//       />
 //     </SafeAreaView>
 //   );
 // };
 
 // const HomeScreen = ({ route }) => {
 //   return (
-//     <Stack.Navigator initialRouteName="HomeScreenComponent">
+//     <Stack.Navigator initialRouteName="Pokedex">
 //       <Stack.Screen
 //         name="Pokedex"
 //         component={HomeScreenComponent}
 //         initialParams={route.params}
+//         options={{ headerShown: false }} // Hide the default header
 //       />
 //       <Stack.Screen
 //         name="PokemonInformation"
@@ -160,34 +188,31 @@
 // };
 
 // const styles = StyleSheet.create({
+//   safeArea: {
+//     flex: 1,
+//     backgroundColor: '#e53935',
+//   },
 //   container: {
 //     flex: 1,
-//     backgroundColor: '#f1f1f1',
+//     backgroundColor: '#e53935',
 //   },
 //   contentContainer: {
 //     padding: 16,
-//     paddingTop: 30, // Add padding to the top to create space for the banner
-//     marginTop: 30, // Adjust margin to reduce the gap
+//     backgroundColor: '#e53935',
 //   },
 //   searchWrapper: {
-//     backgroundColor: '#f1f1f1', // Grey background
-//     paddingBottom: 10, // Add some padding to the bottom
-//     // Add shadow properties for iOS
+//     backgroundColor: '#e53935',
 //     shadowColor: '#000',
 //     shadowOffset: { width: 0, height: 2 },
 //     shadowOpacity: 0.2,
 //     shadowRadius: 4,
-//     // Add elevation for Android
 //     elevation: 5,
 //   },
 //   searchContainer: {
 //     flexDirection: 'row',
 //     alignItems: 'center',
-//     paddingHorizontal: 16,
-//     paddingVertical: 8,
 //     backgroundColor: '#fff',
 //     borderRadius: 8,
-//     margin: 16,
 //   },
 //   searchInput: {
 //     flex: 1,
@@ -196,28 +221,39 @@
 //   headerButtons: {
 //     flexDirection: 'row',
 //   },
+//   header: {
+//     backgroundColor: '#e53935',
+//     borderBottomWidth: 0,
+//     borderBottomColor: 'transparent',
+//     elevation: 0,
+//     shadowOpacity: 0,
+//   },
+//   classicHeader: {
+//     color: 'white',
+//     fontSize: 24,
+//     fontWeight: 'bold',
+//   },
+//   iconContainer: {
+//     flexDirection: 'row',
+//   },
 //   filterWrapper: {
-//     backgroundColor: '#f1f1f1', // Grey background
-//     padding: 16,
-//     // Add shadow properties for iOS
+//     backgroundColor: '#f1f1f1',
 //     shadowColor: '#000',
 //     shadowOffset: { width: 0, height: 2 },
 //     shadowOpacity: 0.2,
 //     shadowRadius: 4,
-//     // Add elevation for Android
 //     elevation: 5,
 //   },
 //   modalOverlay: {
 //     flex: 1,
-//     backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
-//     justifyContent: 'flex-end', // Align modal content to the bottom
+//     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//     justifyContent: 'flex-end',
 //   },
 //   modalContent: {
-//     height: '75%', // Take up 75% of the screen height
+//     height: '75%',
 //     backgroundColor: '#fff',
 //     borderTopLeftRadius: 20,
 //     borderTopRightRadius: 20,
-//     padding: 16,
 //   },
 //   handle: {
 //     width: 40,
@@ -225,16 +261,36 @@
 //     backgroundColor: '#ccc',
 //     borderRadius: 2.5,
 //     alignSelf: 'center',
-//     marginVertical: 10,
 //   },
 //   closeButton: {
 //     alignSelf: 'flex-end',
 //   },
+//   headerContainer: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     paddingHorizontal: 16,
+//     marginBottom: 16,
+//   },
+//   searchBar: {
+//     height: 40,
+//     borderColor: 'white',
+//     borderWidth: 1,
+//     borderRadius: 20,
+//     paddingHorizontal: 10,
+//     marginBottom: 16,
+//     color: 'white',
+//     fontSize: 16,
+//   },
 // });
 
 // export default HomeScreen;
+
+
+
+
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
-import { View, StyleSheet, Animated, SafeAreaView, TextInput, TouchableOpacity, Text, Modal } from 'react-native';
+import { View, StyleSheet, Animated, SafeAreaView, TextInput, TouchableOpacity, Text, Dimensions } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Pokedex from '../components/Pokedex';
@@ -243,8 +299,9 @@ import Banner from '../components/Banner';
 import Filter from '../components/Filters/Filter';
 import Dropdown from '../components/Dropdown';
 import SelectedTypes from '../components/Filters/Selected/SelectedTypes'; // Import SelectedTypes component
-import { PanGestureHandler, State } from 'react-native-gesture-handler';
+import FilterMenu from '../components/Filters/FilterMenu'; // Import FilterMenu component
 
+const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
 
 const HomeScreenComponent = ({ route, navigation }) => {
@@ -252,7 +309,13 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false); 
   const [isFilterVisible, setIsFilterVisible] = useState(false); 
-  const [selectedTypes, setSelectedTypes] = useState([]); // Change to array
+  const [selectedTypes, setSelectedTypes] = useState([]); // Initial state is an empty array
+  const [filterGeneration, setFilterGeneration] = useState('');
+  const [filterLegendary, setFilterLegendary] = useState(null); // null means no filter, true means legendary, false means non-legendary
+  const [expandedFilter, setExpandedFilter] = useState(''); // Track which filter section is expanded
+  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // Track if the filter menu is open
+  const [isAnimating, setIsAnimating] = useState(false); // Track if the animation is in progress
+  const slideAnim = useRef(new Animated.Value(width)).current; // Initial position of the side panel
 
   const flatListRef = useRef(null);
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -288,21 +351,6 @@ const HomeScreenComponent = ({ route, navigation }) => {
     return filtered;
   }, [searchQuery, selectedTypes, pokemonData]);
 
-  useEffect(() => {
-    navigation.setOptions({
-      headerRight: () => (
-        <View style={styles.headerButtons}>
-          <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
-            <Icon name="search" size={25} color="#000" style={{ marginRight: 15 }} />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => setIsFilterVisible((prev) => !prev)}>
-            <Icon name="filter" size={25} color="#000" style={{ marginRight: 15 }} />
-          </TouchableOpacity>
-        </View>
-      ),
-    });
-  }, [navigation, setIsSearchVisible, setIsFilterVisible]);
-
   const handleScroll = Animated.event(
     [{ nativeEvent: { contentOffset: { y: scrollY } } }],
     {
@@ -322,48 +370,67 @@ const HomeScreenComponent = ({ route, navigation }) => {
     }
   );
 
-  const handleGesture = ({ nativeEvent }) => {
-    if (nativeEvent.state === State.END) {
-      if (nativeEvent.translationY > 100) {
-        setIsFilterVisible(false);
-      }
+  const toggleFilterMenu = () => {
+    // Only animate if the filter menu is not already animating
+    if (isAnimating) return;
+  
+    setIsAnimating(true);
+  
+    if (isFilterMenuOpen) {
+      // Closing animation
+      Animated.timing(slideAnim, {
+        toValue: width,
+        duration: 500, // Duration of the sliding animation
+        useNativeDriver: true,
+      }).start(() => {
+        setIsFilterMenuOpen(false);  // Close the menu after the animation
+        setIsAnimating(false);  // Mark animation as complete
+      });
+    } else {
+      // Opening animation
+      setIsFilterMenuOpen(true);  // Open the menu before starting animation
+      Animated.timing(slideAnim, {
+        toValue: 0,
+        duration: 500, // Duration of the sliding animation
+        useNativeDriver: true,
+      }).start(() => {
+        setIsAnimating(false);  // Mark animation as complete
+      });
     }
+  };
+
+  const toggleFilterSection = (section) => {
+    setExpandedFilter((prev) => (prev === section ? '' : section));
+  };
+
+  const clearFilters = () => {
+    setSelectedTypes([]);
+    setFilterGeneration('');
+    setFilterLegendary(null);
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      {isSearchVisible && (
-        <View style={styles.searchWrapper}>
-          <View style={styles.searchContainer}>
-            <TextInput
-              style={styles.searchInput}
-              placeholder="Search Pokémon"
-              value={searchQuery}
-              onChangeText={handleSetSearchQuery}
-            />
-            <TouchableOpacity onPress={() => setSearchQuery('')}>
-              <Icon name="times" size={20} color="#000" />
-            </TouchableOpacity>
-          </View>
+      <View style={styles.headerContainer}>
+        <Text style={styles.classicHeader}>Pokédex</Text>
+        <View style={styles.iconContainer}>
+          <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
+            <Icon name="search" size={25} color="#fff" style={{ marginRight: 15 }} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={toggleFilterMenu}>
+            <Icon name="filter" size={25} color="#fff" style={{ marginRight: 15 }} />
+          </TouchableOpacity>
         </View>
+      </View>
+      {isSearchVisible && (
+        <TextInput
+          style={styles.searchBar}
+          placeholder="Search Pokémon"
+          placeholderTextColor="#fff"
+          value={searchQuery}
+          onChangeText={handleSetSearchQuery}
+        />
       )}
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={isFilterVisible}
-        onRequestClose={() => setIsFilterVisible(false)}
-      >
-        <TouchableOpacity style={styles.modalOverlay} onPress={() => setIsFilterVisible(false)} />
-        <PanGestureHandler onGestureEvent={handleGesture} onHandlerStateChange={handleGesture}>
-          <Animated.View style={styles.modalContent}>
-            <View style={styles.handle} />
-            <TouchableOpacity onPress={() => setIsFilterVisible(false)} style={styles.closeButton}>
-              <Icon name="times" size={20} color="#000" />
-            </TouchableOpacity>
-            <Filter selectedTypes={selectedTypes} setSelectedTypes={handleSetSelectedTypes} />
-          </Animated.View>
-        </PanGestureHandler>
-      </Modal>
       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
       <Animated.FlatList
         ref={flatListRef}
@@ -372,6 +439,21 @@ const HomeScreenComponent = ({ route, navigation }) => {
         keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
         renderItem={({ item }) => <Pokedex pokemon={item} />}
         onScroll={handleScroll}
+      />
+      <FilterMenu
+        isFilterMenuOpen={isFilterMenuOpen}
+        isAnimating={isAnimating}
+        slideAnim={slideAnim}
+        toggleFilterMenu={toggleFilterMenu}
+        expandedFilter={expandedFilter}
+        toggleFilterSection={toggleFilterSection}
+        selectedTypes={selectedTypes}
+        setSelectedTypes={setSelectedTypes}
+        filterGeneration={filterGeneration}
+        setFilterGeneration={setFilterGeneration}
+        filterLegendary={filterLegendary}
+        setFilterLegendary={setFilterLegendary}
+        clearFilters={clearFilters}
       />
     </SafeAreaView>
   );
@@ -384,6 +466,7 @@ const HomeScreen = ({ route }) => {
         name="Pokedex"
         component={HomeScreenComponent}
         initialParams={route.params}
+        options={{ headerShown: false }} // Hide the default header
       />
       <Stack.Screen
         name="PokemonInformation"
@@ -395,34 +478,31 @@ const HomeScreen = ({ route }) => {
 };
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#e53935',
+  },
   container: {
     flex: 1,
-    backgroundColor: '#f1f1f1',
+    backgroundColor: '#e53935',
   },
   contentContainer: {
     padding: 16,
-    paddingTop: 30, // Add padding to the top to create space for the banner
-    marginTop: 30, // Adjust margin to reduce the gap
+    backgroundColor: '#e53935',
   },
   searchWrapper: {
-    backgroundColor: '#f1f1f1', // Grey background
-    paddingBottom: 10, // Add some padding to the bottom
-    // Add shadow properties for iOS
+    backgroundColor: '#e53935',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    // Add elevation for Android
     elevation: 5,
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 8,
     backgroundColor: '#fff',
     borderRadius: 8,
-    margin: 16,
   },
   searchInput: {
     flex: 1,
@@ -431,28 +511,39 @@ const styles = StyleSheet.create({
   headerButtons: {
     flexDirection: 'row',
   },
+  header: {
+    backgroundColor: '#e53935',
+    borderBottomWidth: 0,
+    borderBottomColor: 'transparent',
+    elevation: 0,
+    shadowOpacity: 0,
+  },
+  classicHeader: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  iconContainer: {
+    flexDirection: 'row',
+  },
   filterWrapper: {
-    backgroundColor: '#f1f1f1', // Grey background
-    padding: 16,
-    // Add shadow properties for iOS
+    backgroundColor: '#f1f1f1',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    // Add elevation for Android
     elevation: 5,
   },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
-    justifyContent: 'flex-end', // Align modal content to the bottom
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'flex-end',
   },
   modalContent: {
-    height: '75%', // Take up 75% of the screen height
+    height: '75%',
     backgroundColor: '#fff',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    padding: 16,
   },
   handle: {
     width: 40,
@@ -460,10 +551,26 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     borderRadius: 2.5,
     alignSelf: 'center',
-    marginVertical: 10,
   },
   closeButton: {
     alignSelf: 'flex-end',
+  },
+  headerContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    marginBottom: 16,
+  },
+  searchBar: {
+    height: 40,
+    borderColor: 'white',
+    borderWidth: 1,
+    borderRadius: 20,
+    paddingHorizontal: 10,
+    marginBottom: 16,
+    color: 'white',
+    fontSize: 16,
   },
 });
 
