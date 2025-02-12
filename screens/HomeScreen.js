@@ -9,6 +9,7 @@ import Filter from '../components/Filters/Filter';
 import Dropdown from '../components/Dropdown';
 import SelectedTypes from '../components/Filters/Selected/SelectedTypes'; // Import SelectedTypes component
 import FilterMenu from '../components/Filters/FilterMenu'; // Import FilterMenu component
+import { Keyboard } from 'react-native';
 
 const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
@@ -117,55 +118,55 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setFilterGeneration('');
     setFilterLegendary(null);
   };
-
-  return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Text style={styles.classicHeader}>Pokédex</Text>
-        <View style={styles.iconContainer}>
-          <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
-            <Icon name="search" size={25} color="#fff" style={{ marginRight: 15 }} />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={toggleFilterMenu}>
-            <Icon name="filter" size={25} color="#fff" style={{ marginRight: 15 }} />
-          </TouchableOpacity>
-        </View>
+return (
+  <SafeAreaView style={styles.container}>
+    <View style={styles.headerContainer}>
+      <Text style={styles.classicHeader}>Pokédex</Text>
+      <View style={styles.iconContainer}>
+        <TouchableOpacity onPress={() => setIsSearchVisible((prev) => !prev)}>
+          <Icon name="search" size={25} color="#fff" style={{ marginRight: 15 }} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={toggleFilterMenu}>
+          <Icon name="filter" size={25} color="#fff" style={{ marginRight: 15 }} />
+        </TouchableOpacity>
       </View>
-      {isSearchVisible && (
-        <TextInput
-          style={styles.searchBar}
-          placeholder="Search Pokémon"
-          placeholderTextColor="#fff"
-          value={searchQuery}
-          onChangeText={handleSetSearchQuery}
-        />
-      )}
-      <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
-      <Animated.FlatList
-        ref={flatListRef}
-        contentContainerStyle={styles.contentContainer}
-        data={filteredData} // Use filtered data
-        keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
-        renderItem={({ item }) => <Pokedex pokemon={item} />}
-        onScroll={handleScroll}
+    </View>
+    {isSearchVisible && (
+      <TextInput
+        style={styles.searchBar}
+        placeholder="Search Pokémon"
+        placeholderTextColor="#fff"
+        value={searchQuery}
+        onChangeText={handleSetSearchQuery}
       />
-      <FilterMenu
-        isFilterMenuOpen={isFilterMenuOpen}
-        isAnimating={isAnimating}
-        slideAnim={slideAnim}
-        toggleFilterMenu={toggleFilterMenu}
-        expandedFilter={expandedFilter}
-        toggleFilterSection={toggleFilterSection}
-        selectedTypes={selectedTypes}
-        setSelectedTypes={setSelectedTypes}
-        filterGeneration={filterGeneration}
-        setFilterGeneration={setFilterGeneration}
-        filterLegendary={filterLegendary}
-        setFilterLegendary={setFilterLegendary}
-        clearFilters={clearFilters}
-      />
-    </SafeAreaView>
-  );
+    )}
+    <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
+    <Animated.FlatList
+      ref={flatListRef}
+      contentContainerStyle={styles.contentContainer}
+      data={filteredData} // Use filtered data
+      keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
+      renderItem={({ item }) => <Pokedex pokemon={item} />}
+      onScroll={handleScroll}
+      onScrollBeginDrag={Keyboard.dismiss} // Dismiss the keyboard when scrolling begins
+    />
+    <FilterMenu
+      isFilterMenuOpen={isFilterMenuOpen}
+      isAnimating={isAnimating}
+      slideAnim={slideAnim}
+      toggleFilterMenu={toggleFilterMenu}
+      expandedFilter={expandedFilter}
+      toggleFilterSection={toggleFilterSection}
+      selectedTypes={selectedTypes}
+      setSelectedTypes={setSelectedTypes}
+      filterGeneration={filterGeneration}
+      setFilterGeneration={setFilterGeneration}
+      filterLegendary={filterLegendary}
+      setFilterLegendary={setFilterLegendary}
+      clearFilters={clearFilters}
+    />
+  </SafeAreaView>
+);
 };
 
 const HomeScreen = ({ route }) => {
