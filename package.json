@@ -21,6 +21,7 @@
     "axios": "^1.7.9",
     "expo": "^52.0.32",
     "expo-dev-client": "~5.0.11",
+    "expo-image": "^2.0.5",
     "expo-image-picker": "~16.0.5",
     "expo-modules-autolinking": "~2.0.0",
     "expo-speech": "~13.0.1",

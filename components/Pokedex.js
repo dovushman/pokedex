@@ -200,8 +200,14 @@ export default React.memo(Pokedex);
 
 //larger sprite, large number on the right
 
+
+
+
+
+// filepath: /Users/dovushman/Documents/GitHub/pokedex/components/Pokedex.js
 import React, { useMemo } from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Image } from 'expo-image';
 import { useNavigation } from '@react-navigation/native';
 import typeColors from '../utils/typeColors'; // Import typeColors
 
@@ -223,6 +229,7 @@ const Pokedex = ({ pokemon }) => {
         <Image
           style={styles.image}
           source={{ uri: pokemon.sprite }}
+          resizeMode="contain"
         />
       </View>
       <View style={styles.infoContainer}>

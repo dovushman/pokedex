@@ -194,9 +194,14 @@
 // });
 
 // export default PokemonInformation;import React, { useState, useEffect } from 'react';
+
+
+
+// filepath: /Users/dovushman/Documents/GitHub/pokedex/screens/PokemonInformation.js
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Button, Image, FlatList } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Button, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Image } from 'expo-image';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { getPokemon, getPokemonSpecies } from '../services/api';
 import { speakDexEntry } from '../services/textToSpeech';
@@ -255,6 +260,7 @@ const PokemonInformation = ({ route, navigation }) => {
               <Image
                 style={styles.image}
                 source={{ uri: pokemonData.sprites.other['official-artwork'].front_default }}
+                contentFit="contain"
               />
             </View>
             {items.length > 1 && (
