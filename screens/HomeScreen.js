@@ -1,5 +1,15 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
-import { View, StyleSheet, Animated, SafeAreaView, TextInput, TouchableOpacity, Text, Dimensions, Keyboard } from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Animated,
+  SafeAreaView,
+  TextInput,
+  TouchableOpacity,
+  Text,
+  Dimensions,
+  Keyboard,
+} from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -15,10 +25,10 @@ const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
 
 const HomeScreenComponent = ({ route, navigation }) => {
-  const { data: pokemonData } = route.params || {}; 
+  const { data: pokemonData } = route.params || {};
   const [searchQuery, setSearchQuery] = useState('');
-  const [isSearchVisible, setIsSearchVisible] = useState(false); 
-  const [isFilterVisible, setIsFilterVisible] = useState(false); 
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isFilterVisible, setIsFilterVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState([]); // Initial state is an empty array
   const [filterGeneration, setFilterGeneration] = useState('');
   const [filterLegendary, setFilterLegendary] = useState(null); // null means no filter, true means legendary, false means non-legendary
@@ -62,7 +72,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
     if (selectedTypes.length > 0) {
       filtered = filtered.filter((pokemon) => {
-        return pokemon.types && selectedTypes.some(type => pokemon.types.includes(type.toLowerCase()));
+        return pokemon.types && selectedTypes.some((type) => pokemon.types.includes(type.toLowerCase()));
       });
     }
 
@@ -91,9 +101,9 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const toggleFilterMenu = () => {
     // Only animate if the filter menu is not already animating
     if (isAnimating) return;
-  
+
     setIsAnimating(true);
-  
+
     if (isFilterMenuOpen) {
       // Closing animation
       Animated.timing(slideAnim, {
@@ -101,18 +111,18 @@ const HomeScreenComponent = ({ route, navigation }) => {
         duration: 500, // Duration of the sliding animation
         useNativeDriver: true,
       }).start(() => {
-        setIsFilterMenuOpen(false);  // Close the menu after the animation
-        setIsAnimating(false);  // Mark animation as complete
+        setIsFilterMenuOpen(false); // Close the menu after the animation
+        setIsAnimating(false); // Mark animation as complete
       });
     } else {
       // Opening animation
-      setIsFilterMenuOpen(true);  // Open the menu before starting animation
+      setIsFilterMenuOpen(true); // Open the menu before starting animation
       Animated.timing(slideAnim, {
         toValue: 0,
         duration: 500, // Duration of the sliding animation
         useNativeDriver: true,
       }).start(() => {
-        setIsAnimating(false);  // Mark animation as complete
+        setIsAnimating(false); // Mark animation as complete
       });
     }
   };
@@ -127,25 +137,13 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setFilterLegendary(null);
   };
 
+  // Toggle search bar open/close
   const toggleSearchBar = () => {
     if (isSearchVisible) {
-      // Animate to close the search bar
-      Animated.parallel([
-        Animated.timing(searchBarWidth, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-        Animated.timing(searchBarOpacity, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-      ]).start(() => {
-        setIsSearchVisible(false);
-      });
+      // Do nothing here since the close button now handles collapse vs. clear.
+      // You could alternatively choose to collapse the search bar here as well.
+      return;
     } else {
-      // Animate to open the search bar
       setIsSearchVisible(true);
       Animated.parallel([
         Animated.timing(searchBarWidth, {
@@ -159,6 +157,31 @@ const HomeScreenComponent = ({ route, navigation }) => {
           useNativeDriver: false,
         }),
       ]).start();
+    }
+  };
+
+  // Handle close/clear button press in the search bar
+  const handleCloseSearch = () => {
+    if (searchQuery !== '') {
+      // Clear the search query without closing the search bar.
+      setSearchQuery('');
+    } else {
+      // Animate to close the search bar if it's already empty.
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start(() => {
+        setIsSearchVisible(false);
+        Keyboard.dismiss();
+      });
     }
   };
 
@@ -178,7 +201,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
               value={searchQuery}
               onChangeText={handleSetSearchQuery}
             />
-            <TouchableOpacity onPress={toggleSearchBar}>
+            <TouchableOpacity onPress={handleCloseSearch}>
               <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
             </TouchableOpacity>
           </Animated.View>
@@ -186,7 +209,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
             <Ionicons
               name="sparkles"
               size={25}
-              color={useShinySprites ? "#FFD700" : "#fff"}
+              color={useShinySprites ? '#FFD700' : '#fff'}
               style={{ marginLeft: 6, marginRight: 0 }}
             />
           </TouchableOpacity>
