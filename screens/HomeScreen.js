@@ -268,20 +268,22 @@ const HomeScreen = ({ route }) => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#e53935',
+    backgroundColor: '#e5343d',
   },
   container: {
     flex: 1,
-    backgroundColor: '#e53935',
+    backgroundColor: '#e5343d',
   },
   contentContainer: {
     padding: 16,
-    backgroundColor: '#e53935',
+    // backgroundColor: '#e53935',
+    // backgroundColor: '#e53639',
+    backgroundColor: '#e5343d',
   },
   searchWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#e53935',
+    backgroundColor: '#e5343d',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.6,
@@ -320,7 +322,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   header: {
-    backgroundColor: '#e53935',
+    backgroundColor: '#e5343d',
     borderBottomWidth: 0,
     borderBottomColor: 'transparent',
     elevation: 0,

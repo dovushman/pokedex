@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 12,
     marginBottom: 12,
-    backgroundColor: '#d32f2f',
+    backgroundColor: '#d32f2f', // Updated to match HomeScreen color palette
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
