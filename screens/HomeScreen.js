@@ -1,61 +1,83 @@
-import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useMemo } from 'react';
 import {
   View,
+  Text,
   StyleSheet,
   Animated,
+  Dimensions,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
   SafeAreaView,
   TextInput,
-  TouchableOpacity,
-  Text,
-  Dimensions,
   Keyboard,
 } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
 import PokemonInformation from './PokemonInformation';
-import Banner from '../components/Banner';
-import Filter from '../components/Filters/Filter';
-import Dropdown from '../components/Dropdown';
-import SelectedTypes from '../components/Filters/Selected/SelectedTypes'; // Import SelectedTypes component
-import FilterMenu from '../components/Filters/FilterMenu'; // Import FilterMenu component
+import SelectedTypes from '../components/Filters/Selected/SelectedTypes';
+import FilterMenu from '../components/Filters/FilterMenu';
 
 const { width } = Dimensions.get('window');
+const totalItems = 4;  // Number of items in the FAB menu
 const Stack = createStackNavigator();
 
 const HomeScreenComponent = ({ route, navigation }) => {
   const { data: pokemonData } = route.params || {};
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false);
-  const [isFilterVisible, setIsFilterVisible] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState([]); // Initial state is an empty array
+  const [selectedTypes, setSelectedTypes] = useState([]);
   const [filterGeneration, setFilterGeneration] = useState('');
-  const [filterLegendary, setFilterLegendary] = useState(null); // null means no filter, true means legendary, false means non-legendary
-  const [expandedFilter, setExpandedFilter] = useState(''); // Track which filter section is expanded
-  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // Track if the filter menu is open
-  const [isAnimating, setIsAnimating] = useState(false); // Track if the animation is in progress
-  const [useShinySprites, setUseShinySprites] = useState(false); // Toggle for shiny sprites
+  const [filterLegendary, setFilterLegendary] = useState(null);
+  const [expandedFilter, setExpandedFilter] = useState('');
+  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [useShinySprites, setUseShinySprites] = useState(false);
+  const [isFabMenuOpen, setIsFabMenuOpen] = useState(false);
 
-  const slideAnim = useRef(new Animated.Value(width)).current; // Initial position of the side panel
-  const searchBarWidth = useRef(new Animated.Value(0)).current; // Initial width of the search bar
-  const searchBarOpacity = useRef(new Animated.Value(0)).current; // Initial opacity of the search bar
+  const slideAnim = useRef(new Animated.Value(width)).current;
+  const searchBarWidth = useRef(new Animated.Value(0)).current;
+  const searchBarOpacity = useRef(new Animated.Value(0)).current;
+  const stackAnim = useRef(new Animated.Value(0)).current;
 
-  const flatListRef = useRef(null);
-  const scrollY = useRef(new Animated.Value(0)).current;
-  const previousScrollY = useRef(0); // Track previous scroll position
+  const fabMenuItems = [
+    { label: 'Pokédex', icon: 'book', route: 'Pokedex' },
+    { label: 'Items', icon: 'cube', route: 'Items' },
+    { label: 'Abilities', icon: 'flash', route: 'Abilities' },
+    { label: 'Natures', icon: 'leaf', route: 'Natures' },
+  ];
+
+  const openFabMenu = () => {
+    setIsFabMenuOpen(true);
+    Animated.timing(stackAnim, {
+      toValue: totalItems - 1,
+      duration: (totalItems - 1) * 600,
+      useNativeDriver: true,
+    }).start();
+  };
+
+  const closeFabMenu = () => {
+    Animated.timing(stackAnim, {
+      toValue: 0,
+      duration: (totalItems - 1) * 600,
+      useNativeDriver: true,
+    }).start(() => {
+      setIsFabMenuOpen(false);
+    });
+  };
+
+  const toggleFabMenu = () => {
+    if (isFabMenuOpen) {
+      closeFabMenu();
+    } else {
+      openFabMenu();
+    }
+  };
 
   const handleSetSearchQuery = useCallback((query) => {
     setSearchQuery(query);
   }, []);
-
-  const handleSetSelectedTypes = useCallback((types) => {
-    setSelectedTypes(types);
-  }, []);
-
-  const removeType = (type) => {
-    setSelectedTypes((prevTypes) => prevTypes.filter((t) => t !== type));
-  };
 
   const toggleShinySprites = () => {
     setUseShinySprites((prev) => !prev);
@@ -63,66 +85,41 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
   const filteredData = useMemo(() => {
     let filtered = pokemonData;
-
     if (searchQuery !== '') {
       filtered = filtered.filter((pokemon) =>
         pokemon.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
-
     if (selectedTypes.length > 0) {
-      filtered = filtered.filter((pokemon) => {
-        return pokemon.types && selectedTypes.some((type) => pokemon.types.includes(type.toLowerCase()));
-      });
+      filtered = filtered.filter(
+        (pokemon) =>
+          pokemon.types &&
+          selectedTypes.some((type) => pokemon.types.includes(type.toLowerCase()))
+      );
     }
-
     return filtered;
   }, [searchQuery, selectedTypes, pokemonData]);
 
-  const handleScroll = Animated.event(
-    [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-    {
-      useNativeDriver: false,
-      listener: (event) => {
-        const currentScrollY = event.nativeEvent.contentOffset.y;
-        if (currentScrollY < previousScrollY.current) {
-          // Scrolling up
-          Animated.timing(scrollY, {
-            toValue: 0,
-            duration: 300,
-            useNativeDriver: false,
-          }).start();
-        }
-        previousScrollY.current = currentScrollY;
-      },
-    }
-  );
-
   const toggleFilterMenu = () => {
-    // Only animate if the filter menu is not already animating
     if (isAnimating) return;
-
     setIsAnimating(true);
-
     if (isFilterMenuOpen) {
-      // Closing animation
       Animated.timing(slideAnim, {
         toValue: width,
-        duration: 500, // Duration of the sliding animation
+        duration: 500,
         useNativeDriver: true,
       }).start(() => {
-        setIsFilterMenuOpen(false); // Close the menu after the animation
-        setIsAnimating(false); // Mark animation as complete
+        setIsFilterMenuOpen(false);
+        setIsAnimating(false);
       });
     } else {
-      // Opening animation
-      setIsFilterMenuOpen(true); // Open the menu before starting animation
+      setIsFilterMenuOpen(true);
       Animated.timing(slideAnim, {
         toValue: 0,
-        duration: 500, // Duration of the sliding animation
+        duration: 500,
         useNativeDriver: true,
       }).start(() => {
-        setIsAnimating(false); // Mark animation as complete
+        setIsAnimating(false);
       });
     }
   };
@@ -131,42 +128,27 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setExpandedFilter((prev) => (prev === section ? '' : section));
   };
 
-  const clearFilters = () => {
-    setSelectedTypes([]);
-    setFilterGeneration('');
-    setFilterLegendary(null);
-  };
-
-  // Toggle search bar open/close
   const toggleSearchBar = () => {
-    if (isSearchVisible) {
-      // Do nothing here since the close button now handles collapse vs. clear.
-      // You could alternatively choose to collapse the search bar here as well.
-      return;
-    } else {
-      setIsSearchVisible(true);
-      Animated.parallel([
-        Animated.timing(searchBarWidth, {
-          toValue: width - 100, // Adjust the value as needed
-          duration: 300,
-          useNativeDriver: false,
-        }),
-        Animated.timing(searchBarOpacity, {
-          toValue: 1,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-      ]).start();
-    }
+    if (isSearchVisible) return;
+    setIsSearchVisible(true);
+    Animated.parallel([
+      Animated.timing(searchBarWidth, {
+        toValue: width - 100,
+        duration: 300,
+        useNativeDriver: false,
+      }),
+      Animated.timing(searchBarOpacity, {
+        toValue: 1,
+        duration: 300,
+        useNativeDriver: false,
+      }),
+    ]).start();
   };
 
-  // Handle close/clear button press in the search bar
   const handleCloseSearch = () => {
     if (searchQuery !== '') {
-      // Clear the search query without closing the search bar.
       setSearchQuery('');
     } else {
-      // Animate to close the search bar if it's already empty.
       Animated.parallel([
         Animated.timing(searchBarWidth, {
           toValue: 0,
@@ -218,16 +200,21 @@ const HomeScreenComponent = ({ route, navigation }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
+
+      <SelectedTypes selectedTypes={selectedTypes} removeType={() => {}} />
+
       <Animated.FlatList
-        ref={flatListRef}
+        data={filteredData}
         contentContainerStyle={styles.contentContainer}
-        data={filteredData} // Use filtered data
-        keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <Pokedex pokemon={item} useShinySprites={useShinySprites} />}
-        onScroll={handleScroll}
-        onScrollBeginDrag={Keyboard.dismiss} // Dismiss the keyboard when scrolling begins
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: new Animated.Value(0) } } }],
+          { useNativeDriver: false }
+        )}
+        onScrollBeginDrag={Keyboard.dismiss}
       />
+
       <FilterMenu
         isFilterMenuOpen={isFilterMenuOpen}
         isAnimating={isAnimating}
@@ -241,8 +228,53 @@ const HomeScreenComponent = ({ route, navigation }) => {
         setFilterGeneration={setFilterGeneration}
         filterLegendary={filterLegendary}
         setFilterLegendary={setFilterLegendary}
-        clearFilters={clearFilters}
+        clearFilters={() => {}}
       />
+
+      <TouchableOpacity style={styles.fab} onPress={toggleFabMenu}>
+        <Ionicons name="add" size={30} color="#fff" />
+      </TouchableOpacity>
+
+      {isFabMenuOpen && (
+        <TouchableWithoutFeedback onPress={closeFabMenu}>
+          <View style={styles.overlay}>
+            <View style={styles.fabMenu}>
+            {fabMenuItems.map((item, index) => {
+  const translateY = stackAnim.interpolate({
+    inputRange: [0, totalItems - 1],
+    outputRange: [0, -(index + 1) * 60], // Each item moves up more than the previous
+    extrapolate: 'clamp',
+  });
+
+  const opacity = stackAnim.interpolate({
+    inputRange: [0, index, totalItems - 1],
+    outputRange: [0, 1, 1], // Items fade in as they rise
+    extrapolate: 'clamp',
+  });
+
+  return (
+    <Animated.View
+      key={item.label}
+      style={[
+        styles.fabMenuItem,
+        {
+          transform: [{ translateY }],
+          opacity,
+        },
+      ]}
+    >
+      <Text style={styles.fabMenuText}>{item.label}</Text>
+      <View style={styles.fabMenuIcon}>
+        <Ionicons name={item.icon} size={24} color="#fff" />
+      </View>
+    </Animated.View>
+  );
+})}
+
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
+      )}
     </SafeAreaView>
   );
 };
@@ -254,48 +286,25 @@ const HomeScreen = ({ route }) => {
         name="Pokedex"
         component={HomeScreenComponent}
         initialParams={route.params}
-        options={{ headerShown: false }} // Hide the default header
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="PokemonInformation"
         component={PokemonInformation}
-        options={{ headerShown: false }} // Hide the header for PokemonInformation screen
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
 };
 
 const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#e5343d',
-  },
   container: {
     flex: 1,
     backgroundColor: '#e5343d',
   },
   contentContainer: {
     padding: 16,
-    // backgroundColor: '#e53935',
-    // backgroundColor: '#e53639',
     backgroundColor: '#e5343d',
-  },
-  searchWrapper: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#e5343d',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.6,
-    shadowRadius: 10,
-    elevation: 15,
-    marginBottom: -8,
-    paddingHorizontal: 16,
-    zIndex: 1,
-  },
-  searchIconContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
@@ -318,53 +327,6 @@ const styles = StyleSheet.create({
   closeIcon: {
     marginLeft: 10,
   },
-  headerButtons: {
-    flexDirection: 'row',
-  },
-  header: {
-    backgroundColor: '#e5343d',
-    borderBottomWidth: 0,
-    borderBottomColor: 'transparent',
-    elevation: 0,
-    shadowOpacity: 0,
-  },
-  classicHeader: {
-    color: 'white',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  iconContainer: {
-    flexDirection: 'row',
-  },
-  filterWrapper: {
-    backgroundColor: '#f1f1f1',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  modalOverlay: {
-    flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    justifyContent: 'flex-end',
-  },
-  modalContent: {
-    height: '75%',
-    backgroundColor: '#fff',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-  },
-  handle: {
-    width: 40,
-    height: 5,
-    backgroundColor: '#ccc',
-    borderRadius: 2.5,
-    alignSelf: 'center',
-  },
-  closeButton: {
-    alignSelf: 'flex-end',
-  },
   headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -372,15 +334,57 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginBottom: 16,
   },
-  searchBar: {
-    height: 40,
-    borderColor: 'white',
-    borderWidth: 1,
-    borderRadius: 20,
-    paddingHorizontal: 10,
-    marginBottom: 16,
+  classicHeader: {
     color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  searchIconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  fab: {
+    position: 'absolute',
+    bottom: 30,
+    right: 30,
+    backgroundColor: '#007AFF',
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 10,
+  },
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+  },
+  fabMenu: {
+    position: 'absolute',
+    bottom: 100,
+    right: 37, // Adjust this value to move the menu to the left
+    width: 180,
+  },
+  fabMenuItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end', // Align items to the end to center icons with the main FAB
+    paddingVertical: 8,
+    width: '100%',
+    position: 'absolute',
+  },
+  fabMenuText: {
     fontSize: 16,
+    color: '#fff',
+    marginRight: 15, // Adjust this value to ensure proper spacing between text and icon
+  },
+  fabMenuIcon: {
+    backgroundColor: '#007AFF',
+    borderRadius: 20,
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

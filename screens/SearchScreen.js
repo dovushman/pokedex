@@ -58,7 +58,7 @@ const SearchScreen = () => {
     <View style={styles.container}>
       <Text style={styles.pageTitle}>Who's That Pokémon?</Text>
       <Text style={styles.pageDescription}>
-        Looking for a specific Pokémon? Let us help! Describe a Pokémon, upload an image, or take a photo. Need a Pokémon but not sure which one? Get a recommendation for a that fits your needs!
+        Looking for a specific Pokémon? Let us help! Describe a Pokémon, upload an image, or take a photo. Need a Pokémon but not sure which one? Get a recommendation that fits your needs!
       </Text>
 
       {/* Icons Section */}
