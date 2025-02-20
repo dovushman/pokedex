@@ -6,6 +6,7 @@ import {
   Dimensions,
   SafeAreaView,
   Keyboard,
+  FlatList,
 } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
@@ -18,16 +19,21 @@ import SearchBar from '../components/SearchBar';
 const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
 
+const MemoizedFlatList = React.memo(FlatList, (prevProps, nextProps) => {
+  return prevProps.data === nextProps.data; // Only re-render if the data has changed
+});
+
+
 const HomeScreenComponent = ({ route, navigation }) => {
   const { data: pokemonData } = route.params || {};
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false);
-  const [selectedTypes, setSelectedTypes] = useState([]);
+  const [selectedTypes, setSelectedTypes] = useState(new Set());
   const [filterGeneration, setFilterGeneration] = useState('');
   const [filterLegendary, setFilterLegendary] = useState(null);
   const [expandedFilter, setExpandedFilter] = useState('');
-  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // state for menu visibility
+  const [isAnimating, setIsAnimating] = useState(false); // state for preventing multiple animations
   const [useShinySprites, setUseShinySprites] = useState(false);
 
   const slideAnim = useRef(new Animated.Value(width)).current;
@@ -43,54 +49,68 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setUseShinySprites((prev) => !prev);
   };
 
+  // Remove selected type from the Set (optimized)
+  const removeType = useCallback((type) => {
+    setSelectedTypes((prevSelectedTypes) => {
+      const newSet = new Set(prevSelectedTypes);
+      newSet.delete(type); // O(1) deletion
+      return newSet;
+    });
+  }, []);
+
   const filteredData = useMemo(() => {
-    let filtered = pokemonData;
-    if (searchQuery !== '') {
-      filtered = filtered.filter((pokemon) =>
-        pokemon.name.toLowerCase().includes(searchQuery.toLowerCase())
+    if (!pokemonData) return [];
+
+    const lowercaseSearchQuery = searchQuery.toLowerCase();
+    const selectedTypesSet = new Set(selectedTypes);
+
+    const filtered = pokemonData
+      .filter((pokemon) => {
+        if (selectedTypesSet.size === 0) return true;
+
+        const pokemonTypeSet = new Set(pokemon.types.map((t) => t.toLowerCase()));
+        return [...selectedTypesSet].some((type) => pokemonTypeSet.has(type));
+      })
+      .filter((pokemon) =>
+        lowercaseSearchQuery === '' || pokemon.name.toLowerCase().includes(lowercaseSearchQuery)
       );
-    }
-    if (selectedTypes.length > 0) {
-      filtered = filtered.filter(
-        (pokemon) =>
-          pokemon.types &&
-          selectedTypes.some((type) => pokemon.types.includes(type.toLowerCase()))
-      );
-    }
+
+    // console.log(filtered); // Debugging the filtered data
     return filtered;
-  }, [searchQuery, selectedTypes, pokemonData]);
+  }, [selectedTypes, searchQuery, pokemonData]); // Added searchQuery to dependencies
+
+
 
   const toggleFilterMenu = () => {
     if (isAnimating) return;
+
     setIsAnimating(true);
-    if (isFilterMenuOpen) {
-      Animated.timing(slideAnim, {
-        toValue: width,
-        duration: 500,
-        useNativeDriver: true,
-      }).start(() => {
-        setIsFilterMenuOpen(false);
-        setIsAnimating(false);
-      });
-    } else {
-      setIsFilterMenuOpen(true);
-      Animated.timing(slideAnim, {
-        toValue: 0,
-        duration: 500,
-        useNativeDriver: true,
-      }).start(() => {
-        setIsAnimating(false);
-      });
-    }
+    const toValue = isFilterMenuOpen ? width : 0;
+
+    Animated.timing(slideAnim, {
+      toValue,
+      duration: 500,
+      useNativeDriver: true,
+    }).start(() => {
+      setIsFilterMenuOpen(!isFilterMenuOpen);
+      setIsAnimating(false); // Make sure the animation state is set to false when the animation completes
+    });
   };
+
+
 
   const toggleFilterSection = (section) => {
     setExpandedFilter((prev) => (prev === section ? '' : section));
   };
 
-  const removeType = (type) => {
-    setSelectedTypes((prevSelectedTypes) => prevSelectedTypes.filter((t) => t !== type));
-  };
+  // Memoize Pokedex item rendering to optimize performance
+  const PokedexItem = React.memo(({ pokemon, useShinySprites }) => {
+    return <Pokedex pokemon={pokemon} useShinySprites={useShinySprites} />;
+  }, (prevProps, nextProps) => {
+    // Only re-render if pokemon data or shiny sprites change
+    return prevProps.pokemon.id === nextProps.pokemon.id && prevProps.useShinySprites === nextProps.useShinySprites;
+  });
+
 
   return (
     <SafeAreaView style={styles.container}>
@@ -106,17 +126,19 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
 
-      <Animated.FlatList
-        data={filteredData}
-        contentContainerStyle={styles.contentContainer}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Pokedex pokemon={item} useShinySprites={useShinySprites} />}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { y: new Animated.Value(0) } } }],
-          { useNativeDriver: false }
-        )}
-        onScrollBeginDrag={Keyboard.dismiss}
-      />
+      {/* Memoized FlatList */}
+      <Animated.View style={{ flex: 1 }}>
+        <MemoizedFlatList
+          data={filteredData}
+          contentContainerStyle={styles.contentContainer}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item }) => <PokedexItem pokemon={item} useShinySprites={useShinySprites} />}
+          initialNumToRender={10}
+          maxToRenderPerBatch={5}
+          windowSize={10}
+        />
+
+      </Animated.View>
 
       <FilterMenu
         isFilterMenuOpen={isFilterMenuOpen}
@@ -131,15 +153,13 @@ const HomeScreenComponent = ({ route, navigation }) => {
         setFilterGeneration={setFilterGeneration}
         filterLegendary={filterLegendary}
         setFilterLegendary={setFilterLegendary}
-        clearFilters={() => {}}
+        clearFilters={() => { }}
       />
 
-      <FABMenu
-        fabMenuItems={fabMenuItems}
-        navigation={navigation}
-      />
+      <FABMenu fabMenuItems={fabMenuItems} navigation={navigation} />
     </SafeAreaView>
   );
+
 };
 
 const HomeScreen = ({ route }) => {

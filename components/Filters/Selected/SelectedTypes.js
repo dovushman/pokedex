@@ -22,16 +22,14 @@ const FilterPill = ({ type, onPress }) => {
 const SelectedTypes = memo(({ selectedTypes, removeType }) => {
   return (
     <View style={styles.container}>
-      {selectedTypes.map((type, index) => (
-        <FilterPill
-          key={index}
-          type={capitalizeFirstLetter(type)}
-          onPress={removeType}
-        />
+      {Array.from(selectedTypes).map((type) => (
+        <FilterPill key={type} type={type} onPress={removeType} />
       ))}
     </View>
   );
 });
+
+
 
 const styles = StyleSheet.create({
   container: {
