@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Animated, SafeAreaView, StyleSheet } from 'react-native';
 import TypeFilter from './TypeFilter'; 
-
 const FilterMenu = ({
   isFilterMenuOpen,
   isAnimating,
@@ -81,6 +80,7 @@ const FilterMenu = ({
     )
   );
 };
+
 
 const styles = StyleSheet.create({
   overlay: {

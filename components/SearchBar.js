@@ -1,7 +1,7 @@
+
 import React, { useRef } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Animated, StyleSheet, Keyboard, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const { width } = Dimensions.get('window');
 
@@ -10,8 +10,6 @@ const SearchBar = ({
   setSearchQuery,
   isSearchVisible,
   setIsSearchVisible,
-  toggleShinySprites,
-  useShinySprites,
   toggleFilterMenu,
 }) => {
   const searchBarWidth = useRef(new Animated.Value(0)).current;
@@ -75,14 +73,6 @@ const SearchBar = ({
             <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
           </TouchableOpacity>
         </Animated.View>
-        <TouchableOpacity onPress={toggleShinySprites}>
-          <Ionicons
-            name="sparkles"
-            size={25}
-            color={useShinySprites ? '#FFD700' : '#fff'}
-            style={{ marginLeft: 6, marginRight: 0 }}
-          />
-        </TouchableOpacity>
         <TouchableOpacity onPress={toggleFilterMenu}>
           <Icon name="filter" size={25} color="#fff" style={{ marginLeft: 15 }} />
         </TouchableOpacity>
