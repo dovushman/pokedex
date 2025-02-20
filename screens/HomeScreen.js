@@ -1,26 +1,21 @@
 import React, { useState, useRef, useCallback, useMemo } from 'react';
 import {
   View,
-  Text,
   StyleSheet,
   Animated,
   Dimensions,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
   SafeAreaView,
-  TextInput,
   Keyboard,
 } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { createStackNavigator } from '@react-navigation/stack';
 import Pokedex from '../components/Pokedex';
 import PokemonInformation from './PokemonInformation';
 import SelectedTypes from '../components/Filters/Selected/SelectedTypes';
 import FilterMenu from '../components/Filters/FilterMenu';
+import FABMenu from '../components/FABMenu';
+import SearchBar from '../components/SearchBar';
 
 const { width } = Dimensions.get('window');
-const totalItems = 4;  // Number of items in the FAB menu
 const Stack = createStackNavigator();
 
 const HomeScreenComponent = ({ route, navigation }) => {
@@ -34,13 +29,8 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [useShinySprites, setUseShinySprites] = useState(false);
-  const [isFabMenuOpen, setIsFabMenuOpen] = useState(false);
 
   const slideAnim = useRef(new Animated.Value(width)).current;
-  const searchBarWidth = useRef(new Animated.Value(0)).current;
-  const searchBarOpacity = useRef(new Animated.Value(0)).current;
-  const stackAnim = useRef(new Animated.Value(0)).current;
-  const fabIconRotation = useRef(new Animated.Value(0)).current;
 
   const fabMenuItems = [
     { label: 'Pokédex', icon: 'book', route: 'Pokedex' },
@@ -48,51 +38,6 @@ const HomeScreenComponent = ({ route, navigation }) => {
     { label: 'Abilities', icon: 'flash', route: 'Abilities' },
     { label: 'Natures', icon: 'leaf', route: 'Natures' },
   ];
-
-  const openFabMenu = () => {
-    setIsFabMenuOpen(true);
-    Animated.parallel([
-      Animated.timing(stackAnim, {
-        toValue: totalItems,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(fabIconRotation, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
-
-  const closeFabMenu = () => {
-    Animated.parallel([
-      Animated.timing(stackAnim, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(fabIconRotation, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start(() => {
-      setIsFabMenuOpen(false);
-    });
-  };
-
-  const toggleFabMenu = () => {
-    if (isFabMenuOpen) {
-      closeFabMenu();
-    } else {
-      openFabMenu();
-    }
-  };
-
-  const handleSetSearchQuery = useCallback((query) => {
-    setSearchQuery(query);
-  }, []);
 
   const toggleShinySprites = () => {
     setUseShinySprites((prev) => !prev);
@@ -143,87 +88,21 @@ const HomeScreenComponent = ({ route, navigation }) => {
     setExpandedFilter((prev) => (prev === section ? '' : section));
   };
 
-  const toggleSearchBar = () => {
-    if (isSearchVisible) return;
-    setIsSearchVisible(true);
-    Animated.parallel([
-      Animated.timing(searchBarWidth, {
-        toValue: width - 100,
-        duration: 300,
-        useNativeDriver: false,
-      }),
-      Animated.timing(searchBarOpacity, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: false,
-      }),
-    ]).start();
-  };
-
-  const handleCloseSearch = () => {
-    if (searchQuery !== '') {
-      setSearchQuery('');
-    } else {
-      Animated.parallel([
-        Animated.timing(searchBarWidth, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-        Animated.timing(searchBarOpacity, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-      ]).start(() => {
-        setIsSearchVisible(false);
-        Keyboard.dismiss();
-      });
-    }
-  };
-
-  const fabIconRotate = fabIconRotation.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '135deg'],
-  });
-
   const removeType = (type) => {
     setSelectedTypes((prevSelectedTypes) => prevSelectedTypes.filter((t) => t !== type));
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Text style={styles.classicHeader}>Pokédex</Text>
-        <View style={styles.searchIconContainer}>
-          <TouchableOpacity onPress={toggleSearchBar}>
-            <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
-          </TouchableOpacity>
-          <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
-            <TextInput
-              style={styles.searchInput}
-              placeholder="Search Pokémon"
-              placeholderTextColor="#999"
-              value={searchQuery}
-              onChangeText={handleSetSearchQuery}
-            />
-            <TouchableOpacity onPress={handleCloseSearch}>
-              <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
-            </TouchableOpacity>
-          </Animated.View>
-          <TouchableOpacity onPress={toggleShinySprites}>
-            <Ionicons
-              name="sparkles"
-              size={25}
-              color={useShinySprites ? '#FFD700' : '#fff'}
-              style={{ marginLeft: 6, marginRight: 0 }}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={toggleFilterMenu}>
-            <Icon name="filter" size={25} color="#fff" style={{ marginLeft: 15 }} />
-          </TouchableOpacity>
-        </View>
-      </View>
+      <SearchBar
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        isSearchVisible={isSearchVisible}
+        setIsSearchVisible={setIsSearchVisible}
+        toggleShinySprites={toggleShinySprites}
+        useShinySprites={useShinySprites}
+        toggleFilterMenu={toggleFilterMenu}
+      />
 
       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
 
@@ -255,44 +134,10 @@ const HomeScreenComponent = ({ route, navigation }) => {
         clearFilters={() => {}}
       />
 
-      <View style={styles.innerFabs}>
-        {fabMenuItems.map((item, index) => {
-          const translateY = stackAnim.interpolate({
-            inputRange: [0, totalItems],
-            outputRange: [0, -(index + 1) * 10], // Adjust this value to control the spacing
-            extrapolate: 'clamp',
-          });
-
-          const opacity = stackAnim.interpolate({
-            inputRange: [0, totalItems],
-            outputRange: [0, 1],
-            extrapolate: 'clamp',
-          });
-
-          return (
-            <Animated.View
-              key={item.label}
-              style={[
-                styles.innerFab,
-                {
-                  transform: [{ translateY }],
-                  opacity,
-                },
-              ]}
-            >
-              <TouchableOpacity onPress={() => navigation.navigate(item.route)}>
-                <Ionicons name={item.icon} size={24} color="#fff" />
-              </TouchableOpacity>
-            </Animated.View>
-          );
-        })}
-      </View>
-
-      <TouchableOpacity style={styles.fab} onPress={toggleFabMenu}>
-        <Animated.View style={{ transform: [{ rotate: fabIconRotate }] }}>
-          <Ionicons name="add" size={30} color="#fff" />
-        </Animated.View>
-      </TouchableOpacity>
+      <FABMenu
+        fabMenuItems={fabMenuItems}
+        navigation={navigation}
+      />
     </SafeAreaView>
   );
 };
@@ -323,100 +168,6 @@ const styles = StyleSheet.create({
   contentContainer: {
     padding: 16,
     backgroundColor: '#e5343d',
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 20,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    position: 'absolute',
-    right: 70,
-  },
-  searchInput: {
-    flex: 1,
-    fontSize: 16,
-    color: '#333',
-  },
-  searchIcon: {
-    marginRight: 10,
-  },
-  closeIcon: {
-    marginLeft: 10,
-  },
-  headerContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-  },
-  classicHeader: {
-    color: 'white',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  searchIconContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  fab: {
-    position: 'absolute',
-    bottom: 15,
-    right: 30,
-    backgroundColor: '#007AFF',
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    justifyContent: 'center',
-    alignItems: 'center',
-    elevation: 10,
-  },
-  innerFabs: {
-    position: 'absolute',
-    bottom: 20,
-    right: 37,
-  },
-  innerFab: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: '#007AFF',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  overlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    justifyContent: 'center',
-  },
-  fabMenu: {
-    position: 'absolute',
-    bottom: 100,
-    right: 37, // Adjust this value to move the menu to the left
-    width: 180,
-  },
-  fabMenuItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-end', // Align items to the end to center icons with the main FAB
-    paddingVertical: 8,
-    width: '100%',
-    position: 'absolute',
-  },
-  fabMenuText: {
-    fontSize: 16,
-    color: '#fff',
-    marginRight: 15, // Adjust this value to ensure proper spacing between text and icon
-  },
-  fabMenuIcon: {
-    backgroundColor: '#FF4081',
-    borderRadius: 20,
-    padding: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
 

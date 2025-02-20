@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Animated, SafeAreaView, StyleSheet } from 'react-native';
-import TypeFilter from './TypeFilter'; // Adjust the import path as needed
+import TypeFilter from './TypeFilter'; 
 
 const FilterMenu = ({
   isFilterMenuOpen,
