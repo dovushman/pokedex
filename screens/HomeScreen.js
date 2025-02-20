@@ -40,6 +40,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const searchBarWidth = useRef(new Animated.Value(0)).current;
   const searchBarOpacity = useRef(new Animated.Value(0)).current;
   const stackAnim = useRef(new Animated.Value(0)).current;
+  const fabIconRotation = useRef(new Animated.Value(0)).current;
 
   const fabMenuItems = [
     { label: 'Pokédex', icon: 'book', route: 'Pokedex' },
@@ -50,19 +51,33 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
   const openFabMenu = () => {
     setIsFabMenuOpen(true);
-    Animated.timing(stackAnim, {
-      toValue: totalItems - 1,
-      duration: (totalItems - 1) * 600,
-      useNativeDriver: true,
-    }).start();
+    Animated.parallel([
+      Animated.timing(stackAnim, {
+        toValue: totalItems,
+        duration: 300,
+        useNativeDriver: true,
+      }),
+      Animated.timing(fabIconRotation, {
+        toValue: 1,
+        duration: 300,
+        useNativeDriver: true,
+      }),
+    ]).start();
   };
 
   const closeFabMenu = () => {
-    Animated.timing(stackAnim, {
-      toValue: 0,
-      duration: (totalItems - 1) * 600,
-      useNativeDriver: true,
-    }).start(() => {
+    Animated.parallel([
+      Animated.timing(stackAnim, {
+        toValue: 0,
+        duration: 300,
+        useNativeDriver: true,
+      }),
+      Animated.timing(fabIconRotation, {
+        toValue: 0,
+        duration: 300,
+        useNativeDriver: true,
+      }),
+    ]).start(() => {
       setIsFabMenuOpen(false);
     });
   };
@@ -167,6 +182,15 @@ const HomeScreenComponent = ({ route, navigation }) => {
     }
   };
 
+  const fabIconRotate = fabIconRotation.interpolate({
+    inputRange: [0, 1],
+    outputRange: ['0deg', '135deg'],
+  });
+
+  const removeType = (type) => {
+    setSelectedTypes((prevSelectedTypes) => prevSelectedTypes.filter((t) => t !== type));
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -201,7 +225,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
         </View>
       </View>
 
-      <SelectedTypes selectedTypes={selectedTypes} removeType={() => {}} />
+      <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
 
       <Animated.FlatList
         data={filteredData}
@@ -231,50 +255,44 @@ const HomeScreenComponent = ({ route, navigation }) => {
         clearFilters={() => {}}
       />
 
-      <TouchableOpacity style={styles.fab} onPress={toggleFabMenu}>
-        <Ionicons name="add" size={30} color="#fff" />
-      </TouchableOpacity>
+      <View style={styles.innerFabs}>
+        {fabMenuItems.map((item, index) => {
+          const translateY = stackAnim.interpolate({
+            inputRange: [0, totalItems],
+            outputRange: [0, -(index + 1) * 10], // Adjust this value to control the spacing
+            extrapolate: 'clamp',
+          });
 
-      {isFabMenuOpen && (
-        <TouchableWithoutFeedback onPress={closeFabMenu}>
-          <View style={styles.overlay}>
-            <View style={styles.fabMenu}>
-            {fabMenuItems.map((item, index) => {
-  const translateY = stackAnim.interpolate({
-    inputRange: [0, totalItems - 1],
-    outputRange: [0, -(index + 1) * 60], // Each item moves up more than the previous
-    extrapolate: 'clamp',
-  });
+          const opacity = stackAnim.interpolate({
+            inputRange: [0, totalItems],
+            outputRange: [0, 1],
+            extrapolate: 'clamp',
+          });
 
-  const opacity = stackAnim.interpolate({
-    inputRange: [0, index, totalItems - 1],
-    outputRange: [0, 1, 1], // Items fade in as they rise
-    extrapolate: 'clamp',
-  });
-
-  return (
-    <Animated.View
-      key={item.label}
-      style={[
-        styles.fabMenuItem,
-        {
-          transform: [{ translateY }],
-          opacity,
-        },
-      ]}
-    >
-      <Text style={styles.fabMenuText}>{item.label}</Text>
-      <View style={styles.fabMenuIcon}>
-        <Ionicons name={item.icon} size={24} color="#fff" />
+          return (
+            <Animated.View
+              key={item.label}
+              style={[
+                styles.innerFab,
+                {
+                  transform: [{ translateY }],
+                  opacity,
+                },
+              ]}
+            >
+              <TouchableOpacity onPress={() => navigation.navigate(item.route)}>
+                <Ionicons name={item.icon} size={24} color="#fff" />
+              </TouchableOpacity>
+            </Animated.View>
+          );
+        })}
       </View>
-    </Animated.View>
-  );
-})}
 
-            </View>
-          </View>
-        </TouchableWithoutFeedback>
-      )}
+      <TouchableOpacity style={styles.fab} onPress={toggleFabMenu}>
+        <Animated.View style={{ transform: [{ rotate: fabIconRotate }] }}>
+          <Ionicons name="add" size={30} color="#fff" />
+        </Animated.View>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -345,15 +363,29 @@ const styles = StyleSheet.create({
   },
   fab: {
     position: 'absolute',
-    bottom: 30,
+    bottom: 15,
     right: 30,
     backgroundColor: '#007AFF',
-    width: 60,
-    height: 60,
-    borderRadius: 30,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 10,
+  },
+  innerFabs: {
+    position: 'absolute',
+    bottom: 20,
+    right: 37,
+  },
+  innerFab: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#007AFF',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
@@ -380,7 +412,7 @@ const styles = StyleSheet.create({
     marginRight: 15, // Adjust this value to ensure proper spacing between text and icon
   },
   fabMenuIcon: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#FF4081',
     borderRadius: 20,
     padding: 10,
     justifyContent: 'center',
