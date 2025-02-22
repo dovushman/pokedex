@@ -2,27 +2,43 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import typeColors from '../utils/typeColors'; // Import typeColors
 
+const formatStatName = (statName) => {
+  if (statName === 'hp') {
+    return 'HP';
+  }
+  if (statName.startsWith('special-')) {
+    const parts = statName.split('-');
+    return `Sp. ${capitalizeFirstLetter(parts[1])}`;
+  }
+  return capitalizeFirstLetter(statName);
+};
+
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 const renderStatBar = (statName, statValue, maxValue = 255) => {
+  const formattedStatName = formatStatName(statName);
   const percentage = (statValue / maxValue) * 100;
   let color;
-    if (statValue <= 29) {
-    color = '#EC4541'; //red
+
+  if (statValue <= 29) {
+    color = '#EC4541'; // red
   } else if (statValue <= 59) {
-    color = '#ED7F0F'; //orange
+    color = '#ED7F0F'; // orange
   } else if (statValue <= 89) {
-    color = '#F6DE53'; //yellow
+    color = '#F6DE53'; // yellow
   } else if (statValue <= 119) {
-    color = '#A0E516'; //light green
+    color = '#A0E516'; // light green
   } else if (statValue <= 149) {
-    color = '#24CD5E'; //dark green
-  }
-  else {
-    color = '#56B0F2'; //blue
+    color = '#24CD5E'; // dark green
+  } else {
+    color = '#56B0F2'; // blue
   }
 
   return (
     <View style={styles.statContainer} key={statName}>
-      <Text style={styles.statName}>{statName}</Text>
+      <Text style={styles.statName}>{formattedStatName}</Text>
       <View style={styles.progressBar}>
         <View style={[styles.progress, { width: `${percentage}%`, backgroundColor: color }]} />
       </View>
@@ -150,7 +166,6 @@ const styles = StyleSheet.create({
   },
   progress: {
     height: '100%',
-    backgroundColor: '#4caf50',
   },
   statValue: {
     width: 40,

@@ -5,15 +5,6 @@ const PokemonInformationBattle = ({ pokemonData }) => {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.infoTitle}>Base Stats</Text>
-        <Text style={styles.stat}>HP: {pokemonData.stats[0].base_stat}</Text>
-        <Text style={styles.stat}>Attack: {pokemonData.stats[1].base_stat}</Text>
-        <Text style={styles.stat}>Defense: {pokemonData.stats[2].base_stat}</Text>
-        <Text style={styles.stat}>Special Attack: {pokemonData.stats[3].base_stat}</Text>
-        <Text style={styles.stat}>Special Defense: {pokemonData.stats[4].base_stat}</Text>
-        <Text style={styles.stat}>Speed: {pokemonData.stats[5].base_stat}</Text>
-      </View>
-      <View style={styles.card}>
         <Text style={styles.infoTitle}>Abilities</Text>
         {pokemonData.abilities.map((ability, index) => (
           <Text key={index} style={styles.ability}>{ability.ability.name}</Text>
@@ -50,10 +41,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 8,
-    color: '#333',
-  },
-  stat: {
-    fontSize: 16,
     color: '#333',
   },
   ability: {
