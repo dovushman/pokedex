@@ -2,7 +2,40 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import typeColors from '../utils/typeColors'; // Import typeColors
 
+const renderStatBar = (statName, statValue, maxValue = 255) => {
+  const percentage = (statValue / maxValue) * 100;
+  let color;
+    if (statValue <= 29) {
+    color = '#EC4541'; //red
+  } else if (statValue <= 59) {
+    color = '#ED7F0F'; //orange
+  } else if (statValue <= 89) {
+    color = '#F6DE53'; //yellow
+  } else if (statValue <= 119) {
+    color = '#A0E516'; //light green
+  } else if (statValue <= 149) {
+    color = '#24CD5E'; //dark green
+  }
+  else {
+    color = '#56B0F2'; //blue
+  }
+
+  return (
+    <View style={styles.statContainer} key={statName}>
+      <Text style={styles.statName}>{statName}</Text>
+      <View style={styles.progressBar}>
+        <View style={[styles.progress, { width: `${percentage}%`, backgroundColor: color }]} />
+      </View>
+      <Text style={styles.statValue}>{statValue}</Text>
+    </View>
+  );
+};
+
 const PokemonInformationAbout = ({ pokemonData, speciesData }) => {
+  if (!pokemonData || !speciesData) {
+    return <Text>Loading...</Text>;
+  }
+
   const types = pokemonData.types.map((typeInfo) => {
     const typeName = typeInfo.type.name;
     const color = typeColors[typeName];
@@ -31,6 +64,10 @@ const PokemonInformationAbout = ({ pokemonData, speciesData }) => {
         <Text style={styles.infoTitle}>Height & Weight</Text>
         <Text style={styles.heightWeight}>Height: {pokemonData.height / 10} m</Text>
         <Text style={styles.heightWeight}>Weight: {pokemonData.weight / 10} kg</Text>
+      </View>
+      <View style={styles.card}>
+        <Text style={styles.infoTitle}>Base Stats</Text>
+        {pokemonData.stats.map((stat) => renderStatBar(stat.stat.name, stat.base_stat))}
       </View>
     </View>
   );
@@ -93,6 +130,32 @@ const styles = StyleSheet.create({
   heightWeight: {
     fontSize: 16,
     color: '#333',
+  },
+  statContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  statName: {
+    width: 100,
+    fontSize: 16,
+  },
+  progressBar: {
+    flex: 1,
+    height: 10,
+    backgroundColor: '#ddd',
+    borderRadius: 5,
+    overflow: 'hidden',
+    marginHorizontal: 10,
+  },
+  progress: {
+    height: '100%',
+    backgroundColor: '#4caf50',
+  },
+  statValue: {
+    width: 40,
+    fontSize: 16,
+    textAlign: 'right',
   },
 });
 

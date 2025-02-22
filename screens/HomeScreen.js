@@ -81,7 +81,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
         lowercaseSearchQuery === '' || pokemon.name.toLowerCase().includes(lowercaseSearchQuery)
       );
 
-    // console.log(filtered); // Debugging the filtered data
+    // console.log('Filtered Data:', filtered); // Debugging the filtered data
     return filtered;
   }, [selectedTypes, searchQuery, pokemonData]); // Added searchQuery to dependencies
 
@@ -268,4 +268,3 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-
