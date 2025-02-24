@@ -1,0 +1,278 @@
+{
+  "chilly-reception": {
+    "effect": "Switches out and summons a snowstorm lasting 5 turns.",
+    "description": "The user tells a chillingly bad joke before switching places with a party Pokémon in waiting. This summons a snowstorm lasting five turns."
+  },
+  "fickle-beam": {
+    "effect": "Fickle Beam deals damage with 80 base power, however there is a 30% chance for the power to double to 160.",
+    "description": "The user shoots a beam of light to inflict damage. Sometimes all the user's heads shoot beams in unison, doubling the move's power."
+  },
+  "blazing-torque": {
+    "effect": "Blazing Torque deals damage and has a 30% chance of burning the target.",
+    "description": null
+  },
+  "electro-shot": {
+    "effect": "The user absorbs electricity on the first turn and raises its Special Attack; on the second turn, Electro Shot deals damage.",
+    "description": "The user gathers electricity on the first turn, boosting its Sp. Atk stat, then fires a high-voltage shot on the next turn. The shot will be fired immediately in rain."
+  },
+  "axe-kick": {
+    "effect": "May confuse opponent. If it misses, the user loses HP.",
+    "description": "The user attacks by kicking up into the air and slamming its heel down upon the target. This may also confuse the target. If it misses, the user takes damage instead."
+  },
+  "aqua-cutter": {
+    "effect": "Aqua Cutter deals damage and has an increased critical-hit ratio.",
+    "description": "The user expels pressurized water to cut at the target like a blade. This move has a heightened chance of landing a critical hit."
+  },
+  "combat-torque": {
+    "effect": "Combat Torque deals damage and has a 30% chance of paralyzing the target.",
+    "description": null
+  },
+  "glaive-rush": {
+    "effect": "Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage.",
+    "description": "The user throws its entire body into a reckless charge. Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage."
+  },
+  "gigaton-hammer": {
+    "effect": "Cannot be used twice in a row.",
+    "description": "The user swings its whole body around to attack with its huge hammer. This move can’t be used twice in a row."
+  },
+  "tera-starstorm": {
+    "effect": "With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.",
+    "description": "With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon."
+  },
+  "lumina-crash": {
+    "effect": "Harshly lowers target’s Special Defense.",
+    "description": "The user attacks by unleashing a peculiar light that even affects the mind. This also harshly lowers the target’s Sp. Def stat."
+  },
+  "jet-punch": {
+    "effect": "Always goes first.",
+    "description": "The user summons a torrent around its fist and punches at blinding speed. This move always goes first."
+  },
+  "last-respects": {
+    "effect": "Damages increases the more party Pokémon have been defeated.",
+    "description": "The user attacks to avenge its allies. The more defeated allies there are in the user’s party, the greater the move’s power."
+  },
+  "make-it-rain": {
+    "effect": "Lowers user's Special Attack. Money is earned after the battle.",
+    "description": "The user attacks by throwing out a mass of coins. This also lowers the user’s Sp. Atk stat. Money is earned after the battle."
+  },
+  "aqua-step": {
+    "effect": "Raises user's Speed.\t\t\t\t\t\t\t(100% chance)",
+    "description": "The user toys with the target and attacks it using light and fluid dance steps. This also boosts the user’s Speed stat."
+  },
+  "raging-bull": {
+    "effect": "Type depends on the user’s form. Breaks through Reflect and Light Screen barriers.",
+    "description": "The user performs a tackle like a raging bull. This move’s type depends on the user’s form. It can also break barriers, such as Light Screen and Reflect."
+  },
+  "armor-cannon": {
+    "effect": "Armor Cannon deals damage, but lowers the user's Defense and Special Defense stats by one stage each after attacking.",
+    "description": "The user shoots its own armor out as blazing projectiles. This also lowers the user’s Defense and Sp. Def stats."
+  },
+  "double-shock": {
+    "effect": "After using this move, the user will no longer be Electric type.",
+    "description": "The user discharges all the electricity from its body to perform a high-damage attack. After using this move, the user will no longer be Electric type."
+  },
+  "wicked-torque": {
+    "effect": "Wicked Torque deals damage and has a 10% chance of putting the target to sleep.",
+    "description": null
+  },
+  "blood-moon": {
+    "effect": "The user unleashes the full brunt of its spirit from a full moon that shines as red as blood. This move can't be used twice in a row.",
+    "description": null
+  },
+  "matcha-gotcha": {
+    "effect": "The user fires a blast of tea that it mixed. The user's HP is restored by up to half the damage taken by the target. This may also leave the target with a burn.",
+    "description": null
+  },
+  "noxious-torque": {
+    "effect": "Noxious Torque deals damage and has a 30% chance of poisoning the target.",
+    "description": null
+  },
+  "ivy-cudgel": {
+    "effect": "Ivy Cudgel deals damage and has an increased critical hit ratio (1⁄8 instead of 1⁄24). Its type changes based on the mask worn by Ogerpon:",
+    "description": "The user strikes with an ivy-wrapped cudgel. This move's type changes depending on the mask worn by the user, and it has a heightened chance of landing a critical hit."
+  },
+  "magical-torque": {
+    "effect": "Magical Torque deals damage and has a 30% chance of confusing the target.",
+    "description": null
+  },
+  "salt-cure": {
+    "effect": "Deals damage each turn; Steel and Water types are more affected.",
+    "description": "The user salt cures the target, inflicting damage every turn. Steel and Water types are more strongly affected by this move."
+  },
+  "hydro-steam": {
+    "effect": "Hydro Steam deals damage, and its power is boosted by 50% in harsh sunlight, instead of being reduced.",
+    "description": "The user blasts the target with boiling-hot water. This move's power is not lowered in harsh sunlight but rather boosted by 50 percent."
+  },
+  "order-up": {
+    "effect": "Order Up deals damage. If the user, Dondozo, has a Tastugiri in its mouth, it also raises a particular stat depending on the form of Tatsugiri:",
+    "description": "The user attacks with elegant poise. If the user has a Tatsugiri in its mouth, this move boosts one of the user’s stats based on the Tatsugiri’s form."
+  },
+  "twin-beam": {
+    "effect": "Hits twice in one turn.",
+    "description": "The user shoots mystical beams from its eyes to inflict damage. The target is hit twice in a row."
+  },
+  "psyblade": {
+    "effect": "Psyblade deals damage, and its power is boosted by 50% on Electric Terrain.",
+    "description": "he user rends the target with an ethereal blade. This move's power is boosted by 50 percent if the user is on Electric Terrain."
+  },
+  "shed-tail": {
+    "effect": "Creates a substitute, then swaps places with a party Pokémon in waiting.",
+    "description": "The user creates a substitute for itself using its own HP before switching places with a party Pokémon in waiting."
+  },
+  "kowtow-cleave": {
+    "effect": "Always hits.",
+    "description": "The user slashes at the target after kowtowing to make the target let down its guard. This attack never misses."
+  },
+  "thunderclap": {
+    "effect": "Strikes before a target's move.",
+    "description": "This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack."
+  },
+  "comeuppance": {
+    "effect": "Deals more damage to the opponent that last inflicted damage on it.",
+    "description": "The user retaliates with much greater force against the opponent that last inflicted damage on it."
+  },
+  "fillet-away": {
+    "effect": "Lowers HP but sharply boosts Attack, Special Attack, and Speed.",
+    "description": "The user sharply boosts its Attack, Sp. Atk, and Speed stats by using its own HP."
+  },
+  "malignant-chain": {
+    "effect": "The user pours toxins into the target by wrapping them in a toxic, corrosive chain. This may also leave the target badly poisoned.",
+    "description": null
+  },
+  "tachyon-cutter": {
+    "effect": "Guaranteed to hit twice in a row.",
+    "description": "The user attacks by launching particle blades at the target twice in a row. This attack never misses."
+  },
+  "supercell-slam": {
+    "effect": "The user electrifies its body and drops onto the target to inflict damage. If this move misses, the user takes damage instead.",
+    "description": null
+  },
+  "doodle": {
+    "effect": "Changes the abilities of the user and its teammates to that of the target.",
+    "description": "The user captures the very essence of the target in a sketch. This changes the Abilities of the user and its ally Pokémon to that of the target."
+  },
+  "electro-drift": {
+    "effect": "Boosted even more if it's super-effective.",
+    "description": "The user races forward at ultrafast speeds, piercing its target with futuristic electricity. This move’s power is boosted more than usual if it’s a supereffective hit."
+  },
+  "silk-trap": {
+    "effect": "Protects the user and lowers opponent's Speed on contact.",
+    "description": "The user spins a silken trap, protecting itself from damage while lowering the Speed stat of any attacker that makes direct contact."
+  },
+  "rage-fist": {
+    "effect": "The more times the user has been hit by attacks, the greater the move's power.",
+    "description": "The user converts its rage into energy to attack. The more times the user has been hit by attacks, the greater the move’s power."
+  },
+  "spicy-extract": {
+    "effect": "Harshly lowers the opponent's Defense and sharply raises their Attack.",
+    "description": "The user emits an incredibly spicy extract, sharply boosting the target’s Attack stat and harshly lowering the target’s Defense stat."
+  },
+  "burning-bulwark": {
+    "effect": "The user’s intensely hot fur protects it from attacks and also burns any attacker that makes direct contact with it.",
+    "description": null
+  },
+  "torch-song": {
+    "effect": "Raises user's Special Attack.",
+    "description": "The user blows out raging flames as if singing a song, scorching the target. This also boosts the user’s Sp. Atk stat."
+  },
+  "population-bomb": {
+    "effect": "Hits 1-10 times in a row.",
+    "description": "The user’s fellows gather in droves to perform a combo attack that hits the target one to ten times in a row."
+  },
+  "mighty-cleave": {
+    "effect": "The user wields the light that has accumulated atop its head to cleave the target. This move hits even if the target protects itself.",
+    "description": null
+  },
+  "triple-dive": {
+    "effect": "Hits 3 times in a row.",
+    "description": "The user performs a perfectly timed triple dive, hitting the target with splashes of water three times in a row."
+  },
+  "hyper-drill": {
+    "effect": "Can strike through Protect/Detect.",
+    "description": "The user spins the pointed part of its body at high speed to pierce the target. This attack can hit a target using a move such as Protect or Detect."
+  },
+  "collision-course": {
+    "effect": "Boosted even more if it's super-effective.",
+    "description": "The user transforms and crashes to the ground, causing a massive prehistoric explosion. This move’s power is boosted more than usual if it’s a supereffective hit."
+  },
+  "revival-blessing": {
+    "effect": "Revives a fainted party Pokémon to half HP.",
+    "description": "The user bestows a loving blessing, reviving a party Pokémon that has fainted and restoring half that Pokémon’s max HP."
+  },
+  "flower-trick": {
+    "effect": "Never misses; always results in a critical hit.",
+    "description": "The user throws a rigged bouquet of flowers at the target. This attack never misses and always lands a critical hit."
+  },
+  "mortal-spin": {
+    "effect": "Removes entry hazards and trap move effects, and poisons opposing Pokémon.",
+    "description": "The user performs a spin attack that can also eliminate the effects of such moves as Bind, Wrap, and Leech Seed. This also poisons opposing Pokémon."
+  },
+  "ruination": {
+    "effect": "Halves the opponent's HP.",
+    "description": "The user summons a ruinous disaster. This cuts the target’s HP in half."
+  },
+  "hard-press": {
+    "effect": "The target is crushed with an arm, a claw, or the like to inflict damage. The more HP the target has left, the greater the move’s power.",
+    "description": null
+  },
+  "syrup-bomb": {
+    "effect": "Lowers opponent's Speed each turn for 3 turns.",
+    "description": "The user sets off an explosion of sticky candy syrup, which coats the target and causes the target's Speed stat to drop each turn for three turns."
+  },
+  "spin-out": {
+    "effect": "Harshly lowers user’s Speed.",
+    "description": "The user spins furiously by straining its legs, inflicting damage on the target. This also harshly lowers the user’s Speed stat."
+  },
+  "tidy-up": {
+    "effect": "Removes the effects of entry hazards and Substitute, and boosts user’s Attack and Speed.",
+    "description": "The user tidies up and removes the effects of Spikes, Stealth Rock, Sticky Web, Toxic Spikes, and Substitute. This also boosts the user’s Attack and Speed stats."
+  },
+  "bitter-blade": {
+    "effect": "Bitter Blade deals damage and the user will recover 50% of the damage taken by the target.",
+    "description": "The user focuses its bitter feelings toward the world of the living into a slashing attack. The user’s HP is restored by up to half the damage taken by the target."
+  },
+  "alluring-voice": {
+    "effect": "The user attacks the target using its angelic voice. This also confuses the target if its stats have been boosted during the turn.",
+    "description": null
+  },
+  "upper-hand": {
+    "effect": "Strikes before a target's priority move.",
+    "description": "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move."
+  },
+  "dragon-cheer": {
+    "effect": "The user raises its allies’ morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+    "description": null
+  },
+  "temper-flare": {
+    "effect": "Spurred by desperation, the user attacks the target. This move’s power is doubled if the user’s previous move failed.",
+    "description": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed."
+  },
+  "ice-spinner": {
+    "effect": "Removes effects of Terrain.",
+    "description": "The user covers its feet in thin ice and twirls around, slamming into the target. This move’s spinning motion also destroys the terrain."
+  },
+  "psychic-noise": {
+    "effect": "Deals damage and prevents target from healing.",
+    "description": "The user attacks the target with unpleasant sound waves. For two turns, the target is prevented from recovering HP through moves, Abilities, or held items."
+  },
+  "pounce": {
+    "effect": "Lowers opponent's Speed.\t\t\t\t\t\t\t(100% chance)",
+    "description": "The user attacks by pouncing on the target. This also lowers the target’s Speed stat."
+  },
+  "snowscape": {
+    "effect": "Raises Defense of Ice types for 5 turns.",
+    "description": "The user summons a snowstorm lasting five turns. This boosts the Defense stats of Ice types."
+  },
+  "chilling-water": {
+    "effect": "Lowers opponent's Attack.",
+    "description": "The user attacks the target by showering it with water that’s so cold it saps the target’s power. This also lowers the target’s Attack stat."
+  },
+  "trailblaze": {
+    "effect": "Trailblaze deals damage and raises the user's speed by one stage.",
+    "description": "The user attacks suddenly as if leaping out from tall grass. The user’s nimble footwork boosts its Speed stat."
+  },
+  "tera-blast": {
+    "effect": "Tera Blast deals damage, and its type changes to the user's Tera Type, when the Pokémon is Terastallized.",
+    "description": "If the user has Terastallized, it unleashes energy of its Tera Type. This move inflicts damage using the Attack or Sp. Atk stat—whichever is higher for the user."
+  }
+}

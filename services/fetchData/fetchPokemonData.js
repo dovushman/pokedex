@@ -30,6 +30,7 @@
 //             name: pokemonDetails.name,
 //             types: pokemonDetails.types.map(typeInfo => typeInfo.type.name),
 //             sprite: pokemonDetails.sprites.other['official-artwork'].front_default,
+//             shinySprite: pokemonDetails.sprites.other['official-artwork'].front_shiny,
 //           };
 //         })
 //       );
@@ -74,21 +75,47 @@ const fetchAndSavePokemonData = async () => {
         data.results.map(async (pokemon) => {
           const pokemonDetailsResponse = await fetch(pokemon.url);
           const pokemonDetails = await pokemonDetailsResponse.json();
-          return {
-            id: pokemonDetails.id,
-            name: pokemonDetails.name,
-            types: pokemonDetails.types.map(typeInfo => typeInfo.type.name),
-            sprite: pokemonDetails.sprites.other['official-artwork'].front_default,
-            shinySprite: pokemonDetails.sprites.other['official-artwork'].front_shiny,
-          };
+
+          // Fetch species details to get forms
+          const speciesResponse = await fetch(pokemonDetails.species.url);
+          const speciesDetails = await speciesResponse.json();
+
+          // Fetch forms
+          const formsData = await Promise.all(
+            speciesDetails.varieties.map(async (variety) => {
+              const formDetailsResponse = await fetch(variety.pokemon.url);
+              const formDetails = await formDetailsResponse.json();
+              return {
+                id: formDetails.id,
+                base_id: variety.is_default ? null : pokemonDetails.id,
+                name: formDetails.name,
+                form: variety.is_default ? null : variety.pokemon.name,
+                types: formDetails.types.map(typeInfo => typeInfo.type.name),
+                sprite: formDetails.sprites.other['official-artwork'].front_default,
+                shinySprite: formDetails.sprites.other['official-artwork'].front_shiny,
+              };
+            })
+          );
+
+          return formsData;
         })
       );
 
-      allPokemonData = [...allPokemonData, ...batchData];
+      allPokemonData = [...allPokemonData, ...batchData.flat()];
       offset += BATCH_SIZE;
     }
 
-    fs.writeFileSync(POKEMON_DATA_FILE, JSON.stringify(allPokemonData, null, 2));
+    // Remove duplicates
+    const uniquePokemonData = allPokemonData.reduce((acc, current) => {
+      const x = acc.find(item => item.id === current.id);
+      if (!x) {
+        return acc.concat([current]);
+      } else {
+        return acc;
+      }
+    }, []);
+
+    fs.writeFileSync(POKEMON_DATA_FILE, JSON.stringify(uniquePokemonData, null, 2));
     console.log('Pokémon data saved to', POKEMON_DATA_FILE);
   } catch (error) {
     console.error('Error fetching and saving Pokémon data:', error);
