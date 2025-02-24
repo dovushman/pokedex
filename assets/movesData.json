@@ -50584,11 +50584,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Tera Blast deals damage, and its type changes to the user's Tera Type, when the Pokémon is Terastallized.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "If the user has Terastallized, it unleashes energy of its Tera Type. This move inflicts damage using the Attack or Sp. Atk stat—whichever is higher for the user."
+      }
+    ]
   },
   {
     "id": 852,
@@ -50601,11 +50605,15 @@
     "effect_chance": null,
     "priority": 4,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Protects the user and lowers opponent's Speed on contact.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user spins a silken trap, protecting itself from damage while lowering the Speed stat of any attacker that makes direct contact."
+      }
+    ]
   },
   {
     "id": 853,
@@ -50618,11 +50626,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "May confuse opponent. If it misses, the user loses HP.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks by kicking up into the air and slamming its heel down upon the target. This may also confuse the target. If it misses, the user takes damage instead."
+      }
+    ]
   },
   {
     "id": 854,
@@ -50635,11 +50647,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Damages increases the more party Pokémon have been defeated.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks to avenge its allies. The more defeated allies there are in the user’s party, the greater the move’s power."
+      }
+    ]
   },
   {
     "id": 855,
@@ -50652,11 +50668,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Harshly lowers target’s Special Defense.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks by unleashing a peculiar light that even affects the mind. This also harshly lowers the target’s Sp. Def stat."
+      }
+    ]
   },
   {
     "id": 856,
@@ -50669,11 +50689,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Order Up deals damage. If the user, Dondozo, has a Tastugiri in its mouth, it also raises a particular stat depending on the form of Tatsugiri:",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks with elegant poise. If the user has a Tatsugiri in its mouth, this move boosts one of the user’s stats based on the Tatsugiri’s form."
+      }
+    ]
   },
   {
     "id": 857,
@@ -50686,11 +50710,15 @@
     "effect_chance": null,
     "priority": 1,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Always goes first.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user summons a torrent around its fist and punches at blinding speed. This move always goes first."
+      }
+    ]
   },
   {
     "id": 858,
@@ -50703,11 +50731,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Harshly lowers the opponent's Defense and sharply raises their Attack.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user emits an incredibly spicy extract, sharply boosting the target’s Attack stat and harshly lowering the target’s Defense stat."
+      }
+    ]
   },
   {
     "id": 859,
@@ -50720,11 +50752,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Harshly lowers user’s Speed.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user spins furiously by straining its legs, inflicting damage on the target. This also harshly lowers the user’s Speed stat."
+      }
+    ]
   },
   {
     "id": 860,
@@ -50737,11 +50773,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Hits 1-10 times in a row.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user’s fellows gather in droves to perform a combo attack that hits the target one to ten times in a row."
+      }
+    ]
   },
   {
     "id": 861,
@@ -50754,11 +50794,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Removes effects of Terrain.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user covers its feet in thin ice and twirls around, slamming into the target. This move’s spinning motion also destroys the terrain."
+      }
+    ]
   },
   {
     "id": 862,
@@ -50771,11 +50815,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user throws its entire body into a reckless charge. Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage."
+      }
+    ]
   },
   {
     "id": 863,
@@ -50788,11 +50836,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Revives a fainted party Pokémon to half HP.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user bestows a loving blessing, reviving a party Pokémon that has fainted and restoring half that Pokémon’s max HP."
+      }
+    ]
   },
   {
     "id": 864,
@@ -50805,11 +50857,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Deals damage each turn; Steel and Water types are more affected.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user salt cures the target, inflicting damage every turn. Steel and Water types are more strongly affected by this move."
+      }
+    ]
   },
   {
     "id": 865,
@@ -50822,11 +50878,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Hits 3 times in a row.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user performs a perfectly timed triple dive, hitting the target with splashes of water three times in a row."
+      }
+    ]
   },
   {
     "id": 866,
@@ -50839,11 +50899,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Removes entry hazards and trap move effects, and poisons opposing Pokémon.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user performs a spin attack that can also eliminate the effects of such moves as Bind, Wrap, and Leech Seed. This also poisons opposing Pokémon."
+      }
+    ]
   },
   {
     "id": 867,
@@ -50856,11 +50920,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Changes the abilities of the user and its teammates to that of the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user captures the very essence of the target in a sketch. This changes the Abilities of the user and its ally Pokémon to that of the target."
+      }
+    ]
   },
   {
     "id": 868,
@@ -50873,11 +50941,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Lowers HP but sharply boosts Attack, Special Attack, and Speed.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user sharply boosts its Attack, Sp. Atk, and Speed stats by using its own HP."
+      }
+    ]
   },
   {
     "id": 869,
@@ -50890,11 +50962,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Always hits.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user slashes at the target after kowtowing to make the target let down its guard. This attack never misses."
+      }
+    ]
   },
   {
     "id": 870,
@@ -50907,11 +50983,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Never misses; always results in a critical hit.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user throws a rigged bouquet of flowers at the target. This attack never misses and always lands a critical hit."
+      }
+    ]
   },
   {
     "id": 871,
@@ -50924,11 +51004,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Raises user's Special Attack.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user blows out raging flames as if singing a song, scorching the target. This also boosts the user’s Sp. Atk stat."
+      }
+    ]
   },
   {
     "id": 872,
@@ -50941,11 +51025,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Raises user's Speed.\t\t\t\t\t\t\t(100% chance)",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user toys with the target and attacks it using light and fluid dance steps. This also boosts the user’s Speed stat."
+      }
+    ]
   },
   {
     "id": 873,
@@ -50958,11 +51046,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Type depends on the user’s form. Breaks through Reflect and Light Screen barriers.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user performs a tackle like a raging bull. This move’s type depends on the user’s form. It can also break barriers, such as Light Screen and Reflect."
+      }
+    ]
   },
   {
     "id": 874,
@@ -50975,11 +51067,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Lowers user's Special Attack. Money is earned after the battle.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks by throwing out a mass of coins. This also lowers the user’s Sp. Atk stat. Money is earned after the battle."
+      }
+    ]
   },
   {
     "id": 875,
@@ -50992,11 +51088,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Psyblade deals damage, and its power is boosted by 50% on Electric Terrain.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "he user rends the target with an ethereal blade. This move's power is boosted by 50 percent if the user is on Electric Terrain."
+      }
+    ]
   },
   {
     "id": 876,
@@ -51009,11 +51109,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Hydro Steam deals damage, and its power is boosted by 50% in harsh sunlight, instead of being reduced.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user blasts the target with boiling-hot water. This move's power is not lowered in harsh sunlight but rather boosted by 50 percent."
+      }
+    ]
   },
   {
     "id": 877,
@@ -51026,11 +51130,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Halves the opponent's HP.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user summons a ruinous disaster. This cuts the target’s HP in half."
+      }
+    ]
   },
   {
     "id": 878,
@@ -51043,11 +51151,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Boosted even more if it's super-effective.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user transforms and crashes to the ground, causing a massive prehistoric explosion. This move’s power is boosted more than usual if it’s a supereffective hit."
+      }
+    ]
   },
   {
     "id": 879,
@@ -51060,11 +51172,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Boosted even more if it's super-effective.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user races forward at ultrafast speeds, piercing its target with futuristic electricity. This move’s power is boosted more than usual if it’s a supereffective hit."
+      }
+    ]
   },
   {
     "id": 880,
@@ -51077,11 +51193,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Creates a substitute, then swaps places with a party Pokémon in waiting.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user creates a substitute for itself using its own HP before switching places with a party Pokémon in waiting."
+      }
+    ]
   },
   {
     "id": 881,
@@ -51094,11 +51214,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Switches out and summons a snowstorm lasting 5 turns.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user tells a chillingly bad joke before switching places with a party Pokémon in waiting. This summons a snowstorm lasting five turns."
+      }
+    ]
   },
   {
     "id": 882,
@@ -51111,11 +51235,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Removes the effects of entry hazards and Substitute, and boosts user’s Attack and Speed.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user tidies up and removes the effects of Spikes, Stealth Rock, Sticky Web, Toxic Spikes, and Substitute. This also boosts the user’s Attack and Speed stats."
+      }
+    ]
   },
   {
     "id": 883,
@@ -51128,11 +51256,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Raises Defense of Ice types for 5 turns.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user summons a snowstorm lasting five turns. This boosts the Defense stats of Ice types."
+      }
+    ]
   },
   {
     "id": 884,
@@ -51145,11 +51277,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Lowers opponent's Speed.\t\t\t\t\t\t\t(100% chance)",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks by pouncing on the target. This also lowers the target’s Speed stat."
+      }
+    ]
   },
   {
     "id": 885,
@@ -51162,11 +51298,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Trailblaze deals damage and raises the user's speed by one stage.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks suddenly as if leaping out from tall grass. The user’s nimble footwork boosts its Speed stat."
+      }
+    ]
   },
   {
     "id": 886,
@@ -51179,11 +51319,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Lowers opponent's Attack.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks the target by showering it with water that’s so cold it saps the target’s power. This also lowers the target’s Attack stat."
+      }
+    ]
   },
   {
     "id": 887,
@@ -51196,11 +51340,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Can strike through Protect/Detect.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user spins the pointed part of its body at high speed to pierce the target. This attack can hit a target using a move such as Protect or Detect."
+      }
+    ]
   },
   {
     "id": 888,
@@ -51213,11 +51361,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Hits twice in one turn.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user shoots mystical beams from its eyes to inflict damage. The target is hit twice in a row."
+      }
+    ]
   },
   {
     "id": 889,
@@ -51230,11 +51382,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The more times the user has been hit by attacks, the greater the move's power.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user converts its rage into energy to attack. The more times the user has been hit by attacks, the greater the move’s power."
+      }
+    ]
   },
   {
     "id": 890,
@@ -51247,11 +51403,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Armor Cannon deals damage, but lowers the user's Defense and Special Defense stats by one stage each after attacking.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user shoots its own armor out as blazing projectiles. This also lowers the user’s Defense and Sp. Def stats."
+      }
+    ]
   },
   {
     "id": 891,
@@ -51264,11 +51424,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Bitter Blade deals damage and the user will recover 50% of the damage taken by the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user focuses its bitter feelings toward the world of the living into a slashing attack. The user’s HP is restored by up to half the damage taken by the target."
+      }
+    ]
   },
   {
     "id": 892,
@@ -51281,11 +51445,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "After using this move, the user will no longer be Electric type.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user discharges all the electricity from its body to perform a high-damage attack. After using this move, the user will no longer be Electric type."
+      }
+    ]
   },
   {
     "id": 893,
@@ -51298,11 +51466,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Cannot be used twice in a row.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user swings its whole body around to attack with its huge hammer. This move can’t be used twice in a row."
+      }
+    ]
   },
   {
     "id": 894,
@@ -51315,11 +51487,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Deals more damage to the opponent that last inflicted damage on it.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user retaliates with much greater force against the opponent that last inflicted damage on it."
+      }
+    ]
   },
   {
     "id": 895,
@@ -51332,11 +51508,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Aqua Cutter deals damage and has an increased critical-hit ratio.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user expels pressurized water to cut at the target like a blade. This move has a heightened chance of landing a critical hit."
+      }
+    ]
   },
   {
     "id": 896,
@@ -51349,7 +51529,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Blazing Torque deals damage and has a 30% chance of burning the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51366,7 +51546,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Wicked Torque deals damage and has a 10% chance of putting the target to sleep.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51383,7 +51563,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Noxious Torque deals damage and has a 30% chance of poisoning the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51400,7 +51580,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Combat Torque deals damage and has a 30% chance of paralyzing the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51417,7 +51597,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Magical Torque deals damage and has a 30% chance of confusing the target.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51434,7 +51614,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user unleashes the full brunt of its spirit from a full moon that shines as red as blood. This move can't be used twice in a row.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51451,7 +51631,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user fires a blast of tea that it mixed. The user's HP is restored by up to half the damage taken by the target. This may also leave the target with a burn.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51468,11 +51648,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Lowers opponent's Speed each turn for 3 turns.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user sets off an explosion of sticky candy syrup, which coats the target and causes the target's Speed stat to drop each turn for three turns."
+      }
+    ]
   },
   {
     "id": 904,
@@ -51485,11 +51669,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Ivy Cudgel deals damage and has an increased critical hit ratio (1⁄8 instead of 1⁄24). Its type changes based on the mask worn by Ogerpon:",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user strikes with an ivy-wrapped cudgel. This move's type changes depending on the mask worn by the user, and it has a heightened chance of landing a critical hit."
+      }
+    ]
   },
   {
     "id": 905,
@@ -51502,11 +51690,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user absorbs electricity on the first turn and raises its Special Attack; on the second turn, Electro Shot deals damage.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user gathers electricity on the first turn, boosting its Sp. Atk stat, then fires a high-voltage shot on the next turn. The shot will be fired immediately in rain."
+      }
+    ]
   },
   {
     "id": 906,
@@ -51519,11 +51711,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon."
+      }
+    ]
   },
   {
     "id": 907,
@@ -51536,11 +51732,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Fickle Beam deals damage with 80 base power, however there is a 30% chance for the power to double to 160.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user shoots a beam of light to inflict damage. Sometimes all the user's heads shoot beams in unison, doubling the move's power."
+      }
+    ]
   },
   {
     "id": 908,
@@ -51553,7 +51753,7 @@
     "effect_chance": null,
     "priority": 4,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user’s intensely hot fur protects it from attacks and also burns any attacker that makes direct contact with it.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51570,11 +51770,15 @@
     "effect_chance": null,
     "priority": 1,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Strikes before a target's move.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "This move enables the user to attack first with a jolt of electricity. This move fails if the target is not readying an attack."
+      }
+    ]
   },
   {
     "id": 910,
@@ -51587,7 +51791,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user wields the light that has accumulated atop its head to cleave the target. This move hits even if the target protects itself.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51604,11 +51808,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Guaranteed to hit twice in a row.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks by launching particle blades at the target twice in a row. This attack never misses."
+      }
+    ]
   },
   {
     "id": 912,
@@ -51621,7 +51829,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The target is crushed with an arm, a claw, or the like to inflict damage. The more HP the target has left, the greater the move’s power.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51638,7 +51846,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user raises its allies’ morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51655,7 +51863,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user attacks the target using its angelic voice. This also confuses the target if its stats have been boosted during the turn.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51672,11 +51880,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Spurred by desperation, the user attacks the target. This move’s power is doubled if the user’s previous move failed.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "Spurred by desperation, the user attacks the target. This move's power is doubled if the user's previous move failed."
+      }
+    ]
   },
   {
     "id": 916,
@@ -51689,7 +51901,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user electrifies its body and drops onto the target to inflict damage. If this move misses, the user takes damage instead.",
     "description": null,
     "generation_details": [],
     "past_values": [],
@@ -51706,11 +51918,15 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Deals damage and prevents target from healing.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user attacks the target with unpleasant sound waves. For two turns, the target is prevented from recovering HP through moves, Abilities, or held items."
+      }
+    ]
   },
   {
     "id": 918,
@@ -51723,11 +51939,15 @@
     "effect_chance": null,
     "priority": 3,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "Strikes before a target's priority move.",
     "description": null,
     "generation_details": [],
     "past_values": [],
-    "flavor_text_entries": []
+    "flavor_text_entries": [
+      {
+        "flavor_text": "The user reacts to the target's movement and strikes with the heel of its palm, making the target flinch. This move fails if the target is not readying a priority move."
+      }
+    ]
   },
   {
     "id": 919,
@@ -51740,7 +51960,7 @@
     "effect_chance": null,
     "priority": 0,
     "secondary_effects": null,
-    "effect": null,
+    "effect": "The user pours toxins into the target by wrapping them in a toxic, corrosive chain. This may also leave the target badly poisoned.",
     "description": null,
     "generation_details": [],
     "past_values": [],
