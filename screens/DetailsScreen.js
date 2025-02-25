@@ -209,11 +209,11 @@ const DetailsScreen = () => {
   useEffect(() => {
     const initializeDatabase = async () => {
       const dbPath = `${FileSystem.documentDirectory}SQLite/natures.db`;
-      console.log('Database path:', dbPath);
+      // console.log('Database path:', dbPath);
 
       await setupNaturesDatabase();
       const data = await getNatures();
-      console.log('Fetched natures data:', data);
+      // console.log('Fetched natures data:', data);
       setNaturesList(data);
     };
 

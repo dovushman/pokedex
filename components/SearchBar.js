@@ -1,5 +1,4 @@
-
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Animated, StyleSheet, Keyboard, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -15,26 +14,20 @@ const SearchBar = ({
   const searchBarWidth = useRef(new Animated.Value(0)).current;
   const searchBarOpacity = useRef(new Animated.Value(0)).current;
 
-  const toggleSearchBar = () => {
-    if (isSearchVisible) return;
-    setIsSearchVisible(true);
-    Animated.parallel([
-      Animated.timing(searchBarWidth, {
-        toValue: width - 100,
-        duration: 300,
-        useNativeDriver: false,
-      }),
-      Animated.timing(searchBarOpacity, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: false,
-      }),
-    ]).start();
-  };
-
-  const handleCloseSearch = () => {
-    if (searchQuery !== '') {
-      setSearchQuery('');
+  useEffect(() => {
+    if (isSearchVisible) {
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          toValue: width - 100,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 1,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start();
     } else {
       Animated.parallel([
         Animated.timing(searchBarWidth, {
@@ -47,10 +40,25 @@ const SearchBar = ({
           duration: 300,
           useNativeDriver: false,
         }),
-      ]).start(() => {
-        setIsSearchVisible(false);
-        Keyboard.dismiss();
-      });
+      ]).start();
+    }
+  }, [isSearchVisible]);
+
+  const toggleSearchBar = () => {
+    console.log('toggleSearchBar called');
+    setIsSearchVisible((prev) => !prev);
+  };
+
+  const handleCloseSearch = () => {
+    console.log('handleCloseSearch called');
+    console.log('searchQuery:', searchQuery);
+    if (searchQuery !== '') {
+      console.log('Clearing search query');
+      setSearchQuery('');
+    } else {
+      console.log('Closing search bar');
+      setIsSearchVisible(false);
+      Keyboard.dismiss();
     }
   };
 
@@ -69,7 +77,10 @@ const SearchBar = ({
             value={searchQuery}
             onChangeText={setSearchQuery}
           />
-          <TouchableOpacity onPress={handleCloseSearch}>
+          <TouchableOpacity onPress={() => {
+            console.log('Close button pressed');
+            handleCloseSearch();
+          }}>
             <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
           </TouchableOpacity>
         </Animated.View>

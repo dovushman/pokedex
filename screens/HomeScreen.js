@@ -106,23 +106,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
   };
 
   const toggleSearchBar = () => {
-    if (isSearchVisible) {
-      // Animate to close the search bar
-      Animated.parallel([
-        Animated.timing(searchBarWidth, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-        Animated.timing(searchBarOpacity, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: false,
-        }),
-      ]).start(() => {
-        setIsSearchVisible(false);
-      });
-    } else {
+    if (!isSearchVisible) {
       // Animate to open the search bar
       setIsSearchVisible(true);
       Animated.parallel([
@@ -137,6 +121,30 @@ const HomeScreenComponent = ({ route, navigation }) => {
           useNativeDriver: false,
         }),
       ]).start();
+    }
+  };
+
+  const handleCloseSearch = () => {
+    if (searchQuery !== '') {
+      // Clear the search query without closing the search bar.
+      setSearchQuery('');
+    } else {
+      // Animate to close the search bar if it's already empty.
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start(() => {
+        setIsSearchVisible(false);
+        Keyboard.dismiss();
+      });
     }
   };
 
@@ -156,7 +164,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
               value={searchQuery}
               onChangeText={setSearchQuery}
             />
-            <TouchableOpacity onPress={toggleSearchBar}>
+            <TouchableOpacity onPress={handleCloseSearch}>
               <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
             </TouchableOpacity>
           </Animated.View>

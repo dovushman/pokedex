@@ -24,12 +24,12 @@ export const setupNaturesDatabase = async () => {
 
   for (const nature of naturesData) {
     try {
-      console.log('Inserting nature:', nature);
+      // console.log('Inserting nature:', nature);
       await db.runAsync(
         `INSERT OR REPLACE INTO natures (id, name, increased_stat, decreased_stat, likes_flavor, hates_flavor) VALUES (?, ?, ?, ?, ?, ?);`,
         [nature.id, nature.name, nature.increased_stat || null, nature.decreased_stat || null, nature.likes_flavor || null, nature.hates_flavor || null]
       );
-      console.log('Nature inserted successfully');
+      // console.log('Nature inserted successfully');
     } catch (error) {
       console.error('Error inserting nature:', nature, error);
     }
