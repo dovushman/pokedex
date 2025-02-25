@@ -93,7 +93,16 @@ const styles = StyleSheet.create({
 export default DetailsScreen;
 */
 
+
+
+
+
+
+
+
+
 //moves database
+/*
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
 import { setupMovesDatabase, getMoves, clearMovesDatabase } from '../services/database/movesDatabase';
@@ -147,6 +156,99 @@ const DetailsScreen = () => {
           </View>
         )}
         ListEmptyComponent={<Text>No moves found.</Text>}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    padding: 20,
+  },
+  header: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  item: {
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
+  },
+  name: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  details: {
+    fontSize: 16,
+    color: '#555',
+  },
+});
+
+export default DetailsScreen;
+*/
+
+
+
+
+
+
+//natures database
+import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
+import { setupNaturesDatabase, getNatures, clearNaturesDatabase } from '../services/database/naturesDatabase';
+import { copyDatabaseFile } from '../services/database/database';
+import * as FileSystem from 'expo-file-system';
+
+const DetailsScreen = () => {
+  const [naturesList, setNaturesList] = useState([]);
+
+  useEffect(() => {
+    const initializeDatabase = async () => {
+      const dbPath = `${FileSystem.documentDirectory}SQLite/natures.db`;
+      console.log('Database path:', dbPath);
+
+      await setupNaturesDatabase();
+      const data = await getNatures();
+      console.log('Fetched natures data:', data);
+      setNaturesList(data);
+    };
+
+    initializeDatabase();
+  }, []);
+
+  const handleCopyDatabase = async () => {
+    await copyDatabaseFile('natures.db');
+  };
+
+  const handleClearAndRefillDatabase = async () => {
+    await clearNaturesDatabase();
+    await setupNaturesDatabase();
+    const data = await getNatures();
+    setNaturesList(data);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.header}>Pokémon Natures</Text>
+      <Button title="Copy Natures Database" onPress={handleCopyDatabase} />
+      <Button title="Clear and Refill Natures Database" onPress={handleClearAndRefillDatabase} />
+      <FlatList
+        data={naturesList}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <View style={styles.item}>
+            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.details}>Increased Stat: {item.increased_stat}</Text>
+            <Text style={styles.details}>Decreased Stat: {item.decreased_stat}</Text>
+            <Text style={styles.details}>Likes Flavor: {item.likes_flavor}</Text>
+            <Text style={styles.details}>Hates Flavor: {item.hates_flavor}</Text>
+          </View>
+        )}
+        ListEmptyComponent={<Text>No natures found.</Text>}
       />
     </View>
   );
