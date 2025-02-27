@@ -4,16 +4,21 @@ import { View, Text, StyleSheet } from 'react-native';
 const PokemonInformationBattle = ({ pokemonData }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.card}>
+      <View style={styles.infoSection}>
         <Text style={styles.infoTitle}>Abilities</Text>
         {pokemonData.abilities.map((ability, index) => (
-          <Text key={index} style={styles.ability}>{ability.ability.name}</Text>
+          <Text key={index} style={styles.infoText}>{ability.ability.name}</Text>
         ))}
       </View>
-      <View style={styles.card}>
+      <View style={styles.infoSection}>
         <Text style={styles.infoTitle}>Moves</Text>
-        {pokemonData.moves.slice(0, 5).map((move, index) => (
-          <Text key={index} style={styles.move}>{move.move.name}</Text>
+        {pokemonData.moves.map((move, index) => (
+          <Text key={index} style={styles.infoText}>
+            {move.move.name}
+            {move.method && (
+              <> ({move.method}{move.method === 'level-up' ? ` at level ${move.level}` : ''})</>
+            )}
+          </Text>
         ))}
       </View>
     </View>
@@ -25,32 +30,79 @@ const styles = StyleSheet.create({
     width: '90%',
     alignItems: 'center',
   },
-  card: {
+  infoSection: {
     width: '100%',
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 16,
-    marginVertical: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 5,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255, 255, 255, 0.3)',
   },
   infoTitle: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 8,
-    color: '#333',
+    color: 'white',
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 3,
   },
-  ability: {
+  infoText: {
     fontSize: 16,
-    color: '#333',
-  },
-  move: {
-    fontSize: 16,
-    color: '#333',
+    color: 'white',
+    opacity: 0.8,
   },
 });
 
 export default PokemonInformationBattle;
+
+
+
+// import React from 'react';
+// import { View, Text, StyleSheet } from 'react-native';
+
+// const PokemonInformationBattle = ({ pokemonData }) => {
+//   return (
+//     <View style={styles.container}>
+//       <View style={styles.infoSection}>
+//         <Text style={styles.infoTitle}>Abilities</Text>
+//         {pokemonData.abilities.map((ability, index) => (
+//           <Text key={index} style={styles.infoText}>{ability.ability.name}</Text>
+//         ))}
+//       </View>
+//       <View style={styles.infoSection}>
+//         <Text style={styles.infoTitle}>Moves</Text>
+//         {pokemonData.moves.slice(0, 10).map((move, index) => (
+//           <Text key={index} style={styles.infoText}>{move.move.name}</Text>
+//         ))}
+//       </View>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     width: '90%',
+//     alignItems: 'center',
+//   },
+//   infoSection: {
+//     width: '100%',
+//     paddingVertical: 16,
+//     borderBottomWidth: 1,
+//     borderBottomColor: 'rgba(255, 255, 255, 0.3)',
+//   },
+//   infoTitle: {
+//     fontSize: 22,
+//     fontWeight: 'bold',
+//     marginBottom: 8,
+//     color: 'white',
+//     textShadowColor: 'rgba(0, 0, 0, 0.25)',
+//     textShadowOffset: { width: -1, height: 1 },
+//     textShadowRadius: 3,
+//   },
+//   infoText: {
+//     fontSize: 16,
+//     color: 'white',
+//     opacity: 0.8,
+//   },
+// });
+
+// export default PokemonInformationBattle;

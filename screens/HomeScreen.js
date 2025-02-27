@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   View,
   StyleSheet,
@@ -29,7 +29,8 @@ const MemoizedFlatList = React.memo(FlatList, (prevProps, nextProps) => {
 });
 
 const HomeScreenComponent = ({ route, navigation }) => {
-  const { data: pokemonData } = route.params || {};
+  const { data: initialPokemonData } = route.params || {};
+  const [pokemonData, setPokemonData] = useState(initialPokemonData || []);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState(new Set());
@@ -74,16 +75,15 @@ const HomeScreenComponent = ({ route, navigation }) => {
       .filter((pokemon) => {
         if (selectedTypesSet.size === 0) return true;
 
-        const pokemonTypeSet = new Set(pokemon.types.map((t) => t.toLowerCase()));
+        const pokemonTypeSet = new Set(JSON.parse(pokemon.types).map((t) => t.toLowerCase()));
         return [...selectedTypesSet].some((type) => pokemonTypeSet.has(type));
       })
       .filter((pokemon) =>
         lowercaseSearchQuery === '' || pokemon.name.toLowerCase().includes(lowercaseSearchQuery)
       );
 
-    // console.log('Filtered Data:', filtered); // Debugging the filtered data
     return filtered;
-  }, [selectedTypes, searchQuery, pokemonData]); // Added searchQuery to dependencies
+  }, [selectedTypes, searchQuery, pokemonData]);
 
   const toggleFilterMenu = () => {
     if (isAnimating) return;
@@ -97,7 +97,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
       useNativeDriver: true,
     }).start(() => {
       setIsFilterMenuOpen(!isFilterMenuOpen);
-      setIsAnimating(false); // Make sure the animation state is set to false when the animation completes
+      setIsAnimating(false);
     });
   };
 
@@ -107,11 +107,10 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
   const toggleSearchBar = () => {
     if (!isSearchVisible) {
-      // Animate to open the search bar
       setIsSearchVisible(true);
       Animated.parallel([
         Animated.timing(searchBarWidth, {
-          toValue: width - 100, // Adjust the value as needed
+          toValue: width - 100,
           duration: 300,
           useNativeDriver: false,
         }),
@@ -126,10 +125,8 @@ const HomeScreenComponent = ({ route, navigation }) => {
 
   const handleCloseSearch = () => {
     if (searchQuery !== '') {
-      // Clear the search query without closing the search bar.
       setSearchQuery('');
     } else {
-      // Animate to close the search bar if it's already empty.
       Animated.parallel([
         Animated.timing(searchBarWidth, {
           toValue: 0,
@@ -184,10 +181,16 @@ const HomeScreenComponent = ({ route, navigation }) => {
       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
       <Animated.FlatList
         contentContainerStyle={styles.contentContainer}
-        data={filteredData} // Use filtered data
-        keyExtractor={(item) => item.id.toString()} // Ensure keyExtractor uses a unique key
-        renderItem={({ item }) => <Pokedex pokemon={item} useShinySprites={useShinySprites} />}
-        onScrollBeginDrag={Keyboard.dismiss} // Dismiss the keyboard when scrolling begins
+        data={filteredData}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <Pokedex
+            pokemon={item}
+            useShinySprites={useShinySprites}
+            sprite={useShinySprites ? item.shinySprite : item.sprite}
+          />
+        )}
+        onScrollBeginDrag={Keyboard.dismiss}
       />
       <FilterMenu
         isFilterMenuOpen={isFilterMenuOpen}
@@ -216,12 +219,12 @@ const HomeScreen = ({ route }) => {
         name="Pokedex"
         component={HomeScreenComponent}
         initialParams={route.params}
-        options={{ headerShown: false }} // Hide the default header
+        options={{ headerShown: false }}
       />
       <Stack.Screen
         name="PokemonInformation"
         component={PokemonInformation}
-        options={{ headerShown: false }} // Hide the header for PokemonInformation screen
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );

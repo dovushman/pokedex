@@ -1,27 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import * as Progress from 'react-native-progress';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { setupPokemonDatabase, getPokemons } from '../services/database/pokemonDatabase';
 
 const FetchDataSplashScreen = ({ navigation }) => {
   const [progress, setProgress] = useState(0);
-  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = require('../assets/pokemonData.json');
-        // console.log('Fetched Data:', data); // Add this log
-  
+        // Check if the database has already been initialized
+        const isDatabaseInitialized = await AsyncStorage.getItem('isDatabaseInitialized');
+        if (!isDatabaseInitialized) {
+          // Initialize and populate the database
+          await setupPokemonDatabase();
+          // Set the flag in AsyncStorage
+          await AsyncStorage.setItem('isDatabaseInitialized', 'true');
+        }
+
+        // Fetch the data from the database
+        const data = await getPokemons();
+
+        // Simulate progress
         for (let i = 0; i <= 100; i++) {
           setProgress(i / 100);
           await new Promise(resolve => setTimeout(resolve, 10));
         }
-  
+
+        // Navigate to HomeScreen and pass the data
         navigation.replace('MainTabs', { screen: 'Home', params: { data } });
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error initializing database:', error);
       }
     };
-  
+
     fetchData();
   }, [navigation]);
 

@@ -26,6 +26,7 @@
     "expo-file-system": "^18.0.11",
     "expo-image": "^2.0.5",
     "expo-image-picker": "~16.0.5",
+    "expo-linear-gradient": "^14.0.2",
     "expo-modules-autolinking": "~2.0.0",
     "expo-speech": "~13.0.1",
     "expo-sqlite": "~15.1.2",
