@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import DropDownPicker from 'react-native-dropdown-picker';
 import typeColors from '../utils/typeColors'; // Import typeColors
 
 const formatStatName = (statName) => {
@@ -47,34 +48,44 @@ const renderStatBar = (statName, statValue, maxValue = 255) => {
   );
 };
 
-const PokemonInformationAbout = ({ pokemonData, speciesData }) => {
-  if (!pokemonData || !speciesData) {
+const PokemonInformationAbout = ({ pokemonData }) => {
+  const [selectedVersion, setSelectedVersion] = useState(pokemonData.pokedexEntries[0]?.version || '');
+  const [open, setOpen] = useState(false);
+
+  if (!pokemonData) {
     return <Text>Loading...</Text>;
   }
 
-  const types = pokemonData.types.map((typeInfo) => {
-    const typeName = typeInfo.type.name;
-    const color = typeColors[typeName];
-    return (
-      <View key={typeName} style={[styles.typeContainer, { backgroundColor: color }]}>
-        <Text style={styles.typeText}>
-          {typeName.charAt(0).toUpperCase() + typeName.slice(1)}
-        </Text>
-      </View>
-    );
-  });
+  const selectedPokedexEntry = pokemonData.pokedexEntries.find(entry => entry.version === selectedVersion);
 
-  const title = speciesData.genera.find((genus) => genus.language.name === 'en').genus;
-  const pokedexEntry = speciesData.flavor_text_entries.find(
-    (entry) => entry.language.name === 'en'
-  ).flavor_text.replace(/\f/g, ' '); // Replace form feed characters with space
+  const pokedexEntryText = selectedPokedexEntry
+    ? selectedPokedexEntry.text.replace(/\f/g, ' ').replace(/\n/g, ' ')
+    : 'No Pokedex entry available';
+
+  const dropdownItems = pokemonData.pokedexEntries.map(entry => ({
+    label: capitalizeFirstLetter(entry.version),
+    value: entry.version
+  }));
 
   return (
     <View style={styles.container}>
-      <View style={styles.typesContainer}>{types}</View>
-      <Text style={styles.title}>{title}</Text>
+      <View style={styles.dropdownWrapper}>
+        <DropDownPicker
+          open={open}
+          value={selectedVersion}
+          items={dropdownItems}
+          setOpen={setOpen}
+          setValue={setSelectedVersion}
+          style={styles.dropdown}
+          dropDownContainerStyle={styles.dropdownContainer}
+          textStyle={styles.dropdownText}
+          placeholderStyle={styles.dropdownPlaceholder}
+          containerStyle={styles.dropdownContainerStyle}
+          listMode="SCROLLVIEW" // Improve readability on open
+        />
+      </View>
       <View style={styles.pokedexEntryContainer}>
-        <Text style={styles.pokedexEntry}>{pokedexEntry}</Text>
+        <Text style={styles.pokedexEntry}>{pokedexEntryText}</Text>
       </View>
       <View style={styles.infoSection}>
         <Text style={styles.infoTitle}>Height & Weight</Text>
@@ -83,13 +94,21 @@ const PokemonInformationAbout = ({ pokemonData, speciesData }) => {
       </View>
       <View style={styles.infoSection}>
         <Text style={styles.infoTitle}>Base Stats</Text>
-        {pokemonData.stats.map((stat) => renderStatBar(stat.stat.name, stat.base_stat))}
+        {pokemonData.stats && pokemonData.stats.length > 0 ? (
+          pokemonData.stats.map((stat) => renderStatBar(stat.name, stat.value))
+        ) : (
+          <Text>No stats available</Text>
+        )}
       </View>
       <View style={styles.infoSection}>
         <Text style={styles.infoTitle}>Abilities</Text>
-        {pokemonData.abilities.map((ability, index) => (
-          <Text key={index} style={styles.infoText}>{capitalizeFirstLetter(ability.ability.name)}</Text>
-        ))}
+        {pokemonData.abilities && pokemonData.abilities.length > 0 ? (
+          pokemonData.abilities.map((ability, index) => (
+            <Text key={index} style={styles.infoText}>{capitalizeFirstLetter(ability.name)}</Text>
+          ))
+        ) : (
+          <Text>No abilities available</Text>
+        )}
       </View>
     </View>
   );
@@ -100,27 +119,30 @@ const styles = StyleSheet.create({
     width: '90%',
     alignItems: 'center',
   },
-  typesContainer: {
-    flexDirection: 'row',
-    marginTop: 8,
+  dropdownWrapper: {
+    width: '80%', // Adjust width as needed
+    marginBottom: 20,
+    zIndex: 10, // Ensure it's above other elements
   },
-  typeContainer: {
-    borderRadius: 12,
-    paddingVertical: 4,
-    paddingHorizontal: 8,
-    marginHorizontal: 4,
+  dropdown: {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    borderWidth: 0,
+    borderRadius: 10,
   },
-  typeText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#fff',
+  dropdownContainer: {
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderWidth: 0,
+    borderRadius: 10,
   },
-  title: {
-    fontSize: 20,
-    fontStyle: 'italic',
-    marginTop: 8,
-    color: 'white',
-    opacity: 0.8,
+  dropdownText: {
+    fontSize: 16,
+    color: 'black', // Improved readability
+  },
+  dropdownPlaceholder: {
+    color: 'rgba(255, 255, 255, 0.7)',
+  },
+  dropdownContainerStyle: {
+    borderRadius: 10,
   },
   pokedexEntryContainer: {
     maxWidth: '90%', // Limit maximum width for better readability

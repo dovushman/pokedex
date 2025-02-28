@@ -1,6 +1,20 @@
 import { openDatabase } from './database';
-import pokemonData from '../../assets/pokemonData.json';
 import * as SQLite from 'expo-sqlite';
+import pokemonData from '../../assets/pokemonData.json';
+
+interface Pokemon {
+  id: number;
+  base_id: number | null;
+  name: string;
+  form: string | null;
+  types: string[];
+  sprite: string;
+  shinySprite: string;
+  height: number;
+  weight: number;
+  pokedexEntries: { version: string; text: string }[];
+  abilities: { id: number; name: string; is_hidden: boolean; slot: number }[];
+}
 
 let db: SQLite.SQLiteDatabase;
 
@@ -18,14 +32,18 @@ export const setupPokemonDatabase = async () => {
       form TEXT,
       types TEXT NOT NULL,
       sprite TEXT NOT NULL,
-      shinySprite TEXT NOT NULL
+      shinySprite TEXT NOT NULL,
+      height INTEGER,
+      weight INTEGER,
+      pokedexEntries TEXT,
+      abilities TEXT
     );
   `);
   console.log('Table created successfully');
 
   const existingData = await db.getAllAsync('SELECT * FROM pokemon;');
   if (existingData.length === 0) {
-    for (const pokemon of pokemonData) {
+    for (const pokemon of pokemonData as Pokemon[]) {
       if (!pokemon.sprite) {
         console.warn('Skipping pokemon with null sprite:', pokemon);
         continue;
@@ -34,10 +52,22 @@ export const setupPokemonDatabase = async () => {
       const shinySprite = pokemon.shinySprite || pokemon.sprite;
 
       try {
-        console.log('Inserting pokemon:', pokemon);
+        // Insert Pokémon data into the database
         await db.runAsync(
-          `INSERT OR REPLACE INTO pokemon (id, base_id, name, form, types, sprite, shinySprite) VALUES (?, ?, ?, ?, ?, ?, ?);`,
-          [pokemon.id, pokemon.base_id || null, pokemon.name, pokemon.form || null, JSON.stringify(pokemon.types), pokemon.sprite, shinySprite]
+          `INSERT OR REPLACE INTO pokemon (id, base_id, name, form, types, sprite, shinySprite, height, weight, pokedexEntries, abilities) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`,
+          [
+            pokemon.id,
+            pokemon.base_id || null,
+            pokemon.name,
+            pokemon.form || null,
+            JSON.stringify(pokemon.types),
+            pokemon.sprite,
+            shinySprite,
+            pokemon.height,
+            pokemon.weight,
+            JSON.stringify(pokemon.pokedexEntries),
+            JSON.stringify(pokemon.abilities)
+          ]
         );
       } catch (error) {
         console.error('Error inserting pokemon:', pokemon, error);
@@ -56,13 +86,13 @@ export const clearPokemonDatabase = async () => {
 
 export const getPokemons = async () => {
   const result = await db.getAllAsync('SELECT * FROM pokemon;');
-  console.log('Data fetched successfully:', result);
+  // console.log('Data fetched successfully:', result);
   return result;
 };
 
 export const getPokemonFormsByBaseId = async (baseId: number) => {
   const result = await db.getAllAsync('SELECT * FROM pokemon WHERE base_id = ? OR id = ?;', [baseId, baseId]);
-  console.log('Forms fetched successfully:', result);
+  // console.log('Forms fetched successfully:', result);
   return result;
 };
 
