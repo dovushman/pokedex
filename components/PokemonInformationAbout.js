@@ -100,16 +100,6 @@ const PokemonInformationAbout = ({ pokemonData }) => {
           <Text>No stats available</Text>
         )}
       </View>
-      <View style={styles.infoSection}>
-        <Text style={styles.infoTitle}>Abilities</Text>
-        {pokemonData.abilities && pokemonData.abilities.length > 0 ? (
-          pokemonData.abilities.map((ability, index) => (
-            <Text key={index} style={styles.infoText}>{capitalizeFirstLetter(ability.name)}</Text>
-          ))
-        ) : (
-          <Text>No abilities available</Text>
-        )}
-      </View>
     </View>
   );
 };
