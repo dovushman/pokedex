@@ -32,6 +32,7 @@
 //   try {
 //     let allPokemonData = [];
 //     let offset = 0;
+//     const uniqueVersions = new Set();
 
 //     // Ensure the assets directory exists
 //     const assetsDir = path.dirname(POKEMON_DATA_FILE);
@@ -55,19 +56,13 @@
 //           const pokemonDetailsResponse = await fetchWithRetry(pokemon.url);
 //           const pokemonDetails = await pokemonDetailsResponse.json();
 
-//           // Log details for Mudkip
-//           if (pokemonDetails.name.toLowerCase() === 'mudkip') {
-//             console.log('Mudkip details (pokemonDetails):', JSON.stringify(pokemonDetails, null, 2));
-//           }
-
-//           // Fetch species details to get forms
+//           // Fetch species details to get forms and other details
 //           const speciesResponse = await fetchWithRetry(pokemonDetails.species.url);
 //           const speciesDetails = await speciesResponse.json();
 
-//           // Log details for Mudkip
-//           if (pokemonDetails.name.toLowerCase() === 'mudkip') {
-//             console.log('Mudkip details (speciesDetails):', JSON.stringify(speciesDetails, null, 2));
-//           }
+//           // Fetch evolution chain details
+//           const evolutionChainResponse = await fetchWithRetry(speciesDetails.evolution_chain.url);
+//           const evolutionChainDetails = await evolutionChainResponse.json();
 
 //           // Fetch forms
 //           const formsData = await Promise.all(
@@ -83,6 +78,9 @@
 //                   text: entry.flavor_text
 //                 }));
 
+//               // Add unique versions to the set
+//               pokedexEntries.forEach(entry => uniqueVersions.add(entry.version));
+
 //               // Fetch abilities (Store full ability object)
 //               const abilities = formDetails.abilities.map(abilityInfo => ({
 //                 id: parseInt(abilityInfo.ability.url.split("/").slice(-2, -1)[0]), // Extract ID from URL
@@ -97,6 +95,34 @@
 //                 value: statInfo.base_stat
 //               }));
 
+//               // Fetch egg groups
+//               const eggGroups = speciesDetails.egg_groups.map(group => group.name);
+
+//               // Fetch experience group
+//               const experienceGroup = speciesDetails.growth_rate.name;
+
+//               // Fetch gender differences
+//               const genderDifferences = speciesDetails.has_gender_differences;
+
+//               // Fetch catch rate
+//               const catchRate = speciesDetails.capture_rate;
+
+//               // Fetch catch location area encounters
+//               const locationAreaEncountersResponse = await fetchWithRetry(formDetails.location_area_encounters);
+//               const locationAreaEncounters = await locationAreaEncountersResponse.json();
+//               const catchLocations = locationAreaEncounters.map(encounter => ({
+//                 location: encounter.location_area.name,
+//                 version_details: encounter.version_details.map(versionDetail => ({
+//                   version: versionDetail.version.name,
+//                   encounter_details: versionDetail.encounter_details.map(detail => ({
+//                     method: detail.method.name,
+//                     chance: detail.chance,
+//                     max_level: detail.max_level,
+//                     min_level: detail.min_level
+//                   }))
+//                 }))
+//               }));
+
 //               const pokemonData = {
 //                 id: formDetails.id,
 //                 base_id: variety.is_default ? null : pokemonDetails.id,
@@ -109,14 +135,13 @@
 //                 weight: formDetails.weight,
 //                 pokedexEntries: pokedexEntries,
 //                 abilities: abilities, // Store ability objects with ID + name
-//                 stats: stats // Store stats
+//                 stats: stats, // Store stats
+//                 eggGroups: eggGroups, // Store egg groups
+//                 experienceGroup: experienceGroup, // Store experience group
+//                 genderDifferences: genderDifferences, // Store gender differences
+//                 catchRate: catchRate, // Store catch rate
+//                 catchLocations: catchLocations // Store catch locations
 //               };
-
-//               // Log information for Mudkip
-//               if (formDetails.name.toLowerCase() === 'mudkip') {
-//                 console.log('Mudkip details (formDetails):', JSON.stringify(formDetails, null, 2));
-//                 console.log('Mudkip details (pokemonData):', JSON.stringify(pokemonData, null, 2));
-//               }
 
 //               return pokemonData;
 //             })
@@ -148,12 +173,21 @@
 //     fs.writeFileSync(POKEMON_DATA_FILE, JSON.stringify(uniquePokemonData, null, 2));
 //     console.log("Pokémon data saved successfully!");
 
+//     // Log unique versions
+//     console.log("Unique Pokédex entry versions:", Array.from(uniqueVersions));
+
 //   } catch (error) {
 //     console.error('Error fetching and saving Pokémon data:', error);
 //   }
 // };
 
 // fetchAndSavePokemonData();
+
+
+
+
+
+
 
 import fs from 'fs';
 import fetch from 'node-fetch';
@@ -213,19 +247,47 @@ const fetchAndSavePokemonData = async () => {
           const pokemonDetailsResponse = await fetchWithRetry(pokemon.url);
           const pokemonDetails = await pokemonDetailsResponse.json();
 
-          // Log details for Mudkip
-          if (pokemonDetails.name.toLowerCase() === 'mudkip') {
-            console.log('Mudkip details (pokemonDetails):', JSON.stringify(pokemonDetails, null, 2));
-          }
-
-          // Fetch species details to get forms
+          // Fetch species details to get forms and other details
           const speciesResponse = await fetchWithRetry(pokemonDetails.species.url);
           const speciesDetails = await speciesResponse.json();
 
-          // Log details for Mudkip
-          if (pokemonDetails.name.toLowerCase() === 'mudkip') {
-            console.log('Mudkip details (speciesDetails):', JSON.stringify(speciesDetails, null, 2));
-          }
+          // Fetch evolution chain details
+          const evolutionChainResponse = await fetchWithRetry(speciesDetails.evolution_chain.url);
+          const evolutionChainDetails = await evolutionChainResponse.json();
+
+          // Extract evolution line and requirements
+          const extractEvolutionLine = (chain) => {
+            const evolutionLine = [];
+            const extractChain = (node) => {
+              evolutionLine.push(node.species.name);
+              if (node.evolves_to.length > 0) {
+                extractChain(node.evolves_to[0]);
+              }
+            };
+            extractChain(chain);
+            return evolutionLine;
+          };
+
+          const evolutionLine = extractEvolutionLine(evolutionChainDetails.chain);
+
+          const extractEvolutionRequirements = (chain) => {
+            const requirements = [];
+            const extractChain = (node) => {
+              if (node.evolution_details.length > 0) {
+                requirements.push({
+                  species: node.species.name,
+                  details: node.evolution_details[0]
+                });
+              }
+              if (node.evolves_to.length > 0) {
+                extractChain(node.evolves_to[0]);
+              }
+            };
+            extractChain(chain);
+            return requirements;
+          };
+
+          const evolutionRequirements = extractEvolutionRequirements(evolutionChainDetails.chain);
 
           // Fetch forms
           const formsData = await Promise.all(
@@ -258,6 +320,39 @@ const fetchAndSavePokemonData = async () => {
                 value: statInfo.base_stat
               }));
 
+              // Fetch egg groups
+              const eggGroups = speciesDetails.egg_groups.map(group => group.name);
+
+              // Fetch experience group
+              const experienceGroup = speciesDetails.growth_rate.name;
+
+              // Fetch gender differences
+              const genderDifferences = speciesDetails.has_gender_differences;
+
+              // Fetch gender ratio
+              const genderRate = speciesDetails.gender_rate;
+              const maleRatio = genderRate >= 0 ? (8 - genderRate) * 12.5 : null;
+              const femaleRatio = genderRate >= 0 ? genderRate * 12.5 : null;
+
+              // Fetch catch rate
+              const catchRate = speciesDetails.capture_rate;
+
+              // Fetch catch location area encounters
+              const locationAreaEncountersResponse = await fetchWithRetry(formDetails.location_area_encounters);
+              const locationAreaEncounters = await locationAreaEncountersResponse.json();
+              const catchLocations = locationAreaEncounters.map(encounter => ({
+                location: encounter.location_area.name,
+                version_details: encounter.version_details.map(versionDetail => ({
+                  version: versionDetail.version.name,
+                  encounter_details: versionDetail.encounter_details.map(detail => ({
+                    method: detail.method.name,
+                    chance: detail.chance,
+                    max_level: detail.max_level,
+                    min_level: detail.min_level
+                  }))
+                }))
+              }));
+
               const pokemonData = {
                 id: formDetails.id,
                 base_id: variety.is_default ? null : pokemonDetails.id,
@@ -270,14 +365,16 @@ const fetchAndSavePokemonData = async () => {
                 weight: formDetails.weight,
                 pokedexEntries: pokedexEntries,
                 abilities: abilities, // Store ability objects with ID + name
-                stats: stats // Store stats
+                stats: stats, // Store stats
+                eggGroups: eggGroups, // Store egg groups
+                experienceGroup: experienceGroup, // Store experience group
+                genderDifferences: genderDifferences, // Store gender differences
+                genderRatio: { male: maleRatio, female: femaleRatio }, // Store gender ratio
+                catchRate: catchRate, // Store catch rate
+                catchLocations: catchLocations, // Store catch locations
+                evolutionLine: evolutionLine, // Store evolution line
+                evolutionRequirements: evolutionRequirements // Store evolution requirements
               };
-
-              // Log information for Mudkip
-              if (formDetails.name.toLowerCase() === 'mudkip') {
-                console.log('Mudkip details (formDetails):', JSON.stringify(formDetails, null, 2));
-                console.log('Mudkip details (pokemonData):', JSON.stringify(pokemonData, null, 2));
-              }
 
               return pokemonData;
             })
