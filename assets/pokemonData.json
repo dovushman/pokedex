@@ -89720,7 +89720,8 @@
     "evolutionLine": [
       "oddish",
       "gloom",
-      "vileplume"
+      "vileplume",
+      "bellossom"
     ],
     "evolutionRequirements": [
       {
@@ -89757,6 +89758,35 @@
           "item": {
             "name": "leaf-stone",
             "url": "https://pokeapi.co/api/v2/item/85/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "bellossom",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sun-stone",
+            "url": "https://pokeapi.co/api/v2/item/80/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -90813,7 +90843,8 @@
     "evolutionLine": [
       "oddish",
       "gloom",
-      "vileplume"
+      "vileplume",
+      "bellossom"
     ],
     "evolutionRequirements": [
       {
@@ -90850,6 +90881,35 @@
           "item": {
             "name": "leaf-stone",
             "url": "https://pokeapi.co/api/v2/item/85/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "bellossom",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sun-stone",
+            "url": "https://pokeapi.co/api/v2/item/80/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -91054,7 +91114,8 @@
     "evolutionLine": [
       "oddish",
       "gloom",
-      "vileplume"
+      "vileplume",
+      "bellossom"
     ],
     "evolutionRequirements": [
       {
@@ -91091,6 +91152,35 @@
           "item": {
             "name": "leaf-stone",
             "url": "https://pokeapi.co/api/v2/item/85/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "bellossom",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sun-stone",
+            "url": "https://pokeapi.co/api/v2/item/80/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -99338,11 +99428,38 @@
     ],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -99772,11 +99889,38 @@
     ],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -100004,11 +100148,38 @@
     "catchLocations": [],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -100236,11 +100407,38 @@
     "catchLocations": [],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -100904,11 +101102,38 @@
     ],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -101164,11 +101389,38 @@
     ],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -124129,7 +124381,8 @@
     "evolutionLine": [
       "poliwag",
       "poliwhirl",
-      "poliwrath"
+      "poliwrath",
+      "politoed"
     ],
     "evolutionRequirements": [
       {
@@ -124183,6 +124436,35 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "politoed",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -128272,7 +128554,8 @@
     "evolutionLine": [
       "poliwag",
       "poliwhirl",
-      "poliwrath"
+      "poliwrath",
+      "politoed"
     ],
     "evolutionRequirements": [
       {
@@ -128326,6 +128609,35 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "politoed",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -129148,7 +129460,8 @@
     "evolutionLine": [
       "poliwag",
       "poliwhirl",
-      "poliwrath"
+      "poliwrath",
+      "politoed"
     ],
     "evolutionRequirements": [
       {
@@ -129202,6 +129515,35 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "politoed",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -175580,7 +175922,8 @@
     ],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -175605,6 +175948,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -175813,7 +176185,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -175838,6 +176211,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -176691,7 +177093,8 @@
     ],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -176716,6 +177119,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -176913,7 +177345,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -176938,6 +177371,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -177147,7 +177609,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -177172,6 +177635,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -226699,7 +227191,9 @@
     ],
     "evolutionLine": [
       "tyrogue",
-      "hitmonlee"
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
     ],
     "evolutionRequirements": [
       {
@@ -226719,6 +227213,58 @@
           "party_species": null,
           "party_type": null,
           "relative_physical_stats": 1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmonchan",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": -1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmontop",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": 0,
           "time_of_day": "",
           "trade_species": null,
           "trigger": {
@@ -226976,7 +227522,9 @@
     ],
     "evolutionLine": [
       "tyrogue",
-      "hitmonlee"
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
     ],
     "evolutionRequirements": [
       {
@@ -226996,6 +227544,58 @@
           "party_species": null,
           "party_type": null,
           "relative_physical_stats": 1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmonchan",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": -1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmontop",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": 0,
           "time_of_day": "",
           "trade_species": null,
           "trigger": {
@@ -260059,7 +260659,8 @@
     ],
     "evolutionLine": [
       "scyther",
-      "scizor"
+      "scizor",
+      "kleavor"
     ],
     "evolutionRequirements": [
       {
@@ -260087,6 +260688,35 @@
           "trigger": {
             "name": "trade",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "kleavor",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "black-augurite",
+            "url": "https://pokeapi.co/api/v2/item/10001/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -305997,7 +306627,14 @@
     ],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -306025,6 +306662,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -306236,7 +307070,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -306264,6 +307105,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -306475,7 +307513,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -306503,6 +307548,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -306708,7 +307950,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -306736,6 +307985,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -306941,7 +308387,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -306969,6 +308422,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -307174,7 +308824,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -307202,6 +308859,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -335072,7 +336926,8 @@
     "evolutionLine": [
       "oddish",
       "gloom",
-      "vileplume"
+      "vileplume",
+      "bellossom"
     ],
     "evolutionRequirements": [
       {
@@ -335109,6 +336964,35 @@
           "item": {
             "name": "leaf-stone",
             "url": "https://pokeapi.co/api/v2/item/85/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "bellossom",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sun-stone",
+            "url": "https://pokeapi.co/api/v2/item/80/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -339540,7 +341424,8 @@
     "evolutionLine": [
       "poliwag",
       "poliwhirl",
-      "poliwrath"
+      "poliwrath",
+      "politoed"
     ],
     "evolutionRequirements": [
       {
@@ -339594,6 +341479,35 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "politoed",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -347631,11 +349545,38 @@
     ],
     "evolutionLine": [
       "wooper",
-      "quagsire"
+      "quagsire",
+      "clodsire"
     ],
     "evolutionRequirements": [
       {
         "species": "quagsire",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "clodsire",
         "details": {
           "gender": null,
           "held_item": null,
@@ -347829,11 +349770,38 @@
     "catchLocations": [],
     "evolutionLine": [
       "wooper",
-      "quagsire"
+      "quagsire",
+      "clodsire"
     ],
     "evolutionRequirements": [
       {
         "species": "quagsire",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "clodsire",
         "details": {
           "gender": null,
           "held_item": null,
@@ -350819,11 +352787,38 @@
     ],
     "evolutionLine": [
       "wooper",
-      "quagsire"
+      "quagsire",
+      "clodsire"
     ],
     "evolutionRequirements": [
       {
         "species": "quagsire",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "clodsire",
         "details": {
           "gender": null,
           "held_item": null,
@@ -351177,7 +353172,14 @@
     ],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -351205,6 +353207,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -351538,7 +353737,14 @@
     ],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -351566,6 +353772,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -352848,7 +355251,8 @@
     ],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -352873,6 +355277,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -353062,7 +355495,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "slowpoke",
-      "slowbro"
+      "slowbro",
+      "slowking"
     ],
     "evolutionRequirements": [
       {
@@ -353087,6 +355521,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "slowking",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "kings-rock",
+            "url": "https://pokeapi.co/api/v2/item/198/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
           },
           "turn_upside_down": false
         }
@@ -370277,7 +372740,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "scyther",
-      "scizor"
+      "scizor",
+      "kleavor"
     ],
     "evolutionRequirements": [
       {
@@ -370305,6 +372769,35 @@
           "trigger": {
             "name": "trade",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "kleavor",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "black-augurite",
+            "url": "https://pokeapi.co/api/v2/item/10001/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -370485,7 +372978,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "scyther",
-      "scizor"
+      "scizor",
+      "kleavor"
     ],
     "evolutionRequirements": [
       {
@@ -370513,6 +373007,35 @@
           "trigger": {
             "name": "trade",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "kleavor",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "black-augurite",
+            "url": "https://pokeapi.co/api/v2/item/10001/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -374161,7 +376684,8 @@
     ],
     "evolutionLine": [
       "sneasel",
-      "weavile"
+      "weavile",
+      "sneasler"
     ],
     "evolutionRequirements": [
       {
@@ -374185,6 +376709,35 @@
           "party_type": null,
           "relative_physical_stats": null,
           "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sneasler",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "razor-claw",
+            "url": "https://pokeapi.co/api/v2/item/303/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
           "trade_species": null,
           "trigger": {
             "name": "level-up",
@@ -374381,7 +376934,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "sneasel",
-      "weavile"
+      "weavile",
+      "sneasler"
     ],
     "evolutionRequirements": [
       {
@@ -374405,6 +376959,35 @@
           "party_type": null,
           "relative_physical_stats": null,
           "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sneasler",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "razor-claw",
+            "url": "https://pokeapi.co/api/v2/item/303/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
           "trade_species": null,
           "trigger": {
             "name": "level-up",
@@ -391903,7 +394486,9 @@
     ],
     "evolutionLine": [
       "tyrogue",
-      "hitmonlee"
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
     ],
     "evolutionRequirements": [
       {
@@ -391923,6 +394508,58 @@
           "party_species": null,
           "party_type": null,
           "relative_physical_stats": 1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmonchan",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": -1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmontop",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": 0,
           "time_of_day": "",
           "trade_species": null,
           "trigger": {
@@ -392099,7 +394736,9 @@
     "catchLocations": [],
     "evolutionLine": [
       "tyrogue",
-      "hitmonlee"
+      "hitmonlee",
+      "hitmonchan",
+      "hitmontop"
     ],
     "evolutionRequirements": [
       {
@@ -392119,6 +394758,58 @@
           "party_species": null,
           "party_type": null,
           "relative_physical_stats": 1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmonchan",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": -1,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "hitmontop",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": 0,
           "time_of_day": "",
           "trade_species": null,
           "trigger": {
@@ -406043,7 +408734,9 @@
     "evolutionLine": [
       "wurmple",
       "silcoon",
-      "beautifly"
+      "beautifly",
+      "cascoon",
+      "dustox"
     ],
     "evolutionRequirements": [
       {
@@ -406074,6 +408767,58 @@
       },
       {
         "species": "beautifly",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 10,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "cascoon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 7,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "dustox",
         "details": {
           "gender": null,
           "held_item": null,
@@ -406320,7 +409065,9 @@
     "evolutionLine": [
       "wurmple",
       "silcoon",
-      "beautifly"
+      "beautifly",
+      "cascoon",
+      "dustox"
     ],
     "evolutionRequirements": [
       {
@@ -406351,6 +409098,58 @@
       },
       {
         "species": "beautifly",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 10,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "cascoon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 7,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "dustox",
         "details": {
           "gender": null,
           "held_item": null,
@@ -406750,7 +409549,9 @@
     "evolutionLine": [
       "wurmple",
       "silcoon",
-      "beautifly"
+      "beautifly",
+      "cascoon",
+      "dustox"
     ],
     "evolutionRequirements": [
       {
@@ -406781,6 +409582,58 @@
       },
       {
         "species": "beautifly",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 10,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "cascoon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 7,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "dustox",
         "details": {
           "gender": null,
           "held_item": null,
@@ -407027,7 +409880,9 @@
     "evolutionLine": [
       "wurmple",
       "silcoon",
-      "beautifly"
+      "beautifly",
+      "cascoon",
+      "dustox"
     ],
     "evolutionRequirements": [
       {
@@ -407058,6 +409913,58 @@
       },
       {
         "species": "beautifly",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 10,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "cascoon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 7,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "dustox",
         "details": {
           "gender": null,
           "held_item": null,
@@ -407375,7 +410282,9 @@
     "evolutionLine": [
       "wurmple",
       "silcoon",
-      "beautifly"
+      "beautifly",
+      "cascoon",
+      "dustox"
     ],
     "evolutionRequirements": [
       {
@@ -407406,6 +410315,58 @@
       },
       {
         "species": "beautifly",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 10,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "cascoon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 7,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "dustox",
         "details": {
           "gender": null,
           "held_item": null,
@@ -419215,7 +422176,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -419266,6 +422228,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -419549,7 +422540,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -419600,6 +422592,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -419766,7 +422787,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -419817,6 +422839,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -419971,7 +423022,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -420022,6 +423074,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -422516,7 +425597,8 @@
     ],
     "evolutionLine": [
       "nincada",
-      "ninjask"
+      "ninjask",
+      "shedinja"
     ],
     "evolutionRequirements": [
       {
@@ -422541,6 +425623,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "shedinja",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "shed",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/4/"
           },
           "turn_upside_down": false
         }
@@ -422695,7 +425803,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "nincada",
-      "ninjask"
+      "ninjask",
+      "shedinja"
     ],
     "evolutionRequirements": [
       {
@@ -422720,6 +425829,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "shedinja",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "shed",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/4/"
           },
           "turn_upside_down": false
         }
@@ -422868,7 +426003,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "nincada",
-      "ninjask"
+      "ninjask",
+      "shedinja"
     ],
     "evolutionRequirements": [
       {
@@ -422893,6 +426029,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "shedinja",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "shed",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/4/"
           },
           "turn_upside_down": false
         }
@@ -485128,7 +488290,8 @@
     ],
     "evolutionLine": [
       "snorunt",
-      "glalie"
+      "glalie",
+      "froslass"
     ],
     "evolutionRequirements": [
       {
@@ -485153,6 +488316,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "froslass",
+        "details": {
+          "gender": 1,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -485432,7 +488624,8 @@
     ],
     "evolutionLine": [
       "snorunt",
-      "glalie"
+      "glalie",
+      "froslass"
     ],
     "evolutionRequirements": [
       {
@@ -485457,6 +488650,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "froslass",
+        "details": {
+          "gender": 1,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -485625,7 +488847,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "snorunt",
-      "glalie"
+      "glalie",
+      "froslass"
     ],
     "evolutionRequirements": [
       {
@@ -485650,6 +488873,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "froslass",
+        "details": {
+          "gender": 1,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -487452,7 +490704,8 @@
     ],
     "evolutionLine": [
       "clamperl",
-      "huntail"
+      "huntail",
+      "gorebyss"
     ],
     "evolutionRequirements": [
       {
@@ -487462,6 +490715,35 @@
           "held_item": {
             "name": "deep-sea-tooth",
             "url": "https://pokeapi.co/api/v2/item/203/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gorebyss",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "deep-sea-scale",
+            "url": "https://pokeapi.co/api/v2/item/204/"
           },
           "item": null,
           "known_move": null,
@@ -487806,7 +491088,8 @@
     ],
     "evolutionLine": [
       "clamperl",
-      "huntail"
+      "huntail",
+      "gorebyss"
     ],
     "evolutionRequirements": [
       {
@@ -487816,6 +491099,35 @@
           "held_item": {
             "name": "deep-sea-tooth",
             "url": "https://pokeapi.co/api/v2/item/203/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gorebyss",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "deep-sea-scale",
+            "url": "https://pokeapi.co/api/v2/item/204/"
           },
           "item": null,
           "known_move": null,
@@ -488160,7 +491472,8 @@
     ],
     "evolutionLine": [
       "clamperl",
-      "huntail"
+      "huntail",
+      "gorebyss"
     ],
     "evolutionRequirements": [
       {
@@ -488170,6 +491483,35 @@
           "held_item": {
             "name": "deep-sea-tooth",
             "url": "https://pokeapi.co/api/v2/item/203/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "trade",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gorebyss",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "deep-sea-scale",
+            "url": "https://pokeapi.co/api/v2/item/204/"
           },
           "item": null,
           "known_move": null,
@@ -511709,13 +515051,40 @@
     ],
     "evolutionLine": [
       "burmy",
-      "wormadam"
+      "wormadam",
+      "mothim"
     ],
     "evolutionRequirements": [
       {
         "species": "wormadam",
         "details": {
           "gender": 1,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "mothim",
+        "details": {
+          "gender": 2,
           "held_item": null,
           "item": null,
           "known_move": null,
@@ -511860,13 +515229,40 @@
     "catchLocations": [],
     "evolutionLine": [
       "burmy",
-      "wormadam"
+      "wormadam",
+      "mothim"
     ],
     "evolutionRequirements": [
       {
         "species": "wormadam",
         "details": {
           "gender": 1,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "mothim",
+        "details": {
+          "gender": 2,
           "held_item": null,
           "item": null,
           "known_move": null,
@@ -512011,13 +515407,40 @@
     "catchLocations": [],
     "evolutionLine": [
       "burmy",
-      "wormadam"
+      "wormadam",
+      "mothim"
     ],
     "evolutionRequirements": [
       {
         "species": "wormadam",
         "details": {
           "gender": 1,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "mothim",
+        "details": {
+          "gender": 2,
           "held_item": null,
           "item": null,
           "known_move": null,
@@ -512162,13 +515585,40 @@
     "catchLocations": [],
     "evolutionLine": [
       "burmy",
-      "wormadam"
+      "wormadam",
+      "mothim"
     ],
     "evolutionRequirements": [
       {
         "species": "wormadam",
         "details": {
           "gender": 1,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "mothim",
+        "details": {
+          "gender": 2,
           "held_item": null,
           "item": null,
           "known_move": null,
@@ -512317,13 +515767,40 @@
     "catchLocations": [],
     "evolutionLine": [
       "burmy",
-      "wormadam"
+      "wormadam",
+      "mothim"
     ],
     "evolutionRequirements": [
       {
         "species": "wormadam",
         "details": {
           "gender": 1,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "mothim",
+        "details": {
+          "gender": 2,
           "held_item": null,
           "item": null,
           "known_move": null,
@@ -543499,7 +546976,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "sneasel",
-      "weavile"
+      "weavile",
+      "sneasler"
     ],
     "evolutionRequirements": [
       {
@@ -543523,6 +547001,35 @@
           "party_type": null,
           "relative_physical_stats": null,
           "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sneasler",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "razor-claw",
+            "url": "https://pokeapi.co/api/v2/item/303/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
           "trade_species": null,
           "trigger": {
             "name": "level-up",
@@ -545538,7 +549045,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -545566,6 +549080,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -545719,7 +549430,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -545747,6 +549465,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -546736,7 +550651,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -546787,6 +550703,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -546921,7 +550866,8 @@
     "evolutionLine": [
       "ralts",
       "kirlia",
-      "gardevoir"
+      "gardevoir",
+      "gallade"
     ],
     "evolutionRequirements": [
       {
@@ -546972,6 +550918,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "gallade",
+        "details": {
+          "gender": 2,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -547499,7 +551474,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "snorunt",
-      "glalie"
+      "glalie",
+      "froslass"
     ],
     "evolutionRequirements": [
       {
@@ -547524,6 +551500,35 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "froslass",
+        "details": {
+          "gender": 1,
+          "held_item": null,
+          "item": {
+            "name": "dawn-stone",
+            "url": "https://pokeapi.co/api/v2/item/109/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -613390,7 +617395,8 @@
     ],
     "evolutionLine": [
       "yamask",
-      "cofagrigus"
+      "cofagrigus",
+      "runerigus"
     ],
     "evolutionRequirements": [
       {
@@ -613415,6 +617421,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "runerigus",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "take-damage",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/9/"
           },
           "turn_upside_down": false
         }
@@ -613524,7 +617556,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "yamask",
-      "cofagrigus"
+      "cofagrigus",
+      "runerigus"
     ],
     "evolutionRequirements": [
       {
@@ -613549,6 +617582,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "runerigus",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "take-damage",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/9/"
           },
           "turn_upside_down": false
         }
@@ -613808,7 +617867,8 @@
     ],
     "evolutionLine": [
       "yamask",
-      "cofagrigus"
+      "cofagrigus",
+      "runerigus"
     ],
     "evolutionRequirements": [
       {
@@ -613833,6 +617893,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "runerigus",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "take-damage",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/9/"
           },
           "turn_upside_down": false
         }
@@ -664468,7 +668554,14 @@
     "catchLocations": [],
     "evolutionLine": [
       "eevee",
-      "vaporeon"
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
     ],
     "evolutionRequirements": [
       {
@@ -664496,6 +668589,203 @@
           "trigger": {
             "name": "use-item",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "jolteon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "thunder-stone",
+            "url": "https://pokeapi.co/api/v2/item/83/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "flareon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "fire-stone",
+            "url": "https://pokeapi.co/api/v2/item/82/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "espeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "umbreon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": 160,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "leafeon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "eterna-forest",
+            "url": "https://pokeapi.co/api/v2/location/8/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "glaceon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": {
+            "name": "sinnoh-route-217",
+            "url": "https://pokeapi.co/api/v2/location/48/"
+          },
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sylveon",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          },
+          "location": null,
+          "min_affection": 2,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
           },
           "turn_upside_down": false
         }
@@ -692471,7 +696761,8 @@
     "evolutionLine": [
       "cosmog",
       "cosmoem",
-      "solgaleo"
+      "solgaleo",
+      "lunala"
     ],
     "evolutionRequirements": [
       {
@@ -692502,6 +696793,32 @@
       },
       {
         "species": "solgaleo",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 53,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "lunala",
         "details": {
           "gender": null,
           "held_item": null,
@@ -692614,7 +696931,8 @@
     "evolutionLine": [
       "cosmog",
       "cosmoem",
-      "solgaleo"
+      "solgaleo",
+      "lunala"
     ],
     "evolutionRequirements": [
       {
@@ -692645,6 +696963,32 @@
       },
       {
         "species": "solgaleo",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 53,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "lunala",
         "details": {
           "gender": null,
           "held_item": null,
@@ -692803,7 +697147,8 @@
     "evolutionLine": [
       "cosmog",
       "cosmoem",
-      "solgaleo"
+      "solgaleo",
+      "lunala"
     ],
     "evolutionRequirements": [
       {
@@ -692834,6 +697179,32 @@
       },
       {
         "species": "solgaleo",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 53,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "lunala",
         "details": {
           "gender": null,
           "held_item": null,
@@ -692992,7 +697363,8 @@
     "evolutionLine": [
       "cosmog",
       "cosmoem",
-      "solgaleo"
+      "solgaleo",
+      "lunala"
     ],
     "evolutionRequirements": [
       {
@@ -693023,6 +697395,32 @@
       },
       {
         "species": "solgaleo",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 53,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "lunala",
         "details": {
           "gender": null,
           "held_item": null,
@@ -700494,7 +704892,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -700505,6 +704906,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -700611,7 +705041,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -700622,6 +705055,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -700728,7 +705190,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -700739,6 +705204,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -700845,7 +705339,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -700856,6 +705353,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -700962,7 +705488,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -700973,6 +705502,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -704456,11 +709014,38 @@
     "catchLocations": [],
     "evolutionLine": [
       "meowth",
-      "persian"
+      "persian",
+      "perrserker"
     ],
     "evolutionRequirements": [
       {
         "species": "persian",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 28,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "perrserker",
         "details": {
           "gender": null,
           "held_item": null,
@@ -704915,7 +709500,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "yamask",
-      "cofagrigus"
+      "cofagrigus",
+      "runerigus"
     ],
     "evolutionRequirements": [
       {
@@ -704940,6 +709526,32 @@
           "trigger": {
             "name": "level-up",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "runerigus",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "take-damage",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/9/"
           },
           "turn_upside_down": false
         }
@@ -709216,7 +713828,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "scyther",
-      "scizor"
+      "scizor",
+      "kleavor"
     ],
     "evolutionRequirements": [
       {
@@ -709244,6 +713857,35 @@
           "trigger": {
             "name": "trade",
             "url": "https://pokeapi.co/api/v2/evolution-trigger/2/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "kleavor",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "black-augurite",
+            "url": "https://pokeapi.co/api/v2/item/10001/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
           },
           "turn_upside_down": false
         }
@@ -709812,7 +714454,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "sneasel",
-      "weavile"
+      "weavile",
+      "sneasler"
     ],
     "evolutionRequirements": [
       {
@@ -709836,6 +714479,35 @@
           "party_type": null,
           "relative_physical_stats": null,
           "time_of_day": "night",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "sneasler",
+        "details": {
+          "gender": null,
+          "held_item": {
+            "name": "razor-claw",
+            "url": "https://pokeapi.co/api/v2/item/303/"
+          },
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "day",
           "trade_species": null,
           "trigger": {
             "name": "level-up",
@@ -714275,7 +718947,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "charcadet",
-      "armarouge"
+      "armarouge",
+      "ceruledge"
     ],
     "evolutionRequirements": [
       {
@@ -714286,6 +718959,35 @@
           "item": {
             "name": "auspicious-armor",
             "url": "https://pokeapi.co/api/v2/item/2045/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "ceruledge",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "malicious-armor",
+            "url": "https://pokeapi.co/api/v2/item/1677/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -714385,7 +719087,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "charcadet",
-      "armarouge"
+      "armarouge",
+      "ceruledge"
     ],
     "evolutionRequirements": [
       {
@@ -714396,6 +719099,35 @@
           "item": {
             "name": "auspicious-armor",
             "url": "https://pokeapi.co/api/v2/item/2045/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "ceruledge",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "malicious-armor",
+            "url": "https://pokeapi.co/api/v2/item/1677/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -714495,7 +719227,8 @@
     "catchLocations": [],
     "evolutionLine": [
       "charcadet",
-      "armarouge"
+      "armarouge",
+      "ceruledge"
     ],
     "evolutionRequirements": [
       {
@@ -714506,6 +719239,35 @@
           "item": {
             "name": "auspicious-armor",
             "url": "https://pokeapi.co/api/v2/item/2045/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "ceruledge",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "malicious-armor",
+            "url": "https://pokeapi.co/api/v2/item/1677/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -719402,11 +724164,38 @@
     "catchLocations": [],
     "evolutionLine": [
       "wooper",
-      "quagsire"
+      "quagsire",
+      "clodsire"
     ],
     "evolutionRequirements": [
       {
         "species": "quagsire",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": null,
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": 20,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "level-up",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "clodsire",
         "details": {
           "gender": null,
           "held_item": null,
@@ -722952,7 +727741,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -722963,6 +727755,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
@@ -723846,7 +728667,10 @@
     "catchLocations": [],
     "evolutionLine": [
       "applin",
-      "flapple"
+      "flapple",
+      "appletun",
+      "dipplin",
+      "hydrapple"
     ],
     "evolutionRequirements": [
       {
@@ -723857,6 +728681,35 @@
           "item": {
             "name": "tart-apple",
             "url": "https://pokeapi.co/api/v2/item/1175/"
+          },
+          "known_move": null,
+          "known_move_type": null,
+          "location": null,
+          "min_affection": null,
+          "min_beauty": null,
+          "min_happiness": null,
+          "min_level": null,
+          "needs_overworld_rain": false,
+          "party_species": null,
+          "party_type": null,
+          "relative_physical_stats": null,
+          "time_of_day": "",
+          "trade_species": null,
+          "trigger": {
+            "name": "use-item",
+            "url": "https://pokeapi.co/api/v2/evolution-trigger/3/"
+          },
+          "turn_upside_down": false
+        }
+      },
+      {
+        "species": "appletun",
+        "details": {
+          "gender": null,
+          "held_item": null,
+          "item": {
+            "name": "sweet-apple",
+            "url": "https://pokeapi.co/api/v2/item/1174/"
           },
           "known_move": null,
           "known_move_type": null,
