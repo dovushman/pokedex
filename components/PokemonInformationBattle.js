@@ -66,6 +66,7 @@ const PokemonInformationBattle = ({ pokemonData }) => {
             <View key={index}>
               <Text style={[styles.infoText, styles.boldText]}>
                 {capitalizeFirstLetter(ability.name)}
+                {ability.is_hidden && <Text style={styles.hiddenAbility}> (Hidden)</Text>}
               </Text>
               <Text style={styles.infoEffect}>{getAbilityDetails(ability.name)}</Text>
             </View>
@@ -190,6 +191,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: 'rgba(255, 255, 255, 0.8)',
     marginBottom: 8,
+  },
+  hiddenAbility: {
+    fontStyle: 'italic',
+    color: 'rgba(255, 255, 255, 0.6)',
   },
   extraSpace: {
     marginTop: 16, // Add extra space above the "Defending" category
