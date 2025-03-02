@@ -168,7 +168,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -549,7 +549,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -788,7 +788,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -1021,7 +1021,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -1260,7 +1260,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -20507,7 +20507,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -32353,7 +32353,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -33216,7 +33216,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -36519,7 +36519,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -37605,7 +37605,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -45299,7 +45299,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -46417,7 +46417,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -47496,7 +47496,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -48598,7 +48598,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -48859,7 +48859,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -49120,7 +49120,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -49381,7 +49381,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -49642,7 +49642,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -49903,7 +49903,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -50164,7 +50164,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -50425,7 +50425,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -50686,7 +50686,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -50947,7 +50947,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -51208,7 +51208,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -51469,7 +51469,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -51730,7 +51730,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -51991,7 +51991,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -52252,7 +52252,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -52513,7 +52513,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -52774,7 +52774,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -53107,7 +53107,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -53364,7 +53364,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -54704,7 +54704,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -55028,7 +55028,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -56197,7 +56197,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -56414,7 +56414,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -57466,7 +57466,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -58422,7 +58422,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -58669,7 +58669,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -59563,7 +59563,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -60520,7 +60520,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -63233,7 +63233,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -64284,7 +64284,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -64615,7 +64615,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -64923,7 +64923,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -87864,7 +87864,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -89978,7 +89978,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -91101,7 +91101,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -91391,7 +91391,7 @@
     ],
     "eggGroups": [
       "bug",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -92804,7 +92804,7 @@
     ],
     "eggGroups": [
       "bug",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -95662,7 +95662,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -96613,7 +96613,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -97147,7 +97147,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -97798,7 +97798,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -98324,7 +98324,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -99675,7 +99675,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -100136,7 +100136,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -100395,7 +100395,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -100654,7 +100654,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -101349,7 +101349,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -101641,7 +101641,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -107202,7 +107202,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -111017,7 +111017,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -112007,7 +112007,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -112628,7 +112628,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -113759,7 +113759,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -113998,7 +113998,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -114238,7 +114238,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -129743,7 +129743,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -131723,7 +131723,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -132603,7 +132603,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -132854,7 +132854,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -133117,7 +133117,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -135269,7 +135269,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -137714,7 +137714,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -137977,7 +137977,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -138207,7 +138207,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -140405,7 +140405,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -141625,7 +141625,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -170056,7 +170056,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -171693,7 +171693,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -171913,7 +171913,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -172552,7 +172552,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -180355,7 +180355,7 @@
     ],
     "eggGroups": [
       "flying",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -181087,7 +181087,7 @@
     ],
     "eggGroups": [
       "flying",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -183803,7 +183803,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -185667,7 +185667,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -186572,7 +186572,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -188661,7 +188661,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -189038,7 +189038,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -190308,7 +190308,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -193490,7 +193490,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -200622,7 +200622,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -204443,7 +204443,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -204855,7 +204855,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -205107,7 +205107,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -208953,7 +208953,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -209915,7 +209915,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -221672,7 +221672,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -224255,7 +224255,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -224485,7 +224485,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -227118,7 +227118,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -227449,7 +227449,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -228677,7 +228677,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -229963,7 +229963,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -230663,7 +230663,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -230885,7 +230885,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -232023,7 +232023,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -233804,7 +233804,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -259189,7 +259189,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -260053,7 +260053,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -260905,7 +260905,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -262408,7 +262408,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -263037,7 +263037,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -264726,7 +264726,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -265984,7 +265984,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -266189,7 +266189,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -266394,7 +266394,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -306134,7 +306134,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -307058,7 +307058,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -307501,7 +307501,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -307938,7 +307938,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -308375,7 +308375,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -308812,7 +308812,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -311887,7 +311887,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -312277,7 +312277,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -312460,7 +312460,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -312855,7 +312855,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -313038,7 +313038,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -313450,7 +313450,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -315990,7 +315990,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -316323,7 +316323,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -316491,7 +316491,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -316659,7 +316659,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -316831,7 +316831,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -317172,7 +317172,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -317382,7 +317382,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -317595,7 +317595,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -317939,7 +317939,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -318152,7 +318152,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -318366,7 +318366,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -319342,7 +319342,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -320329,7 +320329,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -331598,7 +331598,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -332046,7 +332046,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -332542,7 +332542,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -332936,7 +332936,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -334705,7 +334705,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -335741,7 +335741,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -336483,7 +336483,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -336696,7 +336696,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -336913,7 +336913,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -341661,7 +341661,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -343558,7 +343558,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -344021,7 +344021,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -344248,7 +344248,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": true,
@@ -346335,7 +346335,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -347110,7 +347110,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -348145,7 +348145,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -349758,7 +349758,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -349983,7 +349983,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -353012,7 +353012,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -353577,7 +353577,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -355709,7 +355709,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -356745,7 +356745,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -363469,7 +363469,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -364593,7 +364593,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -367033,7 +367033,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -370410,7 +370410,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -371019,7 +371019,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -375369,7 +375369,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -376922,7 +376922,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -377147,7 +377147,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -377918,7 +377918,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -378858,7 +378858,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -380075,7 +380075,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -380461,7 +380461,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -381702,7 +381702,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -387388,7 +387388,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -389565,7 +389565,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -390250,7 +390250,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -390520,7 +390520,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -391150,7 +391150,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -391647,7 +391647,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -392505,7 +392505,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -393304,7 +393304,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -394242,7 +394242,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -394724,7 +394724,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -394983,7 +394983,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -395304,7 +395304,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -395798,7 +395798,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -396318,7 +396318,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -397559,7 +397559,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -397860,7 +397860,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -398161,7 +398161,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -400508,7 +400508,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -400815,7 +400815,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -401119,7 +401119,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -402181,7 +402181,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -402467,7 +402467,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -402693,7 +402693,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -402885,7 +402885,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -403993,7 +403993,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -404671,7 +404671,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -405024,7 +405024,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -406560,7 +406560,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -406771,7 +406771,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -408131,7 +408131,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -410536,7 +410536,7 @@
     ],
     "eggGroups": [
       "water1",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -411093,7 +411093,7 @@
     ],
     "eggGroups": [
       "water1",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -411782,7 +411782,7 @@
     ],
     "eggGroups": [
       "water1",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -411996,8 +411996,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -412562,8 +412562,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -412996,8 +412996,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -421814,8 +421814,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -422409,8 +422409,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -422773,8 +422773,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -423008,8 +423008,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -424178,7 +424178,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -424413,7 +424413,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -424577,7 +424577,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -424881,7 +424881,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -425163,7 +425163,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -426197,7 +426197,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -427761,7 +427761,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -428218,7 +428218,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -428437,7 +428437,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -430886,7 +430886,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -431307,7 +431307,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -432702,7 +432702,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -433068,7 +433068,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -433296,7 +433296,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -434666,7 +434666,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -434831,7 +434831,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -435832,7 +435832,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -437863,7 +437863,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -439644,7 +439644,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -441067,7 +441067,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -441259,7 +441259,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -441680,7 +441680,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -441915,7 +441915,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -444274,7 +444274,7 @@
     ],
     "eggGroups": [
       "bug",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "slow-then-very-fast",
     "genderDifferences": false,
@@ -444569,7 +444569,7 @@
     ],
     "eggGroups": [
       "bug",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -444895,7 +444895,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -445981,7 +445981,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": true,
@@ -446275,7 +446275,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": true,
@@ -448829,7 +448829,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "water2"
     ],
     "experienceGroup": "fast-then-very-slow",
@@ -453064,7 +453064,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "water2"
     ],
     "experienceGroup": "fast-then-very-slow",
@@ -453774,7 +453774,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -454770,7 +454770,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -455337,7 +455337,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -455537,7 +455537,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -456115,7 +456115,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -456777,7 +456777,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -457241,8 +457241,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -459309,8 +459309,8 @@
       }
     ],
     "eggGroups": [
-      "plant",
-      "humanshape"
+      "grass",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -459672,8 +459672,8 @@
       }
     ],
     "eggGroups": [
-      "plant",
-      "humanshape"
+      "grass",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -461371,7 +461371,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow-then-very-fast",
     "genderDifferences": false,
@@ -461963,7 +461963,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "fast-then-very-slow",
@@ -476855,7 +476855,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -477865,7 +477865,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -478018,7 +478018,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -478171,7 +478171,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -478321,7 +478321,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -479097,7 +479097,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -480463,7 +480463,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -481273,7 +481273,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -481455,7 +481455,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -482657,7 +482657,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -483329,7 +483329,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -483792,7 +483792,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -484543,7 +484543,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -487116,7 +487116,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -487266,7 +487266,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -489055,7 +489055,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -489677,7 +489677,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -490026,7 +490026,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -496583,7 +496583,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -496875,7 +496875,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -497167,7 +497167,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -497446,7 +497446,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -497742,7 +497742,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -497879,7 +497879,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -498175,7 +498175,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -498311,7 +498311,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -498539,7 +498539,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -498675,7 +498675,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -498904,7 +498904,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499041,7 +499041,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499320,7 +499320,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499465,7 +499465,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499601,7 +499601,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499803,7 +499803,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -499939,7 +499939,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -500075,7 +500075,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -500202,7 +500202,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -500455,7 +500455,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -500666,7 +500666,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -500847,8 +500847,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -501101,8 +501101,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -501312,8 +501312,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -501495,7 +501495,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -501748,7 +501748,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -501959,7 +501959,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -504991,7 +504991,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -507802,7 +507802,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -510639,7 +510639,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -512488,7 +512488,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -512760,7 +512760,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -512956,7 +512956,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -513939,7 +513939,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -516545,7 +516545,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -516927,7 +516927,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -518934,7 +518934,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -520660,7 +520660,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -520817,7 +520817,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -521042,7 +521042,7 @@
     ],
     "eggGroups": [
       "water1",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -521971,7 +521971,7 @@
     ],
     "eggGroups": [
       "water1",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -522857,7 +522857,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": true,
@@ -523073,7 +523073,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -523463,7 +523463,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast-then-very-slow",
     "genderDifferences": false,
@@ -524017,8 +524017,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -524447,8 +524447,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -524663,8 +524663,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -524828,7 +524828,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -525259,7 +525259,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -525464,7 +525464,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -525657,7 +525657,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -528906,7 +528906,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -529217,7 +529217,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -534143,7 +534143,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -534586,7 +534586,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -534938,7 +534938,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -536769,7 +536769,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -538263,7 +538263,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -538497,7 +538497,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -538962,8 +538962,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -539213,8 +539213,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -539376,7 +539376,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -539824,7 +539824,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -541187,7 +541187,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -541727,7 +541727,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -541915,7 +541915,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -545186,7 +545186,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -545804,7 +545804,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -546472,7 +546472,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -546785,7 +546785,7 @@
     ],
     "eggGroups": [
       "monster",
-      "plant"
+      "grass"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -546964,7 +546964,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -547617,7 +547617,7 @@
     ],
     "eggGroups": [
       "monster",
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -547815,7 +547815,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -548143,7 +548143,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -548351,7 +548351,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -549033,7 +549033,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -549418,7 +549418,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -550144,7 +550144,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": true,
@@ -550637,8 +550637,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -550852,8 +550852,8 @@
       }
     ],
     "eggGroups": [
-      "humanshape",
-      "indeterminate"
+      "humanlike",
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -551252,7 +551252,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -551649,7 +551649,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -551844,7 +551844,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -551973,7 +551973,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -552102,7 +552102,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -552231,7 +552231,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -552360,7 +552360,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -552480,7 +552480,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -552747,7 +552747,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -553032,7 +553032,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -553333,7 +553333,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -553563,7 +553563,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -553690,7 +553690,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -553893,7 +553893,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -554020,7 +554020,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -554273,7 +554273,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -554525,7 +554525,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -554755,7 +554755,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -554875,7 +554875,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -555404,7 +555404,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -555563,7 +555563,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -555723,7 +555723,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -555843,7 +555843,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -555979,7 +555979,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -556109,8 +556109,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -556349,8 +556349,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -556507,8 +556507,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -556693,7 +556693,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -556933,7 +556933,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -557091,7 +557091,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -557280,7 +557280,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -557523,7 +557523,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -557684,7 +557684,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -557874,7 +557874,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -558037,7 +558037,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -558921,7 +558921,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -560086,7 +560086,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -560858,7 +560858,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -561663,7 +561663,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -562142,7 +562142,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -562696,7 +562696,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -563363,7 +563363,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -563649,7 +563649,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -563782,7 +563782,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -564068,7 +564068,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -564201,7 +564201,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -564487,7 +564487,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -564634,7 +564634,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -564964,7 +564964,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -569069,7 +569069,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -569317,7 +569317,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -573878,7 +573878,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "flying"
     ],
     "experienceGroup": "medium",
@@ -576669,7 +576669,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "flying"
     ],
     "experienceGroup": "medium",
@@ -576814,7 +576814,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -579284,7 +579284,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -594380,7 +594380,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -594717,7 +594717,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -595661,7 +595661,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -598241,7 +598241,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -599055,7 +599055,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -601991,7 +601991,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -602834,7 +602834,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -603158,7 +603158,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -604003,7 +604003,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -604327,7 +604327,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -612250,7 +612250,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -613088,7 +613088,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -613512,7 +613512,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -613677,7 +613677,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614083,7 +614083,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614221,7 +614221,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614360,7 +614360,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614498,7 +614498,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614637,7 +614637,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -614781,7 +614781,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -615947,7 +615947,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -616530,7 +616530,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -617150,7 +617150,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -617544,7 +617544,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -617704,7 +617704,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -619771,7 +619771,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -619998,7 +619998,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -620142,7 +620142,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -620492,7 +620492,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -620644,7 +620644,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -621377,7 +621377,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -621783,7 +621783,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -622236,7 +622236,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -622683,7 +622683,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -622894,7 +622894,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -623476,7 +623476,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -623824,7 +623824,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -626559,7 +626559,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -627056,7 +627056,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -627622,7 +627622,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -629578,7 +629578,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -630320,7 +630320,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -630985,7 +630985,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -632254,7 +632254,7 @@
     "abilities": [],
     "stats": [],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -632435,7 +632435,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -633143,7 +633143,7 @@
     "abilities": [],
     "stats": [],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -634792,7 +634792,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "mineral"
     ],
     "experienceGroup": "medium",
@@ -635152,7 +635152,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "mineral"
     ],
     "experienceGroup": "medium",
@@ -636192,7 +636192,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -636593,7 +636593,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -636775,7 +636775,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -637007,7 +637007,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -637613,7 +637613,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -637846,7 +637846,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -639056,7 +639056,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -639231,7 +639231,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -640407,7 +640407,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -640850,7 +640850,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -643045,7 +643045,7 @@
     ],
     "eggGroups": [
       "water1",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -644952,7 +644952,7 @@
     ],
     "eggGroups": [
       "water1",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -645076,8 +645076,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -646294,8 +646294,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -648975,7 +648975,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -649469,7 +649469,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -649695,7 +649695,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -651554,7 +651554,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -654999,7 +654999,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -655276,7 +655276,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -655541,7 +655541,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -655807,7 +655807,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -655972,7 +655972,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656079,7 +656079,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656245,7 +656245,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656350,7 +656350,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656547,7 +656547,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656746,7 +656746,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -656956,7 +656956,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657061,7 +657061,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657297,7 +657297,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657402,7 +657402,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657507,7 +657507,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657612,7 +657612,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657709,7 +657709,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657806,7 +657806,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657903,7 +657903,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -657989,7 +657989,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -658158,7 +658158,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -658300,7 +658300,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -658469,7 +658469,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -658638,7 +658638,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -658780,7 +658780,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -659715,7 +659715,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -660025,7 +660025,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -661590,7 +661590,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -661798,7 +661798,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": true,
@@ -662925,7 +662925,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -663103,7 +663103,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -663247,8 +663247,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -663600,8 +663600,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -663873,7 +663873,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -664133,7 +664133,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -664301,7 +664301,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -664429,7 +664429,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -668542,7 +668542,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -668887,7 +668887,7 @@
     ],
     "eggGroups": [
       "flying",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -669210,7 +669210,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -671729,8 +671729,8 @@
       }
     ],
     "eggGroups": [
-      "plant",
-      "indeterminate"
+      "grass",
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -671991,8 +671991,8 @@
       }
     ],
     "eggGroups": [
-      "plant",
-      "indeterminate"
+      "grass",
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -672254,7 +672254,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -672435,7 +672435,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -672604,7 +672604,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -672761,7 +672761,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -672918,7 +672918,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -673047,7 +673047,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -673176,7 +673176,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -673305,7 +673305,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -674329,7 +674329,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -674470,7 +674470,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -674627,7 +674627,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -674818,7 +674818,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -674915,7 +674915,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675012,7 +675012,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675109,7 +675109,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675252,7 +675252,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675333,7 +675333,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675414,7 +675414,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675495,7 +675495,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -675576,7 +675576,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -676341,7 +676341,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -676545,7 +676545,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -676695,7 +676695,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -676845,7 +676845,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -677050,7 +677050,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -677201,7 +677201,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -679146,7 +679146,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -679905,7 +679905,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -680902,7 +680902,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -684164,7 +684164,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -684357,7 +684357,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -684485,7 +684485,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -684663,7 +684663,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -684829,7 +684829,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -686329,7 +686329,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -686703,7 +686703,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -687514,7 +687514,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -687845,7 +687845,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -687984,7 +687984,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -688113,7 +688113,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -688493,7 +688493,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -689219,7 +689219,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -689447,7 +689447,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -689679,7 +689679,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -689892,7 +689892,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -690183,7 +690183,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -690341,7 +690341,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -690671,7 +690671,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -690859,7 +690859,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -691437,7 +691437,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -691632,7 +691632,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -692100,7 +692100,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -692271,7 +692271,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -693607,7 +693607,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -693876,7 +693876,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -694056,7 +694056,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -694146,7 +694146,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -694312,7 +694312,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -694401,7 +694401,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -694490,7 +694490,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -696048,7 +696048,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -696209,7 +696209,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -696370,7 +696370,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -696531,7 +696531,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -696693,7 +696693,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -696918,7 +696918,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697089,7 +697089,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697305,7 +697305,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697513,7 +697513,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697712,7 +697712,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697844,7 +697844,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -697997,7 +697997,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698196,7 +698196,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698344,7 +698344,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698492,7 +698492,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698659,7 +698659,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698857,7 +698857,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -698946,7 +698946,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699035,7 +699035,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699116,7 +699116,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699225,7 +699225,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699314,7 +699314,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699386,7 +699386,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699518,7 +699518,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699622,7 +699622,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699724,7 +699724,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699833,7 +699833,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699913,7 +699913,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -699993,7 +699993,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -700073,7 +700073,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -700151,8 +700151,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700285,8 +700285,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700419,8 +700419,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700553,8 +700553,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700687,8 +700687,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700821,8 +700821,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -700955,8 +700955,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701089,8 +701089,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "humanshape"
+      "field",
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701224,7 +701224,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701358,7 +701358,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701492,7 +701492,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701626,7 +701626,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -701759,7 +701759,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -701865,7 +701865,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -703094,7 +703094,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -703206,7 +703206,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -703318,7 +703318,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -703430,7 +703430,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -703542,7 +703542,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -703654,7 +703654,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -704101,7 +704101,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -704207,7 +704207,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "fast",
     "genderDifferences": false,
@@ -704879,7 +704879,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -705028,7 +705028,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -705177,7 +705177,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -705326,7 +705326,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -705475,7 +705475,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -705623,7 +705623,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -705736,7 +705736,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -705849,7 +705849,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "dragon"
     ],
     "experienceGroup": "medium",
@@ -706397,7 +706397,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -706510,7 +706510,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -706623,7 +706623,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -706736,7 +706736,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -706849,7 +706849,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -707295,7 +707295,7 @@
     ],
     "eggGroups": [
       "water1",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -707405,7 +707405,7 @@
     ],
     "eggGroups": [
       "water1",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -707515,7 +707515,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -707625,7 +707625,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -708300,7 +708300,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -708441,7 +708441,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -708582,7 +708582,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -708723,7 +708723,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -708863,7 +708863,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709002,7 +709002,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709243,7 +709243,7 @@
     ],
     "eggGroups": [
       "flying",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709356,7 +709356,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709488,7 +709488,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709622,7 +709622,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709729,7 +709729,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -709836,7 +709836,7 @@
     ],
     "eggGroups": [
       "fairy",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -710022,7 +710022,7 @@
     ],
     "eggGroups": [
       "water1",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -710381,7 +710381,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -710454,7 +710454,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -710697,7 +710697,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -710771,7 +710771,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "medium",
@@ -710850,7 +710850,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "mineral"
     ],
     "experienceGroup": "medium",
@@ -710957,7 +710957,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "mineral"
     ],
     "experienceGroup": "medium",
@@ -711064,7 +711064,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "mineral"
     ],
     "experienceGroup": "medium",
@@ -711178,7 +711178,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -711263,7 +711263,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -711348,7 +711348,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -711433,7 +711433,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -711692,7 +711692,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate",
+      "amorphous",
       "dragon"
     ],
     "experienceGroup": "slow",
@@ -711833,7 +711833,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate",
+      "amorphous",
       "dragon"
     ],
     "experienceGroup": "slow",
@@ -711974,7 +711974,7 @@
       }
     ],
     "eggGroups": [
-      "indeterminate",
+      "amorphous",
       "dragon"
     ],
     "experienceGroup": "slow",
@@ -712102,7 +712102,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712175,7 +712175,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712247,7 +712247,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712320,7 +712320,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712393,7 +712393,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712466,7 +712466,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712538,7 +712538,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712639,7 +712639,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712740,7 +712740,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712841,7 +712841,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -712942,7 +712942,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713043,7 +713043,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713116,7 +713116,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713188,7 +713188,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713260,7 +713260,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713332,7 +713332,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713404,7 +713404,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713477,7 +713477,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713550,7 +713550,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713623,7 +713623,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713704,7 +713704,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -713958,7 +713958,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -714085,7 +714085,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -714442,7 +714442,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -714690,7 +714690,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -714759,7 +714759,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -714837,8 +714837,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -714971,8 +714971,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -715106,8 +715106,8 @@
       }
     ],
     "eggGroups": [
-      "ground",
-      "plant"
+      "field",
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -715240,7 +715240,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -715373,7 +715373,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -715507,7 +715507,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -716049,7 +716049,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -716161,7 +716161,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -716273,7 +716273,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": true,
@@ -716810,7 +716810,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -716950,7 +716950,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -717090,7 +717090,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -717229,7 +717229,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -717342,7 +717342,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -717455,7 +717455,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "fairy"
     ],
     "experienceGroup": "fast",
@@ -717562,7 +717562,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "mineral"
     ],
     "experienceGroup": "medium-slow",
@@ -717669,7 +717669,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "mineral"
     ],
     "experienceGroup": "medium-slow",
@@ -717777,7 +717777,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -717911,7 +717911,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -718045,7 +718045,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -718935,7 +718935,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -719075,7 +719075,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -719215,7 +719215,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -719818,7 +719818,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -719930,7 +719930,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -720043,7 +720043,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -720156,7 +720156,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -720263,7 +720263,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -720370,7 +720370,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -720477,7 +720477,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -720584,7 +720584,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -720780,7 +720780,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -720896,7 +720896,7 @@
       }
     ],
     "eggGroups": [
-      "plant"
+      "grass"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -722171,7 +722171,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "water2"
     ],
     "experienceGroup": "slow",
@@ -722278,7 +722278,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "water2"
     ],
     "experienceGroup": "slow",
@@ -722385,7 +722385,7 @@
       }
     ],
     "eggGroups": [
-      "ground",
+      "field",
       "water2"
     ],
     "experienceGroup": "slow",
@@ -722707,7 +722707,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -722785,7 +722785,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -723077,7 +723077,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -723183,7 +723183,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -723380,7 +723380,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -723495,7 +723495,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium-slow",
     "genderDifferences": false,
@@ -724011,7 +724011,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724152,7 +724152,7 @@
     ],
     "eggGroups": [
       "water1",
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724292,7 +724292,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724407,7 +724407,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724522,7 +724522,7 @@
       }
     ],
     "eggGroups": [
-      "ground"
+      "field"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724638,7 +724638,7 @@
       }
     ],
     "eggGroups": [
-      "humanshape"
+      "humanlike"
     ],
     "experienceGroup": "medium",
     "genderDifferences": false,
@@ -724766,7 +724766,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -724839,7 +724839,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -724912,7 +724912,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -724985,7 +724985,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725058,7 +725058,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725131,7 +725131,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725204,7 +725204,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725277,7 +725277,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725350,7 +725350,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725423,7 +725423,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725496,7 +725496,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -725569,7 +725569,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726046,7 +726046,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726152,7 +726152,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726253,7 +726253,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726354,7 +726354,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726427,7 +726427,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726500,7 +726500,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726573,7 +726573,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726646,7 +726646,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726719,7 +726719,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726792,7 +726792,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726871,7 +726871,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -726950,7 +726950,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727029,7 +727029,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727108,7 +727108,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727181,7 +727181,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727260,7 +727260,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727339,7 +727339,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727418,7 +727418,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727497,7 +727497,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727570,7 +727570,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727643,7 +727643,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727728,7 +727728,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow",
@@ -727872,7 +727872,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -727953,7 +727953,7 @@
     ],
     "eggGroups": [
       "mineral",
-      "indeterminate"
+      "amorphous"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728033,7 +728033,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728112,7 +728112,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728191,7 +728191,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728263,7 +728263,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728336,7 +728336,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728409,7 +728409,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728482,7 +728482,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728654,7 +728654,7 @@
       }
     ],
     "eggGroups": [
-      "plant",
+      "grass",
       "dragon"
     ],
     "experienceGroup": "slow-then-very-fast",
@@ -728791,7 +728791,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728864,7 +728864,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -728937,7 +728937,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -729010,7 +729010,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -729082,7 +729082,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -729154,7 +729154,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -729226,7 +729226,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,
@@ -729299,7 +729299,7 @@
       }
     ],
     "eggGroups": [
-      "no-eggs"
+      "no eggs discovered"
     ],
     "experienceGroup": "slow",
     "genderDifferences": false,

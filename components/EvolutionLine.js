@@ -20,7 +20,7 @@ const EvolutionLine = ({ evolutionLine }) => {
 
   useEffect(() => {
     if (evolutionLine) {
-      console.log('Evolution Line:', evolutionLine); // Log the evolution line
+      // console.log('Evolution Line:', evolutionLine); // Log the evolution line
       const sprites = {};
       const fetchSprites = (line) => {
         line.forEach(pokemonName => {

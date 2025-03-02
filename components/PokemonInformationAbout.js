@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableWithoutFeedback, ScrollView } from 're
 import DropDownPicker from 'react-native-dropdown-picker';
 import typeColors from '../utils/typeColors'; // Import typeColors
 import EvolutionLine from './EvolutionLine'; // Import EvolutionLine
+import EggGroupBadge from './EggGroupBadge'; // Import EggGroupBadge
 
 const formatStatName = (statName) => {
   if (statName === 'hp') {
@@ -164,7 +165,15 @@ const PokemonInformationAbout = ({ pokemonData }) => {
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Egg Group</Text>
-          <Text style={styles.infoText}>{pokemonData.eggGroups ? capitalizeArray(pokemonData.eggGroups).join(', ') : 'N/A'}</Text>
+          <View style={styles.eggGroupContainer}>
+            {pokemonData.eggGroups ? (
+              pokemonData.eggGroups.map((eggGroup) => (
+                <EggGroupBadge key={eggGroup} eggGroup={capitalizeFirstLetter(eggGroup)} />
+              ))
+            ) : (
+              <Text style={styles.infoText}>N/A</Text>
+            )}
+          </View>
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Experience Group</Text>
@@ -293,6 +302,10 @@ const styles = StyleSheet.create({
   },
   genderRatioBar: {
     height: '100%',
+  },
+  eggGroupContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 });
 
