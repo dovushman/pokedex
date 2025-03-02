@@ -18,6 +18,10 @@ const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
+const capitalizeArray = (array) => {
+  return array.map(item => capitalizeFirstLetter(item));
+};
+
 const renderStatBar = (statName, statValue, maxValue = 255) => {
   const formattedStatName = formatStatName(statName);
   const percentage = (statValue / maxValue) * 100;
@@ -116,7 +120,7 @@ const renderEvolutionChain = (chain) => {
 
   return chain.map((evolution, index) => (
     <View key={index} style={styles.evolutionRequirement}>
-      <Text style={styles.infoText}>{evolution.species}</Text>
+      <Text style={styles.infoText}>{capitalizeFirstLetter(evolution.species)}</Text>
       {renderEvolutionRequirement(evolution)}
       {evolution.evolves_to && evolution.evolves_to.length > 0 && (
         <View style={styles.evolutionChain}>
@@ -192,15 +196,15 @@ const PokemonInformationAbout = ({ pokemonData }) => {
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Egg Group</Text>
-          <Text style={styles.infoText}>{pokemonData.eggGroups ? pokemonData.eggGroups.join(', ') : 'N/A'}</Text>
+          <Text style={styles.infoText}>{pokemonData.eggGroups ? capitalizeArray(pokemonData.eggGroups).join(', ') : 'N/A'}</Text>
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Experience Group</Text>
-          <Text style={styles.infoText}>{pokemonData.experienceGroup || 'N/A'}</Text>
+          <Text style={styles.infoText}>{pokemonData.experienceGroup ? capitalizeFirstLetter(pokemonData.experienceGroup) : 'N/A'}</Text>
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Evolution Line</Text>
-          <Text style={styles.infoText}>{pokemonData.evolutionLine ? pokemonData.evolutionLine.join(' -> ') : 'N/A'}</Text>
+          <Text style={styles.infoText}>{pokemonData.evolutionLine ? capitalizeArray(pokemonData.evolutionLine).join(' -> ') : 'N/A'}</Text>
         </View>
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Evolution Requirements</Text>
@@ -224,7 +228,6 @@ const PokemonInformationAbout = ({ pokemonData }) => {
     </TouchableWithoutFeedback>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     width: '90%',
@@ -234,6 +237,7 @@ const styles = StyleSheet.create({
     width: '80%', // Adjust width as needed
     marginBottom: 20,
     zIndex: 10, // Ensure it's above other elements
+    alignSelf: 'center', // Center horizontally
   },
   dropdown: {
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
@@ -254,6 +258,7 @@ const styles = StyleSheet.create({
   },
   dropdownContainerStyle: {
     borderRadius: 10,
+    alignSelf: 'center', // Center horizontally
   },
   pokedexEntryContainer: {
     maxWidth: '90%', // Limit maximum width for better readability
