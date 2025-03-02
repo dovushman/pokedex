@@ -57,6 +57,14 @@ const renderStatBar = (statName, statValue, maxValue = 255) => {
 const buildEvolutionTree = (evolutionLine) => {
   if (!evolutionLine || evolutionLine.length === 0) return null;
 
+  // Special case for Eevee and its evolutions
+  const eeveeEvolutions = [
+    "vaporeon", "jolteon", "flareon", "espeon", "umbreon", "leafeon", "glaceon", "sylveon"
+  ];
+  if (evolutionLine[0].toLowerCase() === 'eevee' || eeveeEvolutions.includes(evolutionLine[0].toLowerCase())) {
+    return ["eevee", eeveeEvolutions];
+  }
+
   const evolutionMap = {};
   evolutionLine.forEach((evolution, index) => {
     if (index === 0) return; // Skip the first stage (base Pokémon)
