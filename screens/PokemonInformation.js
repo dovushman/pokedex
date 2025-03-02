@@ -100,15 +100,17 @@ const PokemonInformation = ({ route, navigation }) => {
       style={styles.gradient}
     >
       <SafeAreaView style={styles.safeArea}>
-        <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-          <Text style={styles.backButtonText}>&#x2190; Back</Text>
-        </TouchableOpacity>
+        <View style={styles.headerContainer}>
+          <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+            <Text style={styles.backButtonText}>&#x2190; Back</Text>
+          </TouchableOpacity>
+          <Text style={styles.headerTitle}>{capitalizeFirstLetter(pokemonDataState.name)}</Text>
+        </View>
 
         <FlatList
           data={[{ key: 'content' }]}
           renderItem={() => (
             <View style={styles.contentContainer}>
-              <Text style={styles.name}>{capitalizeFirstLetter(pokemonDataState.name)}</Text>
               <Text style={styles.number}>#{pokemonDataState.id}</Text>
               <Image style={styles.image} source={{ uri: pokemonDataState.sprite }} />
 
@@ -170,29 +172,32 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
   },
+  headerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center', // Center the content horizontally
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    backgroundColor: 'transparent',
+  },
   backButton: {
-    position: 'absolute',
-    top: 50,
-    left: 20,
-    zIndex: 1,
+    position: 'absolute', // Position the back button absolutely
+    left: 16, // Align it to the left
+    padding: 10,
   },
   backButtonText: {
     fontSize: 18,
     color: 'white',
     fontWeight: 'bold',
   },
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'white',
+  },
   contentContainer: {
     alignItems: 'center',
     padding: 20,
-  },
-  name: {
-    fontSize: 36, // Increased font size
-    fontWeight: 'bold',
-    color: 'white',
-    textShadowColor: 'rgba(0, 0, 0, 0.3)', // Refined shadow
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 5,
-    marginBottom: 5,
   },
   number: {
     fontSize: 24, // Increased font size
@@ -201,7 +206,8 @@ const styles = StyleSheet.create({
     textShadowColor: 'rgba(0, 0, 0, 0.5)', // Stronger shadow
     textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
-    marginBottom: 10,
+    marginBottom: 0,
+    marginTop: -20, // Increased margin
   },
   image: {
     width: 250, // increased size

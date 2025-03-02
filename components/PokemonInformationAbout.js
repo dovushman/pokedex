@@ -85,6 +85,15 @@ const buildEvolutionTree = (evolutionLine) => {
   return Array.isArray(result) ? result.flat() : result; // Flatten the result to match the desired format
 };
 
+const renderGenderRatioBar = (maleRatio, femaleRatio) => {
+  return (
+    <View style={styles.genderRatioContainer}>
+      <View style={[styles.genderRatioBar, { width: `${maleRatio}%`, backgroundColor: '#56B0F2' }]} />
+      <View style={[styles.genderRatioBar, { width: `${femaleRatio}%`, backgroundColor: '#FF77DE' }]} />
+    </View>
+  );
+};
+
 const PokemonInformationAbout = ({ pokemonData }) => {
   if (!pokemonData) {
     return <Text>Loading...</Text>;
@@ -106,9 +115,9 @@ const PokemonInformationAbout = ({ pokemonData }) => {
     ? selectedPokedexEntry.text.replace(/\f/g, ' ').replace(/\n/g, ' ')
     : 'No Pokedex entry available';
 
-  const genderRatioText = pokemonData.genderRatio
+  const genderRatioText = (pokemonData.genderRatio && pokemonData.genderRatio.male !== null && pokemonData.genderRatio.female !== null)
     ? `Male: ${pokemonData.genderRatio.male}%, Female: ${pokemonData.genderRatio.female}%`
-    : 'Genderless';
+    : 'Gender Unknown';
 
   const showEvolutionLine = pokemonData.evolutionLine && pokemonData.evolutionLine.length > 1;
 
@@ -168,12 +177,13 @@ const PokemonInformationAbout = ({ pokemonData }) => {
         )}
         <View style={styles.infoSection}>
           <Text style={styles.infoTitle}>Gender Differences</Text>
-          {pokemonData.genderRatio ? (
+          {pokemonData.genderRatio && pokemonData.genderRatio.male !== null && pokemonData.genderRatio.female !== null ? (
             <>
               <Text style={styles.infoText}>{genderRatioText}</Text>
+              {renderGenderRatioBar(pokemonData.genderRatio.male, pokemonData.genderRatio.female)}
             </>
           ) : (
-            <Text style={styles.infoText}>Genderless</Text>
+            <Text style={styles.infoText}>Gender Unknown</Text>
           )}
         </View>
       </ScrollView>
@@ -273,6 +283,16 @@ const styles = StyleSheet.create({
     color: 'white',
     opacity: 0.8,
     textAlign: 'right',
+  },
+  genderRatioContainer: {
+    flexDirection: 'row',
+    height: 10,
+    borderRadius: 5,
+    overflow: 'hidden',
+    marginTop: 8,
+  },
+  genderRatioBar: {
+    height: '100%',
   },
 });
 
