@@ -16,6 +16,7 @@ const formatStatName = (statName) => {
 };
 
 const capitalizeFirstLetter = (string) => {
+  if (typeof string !== 'string') return '';
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
@@ -53,6 +54,29 @@ const renderStatBar = (statName, statValue, maxValue = 255) => {
   );
 };
 
+const buildEvolutionTree = (evolutionLine) => {
+  if (!evolutionLine || evolutionLine.length === 0) return null;
+
+  const evolutionMap = {};
+  evolutionLine.forEach((evolution, index) => {
+    if (index === 0) return; // Skip the first stage (base Pokémon)
+    const previousEvolution = evolutionLine[index - 1];
+    if (!evolutionMap[previousEvolution]) {
+      evolutionMap[previousEvolution] = [];
+    }
+    evolutionMap[previousEvolution].push(evolution);
+  });
+
+  const traverseEvolution = (current) => {
+    if (!evolutionMap[current]) return current;
+    const evolutions = evolutionMap[current].map(traverseEvolution);
+    return evolutions.length > 1 ? [current, evolutions] : [current, ...evolutions];
+  };
+
+  const result = traverseEvolution(evolutionLine[0]); // Start from the base Pokémon
+  return Array.isArray(result) ? result.flat() : result; // Flatten the result to match the desired format
+};
+
 const PokemonInformationAbout = ({ pokemonData }) => {
   if (!pokemonData) {
     return <Text>Loading...</Text>;
@@ -79,6 +103,9 @@ const PokemonInformationAbout = ({ pokemonData }) => {
     : 'Genderless';
 
   const showEvolutionLine = pokemonData.evolutionLine && pokemonData.evolutionLine.length > 1;
+
+  // Adjust the evolution line structure for branching evolutions
+  const finalEvolutionLine = buildEvolutionTree(pokemonData.evolutionLine);
 
   return (
     <TouchableWithoutFeedback onPress={() => setOpen(false)}>
@@ -126,9 +153,9 @@ const PokemonInformationAbout = ({ pokemonData }) => {
           <Text style={styles.infoTitle}>Experience Group</Text>
           <Text style={styles.infoText}>{pokemonData.experienceGroup ? capitalizeFirstLetter(pokemonData.experienceGroup) : 'N/A'}</Text>
         </View>
-        {showEvolutionLine && (
+        {showEvolutionLine && finalEvolutionLine && (
           <EvolutionLine 
-            evolutionLine={pokemonData.evolutionLine} 
+            evolutionLine={finalEvolutionLine} 
           />
         )}
         <View style={styles.infoSection}>
