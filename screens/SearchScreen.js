@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
 import { FontAwesome, Foundation } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
@@ -6,13 +6,23 @@ import DescriptionModal from '../components/DescriptionModal';
 import PokemonResultsModal from '../components/DescriptionResponseModal';
 import axios from 'axios';
 import pokemonData from '../assets/pokemonData.json'; // Import pokemonData
+import { useFocusEffect } from '@react-navigation/native';
 
-const SearchScreen = ({ navigation }) => {
+const SearchScreen = ({ navigation, route }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [descriptionModalVisible, setDescriptionModalVisible] = useState(false);
   const [description, setDescription] = useState("");
   const [results, setResults] = useState([]);
   const [resultsModalVisible, setResultsModalVisible] = useState(false);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      if (route.params?.reopenModal) {
+        setResultsModalVisible(true);
+        navigation.setParams({ reopenModal: false });
+      }
+    }, [navigation, route.params])
+  );
 
   const handleCaptureImage = async () => {
     let result = await ImagePicker.launchCameraAsync({
@@ -130,7 +140,7 @@ const SearchScreen = ({ navigation }) => {
         onSelect={(pokemon) => {
           console.log('Selected Pokémon:', pokemon);
           setResultsModalVisible(false);
-          navigation.navigate('PokemonInformation', { pokemonId: pokemon.id });
+          navigation.navigate('PokemonInformation', { pokemonId: pokemon.id, reopenModal: true });
         }}
         onNoneSelected={() => {
           console.log('None of these Pokémon were selected.');

@@ -46,7 +46,7 @@ const PokemonResultsModal = ({ results, isVisible, onClose, onNoneSelected, navi
                 style={styles.card}
                 onPress={() => {
                   onClose();
-                  navigation.navigate('PokemonInformation', { pokemonId: pokemon.id });
+                  navigation.navigate('PokemonInformation', { pokemonId: pokemon.id, reopenModal: true });
                 }}
               >
                 <Image source={{ uri: pokemon.sprite }} style={styles.sprite} />
