@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Keyboard, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { FontAwesome, Foundation } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import DescriptionModal from '../components/DescriptionModal';
@@ -51,6 +51,7 @@ const SearchScreen = ({ navigation, route }) => {
   };
 
   const handleDescriptionSubmit = async () => {
+    Keyboard.dismiss(); // Dismiss the keyboard
     if (description.trim()) {
       try {
         const response = await axios.post('http://localhost:5001/description', { description });
@@ -85,69 +86,80 @@ const SearchScreen = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.pageTitle}>Who's That Pokémon?</Text>
-      <Text style={styles.pageDescription}>
-        Looking for a specific Pokémon? Let us help! Describe a Pokémon, upload an image, or take a photo. Need a Pokémon but not sure which one? Get a recommendation that fits your needs!
-      </Text>
+      <KeyboardAvoidingView
+        style={styles.innerContainer}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
+        <ScrollView contentContainerStyle={styles.scrollViewContent}>
+          <Text style={styles.pageTitle}>Who's That Pokémon?</Text>
+          <Text style={styles.pageDescription}>
+            Looking for a specific Pokémon? Let us help! Describe a Pokémon, upload an image, or take a photo. Need a Pokémon but not sure which one? Get a recommendation that fits your needs!
+          </Text>
 
-      {/* Icons Section */}
-      <View style={styles.iconsRow}>
-        <TouchableOpacity style={styles.iconButton} onPress={handleUploadImage}>
-          <FontAwesome name="image" size={30} color="#4A90E2" />
-          <Text style={styles.iconLabel}>Upload Image</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.iconButton} onPress={handleCaptureImage}>
-          <FontAwesome name="camera" size={30} color="#4A90E2" />
-          <Text style={styles.iconLabel}>Take Photo</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.iconButton} onPress={handleRecommendation}>
-          <Foundation name="lightbulb" size={30} color="#4A90E2" />
-          <Text style={styles.iconLabel}>Recommend</Text>
-        </TouchableOpacity>
-      </View>
+          {/* Icons Section */}
+          <View style={styles.iconsRow}>
+            <TouchableOpacity style={styles.iconButton} onPress={handleUploadImage}>
+              <FontAwesome name="image" size={30} color="#4A90E2" />
+              <Text style={styles.iconLabel}>Upload Image</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconButton} onPress={handleCaptureImage}>
+              <FontAwesome name="camera" size={30} color="#4A90E2" />
+              <Text style={styles.iconLabel}>Take Photo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconButton} onPress={handleRecommendation}>
+              <Foundation name="lightbulb" size={30} color="#4A90E2" />
+              <Text style={styles.iconLabel}>Recommend</Text>
+            </TouchableOpacity>
+          </View>
 
-      {/* Search Section */}
-      <View style={styles.sectionContainer}>
-        <Text style={styles.sectionTitle}>Describe a Pokémon</Text>
-        <View style={styles.searchContainer}>
-          <TextInput 
-            style={styles.searchBar} 
-            placeholder="Describe the Pokémon..." 
-            placeholderTextColor="#ccc"
-            multiline={true}
-            value={description}
-            onChangeText={setDescription}
+          {/* Search Section */}
+          <View style={styles.sectionContainer}>
+            <Text style={styles.sectionTitle}>Describe a Pokémon</Text>
+            <View style={styles.searchContainer}>
+              <TextInput
+                style={styles.searchBar}
+                placeholder="Describe the Pokémon..."
+                placeholderTextColor="#ccc"
+                multiline={false} // Ensure it’s single-line so "return" submits instead of adding a new line
+                value={description}
+                onChangeText={setDescription}
+                onSubmitEditing={handleDescriptionSubmit}
+                returnKeyType="search" // This changes the return key to a search icon on mobile keyboards
+                blurOnSubmit={true} // Ensures keyboard dismisses after pressing return
+              />
+
+            </View>
+            <TouchableOpacity style={styles.searchButton} onPress={handleDescriptionSubmit}>
+              <FontAwesome name="search" size={20} color="white" />
+              <Text style={styles.searchButtonText}>Search</Text>
+            </TouchableOpacity>
+          </View>
+
+          <DescriptionModal
+            visible={descriptionModalVisible}
+            onClose={() => setDescriptionModalVisible(false)}
+            onDescriptionSubmit={handleDescriptionSubmit}
+            description={description}
+            setDescription={setDescription}
           />
-        </View>
-        <TouchableOpacity style={styles.searchButton} onPress={handleDescriptionSubmit}>
-          <FontAwesome name="search" size={20} color="white" />
-          <Text style={styles.searchButtonText}>Search</Text>
-        </TouchableOpacity>
-      </View>
 
-      <DescriptionModal 
-        visible={descriptionModalVisible} 
-        onClose={() => setDescriptionModalVisible(false)} 
-        onDescriptionSubmit={handleDescriptionSubmit}
-        description={description}
-        setDescription={setDescription}
-      />
-
-      <PokemonResultsModal
-        results={results}
-        isVisible={resultsModalVisible}
-        onClose={() => setResultsModalVisible(false)}
-        onSelect={(pokemon) => {
-          console.log('Selected Pokémon:', pokemon);
-          setResultsModalVisible(false);
-          navigation.navigate('PokemonInformation', { pokemonId: pokemon.id, reopenModal: true });
-        }}
-        onNoneSelected={() => {
-          console.log('None of these Pokémon were selected.');
-          setResultsModalVisible(false);
-        }}
-        navigation={navigation} // Pass navigation prop here
-      />
+          <PokemonResultsModal
+            results={results}
+            isVisible={resultsModalVisible}
+            onClose={() => setResultsModalVisible(false)}
+            onSelect={(pokemon) => {
+              console.log('Selected Pokémon:', pokemon);
+              setResultsModalVisible(false);
+              navigation.navigate('PokemonInformation', { pokemonId: pokemon.id, reopenModal: true });
+            }}
+            onNoneSelected={() => {
+              console.log('None of these Pokémon were selected.');
+              setResultsModalVisible(false);
+            }}
+            navigation={navigation} // Pass navigation prop here
+          />
+        </ScrollView>
+      </KeyboardAvoidingView>
 
       {/* Disclaimer Section */}
       <Text style={styles.disclaimerText}>
@@ -161,6 +173,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#e5343d',
+  },
+  innerContainer: {
+    flex: 1,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
     paddingVertical: 30,
     paddingHorizontal: 20,
   },
