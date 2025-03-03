@@ -4,6 +4,7 @@ import { Image } from 'expo-image';
 import { useNavigation } from '@react-navigation/native';
 import typeColors from '../utils/typeColors';
 
+
 const Pokedex = ({ pokemon, useShinySprites }) => {
   const navigation = useNavigation();
 

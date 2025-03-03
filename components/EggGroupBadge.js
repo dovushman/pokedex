@@ -27,6 +27,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     justifyContent: 'center', // Center the text vertically
     alignItems: 'center', // Center the text horizontally
+    borderWidth: 0.3, // Add a thin border
+    borderColor: 'black', // Set the border color to black
   },
   text: {
     color: 'white',

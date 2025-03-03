@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import SearchScreen from './screens/SearchScreen';
 import FetchDataSplashScreen from './screens/FetchDataSplashScreen'; // Import the FetchDataSplashScreen
+import PokemonInformation from './screens/PokemonInformation';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -24,6 +25,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Splash" component={FetchDataSplashScreen} />
         <Stack.Screen name="MainTabs" component={MainTabs} />
+        <Stack.Screen name="PokemonInformation" component={PokemonInformation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
