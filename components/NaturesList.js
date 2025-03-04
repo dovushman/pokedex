@@ -13,7 +13,8 @@ const NaturesList = () => {
     const searchBarOpacity = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
-        setNatures(naturesData);
+        const sortedNatures = naturesData.sort((a, b) => a.name.localeCompare(b.name));
+        setNatures(sortedNatures);
     }, []);
 
     useEffect(() => {
