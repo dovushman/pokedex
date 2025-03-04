@@ -1,129 +1,149 @@
 import React, { useState, useRef } from 'react';
-import { View, TouchableOpacity, Animated, StyleSheet } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { View, TouchableOpacity, Animated, StyleSheet, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
-const FABMenu = ({ fabMenuItems, navigation }) => {
-  const [isFabMenuOpen, setIsFabMenuOpen] = useState(false);
-  const stackAnim = useRef(new Animated.Value(0)).current;
-  const fabIconRotation = useRef(new Animated.Value(0)).current;
-  const totalItems = fabMenuItems.length;
+const FABMenu = ({ items }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const animation = useRef(new Animated.Value(1)).current;
+  const slideAnimations = useRef(items.map(() => new Animated.Value(0))).current;
 
-  const openFabMenu = () => {
-    setIsFabMenuOpen(true);
-    Animated.parallel([
-      Animated.timing(stackAnim, {
-        toValue: totalItems,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(fabIconRotation, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
+  const toggleMenu = () => {
+    const toValue = isOpen ? 0 : 1;
 
-  const closeFabMenu = () => {
-    Animated.parallel([
-      Animated.timing(stackAnim, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-      Animated.timing(fabIconRotation, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
-    ]).start(() => {
-      setIsFabMenuOpen(false);
-    });
-  };
+    Animated.spring(animation, {
+      toValue,
+      friction: 5,
+      useNativeDriver: true,
+    }).start();
 
-  const toggleFabMenu = () => {
-    if (isFabMenuOpen) {
-      closeFabMenu();
+    if (isOpen) {
+      Animated.stagger(
+        50,
+        slideAnimations.map((anim) =>
+          Animated.timing(anim, {
+            toValue: 0,
+            duration: 300,
+            useNativeDriver: true,
+          })
+        )
+      ).start(() => setIsOpen(false));
     } else {
-      openFabMenu();
+      setIsOpen(true);
+      Animated.stagger(
+        50,
+        slideAnimations.reverse().map((anim) =>
+          Animated.timing(anim, {
+            toValue: 1,
+            duration: 300,
+            useNativeDriver: true,
+          })
+        )
+      ).start();
     }
   };
 
-  const fabIconRotate = fabIconRotation.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['0deg', '135deg'],
-  });
-
   return (
-    <>
-      <View style={styles.innerFabs}>
-        {fabMenuItems.map((item, index) => {
-          const translateY = stackAnim.interpolate({
-            inputRange: [0, totalItems],
-            outputRange: [0, -(index + 1) * 10], // Adjust this value to control the spacing
-            extrapolate: 'clamp',
-          });
-
-          const opacity = stackAnim.interpolate({
-            inputRange: [0, totalItems],
-            outputRange: [0, 1],
-            extrapolate: 'clamp',
-          });
-
-          return (
-            <Animated.View
-              key={item.label}
-              style={[
-                styles.innerFab,
+    <View style={styles.container}>
+      {items.map((item, index) => (
+        <Animated.View
+          key={index}
+          style={[
+            styles.itemContainer,
+            {
+              transform: [
                 {
-                  transform: [{ translateY }],
-                  opacity,
+                  translateY: slideAnimations[index].interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [70, 0], // Keeps items raised
+                  }),
                 },
-              ]}
-            >
-              <TouchableOpacity onPress={() => navigation.navigate(item.route)}>
-                <Ionicons name={item.icon} size={24} color="#fff" />
-              </TouchableOpacity>
-            </Animated.View>
-          );
-        })}
-      </View>
+                { scale: slideAnimations[index] },
+              ],
+              opacity: slideAnimations[index],
+            },
+          ]}
+        >
+          <Text style={styles.menuText}>{item.label}</Text>
 
-      <TouchableOpacity style={styles.fab} onPress={toggleFabMenu}>
-        <Animated.View style={{ transform: [{ rotate: fabIconRotate }] }}>
-          <Ionicons name="add" size={30} color="#fff" />
+          <TouchableOpacity
+            style={styles.iconButton}
+            onPress={() => console.log(item.route)}
+          >
+            <Icon name={item.icon} size={20} color="#fff" />
+          </TouchableOpacity>
+        </Animated.View>
+      ))}
+
+      <TouchableOpacity style={[styles.button, styles.mainButton]} onPress={toggleMenu}>
+        <Animated.View style={styles.menuIcon}>
+          <Icon name="plus" size={24} color="#fff" />
         </Animated.View>
       </TouchableOpacity>
-    </>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  fab: {
+  container: {
     position: 'absolute',
-    bottom: 15,
+    bottom: 80, // Keeps menu higher
     right: 30,
-    backgroundColor: '#007AFF',
+    alignItems: 'center',
+  },
+  itemContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    width: 160,
+    position: 'relative',
+    marginBottom: 10, // Consistent spacing
+  },
+  menuText: {
+    color: '#222', // Darker but softer than black
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    flex: 1,
+    marginRight: 12,
+    
+    // 🔹 Option 1: Add Background
+    backgroundColor: 'rgba(255, 255, 255, 0.7)', // Light background with transparency
+    paddingVertical: 4,
+    paddingHorizontal: 6,
+    borderRadius: 4,
+  },
+  iconButton: {
     width: 56,
     height: 56,
     borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',
-    elevation: 10,
+    backgroundColor: '#4A90E2',
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 2,
+    elevation: 4,
   },
-  innerFabs: {
-    position: 'absolute',
-    bottom: 20,
-    right: 37,
-  },
-  innerFab: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: '#007AFF',
+  button: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+  },
+  mainButton: {
+    backgroundColor: '#4A90E2',
+    position: 'absolute',
+    bottom: -60, // Keeps FAB in place
+    right: 0,
+  },
+  menuIcon: {
+    transform: [
+      {
+        rotate: '0deg',
+      },
+    ],
   },
 });
 

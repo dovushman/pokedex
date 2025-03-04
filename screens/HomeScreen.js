@@ -18,7 +18,7 @@ import Pokedex from '../components/Pokedex';
 import PokemonInformation from './PokemonInformation';
 import SelectedTypes from '../components/Filters/Selected/SelectedTypes';
 import FilterMenu from '../components/Filters/FilterMenu';
-import FABMenu from '../components/FABMenu';
+import FABMenu from '../components/FABMenu'; // Import the FABMenu component
 import SearchBar from '../components/SearchBar';
 
 const { width } = Dimensions.get('window');
@@ -207,7 +207,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
         setFilterLegendary={setFilterLegendary}
         clearFilters={() => { }}
       />
-      <FABMenu fabMenuItems={fabMenuItems} navigation={navigation} />
+      <FABMenu items={fabMenuItems} /> {/* Add the FABMenu component */}
     </SafeAreaView>
   );
 };
@@ -279,7 +279,6 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
-
 
 //Copilot styling - pair with pokedex
 /*
