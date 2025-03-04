@@ -20,7 +20,7 @@ const NaturesList = () => {
         if (isSearchVisible) {
             Animated.parallel([
                 Animated.timing(searchBarWidth, {
-                    toValue: 200,
+                    toValue: 293, // Increase this value to extend the search bar further left
                     duration: 300,
                     useNativeDriver: false,
                 }),
@@ -79,7 +79,12 @@ const NaturesList = () => {
                     </TouchableOpacity>
                 </Animated.View>
                 <TouchableOpacity onPress={() => setIsSearchVisible(!isSearchVisible)}>
-                    <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
+                    <Icon
+                        name="search"
+                        size={25}
+                        color="#fff"
+                        style={[styles.searchIcon, isSearchVisible && styles.transparentSearchIcon]}
+                    />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => setFilterIncreasedStat('')}>
                     <Icon name="arrow-up" size={25} color="#fff" style={styles.filterIcon} />
@@ -124,6 +129,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingVertical: 5,
         marginRight: 10,
+        position: 'absolute',
+        right: 75,
     },
     searchInput: {
         flex: 1,
@@ -131,7 +138,11 @@ const styles = StyleSheet.create({
         color: '#333',
     },
     searchIcon: {
-        marginLeft: 125,
+        marginLeft: 160,
+        opacity: 1, // Default opacity
+    },
+    transparentSearchIcon: {
+        opacity: 0, // Transparent opacity
     },
     item: {
         padding: 16,
@@ -143,7 +154,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 4,
         elevation: 5,
-        width: '90%',
+        width: '92%',
         alignSelf: 'center',
     },
     title: {
