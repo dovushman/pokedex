@@ -101,6 +101,7 @@ const NaturesList = () => {
         </SafeAreaView>
     );
 };
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -172,6 +173,12 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: '#FFD700',
         marginBottom: 4,
+    },
+    closeIcon: {
+        marginLeft: 10,
+    },
+    filterIcon: {
+        marginLeft: 10,
     },
 });
 
