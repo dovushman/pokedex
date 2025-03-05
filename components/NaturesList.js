@@ -111,12 +111,15 @@
 // export default NaturesList;
 
 
+
 import React, { useEffect, useState, useRef } from 'react';
 import { Text, View, StyleSheet, FlatList, SafeAreaView, TouchableOpacity, Animated, Dimensions, Keyboard, TextInput } from 'react-native';
 import naturesData from '../assets/naturesData.json';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const { width } = Dimensions.get('window');
+
+const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '';
 
 const NaturesList = () => {
     const [natures, setNatures] = useState([]);
@@ -193,11 +196,11 @@ const NaturesList = () => {
 
     const renderItem = ({ item }) => (
         <View style={styles.item}>
-            <Text style={styles.title}>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</Text>
-            <Text style={styles.stat}>Increased Stat: {item.increased_stat}</Text>
-            <Text style={styles.stat}>Decreased Stat: {item.decreased_stat}</Text>
-            <Text style={styles.flavor}>Likes Flavor: {item.likes_flavor}</Text>
-            <Text style={styles.flavor}>Hates Flavor: {item.hates_flavor}</Text>
+            <Text style={styles.title}>{capitalize(item.name)}</Text>
+            <Text style={styles.statGold}>Increased Stat: {capitalize(item.increased_stat)}</Text>
+            <Text style={styles.flavorGold}>Likes Flavor: {capitalize(item.likes_flavor)}</Text>
+            <Text style={styles.stat}>Decreased Stat: {capitalize(item.decreased_stat)}</Text>
+            <Text style={styles.flavor}>Hates Flavor: {capitalize(item.hates_flavor)}</Text>
         </View>
     );
 
@@ -269,7 +272,17 @@ const styles = StyleSheet.create({
         color: 'white',
         marginBottom: 4,
     },
+    statGold: {
+        fontSize: 14,
+        color: '#FFD700',
+        marginBottom: 4,
+    },
     flavor: {
+        fontSize: 14,
+        color: 'white',
+        marginBottom: 4,
+    },
+    flavorGold: {
         fontSize: 14,
         color: '#FFD700',
         marginBottom: 4,
