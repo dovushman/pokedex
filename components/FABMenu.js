@@ -15,7 +15,6 @@ const FABMenu = ({ navigation }) => {
   ];
 
   const toggleMenu = () => {
-    console.log('Toggling Menu:', isOpen ? 'Closing' : 'Opening');
     try {
       const toValue = isOpen ? 0 : 1;
 
@@ -28,11 +27,9 @@ const FABMenu = ({ navigation }) => {
 
       if (isOpen) {
         // Close the menu items
-        console.log('Closing menu items');
         Animated.stagger(
           50,
           slideAnimations.map((anim, index) => {
-            console.log(`Animating item ${index} to 0`);
             return Animated.timing(anim, {
               toValue: 0,
               duration: 300,
@@ -40,17 +37,14 @@ const FABMenu = ({ navigation }) => {
             });
           })
         ).start(() => {
-          console.log('Menu items closed');
           setIsOpen(false);
         });
       } else {
         // Open the menu items
-        console.log('Opening menu items');
         setIsOpen(true);
         Animated.stagger(
           50,
           slideAnimations.reverse().map((anim, index) => {
-            console.log(`Animating item ${index} to 1`);
             return Animated.timing(anim, {
               toValue: 1,
               duration: 300,
@@ -58,7 +52,6 @@ const FABMenu = ({ navigation }) => {
             });
           })
         ).start(() => {
-          console.log('Menu items opened');
         });
       }
     } catch (error) {

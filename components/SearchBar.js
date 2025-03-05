@@ -1,5 +1,131 @@
-import React, { useRef, useEffect } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Animated, StyleSheet, Keyboard, Dimensions } from 'react-native';
+// import React, { useEffect, useRef } from 'react';
+// import { View, TextInput, StyleSheet, TouchableOpacity, Animated, Dimensions, Text } from 'react-native';
+// import Icon from 'react-native-vector-icons/FontAwesome';
+
+// const { width } = Dimensions.get('window');
+
+// const SearchBar = ({
+//   searchQuery,
+//   setSearchQuery,
+//   isSearchVisible,
+//   setIsSearchVisible,
+//   toggleFilterMenu,
+//   handleClearSearch, // Add handleClearSearch prop
+//   extraIcons = null,
+// }) => {
+//   const searchBarWidth = useRef(new Animated.Value(0)).current;
+//   const searchBarOpacity = useRef(new Animated.Value(0)).current;
+
+//   useEffect(() => {
+//     if (isSearchVisible) {
+//       Animated.parallel([
+//         Animated.timing(searchBarWidth, {
+//           toValue: width - 95,
+//           duration: 300,
+//           useNativeDriver: false,
+//         }),
+//         Animated.timing(searchBarOpacity, {
+//           toValue: 1,
+//           duration: 300,
+//           useNativeDriver: false,
+//         }),
+//       ]).start();
+//     } else {
+//       Animated.parallel([
+//         Animated.timing(searchBarWidth, {
+//           toValue: 0,
+//           duration: 300,
+//           useNativeDriver: false,
+//         }),
+//         Animated.timing(searchBarOpacity, {
+//           toValue: 0,
+//           duration: 300,
+//           useNativeDriver: false,
+//         }),
+//       ]).start();
+//     }
+//   }, [isSearchVisible]);
+
+//   return (
+//     <View style={styles.headerContainer}>
+//       <Text style={styles.classicHeader}>Natures</Text>
+//       <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
+//         <TextInput
+//           style={styles.searchInput}
+//           placeholder="Search Natures"
+//           placeholderTextColor="#999"
+//           value={searchQuery}
+//           onChangeText={setSearchQuery}
+//         />
+//         <TouchableOpacity onPress={handleClearSearch}>
+//           <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
+//         </TouchableOpacity>
+//       </Animated.View>
+//       <View style={styles.iconContainer}>
+//         <TouchableOpacity onPress={() => setIsSearchVisible(!isSearchVisible)}>
+//           <Icon
+//             name="search"
+//             size={25}
+//             color="#fff"
+//             style={[styles.searchIcon, isSearchVisible && styles.transparentSearchIcon]}
+//           />
+//         </TouchableOpacity>
+//         {extraIcons}
+//       </View>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   headerContainer: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     paddingHorizontal: 16,
+//     marginBottom: 16,
+//   },
+//   classicHeader: {
+//     color: 'white',
+//     fontSize: 24,
+//     fontWeight: 'bold',
+//   },
+//   searchContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     backgroundColor: '#fff',
+//     borderRadius: 20,
+//     paddingHorizontal: 10,
+//     paddingVertical: 5,
+//     position: 'absolute',
+//     right: 80,
+//   },
+//   searchInput: {
+//     flex: 1,
+//     fontSize: 16,
+//     color: '#333',
+//   },
+//   searchIcon: {
+//     marginRight: 4,
+//   },
+//   transparentSearchIcon: {
+//     opacity: 0,
+//   },
+//   closeIcon: {
+//     marginLeft: 10,
+//   },
+//   iconContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     marginLeft: 15,
+//   },
+// });
+
+// export default SearchBar;
+
+
+
+import React, { useEffect, useRef } from 'react';
+import { View, TextInput, StyleSheet, TouchableOpacity, Animated, Dimensions, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const { width } = Dimensions.get('window');
@@ -10,6 +136,7 @@ const SearchBar = ({
   isSearchVisible,
   setIsSearchVisible,
   toggleFilterMenu,
+  extraIcons = null,
 }) => {
   const searchBarWidth = useRef(new Animated.Value(0)).current;
   const searchBarOpacity = useRef(new Animated.Value(0)).current;
@@ -18,7 +145,7 @@ const SearchBar = ({
     if (isSearchVisible) {
       Animated.parallel([
         Animated.timing(searchBarWidth, {
-          toValue: width - 100,
+          toValue: width - 95,
           duration: 300,
           useNativeDriver: false,
         }),
@@ -44,49 +171,52 @@ const SearchBar = ({
     }
   }, [isSearchVisible]);
 
-  const toggleSearchBar = () => {
-    console.log('toggleSearchBar called');
-    setIsSearchVisible((prev) => !prev);
-  };
-
-  const handleCloseSearch = () => {
-    console.log('handleCloseSearch called');
-    console.log('searchQuery:', searchQuery);
+  const handleClearSearch = () => {
     if (searchQuery !== '') {
-      console.log('Clearing search query');
       setSearchQuery('');
     } else {
-      console.log('Closing search bar');
-      setIsSearchVisible(false);
-      Keyboard.dismiss();
+      Animated.parallel([
+        Animated.timing(searchBarWidth, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+        Animated.timing(searchBarOpacity, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: false,
+        }),
+      ]).start(() => {
+        setIsSearchVisible(false);
+      });
     }
   };
 
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.classicHeader}>Pokédex</Text>
-      <View style={styles.searchIconContainer}>
-        <TouchableOpacity onPress={toggleSearchBar}>
-          <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
+      <Text style={styles.classicHeader}>Natures</Text>
+      <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Search Natures"
+          placeholderTextColor="#999"
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
+        <TouchableOpacity onPress={handleClearSearch}>
+          <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
         </TouchableOpacity>
-        <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
-          <TextInput
-            style={styles.searchInput}
-            placeholder="Search Pokémon"
-            placeholderTextColor="#999"
-            value={searchQuery}
-            onChangeText={setSearchQuery}
+      </Animated.View>
+      <View style={styles.iconContainer}>
+        <TouchableOpacity onPress={() => setIsSearchVisible(!isSearchVisible)}>
+          <Icon
+            name="search"
+            size={25}
+            color="#fff"
+            style={[styles.searchIcon, isSearchVisible && styles.transparentSearchIcon]}
           />
-          <TouchableOpacity onPress={() => {
-            console.log('Close button pressed');
-            handleCloseSearch();
-          }}>
-            <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
-          </TouchableOpacity>
-        </Animated.View>
-        <TouchableOpacity onPress={toggleFilterMenu}>
-          <Icon name="filter" size={25} color="#fff" style={{ marginLeft: 15 }} />
         </TouchableOpacity>
+        {extraIcons}
       </View>
     </View>
   );
@@ -105,10 +235,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-  searchIconContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -117,7 +243,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     position: 'absolute',
-    right: 70,
+    right: 80,
   },
   searchInput: {
     flex: 1,
@@ -125,10 +251,18 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   searchIcon: {
-    marginRight: 10,
+    marginRight: 4,
+  },
+  transparentSearchIcon: {
+    opacity: 0,
   },
   closeIcon: {
     marginLeft: 10,
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 15,
   },
 });
 
