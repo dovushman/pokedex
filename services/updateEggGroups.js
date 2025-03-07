@@ -1,3 +1,7 @@
+
+//file logs egg groups and updates wrong ones on pokemon json.
+
+
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';

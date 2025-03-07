@@ -111,7 +111,6 @@
 // export default NaturesList;
 
 
-
 import React, { useEffect, useState, useRef } from 'react';
 import { Text, View, StyleSheet, FlatList, SafeAreaView, TouchableOpacity, Animated, Dimensions, Keyboard, TextInput } from 'react-native';
 import naturesData from '../assets/naturesData.json';
@@ -119,7 +118,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 const { width } = Dimensions.get('window');
 
-const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '';
+const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '-';
 
 const NaturesList = () => {
     const [natures, setNatures] = useState([]);

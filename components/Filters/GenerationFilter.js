@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import pokemonData from '../../assets/pokemonData.json';
 
 const GenerationFilter = ({ selectedGeneration, setSelectedGeneration, toggleFilterSection, expandedFilter }) => {
-  const generations = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const [generations, setGenerations] = useState([]);
+
+  useEffect(() => {
+    // Extract unique generations from pokemonData
+    const uniqueGenerations = [...new Set(pokemonData.map(pokemon => pokemon.generation))];
+    setGenerations(uniqueGenerations);
+    // console.log('Generations:', uniqueGenerations);
+  }, []);
 
   const toggleGeneration = (generation) => {
-    setSelectedGeneration((prevGeneration) => (prevGeneration === generation ? '' : generation));
+    // console.log('Toggling generation:', generation);
+    setSelectedGeneration((prevGeneration) => {
+      const newGeneration = prevGeneration === generation ? '' : generation;
+      // console.log('New Selected Generation:', newGeneration);
+      return newGeneration;
+    });
   };
+  
 
   return (
     <View>
@@ -20,7 +34,7 @@ const GenerationFilter = ({ selectedGeneration, setSelectedGeneration, toggleFil
               key={generation}
               style={[
                 styles.generationButton,
-                selectedGeneration === generation && { backgroundColor: '#d32f2f' }
+                selectedGeneration === generation ? { backgroundColor: '#d32f2f' } : {}
               ]}
               onPress={() => toggleGeneration(generation)}
             >
@@ -28,8 +42,7 @@ const GenerationFilter = ({ selectedGeneration, setSelectedGeneration, toggleFil
                 styles.generationText,
                 selectedGeneration === generation && { color: 'white' }
               ]}>
-                Gen {generation}
-              </Text>
+                Gen {generation.split('-')[1].toUpperCase()}              </Text>
             </TouchableOpacity>
           ))}
         </View>

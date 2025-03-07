@@ -20,7 +20,8 @@
 // import FilterMenu from '../components/Filters/FilterMenu';
 // import FABMenu from '../components/FABMenu';
 // import SearchBar from '../components/SearchBar';
-// import NaturesList from '../components/NaturesList'; // Import NaturesList
+// import NaturesList from '../components/NaturesList';
+// import ItemScreen from './ItemScreen'; // Import ItemScreen
 
 // const { width } = Dimensions.get('window');
 // const Stack = createStackNavigator();
@@ -34,8 +35,8 @@
 //   const [filterGeneration, setFilterGeneration] = useState('');
 //   const [filterLegendary, setFilterLegendary] = useState(null);
 //   const [expandedFilter, setExpandedFilter] = useState('');
-//   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false); // state for menu visibility
-//   const [isAnimating, setIsAnimating] = useState(false); // state for preventing multiple animations
+//   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
+//   const [isAnimating, setIsAnimating] = useState(false);
 //   const [useShinySprites, setUseShinySprites] = useState(false);
 
 //   const slideAnim = useRef(new Animated.Value(width)).current;
@@ -46,11 +47,10 @@
 //     setUseShinySprites((prev) => !prev);
 //   };
 
-//   // Remove selected type from the Set (optimized)
 //   const removeType = useCallback((type) => {
 //     setSelectedTypes((prevSelectedTypes) => {
 //       const newSet = new Set(prevSelectedTypes);
-//       newSet.delete(type); // O(1) deletion
+//       newSet.delete(type);
 //       return newSet;
 //     });
 //   }, []);
@@ -113,7 +113,7 @@
 //     }
 //   };
 
-//   const handleCloseSearch = () => {
+//   const handleClearSearch = () => {
 //     if (searchQuery !== '') {
 //       setSearchQuery('');
 //     } else {
@@ -151,7 +151,7 @@
 //               value={searchQuery}
 //               onChangeText={setSearchQuery}
 //             />
-//             <TouchableOpacity onPress={handleCloseSearch}>
+//             <TouchableOpacity onPress={handleClearSearch}>
 //               <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
 //             </TouchableOpacity>
 //           </Animated.View>
@@ -218,7 +218,12 @@
 //       />
 //       <Stack.Screen
 //         name="Natures"
-//         component={NaturesList} // Add NaturesList screen
+//         component={NaturesList}
+//         options={{ headerShown: false }}
+//       />
+//       <Stack.Screen
+//         name="Items"
+//         component={ItemScreen} // Add ItemScreen to the navigation stack
 //         options={{ headerShown: false }}
 //       />
 //     </Stack.Navigator>
@@ -276,6 +281,8 @@
 // export default HomeScreen;
 
 
+
+
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   View,
@@ -295,10 +302,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Pokedex from '../components/Pokedex';
 import PokemonInformation from './PokemonInformation';
 import SelectedTypes from '../components/Filters/Selected/SelectedTypes';
+import SelectedGenerations from '../components/Filters/Selected/SelectedGenerations';
 import FilterMenu from '../components/Filters/FilterMenu';
 import FABMenu from '../components/FABMenu';
 import SearchBar from '../components/SearchBar';
 import NaturesList from '../components/NaturesList';
+import ItemScreen from './ItemScreen';
 
 const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
@@ -309,7 +318,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState(new Set());
-  const [filterGeneration, setFilterGeneration] = useState('');
+  const [selectedGeneration, setSelectedGeneration] = useState('');
   const [filterLegendary, setFilterLegendary] = useState(null);
   const [expandedFilter, setExpandedFilter] = useState('');
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
@@ -319,6 +328,15 @@ const HomeScreenComponent = ({ route, navigation }) => {
   const slideAnim = useRef(new Animated.Value(width)).current;
   const searchBarWidth = useRef(new Animated.Value(0)).current;
   const searchBarOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    // console.log('Initial Pokemon Data:', initialPokemonData);
+    setPokemonData(initialPokemonData || []);
+  }, [initialPokemonData]);
+
+  useEffect(() => {
+    // console.log('Pokemon Data:', pokemonData);
+  }, [pokemonData]);
 
   const toggleShinySprites = () => {
     setUseShinySprites((prev) => !prev);
@@ -332,25 +350,51 @@ const HomeScreenComponent = ({ route, navigation }) => {
     });
   }, []);
 
+  const removeGeneration = useCallback(() => {
+    setSelectedGeneration('');
+  }, []);
+
   const filteredData = useMemo(() => {
     if (!pokemonData) return [];
-
+  
     const lowercaseSearchQuery = searchQuery.toLowerCase();
     const selectedTypesSet = new Set(selectedTypes);
-
+  
+    // console.log('Filtering data with the following parameters:');
+    // console.log('Selected Generation:', selectedGeneration);
+    // console.log('Selected Types:', selectedTypes);
+    // console.log('Search Query:', searchQuery);
+  
     const filtered = pokemonData
       .filter((pokemon) => {
-        if (selectedTypesSet.size === 0) return true;
-
-        const pokemonTypeSet = new Set(JSON.parse(pokemon.types).map((t) => t.toLowerCase()));
-        return [...selectedTypesSet].some((type) => pokemonTypeSet.has(type));
-      })
-      .filter((pokemon) =>
-        lowercaseSearchQuery === '' || pokemon.name.toLowerCase().includes(lowercaseSearchQuery)
-      );
-
+        // console.log('Pokemon Object:', JSON.stringify(pokemon, null, 2)); // Log the entire Pokémon object
+  
+        // Check if the Pokémon's generation matches the selected generation
+        if (selectedGeneration && pokemon.generation !== selectedGeneration) {
+          return false;
+        }
+  
+        // Check if the Pokémon's types match the selected types
+        if (selectedTypesSet.size > 0) {
+          const pokemonTypeSet = new Set(pokemon.types.map((t) => t.toLowerCase()));
+          if (![...selectedTypesSet].some((type) => pokemonTypeSet.has(type))) {
+            return false;
+          }
+        }
+  
+        // Check if the Pokémon's name matches the search query
+        if (lowercaseSearchQuery && !pokemon.name.toLowerCase().includes(lowercaseSearchQuery)) {
+          return false;
+        }
+  
+        return true;
+      });
+  
+    // console.log('Filtered Data:', filtered);
     return filtered;
-  }, [selectedTypes, searchQuery, pokemonData]);
+  }, [selectedTypes, searchQuery, pokemonData, selectedGeneration]);
+  // console.log('Filtered Data Length:', filteredData.length);
+
 
   const toggleFilterMenu = () => {
     if (isAnimating) return;
@@ -412,6 +456,10 @@ const HomeScreenComponent = ({ route, navigation }) => {
     }
   };
 
+  useEffect(() => {
+    // console.log('Selected Generation:', selectedGeneration);
+  }, [selectedGeneration]);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -446,6 +494,7 @@ const HomeScreenComponent = ({ route, navigation }) => {
         </View>
       </View>
       <SelectedTypes selectedTypes={selectedTypes} removeType={removeType} />
+      <SelectedGenerations selectedGeneration={selectedGeneration} removeGeneration={removeGeneration} />
       <Animated.FlatList
         contentContainerStyle={styles.contentContainer}
         data={filteredData}
@@ -468,8 +517,8 @@ const HomeScreenComponent = ({ route, navigation }) => {
         toggleFilterSection={toggleFilterSection}
         selectedTypes={selectedTypes}
         setSelectedTypes={setSelectedTypes}
-        filterGeneration={filterGeneration}
-        setFilterGeneration={setFilterGeneration}
+        filterGeneration={selectedGeneration}
+        setFilterGeneration={setSelectedGeneration}
         filterLegendary={filterLegendary}
         setFilterLegendary={setFilterLegendary}
         clearFilters={() => { }}
@@ -496,6 +545,11 @@ const HomeScreen = ({ route }) => {
       <Stack.Screen
         name="Natures"
         component={NaturesList}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Items"
+        component={ItemScreen} // Add ItemScreen to the navigation stack
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
@@ -551,6 +605,14 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
+
+
+
+
+
+
+
+
 
 //Copilot styling - pair with pokedex
 /*

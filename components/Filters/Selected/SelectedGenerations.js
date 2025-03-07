@@ -13,12 +13,14 @@ const FilterPill = ({ generation, onPress }) => {
   );
 };
 
-const SelectedGenerations = memo(({ selectedGenerations, removeGeneration }) => {
+const SelectedGenerations = memo(({ selectedGeneration, removeGeneration }) => {
+  if (!selectedGeneration || typeof selectedGeneration !== 'string') return null;
+
+  const generationText = selectedGeneration.replace('generation-', '').toUpperCase();
+
   return (
     <View style={styles.container}>
-      {Array.from(selectedGenerations).map((generation) => (
-        <FilterPill key={generation} generation={generation} onPress={removeGeneration} />
-      ))}
+      <FilterPill generation={generationText} onPress={removeGeneration} />
     </View>
   );
 });

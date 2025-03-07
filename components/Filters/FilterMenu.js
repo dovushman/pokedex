@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Animated, SafeAreaView, StyleSheet } from 'react-native';
 import TypeFilter from './TypeFilter'; 
+import GenerationFilter from './GenerationFilter'; // Import GenerationFilter
+
 const FilterMenu = ({
   isFilterMenuOpen,
   isAnimating,
@@ -33,18 +35,12 @@ const FilterMenu = ({
               />
 
               {/* Generation Filter */}
-              <TouchableOpacity onPress={() => toggleFilterSection('generation')} style={styles.filterToggle}>
-                <Text style={styles.filterText}>Filter by Generation</Text>
-              </TouchableOpacity>
-              {expandedFilter === 'generation' && (
-                <View style={styles.filterOptions}>
-                  {['1', '2', '3', '4'].map((gen) => (
-                    <TouchableOpacity key={gen} onPress={() => setFilterGeneration(parseInt(gen))} style={styles.filterButton}>
-                      <Text style={styles.filterButtonText}>Gen {gen}</Text>
-                    </TouchableOpacity>
-                  ))}
-                </View>
-              )}
+              <GenerationFilter
+                selectedGeneration={filterGeneration}
+                setSelectedGeneration={setFilterGeneration}
+                toggleFilterSection={toggleFilterSection}
+                expandedFilter={expandedFilter}
+              />
 
               {/* Legendary Filter */}
               <TouchableOpacity onPress={() => toggleFilterSection('legendary')} style={styles.filterToggle}>
@@ -80,7 +76,6 @@ const FilterMenu = ({
     )
   );
 };
-
 
 const styles = StyleSheet.create({
   overlay: {
