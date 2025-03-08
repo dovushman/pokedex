@@ -296,7 +296,7 @@ const SearchScreen = ({ navigation, route }) => {
         type: 'image/jpeg',
       });
   
-      const response = await fetch('http://192.168.1.37:5001/recognize', { // Replace with your local network IP address
+      const response = await fetch('http://localhost:5001/recognize', { // Replace with your local network IP address
         method: 'POST',
         body: formData,
         headers: {
@@ -333,7 +333,7 @@ const SearchScreen = ({ navigation, route }) => {
     Keyboard.dismiss(); // Dismiss the keyboard
     if (description.trim()) {
       try {
-        const response = await axios.post('http://192.168.1.37:5001/description', { description }); // Replace with your local network IP address
+        const response = await axios.post('http://localhost:5001/description', { description }); // Replace with your local network IP address
         console.log('Description response:', response.data);
         if (response.data && Array.isArray(response.data.identifiedPokemon) && response.data.identifiedPokemon.length > 0) {
           const identifiedPokemonWithIds = response.data.identifiedPokemon.map((pokemon) => {
