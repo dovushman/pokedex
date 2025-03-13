@@ -7,6 +7,7 @@ import SearchScreen from './screens/SearchScreen';
 import FetchDataSplashScreen from './screens/FetchDataSplashScreen';
 import PokemonInformation from './screens/PokemonInformation';
 import TeamBuilderHomeScreen from './screens/TeamBuilderHomeScreen'; // Import the TeamBuilderHomeScreen
+import TeamEditorScreen from './screens/TeamEditorScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -30,6 +31,7 @@ export default function App() {
         <Stack.Screen name="Splash" component={FetchDataSplashScreen} />
         <Stack.Screen name="MainTabs" component={MainTabs} />
         <Stack.Screen name="PokemonInformation" component={PokemonInformation} />
+        <Stack.Screen name="TeamEditor" component={TeamEditorScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

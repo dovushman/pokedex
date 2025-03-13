@@ -12,12 +12,26 @@ import {
   TextInput,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import NoTeamsView from '../components/NoTeamsView';
+import TeamListView from '../components/TeamListView';
 
 const { width } = Dimensions.get('window');
 
-const TeamBuilderHomeScreen = () => {
+const TeamBuilderHomeScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [teams, setTeams] = useState([
+    {
+      id: 1,
+      name: 'Sample Team',
+      pokemonSprites: [1, 4, 7],
+    },
+    {
+      id: 2,
+      name: 'Competitive Team',
+      pokemonSprites: [25, 6, 3, 9, 150, 248],
+    },
+  ]);
   const searchBarWidth = useRef(new Animated.Value(0)).current;
   const searchBarOpacity = useRef(new Animated.Value(0)).current;
 
@@ -61,6 +75,23 @@ const TeamBuilderHomeScreen = () => {
     }
   };
 
+  const handleCreateTeam = () => {
+    navigation.navigate('TeamEditor', { saveTeam });
+  };
+
+  const saveTeam = (team) => {
+    setTeams((prevTeams) => {
+      const existingTeamIndex = prevTeams.findIndex((t) => t.id === team.id);
+      if (existingTeamIndex !== -1) {
+        const updatedTeams = [...prevTeams];
+        updatedTeams[existingTeamIndex] = team;
+        return updatedTeams;
+      } else {
+        return [...prevTeams, team];
+      }
+    });
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -69,7 +100,7 @@ const TeamBuilderHomeScreen = () => {
           <TouchableOpacity onPress={toggleSearchBar}>
             <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={handleCreateTeam}>
             <Icon name="plus" size={28.5} color="#fff" style={styles.addIcon} />
           </TouchableOpacity>
           <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
@@ -87,7 +118,17 @@ const TeamBuilderHomeScreen = () => {
         </View>
       </View>
       <View style={styles.contentContainer}>
-        <Text>Hello World</Text>
+        {teams.length === 0 ? (
+          <NoTeamsView onCreateTeam={handleCreateTeam} />
+        ) : (
+          <FlatList
+            data={teams}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
+              <TeamListView team={item} />
+            )}
+          />
+        )}
       </View>
     </SafeAreaView>
   );
@@ -139,7 +180,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   contentContainer: {
+    flex: 1,
     padding: 16,
+  },
+  teamContainer: {
+    // Styles for team container
   },
 });
 
