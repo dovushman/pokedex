@@ -1,23 +1,27 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import SearchScreen from './screens/SearchScreen';
-import FetchDataSplashScreen from './screens/FetchDataSplashScreen'; // Import the FetchDataSplashScreen
+import FetchDataSplashScreen from './screens/FetchDataSplashScreen';
 import PokemonInformation from './screens/PokemonInformation';
+import TeamBuilderHomeScreen from './screens/TeamBuilderHomeScreen'; // Import the TeamBuilderHomeScreen
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const MainTabs = ({ route }) => (
-  <Tab.Navigator screenOptions={{ headerShown: false }}>
-    <Tab.Screen name="Home" component={HomeScreen} initialParams={route.params} />
-    <Tab.Screen name="Search" component={SearchScreen} />
-    <Tab.Screen name="Details" component={DetailsScreen} />
-  </Tab.Navigator>
-);
+const MainTabs = ({ route }) => {
+  const params = route?.params || {}; // Ensure params exist
+
+  return (
+    <Tab.Navigator screenOptions={{ headerShown: false }}>
+      <Tab.Screen name="Home" component={HomeScreen} initialParams={params} />
+      <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen name="Team Builder" component={TeamBuilderHomeScreen} /> 
+    </Tab.Navigator>
+  );
+};
 
 export default function App() {
   return (
