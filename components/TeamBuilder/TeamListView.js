@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Image } from 'expo-image';
 import { useNavigation } from '@react-navigation/native';
-import getPokemonSprite from '../utils/getPokemonSprite'; // Import the utility function
+import getPokemonSprite from '../../utils/getPokemonSprite'; // Import the utility function
 
 const TeamListView = ({ team }) => {
   const navigation = useNavigation();

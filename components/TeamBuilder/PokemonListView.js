@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput } from 'react-native';
-import pokemonData from '../assets/pokemonData.json';
+import pokemonData from '../../assets/pokemonData.json';
 import { Image } from 'expo-image';
-import { capitalizeWords } from '../utils/capitalize';
+import { capitalizeWords } from '../../utils/capitalize';
 import PokemonListViewStats from './PokemonListViewStats';
 
 const PokemonListView = ({ onSelectPokemon, onClose }) => {

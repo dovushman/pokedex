@@ -12,8 +12,8 @@ import {
   TextInput,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import NoTeamsView from '../components/NoTeamsView';
-import TeamListView from '../components/TeamListView';
+import NoTeamsView from '../components/TeamBuilder/NoTeamsView';
+import TeamListView from '../components/TeamBuilder/TeamListView';
 
 const { width } = Dimensions.get('window');
 

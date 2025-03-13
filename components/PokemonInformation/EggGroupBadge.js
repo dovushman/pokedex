@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import eggGroupColors from '../utils/eggGroupColors';
+import eggGroupColors from '../../utils/eggGroupColors';
 
 const capitalizeWords = (str) => {
   return str.replace(/\b\w/g, char => char.toUpperCase());

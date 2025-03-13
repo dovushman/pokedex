@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableWithoutFeedback, ScrollView } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
-import typeColors from '../utils/typeColors'; // Import typeColors
+import typeColors from '../../utils/typeColors'; // Import typeColors
 import EvolutionLine from './EvolutionLine'; // Import EvolutionLine
 import EggGroupBadge from './EggGroupBadge'; // Import EggGroupBadge
 

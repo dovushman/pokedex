@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'; // Import the icon library
-import pokemonData from '../assets/pokemonData.json'; // Adjust the path as necessary
+import pokemonData from '../../assets/pokemonData.json'; // Adjust the path as necessary
 
 const capitalizeFirstLetter = (string) => {
   if (typeof string !== 'string') {

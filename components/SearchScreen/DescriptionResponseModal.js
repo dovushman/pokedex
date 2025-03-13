@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, Image, Modal, StyleSheet, Pressable } from "react-native";
-import typeColors from "../utils/typeColors";
-import pokemonData from "../assets/pokemonData.json";
+import typeColors from "../../utils/typeColors";
+import pokemonData from "../../assets/pokemonData.json";
 
 // Utility function to capitalize the first letter of a string
 const capitalizeFirstLetter = (string) => {

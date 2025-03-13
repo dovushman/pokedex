@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Keyboard, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { FontAwesome, Foundation } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
-import DescriptionModal from '../components/DescriptionModal';
-import PokemonResultsModal from '../components/DescriptionResponseModal';
-import ImageResponseModal from '../components/ImageResponseModal';
+import DescriptionModal from '../components/SearchScreen/DescriptionModal';
+import PokemonResultsModal from '../components/SearchScreen/DescriptionResponseModal';
+import ImageResponseModal from '../components/SearchScreen/ImageResponseModal';
 import axios from 'axios';
 import pokemonData from '../assets/pokemonData.json'; // Import pokemonData
 import { useFocusEffect } from '@react-navigation/native';

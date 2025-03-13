@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import { Image } from 'expo-image';
-import typeColors from '../utils/typeColors';
+import typeColors from '../../utils/typeColors';
 
 // Utility function to capitalize the first letter of a string
 const capitalizeFirstLetter = (string) => {

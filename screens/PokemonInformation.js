@@ -4,8 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import DropDownPicker from 'react-native-dropdown-picker';
 import pokemonData from '../assets/pokemonData.json';
-import PokemonInformationBattle from '../components/PokemonInformationBattle';
-import PokemonInformationAbout from '../components/PokemonInformationAbout';
+import PokemonInformationBattle from '../components/PokemonInformation/PokemonInformationBattle';
+import PokemonInformationAbout from '../components/PokemonInformation/PokemonInformationAbout';
 import { LinearGradient } from 'expo-linear-gradient';
 import typeColors from '../utils/typeColors'; // Import typeColors
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import abilitiesData from '../assets/abilitiesData.json'; // Import abilities data
-import typeMatchupsData from '../assets/typeMatchupsData.json'; // Import type matchups data
+import abilitiesData from '../../assets/abilitiesData.json'; // Import abilities data
+import typeMatchupsData from '../../assets/typeMatchupsData.json'; // Import type matchups data
 
 const getAbilityDetails = (abilityName) => {
   const ability = abilitiesData.find((a) => a.name === abilityName);
