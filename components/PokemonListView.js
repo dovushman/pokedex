@@ -1,11 +1,17 @@
-import React from 'react';
-import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, FlatList, TouchableOpacity, StyleSheet, TouchableWithoutFeedback, TextInput } from 'react-native';
 import pokemonData from '../assets/pokemonData.json';
 import { Image } from 'expo-image';
 import { capitalizeWords } from '../utils/capitalize';
 import PokemonListViewStats from './PokemonListViewStats';
 
-const PokemonListView = ({ onSelectPokemon }) => {
+const PokemonListView = ({ onSelectPokemon, onClose }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredPokemonData = pokemonData.filter((pokemon) =>
+    pokemon.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   const renderItem = ({ item }) => {
     const abilityNames = item.abilities.map((ability) => capitalizeWords(ability.name));
     const typeNames = item.types.map(capitalizeWords).join(', ');
@@ -33,27 +39,48 @@ const PokemonListView = ({ onSelectPokemon }) => {
   };
 
   return (
-    <FlatList
-      data={pokemonData}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={renderItem}
-      contentContainerStyle={styles.listContainer}
-    />
+    <TouchableWithoutFeedback onPress={onClose}>
+      <View style={styles.container}>
+        <TextInput
+          style={styles.searchBar}
+          placeholder="Search Pokémon"
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
+        <FlatList
+          data={filteredPokemonData}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={renderItem}
+          contentContainerStyle={styles.listContainer}
+        />
+      </View>
+    </TouchableWithoutFeedback>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  searchBar: {
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    margin: 8,
+  },
   listContainer: {
     padding: 8,
   },
   pokemonContainer: {
     flexDirection: 'row',
-    borderBottomWidth: 1, // Add this line to create a bottom border
-    borderBottomColor: '#ccc', // Add this line to set the border color
+    borderBottomWidth: 1,
+    borderBottomColor: '#ccc',
     padding: 8,
     marginBottom: 8,
     position: 'relative',
-    alignItems: 'center', // Center vertically
+    alignItems: 'center',
   },
   pokemonInfo: {
     flex: 1,
