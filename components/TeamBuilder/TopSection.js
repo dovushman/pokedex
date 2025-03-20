@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { capitalizeWords } from '../../utils/capitalize';
+import typeColors from '../../utils/typeColors';
 
 const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
   const [nickname, setNickname] = useState(pokemon.nickname || '');
@@ -12,15 +13,27 @@ const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
   };
 
   const capitalizedPokemonName = capitalizeWords(pokemon.name);
+  const spriteUri = pokemon.shiny ? pokemon.shinySprite : pokemon.sprite;
+
+  const renderTypes = () => {
+    return pokemon.types.map((type) => (
+      <Text key={type} style={[styles.type, { backgroundColor: typeColors[type] }]}>
+        {type}
+      </Text>
+    ));
+  };
 
   return (
     <View style={styles.topSection}>
       <View style={styles.spriteContainer}>
         <Image
-          source={{ uri: pokemon.sprite }}
+          source={{ uri: spriteUri }}
           style={styles.sprite}
           resizeMode="contain"
         />
+        <View style={styles.typesContainer}>
+          {renderTypes()}
+        </View>
       </View>
       <View style={styles.rightContent}>
         <View style={styles.fieldsContainer}>
@@ -88,10 +101,27 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingRight: 10,
+    paddingLeft: 10, // Added padding to move the sprite and types to the right
   },
   sprite: {
     width: 150,
     height: 150,
+  },
+  typesContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginVertical: 10,
+    paddingLeft: 10, // Added padding to move the types to the right
+  },
+  type: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    textTransform: 'capitalize',
+    color: '#fff',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+    marginRight: 4,
   },
   rightContent: {
     width: '60%',

@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import React, { useState, useMemo } from 'react';
+import { ScrollView, StyleSheet, View, Text } from 'react-native';
 import TopSection from './TopSection';
 import BottomSection from './BottomSection';
 import Moves from './Moves';
 import Stats from './Stats';
+import typeColors from '../../utils/typeColors';
 
 const PokemonDetails = ({ pokemon, onNicknameChange }) => {
   const [activeTab, setActiveTab] = useState('details');
+  const [isShiny, setIsShiny] = useState(pokemon.shiny);
+  const [gender, setGender] = useState(pokemon.gender);
+
+  const handleShinyChange = (value) => {
+    setIsShiny(value);
+    pokemon.shiny = value;
+  };
+
+  const handleGenderChange = (value) => {
+    setGender(value);
+    pokemon.gender = value;
+  };
 
   const renderTabContent = () => {
     switch (activeTab) {
       case 'details':
-        return <BottomSection styles={styles} pokemon={pokemon} />;
+        return <BottomSection styles={styles} pokemon={pokemon} onShinyChange={handleShinyChange} onGenderChange={handleGenderChange} />;
       case 'moves':
         return <Moves styles={styles} moves={pokemon.moves} />;
       case 'stats':
@@ -39,91 +52,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#e5343d',
-  },
-  header: {
-    padding: 10,
-  },
-  topSection: {
-    flexDirection: 'row',
-    marginBottom: 10,
-  },
-  spriteContainer: {
-    width: '40%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingRight: 10,
-  },
-  sprite: {
-    width: 150,
-    height: 150,
-  },
-  rightContent: {
-    width: '60%',
-    justifyContent: 'space-between',
-    paddingRight: 10, // Added padding to the right side
-  },
-  fieldsContainer: {
-    marginBottom: 10,
-    paddingRight: 10, // Added padding to the right side
-  },
-  fieldWrapper: {
-    marginBottom: 8,
-  },
-  label: {
-    fontSize: 14,
-    fontWeight: '500',
-    marginBottom: 4,
-    color: '#fff',
-  },
-  input: {
-    backgroundColor: '#fff',
-    borderWidth: 1,
-    borderColor: '#a0a8b8',
-    borderRadius: 4,
-    padding: 8,
-    fontSize: 14,
-    color: '#333',
-  },
-  actionButtons: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 10,
-  },
-  actionButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#e5343d',
-    borderWidth: 1,
-    borderColor: '#fff',
-    borderRadius: 4,
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-  },
-  actionButtonText: {
-    fontSize: 12,
-    marginLeft: 4,
-    color: '#fff',
-  },
-  tabs: {
-    flexDirection: 'row',
-    backgroundColor: '#c0c8d8',
-    borderTopLeftRadius: 4,
-    borderTopRightRadius: 4,
-  },
-  tab: {
-    flex: 1,
-    paddingVertical: 10,
-    alignItems: 'center',
-  },
-  activeTab: {
-    backgroundColor: '#fff',
-    borderTopLeftRadius: 4,
-    borderTopRightRadius: 4,
-  },
-  tabText: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: '#333',
   },
   tabContent: {
     backgroundColor: '#e5343d', // Adjusted background color
@@ -157,6 +85,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     padding: 8,
     alignItems: 'center',
+    height: 40, // Ensure consistent height
+    justifyContent: 'center', // Center content vertically
   },
   detailValueText: {
     fontSize: 14,

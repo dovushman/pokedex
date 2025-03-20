@@ -1,0 +1,5598 @@
+[
+  {
+    "name": "ababo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ababo.png"
+  },
+  {
+    "name": "abomasnow-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/abomasnow-mega.png"
+  },
+  {
+    "name": "abomasnow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/abomasnow.png"
+  },
+  {
+    "name": "abra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/abra.png"
+  },
+  {
+    "name": "absol-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/absol-mega.png"
+  },
+  {
+    "name": "absol",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/absol.png"
+  },
+  {
+    "name": "accelgor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/accelgor.png"
+  },
+  {
+    "name": "aegislash-blade",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aegislash-blade.png"
+  },
+  {
+    "name": "aegislash-shield",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aegislash-shield.png"
+  },
+  {
+    "name": "aegislash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aegislash.png"
+  },
+  {
+    "name": "aerodactyl-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aerodactyl-mega.png"
+  },
+  {
+    "name": "aerodactyl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aerodactyl.png"
+  },
+  {
+    "name": "aggron-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aggron-mega.png"
+  },
+  {
+    "name": "aggron",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aggron.png"
+  },
+  {
+    "name": "aipom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aipom.png"
+  },
+  {
+    "name": "alakazam-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/alakazam-mega.png"
+  },
+  {
+    "name": "alakazam",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/alakazam.png"
+  },
+  {
+    "name": "alomomola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/alomomola.png"
+  },
+  {
+    "name": "altaria-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/altaria-mega.png"
+  },
+  {
+    "name": "altaria",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/altaria.png"
+  },
+  {
+    "name": "amaura",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/amaura.png"
+  },
+  {
+    "name": "ambipom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ambipom.png"
+  },
+  {
+    "name": "amoonguss",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/amoonguss.png"
+  },
+  {
+    "name": "ampharos-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ampharos-mega.png"
+  },
+  {
+    "name": "ampharos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ampharos.png"
+  },
+  {
+    "name": "annihilape",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/annihilape.png"
+  },
+  {
+    "name": "anorith",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/anorith.png"
+  },
+  {
+    "name": "appletun",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/appletun.png"
+  },
+  {
+    "name": "applin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/applin.png"
+  },
+  {
+    "name": "araquanid",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/araquanid.png"
+  },
+  {
+    "name": "arbok",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arbok.png"
+  },
+  {
+    "name": "arboliva",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arboliva.png"
+  },
+  {
+    "name": "arcanine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arcanine.png"
+  },
+  {
+    "name": "arceus-bug",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-bug.png"
+  },
+  {
+    "name": "arceus-dark",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-dark.png"
+  },
+  {
+    "name": "arceus-dragon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-dragon.png"
+  },
+  {
+    "name": "arceus-electric",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-electric.png"
+  },
+  {
+    "name": "arceus-fairy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-fairy.png"
+  },
+  {
+    "name": "arceus-fighting",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-fighting.png"
+  },
+  {
+    "name": "arceus-fire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-fire.png"
+  },
+  {
+    "name": "arceus-flying",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-flying.png"
+  },
+  {
+    "name": "arceus-ghost",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-ghost.png"
+  },
+  {
+    "name": "arceus-grass",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-grass.png"
+  },
+  {
+    "name": "arceus-ground",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-ground.png"
+  },
+  {
+    "name": "arceus-ice",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-ice.png"
+  },
+  {
+    "name": "arceus-normal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-normal.png"
+  },
+  {
+    "name": "arceus-poison",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-poison.png"
+  },
+  {
+    "name": "arceus-psychic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-psychic.png"
+  },
+  {
+    "name": "arceus-rock",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-rock.png"
+  },
+  {
+    "name": "arceus-steel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-steel.png"
+  },
+  {
+    "name": "arceus-water",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus-water.png"
+  },
+  {
+    "name": "arceus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arceus.png"
+  },
+  {
+    "name": "archen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/archen.png"
+  },
+  {
+    "name": "archeops",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/archeops.png"
+  },
+  {
+    "name": "arctibax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arctibax.png"
+  },
+  {
+    "name": "arctovish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arctovish.png"
+  },
+  {
+    "name": "arctozolt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arctozolt.png"
+  },
+  {
+    "name": "argalis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/argalis.png"
+  },
+  {
+    "name": "arghonaut-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arghonaut-f.png"
+  },
+  {
+    "name": "arghonaut",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arghonaut.png"
+  },
+  {
+    "name": "ariados",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ariados.png"
+  },
+  {
+    "name": "armaldo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/armaldo.png"
+  },
+  {
+    "name": "armarouge",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/armarouge.png"
+  },
+  {
+    "name": "aromatisse",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aromatisse.png"
+  },
+  {
+    "name": "aron",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aron.png"
+  },
+  {
+    "name": "arrokuda",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/arrokuda.png"
+  },
+  {
+    "name": "articuno",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/articuno.png"
+  },
+  {
+    "name": "astrolotl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/astrolotl.png"
+  },
+  {
+    "name": "audino-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/audino-mega.png"
+  },
+  {
+    "name": "audino",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/audino.png"
+  },
+  {
+    "name": "aurorus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aurorus.png"
+  },
+  {
+    "name": "aurumoth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/aurumoth.png"
+  },
+  {
+    "name": "avalugg",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/avalugg.png"
+  },
+  {
+    "name": "axew",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/axew.png"
+  },
+  {
+    "name": "azelf",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/azelf.png"
+  },
+  {
+    "name": "azumarill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/azumarill.png"
+  },
+  {
+    "name": "azurill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/azurill.png"
+  },
+  {
+    "name": "bagon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bagon.png"
+  },
+  {
+    "name": "baltoy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/baltoy.png"
+  },
+  {
+    "name": "banette-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/banette-mega.png"
+  },
+  {
+    "name": "banette",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/banette.png"
+  },
+  {
+    "name": "barbaracle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/barbaracle.png"
+  },
+  {
+    "name": "barboach",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/barboach.png"
+  },
+  {
+    "name": "barraskewda",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/barraskewda.png"
+  },
+  {
+    "name": "basculin-bluestriped",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/basculin-bluestriped.png"
+  },
+  {
+    "name": "basculin-redstriped",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/basculin-redstriped.png"
+  },
+  {
+    "name": "basculin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/basculin.png"
+  },
+  {
+    "name": "bastiodon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bastiodon.png"
+  },
+  {
+    "name": "baxcalibur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/baxcalibur.png"
+  },
+  {
+    "name": "bayleef",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bayleef.png"
+  },
+  {
+    "name": "beartic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beartic.png"
+  },
+  {
+    "name": "beautifly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beautifly.png"
+  },
+  {
+    "name": "beedrill-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beedrill-mega.png"
+  },
+  {
+    "name": "beedrill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beedrill.png"
+  },
+  {
+    "name": "beheeyem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beheeyem.png"
+  },
+  {
+    "name": "beldum",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/beldum.png"
+  },
+  {
+    "name": "bellibolt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bellibolt.png"
+  },
+  {
+    "name": "bellossom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bellossom.png"
+  },
+  {
+    "name": "bellsprout",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bellsprout.png"
+  },
+  {
+    "name": "bergmite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bergmite.png"
+  },
+  {
+    "name": "bewear",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bewear.png"
+  },
+  {
+    "name": "bibarel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bibarel.png"
+  },
+  {
+    "name": "bidoof",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bidoof.png"
+  },
+  {
+    "name": "binacle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/binacle.png"
+  },
+  {
+    "name": "bisharp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bisharp.png"
+  },
+  {
+    "name": "blacephalon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blacephalon.png"
+  },
+  {
+    "name": "blastoise-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blastoise-mega.png"
+  },
+  {
+    "name": "blastoise",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blastoise.png"
+  },
+  {
+    "name": "blaziken-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blaziken-mega.png"
+  },
+  {
+    "name": "blaziken",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blaziken.png"
+  },
+  {
+    "name": "blipbug",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blipbug.png"
+  },
+  {
+    "name": "blissey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blissey.png"
+  },
+  {
+    "name": "blitzle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/blitzle.png"
+  },
+  {
+    "name": "boldore",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/boldore.png"
+  },
+  {
+    "name": "boltund",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/boltund.png"
+  },
+  {
+    "name": "bombirdier",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bombirdier.png"
+  },
+  {
+    "name": "bonsly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bonsly.png"
+  },
+  {
+    "name": "bouffalant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bouffalant.png"
+  },
+  {
+    "name": "bounsweet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bounsweet.png"
+  },
+  {
+    "name": "braixen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/braixen.png"
+  },
+  {
+    "name": "brambleghast",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/brambleghast.png"
+  },
+  {
+    "name": "bramblin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bramblin.png"
+  },
+  {
+    "name": "brattler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/brattler.png"
+  },
+  {
+    "name": "braviary",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/braviary.png"
+  },
+  {
+    "name": "breezi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/breezi.png"
+  },
+  {
+    "name": "breloom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/breloom.png"
+  },
+  {
+    "name": "brionne",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/brionne.png"
+  },
+  {
+    "name": "bronzong",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bronzong.png"
+  },
+  {
+    "name": "bronzor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bronzor.png"
+  },
+  {
+    "name": "brutebonnet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/brutebonnet.png"
+  },
+  {
+    "name": "bruxish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bruxish.png"
+  },
+  {
+    "name": "budew",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/budew.png"
+  },
+  {
+    "name": "buizel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/buizel.png"
+  },
+  {
+    "name": "bulbasaur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bulbasaur.png"
+  },
+  {
+    "name": "buneary",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/buneary.png"
+  },
+  {
+    "name": "bunnelby",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/bunnelby.png"
+  },
+  {
+    "name": "burmy-plant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/burmy-plant.png"
+  },
+  {
+    "name": "burmy-sandy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/burmy-sandy.png"
+  },
+  {
+    "name": "burmy-trash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/burmy-trash.png"
+  },
+  {
+    "name": "burmy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/burmy.png"
+  },
+  {
+    "name": "butterfree",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/butterfree.png"
+  },
+  {
+    "name": "buzzwole",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/buzzwole.png"
+  },
+  {
+    "name": "cacnea",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cacnea.png"
+  },
+  {
+    "name": "cacturne",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cacturne.png"
+  },
+  {
+    "name": "caimanoe",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/caimanoe.png"
+  },
+  {
+    "name": "camerupt-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/camerupt-mega.png"
+  },
+  {
+    "name": "camerupt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/camerupt.png"
+  },
+  {
+    "name": "capsakid",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/capsakid.png"
+  },
+  {
+    "name": "carbink",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/carbink.png"
+  },
+  {
+    "name": "caribolt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/caribolt.png"
+  },
+  {
+    "name": "carkol",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/carkol.png"
+  },
+  {
+    "name": "carnivine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/carnivine.png"
+  },
+  {
+    "name": "carracosta",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/carracosta.png"
+  },
+  {
+    "name": "carvanha",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/carvanha.png"
+  },
+  {
+    "name": "cascoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cascoon.png"
+  },
+  {
+    "name": "castform-rainy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/castform-rainy.png"
+  },
+  {
+    "name": "castform-snowy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/castform-snowy.png"
+  },
+  {
+    "name": "castform-sunny",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/castform-sunny.png"
+  },
+  {
+    "name": "castform",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/castform.png"
+  },
+  {
+    "name": "caterpie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/caterpie.png"
+  },
+  {
+    "name": "cawdet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cawdet.png"
+  },
+  {
+    "name": "cawmodore",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cawmodore.png"
+  },
+  {
+    "name": "celebi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/celebi.png"
+  },
+  {
+    "name": "celesteela",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/celesteela.png"
+  },
+  {
+    "name": "centiskorch",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/centiskorch.png"
+  },
+  {
+    "name": "ceruledge",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ceruledge.png"
+  },
+  {
+    "name": "cetitan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cetitan.png"
+  },
+  {
+    "name": "cetoddle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cetoddle.png"
+  },
+  {
+    "name": "chandelure",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chandelure.png"
+  },
+  {
+    "name": "chansey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chansey.png"
+  },
+  {
+    "name": "charcadet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charcadet.png"
+  },
+  {
+    "name": "charizard-megax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charizard-megax.png"
+  },
+  {
+    "name": "charizard-megay",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charizard-megay.png"
+  },
+  {
+    "name": "charizard",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charizard.png"
+  },
+  {
+    "name": "charjabug",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charjabug.png"
+  },
+  {
+    "name": "charmander",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charmander.png"
+  },
+  {
+    "name": "charmeleon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/charmeleon.png"
+  },
+  {
+    "name": "chatot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chatot.png"
+  },
+  {
+    "name": "cherrim-overcast",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cherrim-overcast.png"
+  },
+  {
+    "name": "cherrim-sunshine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cherrim-sunshine.png"
+  },
+  {
+    "name": "cherrim",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cherrim.png"
+  },
+  {
+    "name": "cherubi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cherubi.png"
+  },
+  {
+    "name": "chesnaught",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chesnaught.png"
+  },
+  {
+    "name": "chespin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chespin.png"
+  },
+  {
+    "name": "chewtle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chewtle.png"
+  },
+  {
+    "name": "chienpao",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chienpao.png"
+  },
+  {
+    "name": "chikorita",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chikorita.png"
+  },
+  {
+    "name": "chimchar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chimchar.png"
+  },
+  {
+    "name": "chimecho",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chimecho.png"
+  },
+  {
+    "name": "chinchou",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chinchou.png"
+  },
+  {
+    "name": "chingling",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chingling.png"
+  },
+  {
+    "name": "chiyu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chiyu.png"
+  },
+  {
+    "name": "chromera",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chromera.png"
+  },
+  {
+    "name": "chuggalong",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chuggalong.png"
+  },
+  {
+    "name": "chuggon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/chuggon.png"
+  },
+  {
+    "name": "cinccino",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cinccino.png"
+  },
+  {
+    "name": "cinderace",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cinderace.png"
+  },
+  {
+    "name": "clamperl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clamperl.png"
+  },
+  {
+    "name": "clauncher",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clauncher.png"
+  },
+  {
+    "name": "clawitzer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clawitzer.png"
+  },
+  {
+    "name": "claydol",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/claydol.png"
+  },
+  {
+    "name": "clefable",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clefable.png"
+  },
+  {
+    "name": "clefairy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clefairy.png"
+  },
+  {
+    "name": "cleffa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cleffa.png"
+  },
+  {
+    "name": "clodsire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/clodsire.png"
+  },
+  {
+    "name": "cloyster",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cloyster.png"
+  },
+  {
+    "name": "coalossal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/coalossal.png"
+  },
+  {
+    "name": "cobalion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cobalion.png"
+  },
+  {
+    "name": "cofagrigus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cofagrigus.png"
+  },
+  {
+    "name": "colossoil-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/colossoil-f.png"
+  },
+  {
+    "name": "colossoil",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/colossoil.png"
+  },
+  {
+    "name": "combee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/combee.png"
+  },
+  {
+    "name": "combusken",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/combusken.png"
+  },
+  {
+    "name": "comfey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/comfey.png"
+  },
+  {
+    "name": "conkeldurr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/conkeldurr.png"
+  },
+  {
+    "name": "copperajah",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/copperajah.png"
+  },
+  {
+    "name": "coribalis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/coribalis.png"
+  },
+  {
+    "name": "corphish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/corphish.png"
+  },
+  {
+    "name": "corsola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/corsola.png"
+  },
+  {
+    "name": "corviknight",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/corviknight.png"
+  },
+  {
+    "name": "corvisquire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/corvisquire.png"
+  },
+  {
+    "name": "cosmoem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cosmoem.png"
+  },
+  {
+    "name": "cosmog",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cosmog.png"
+  },
+  {
+    "name": "cottonee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cottonee.png"
+  },
+  {
+    "name": "crabominable",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crabominable.png"
+  },
+  {
+    "name": "crabrawler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crabrawler.png"
+  },
+  {
+    "name": "cradily",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cradily.png"
+  },
+  {
+    "name": "cramorant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cramorant.png"
+  },
+  {
+    "name": "cranidos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cranidos.png"
+  },
+  {
+    "name": "crawdaunt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crawdaunt.png"
+  },
+  {
+    "name": "cresceidon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cresceidon.png"
+  },
+  {
+    "name": "cresselia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cresselia.png"
+  },
+  {
+    "name": "croagunk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/croagunk.png"
+  },
+  {
+    "name": "crobat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crobat.png"
+  },
+  {
+    "name": "crocalor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crocalor.png"
+  },
+  {
+    "name": "croconaw",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/croconaw.png"
+  },
+  {
+    "name": "crucibelle-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crucibelle-mega.png"
+  },
+  {
+    "name": "crucibelle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crucibelle.png"
+  },
+  {
+    "name": "crustle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/crustle.png"
+  },
+  {
+    "name": "cryogonal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cryogonal.png"
+  },
+  {
+    "name": "cubchoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cubchoo.png"
+  },
+  {
+    "name": "cubone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cubone.png"
+  },
+  {
+    "name": "cufant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cufant.png"
+  },
+  {
+    "name": "cupra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cupra.png"
+  },
+  {
+    "name": "cutiefly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cutiefly.png"
+  },
+  {
+    "name": "cyclizar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cyclizar.png"
+  },
+  {
+    "name": "cyclohm-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cyclohm-f.png"
+  },
+  {
+    "name": "cyclohm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cyclohm.png"
+  },
+  {
+    "name": "cyndaquil",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/cyndaquil.png"
+  },
+  {
+    "name": "dachsbun",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dachsbun.png"
+  },
+  {
+    "name": "darkrai",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/darkrai.png"
+  },
+  {
+    "name": "darmanitan-standard",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/darmanitan-standard.png"
+  },
+  {
+    "name": "darmanitan-zen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/darmanitan-zen.png"
+  },
+  {
+    "name": "darmanitan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/darmanitan.png"
+  },
+  {
+    "name": "dartrix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dartrix.png"
+  },
+  {
+    "name": "darumaka",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/darumaka.png"
+  },
+  {
+    "name": "decidueye",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/decidueye.png"
+  },
+  {
+    "name": "dedenne",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dedenne.png"
+  },
+  {
+    "name": "deerling-autumn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deerling-autumn.png"
+  },
+  {
+    "name": "deerling-sprint",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deerling-sprint.png"
+  },
+  {
+    "name": "deerling-summer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deerling-summer.png"
+  },
+  {
+    "name": "deerling-winter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deerling-winter.png"
+  },
+  {
+    "name": "deerling",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deerling.png"
+  },
+  {
+    "name": "deino",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deino.png"
+  },
+  {
+    "name": "delcatty",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/delcatty.png"
+  },
+  {
+    "name": "delibird",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/delibird.png"
+  },
+  {
+    "name": "delphox",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/delphox.png"
+  },
+  {
+    "name": "deoxys-attack",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deoxys-attack.png"
+  },
+  {
+    "name": "deoxys-defense",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deoxys-defense.png"
+  },
+  {
+    "name": "deoxys-speed",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deoxys-speed.png"
+  },
+  {
+    "name": "deoxys",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/deoxys.png"
+  },
+  {
+    "name": "dewgong",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dewgong.png"
+  },
+  {
+    "name": "dewott",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dewott.png"
+  },
+  {
+    "name": "dewpider",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dewpider.png"
+  },
+  {
+    "name": "dhelmise",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dhelmise.png"
+  },
+  {
+    "name": "dialga",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dialga.png"
+  },
+  {
+    "name": "diancie-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/diancie-mega.png"
+  },
+  {
+    "name": "diancie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/diancie.png"
+  },
+  {
+    "name": "diggersby",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/diggersby.png"
+  },
+  {
+    "name": "diglett-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/diglett-alola.png"
+  },
+  {
+    "name": "diglett",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/diglett.png"
+  },
+  {
+    "name": "dipplin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dipplin.png"
+  },
+  {
+    "name": "ditto",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ditto.png"
+  },
+  {
+    "name": "dodrio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dodrio.png"
+  },
+  {
+    "name": "doduo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/doduo.png"
+  },
+  {
+    "name": "dolliv",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dolliv.png"
+  },
+  {
+    "name": "dondozo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dondozo.png"
+  },
+  {
+    "name": "donphan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/donphan.png"
+  },
+  {
+    "name": "dorsoil",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dorsoil.png"
+  },
+  {
+    "name": "dottler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dottler.png"
+  },
+  {
+    "name": "doublade",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/doublade.png"
+  },
+  {
+    "name": "dracovish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dracovish.png"
+  },
+  {
+    "name": "dracozolt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dracozolt.png"
+  },
+  {
+    "name": "dragalge",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dragalge.png"
+  },
+  {
+    "name": "dragapult",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dragapult.png"
+  },
+  {
+    "name": "draggalong",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/draggalong.png"
+  },
+  {
+    "name": "dragonair",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dragonair.png"
+  },
+  {
+    "name": "dragonite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dragonite.png"
+  },
+  {
+    "name": "drakloak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drakloak.png"
+  },
+  {
+    "name": "drampa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drampa.png"
+  },
+  {
+    "name": "drapion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drapion.png"
+  },
+  {
+    "name": "dratini",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dratini.png"
+  },
+  {
+    "name": "drednaw",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drednaw.png"
+  },
+  {
+    "name": "dreepy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dreepy.png"
+  },
+  {
+    "name": "drifblim",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drifblim.png"
+  },
+  {
+    "name": "drifloon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drifloon.png"
+  },
+  {
+    "name": "drilbur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drilbur.png"
+  },
+  {
+    "name": "drizzile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drizzile.png"
+  },
+  {
+    "name": "drowzee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/drowzee.png"
+  },
+  {
+    "name": "druddigon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/druddigon.png"
+  },
+  {
+    "name": "dubwool",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dubwool.png"
+  },
+  {
+    "name": "ducklett",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ducklett.png"
+  },
+  {
+    "name": "dudunsparce-threesegment",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dudunsparce-threesegment.png"
+  },
+  {
+    "name": "dudunsparce",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dudunsparce.png"
+  },
+  {
+    "name": "dugtrio-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dugtrio-alola.png"
+  },
+  {
+    "name": "dugtrio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dugtrio.png"
+  },
+  {
+    "name": "dunsparce",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dunsparce.png"
+  },
+  {
+    "name": "duohm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/duohm.png"
+  },
+  {
+    "name": "duosion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/duosion.png"
+  },
+  {
+    "name": "durant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/durant.png"
+  },
+  {
+    "name": "dusclops",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dusclops.png"
+  },
+  {
+    "name": "dusknoir",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dusknoir.png"
+  },
+  {
+    "name": "duskull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/duskull.png"
+  },
+  {
+    "name": "dustox",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dustox.png"
+  },
+  {
+    "name": "dwebble",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/dwebble.png"
+  },
+  {
+    "name": "eelektrik",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eelektrik.png"
+  },
+  {
+    "name": "eelektross",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eelektross.png"
+  },
+  {
+    "name": "eevee-starter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eevee-starter.png"
+  },
+  {
+    "name": "eevee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eevee.png"
+  },
+  {
+    "name": "eiscue-noice",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eiscue-noice.png"
+  },
+  {
+    "name": "eiscue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eiscue.png"
+  },
+  {
+    "name": "ekans",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ekans.png"
+  },
+  {
+    "name": "eldegoss",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/eldegoss.png"
+  },
+  {
+    "name": "electabuzz",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/electabuzz.png"
+  },
+  {
+    "name": "electivire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/electivire.png"
+  },
+  {
+    "name": "electrelk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/electrelk.png"
+  },
+  {
+    "name": "electrike",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/electrike.png"
+  },
+  {
+    "name": "electrode",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/electrode.png"
+  },
+  {
+    "name": "elekid",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/elekid.png"
+  },
+  {
+    "name": "elgyem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/elgyem.png"
+  },
+  {
+    "name": "embirch",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/embirch.png"
+  },
+  {
+    "name": "emboar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/emboar.png"
+  },
+  {
+    "name": "emolga",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/emolga.png"
+  },
+  {
+    "name": "empoleon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/empoleon.png"
+  },
+  {
+    "name": "english",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/english.png"
+  },
+  {
+    "name": "entei",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/entei.png"
+  },
+  {
+    "name": "equilibra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/equilibra.png"
+  },
+  {
+    "name": "escavalier",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/escavalier.png"
+  },
+  {
+    "name": "espathra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/espathra.png"
+  },
+  {
+    "name": "espeon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/espeon.png"
+  },
+  {
+    "name": "espurr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/espurr.png"
+  },
+  {
+    "name": "excadrill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/excadrill.png"
+  },
+  {
+    "name": "exeggcute",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/exeggcute.png"
+  },
+  {
+    "name": "exeggutor-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/exeggutor-alola.png"
+  },
+  {
+    "name": "exeggutor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/exeggutor.png"
+  },
+  {
+    "name": "exploud",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/exploud.png"
+  },
+  {
+    "name": "farfetchd",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/farfetchd.png"
+  },
+  {
+    "name": "farigiraf",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/farigiraf.png"
+  },
+  {
+    "name": "fawnifer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fawnifer.png"
+  },
+  {
+    "name": "fearow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fearow.png"
+  },
+  {
+    "name": "feebas",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/feebas.png"
+  },
+  {
+    "name": "fennekin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fennekin.png"
+  },
+  {
+    "name": "feraligatr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/feraligatr.png"
+  },
+  {
+    "name": "ferroseed",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ferroseed.png"
+  },
+  {
+    "name": "ferrothorn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ferrothorn.png"
+  },
+  {
+    "name": "fezandipiti",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fezandipiti.png"
+  },
+  {
+    "name": "fidgit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fidgit.png"
+  },
+  {
+    "name": "fidough",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fidough.png"
+  },
+  {
+    "name": "finizen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/finizen.png"
+  },
+  {
+    "name": "finneon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/finneon.png"
+  },
+  {
+    "name": "flaaffy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flaaffy.png"
+  },
+  {
+    "name": "flabebe-blue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe-blue.png"
+  },
+  {
+    "name": "flabebe-orange",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe-orange.png"
+  },
+  {
+    "name": "flabebe-red",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe-red.png"
+  },
+  {
+    "name": "flabebe-white",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe-white.png"
+  },
+  {
+    "name": "flabebe-yellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe-yellow.png"
+  },
+  {
+    "name": "flabebe",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flabebe.png"
+  },
+  {
+    "name": "flamigo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flamigo.png"
+  },
+  {
+    "name": "flapple",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flapple.png"
+  },
+  {
+    "name": "flarelm-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flarelm-f.png"
+  },
+  {
+    "name": "flarelm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flarelm.png"
+  },
+  {
+    "name": "flareon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flareon.png"
+  },
+  {
+    "name": "fletchinder",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fletchinder.png"
+  },
+  {
+    "name": "fletchling",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fletchling.png"
+  },
+  {
+    "name": "flittle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flittle.png"
+  },
+  {
+    "name": "floatoy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floatoy.png"
+  },
+  {
+    "name": "floatzel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floatzel.png"
+  },
+  {
+    "name": "floette-blue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-blue.png"
+  },
+  {
+    "name": "floette-eternal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-eternal.png"
+  },
+  {
+    "name": "floette-orange",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-orange.png"
+  },
+  {
+    "name": "floette-red",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-red.png"
+  },
+  {
+    "name": "floette-white",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-white.png"
+  },
+  {
+    "name": "floette-yellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette-yellow.png"
+  },
+  {
+    "name": "floette",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floette.png"
+  },
+  {
+    "name": "floragato",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/floragato.png"
+  },
+  {
+    "name": "florges-blue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges-blue.png"
+  },
+  {
+    "name": "florges-orange",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges-orange.png"
+  },
+  {
+    "name": "florges-red",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges-red.png"
+  },
+  {
+    "name": "florges-white",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges-white.png"
+  },
+  {
+    "name": "florges-yellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges-yellow.png"
+  },
+  {
+    "name": "florges",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/florges.png"
+  },
+  {
+    "name": "fluttermane",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fluttermane.png"
+  },
+  {
+    "name": "flygon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/flygon.png"
+  },
+  {
+    "name": "fomantis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fomantis.png"
+  },
+  {
+    "name": "foongus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/foongus.png"
+  },
+  {
+    "name": "forretress",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/forretress.png"
+  },
+  {
+    "name": "fraxure",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fraxure.png"
+  },
+  {
+    "name": "frigibax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/frigibax.png"
+  },
+  {
+    "name": "frillish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/frillish.png"
+  },
+  {
+    "name": "froakie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/froakie.png"
+  },
+  {
+    "name": "frogadier",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/frogadier.png"
+  },
+  {
+    "name": "froslass",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/froslass.png"
+  },
+  {
+    "name": "fuecoco",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/fuecoco.png"
+  },
+  {
+    "name": "furfrou-dandy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-dandy.png"
+  },
+  {
+    "name": "furfrou-debutante",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-debutante.png"
+  },
+  {
+    "name": "furfrou-diamond",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-diamond.png"
+  },
+  {
+    "name": "furfrou-heart",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-heart.png"
+  },
+  {
+    "name": "furfrou-kabuki",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-kabuki.png"
+  },
+  {
+    "name": "furfrou-lareine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-lareine.png"
+  },
+  {
+    "name": "furfrou-matron",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-matron.png"
+  },
+  {
+    "name": "furfrou-pharaoh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-pharaoh.png"
+  },
+  {
+    "name": "furfrou-star",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou-star.png"
+  },
+  {
+    "name": "furfrou",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furfrou.png"
+  },
+  {
+    "name": "furret",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/furret.png"
+  },
+  {
+    "name": "gabite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gabite.png"
+  },
+  {
+    "name": "gallade-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gallade-mega.png"
+  },
+  {
+    "name": "gallade",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gallade.png"
+  },
+  {
+    "name": "galvantula",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/galvantula.png"
+  },
+  {
+    "name": "garbodor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/garbodor.png"
+  },
+  {
+    "name": "garchomp-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/garchomp-mega.png"
+  },
+  {
+    "name": "garchomp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/garchomp.png"
+  },
+  {
+    "name": "gardevoir-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gardevoir-mega.png"
+  },
+  {
+    "name": "gardevoir",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gardevoir.png"
+  },
+  {
+    "name": "garganacl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/garganacl.png"
+  },
+  {
+    "name": "gastly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gastly.png"
+  },
+  {
+    "name": "gastrodon-east",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gastrodon-east.png"
+  },
+  {
+    "name": "gastrodon-west",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gastrodon-west.png"
+  },
+  {
+    "name": "gastrodon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gastrodon.png"
+  },
+  {
+    "name": "genesect-burn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/genesect-burn.png"
+  },
+  {
+    "name": "genesect-chill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/genesect-chill.png"
+  },
+  {
+    "name": "genesect-douse",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/genesect-douse.png"
+  },
+  {
+    "name": "genesect-shock",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/genesect-shock.png"
+  },
+  {
+    "name": "genesect",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/genesect.png"
+  },
+  {
+    "name": "gengar-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gengar-mega.png"
+  },
+  {
+    "name": "gengar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gengar.png"
+  },
+  {
+    "name": "geodude-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/geodude-alola.png"
+  },
+  {
+    "name": "geodude",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/geodude.png"
+  },
+  {
+    "name": "gholdengo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gholdengo.png"
+  },
+  {
+    "name": "gible",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gible.png"
+  },
+  {
+    "name": "gigalith",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gigalith.png"
+  },
+  {
+    "name": "gimmighoul-roaming",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gimmighoul-roaming.png"
+  },
+  {
+    "name": "gimmighoul",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gimmighoul.png"
+  },
+  {
+    "name": "girafarig",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/girafarig.png"
+  },
+  {
+    "name": "giratina-altered",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/giratina-altered.png"
+  },
+  {
+    "name": "giratina-origin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/giratina-origin.png"
+  },
+  {
+    "name": "giratina",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/giratina.png"
+  },
+  {
+    "name": "glaceon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glaceon.png"
+  },
+  {
+    "name": "glalie-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glalie-mega.png"
+  },
+  {
+    "name": "glalie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glalie.png"
+  },
+  {
+    "name": "glameow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glameow.png"
+  },
+  {
+    "name": "gligar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gligar.png"
+  },
+  {
+    "name": "glimmet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glimmet.png"
+  },
+  {
+    "name": "glimmora",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/glimmora.png"
+  },
+  {
+    "name": "gliscor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gliscor.png"
+  },
+  {
+    "name": "gloom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gloom.png"
+  },
+  {
+    "name": "gogoat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gogoat.png"
+  },
+  {
+    "name": "golbat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golbat.png"
+  },
+  {
+    "name": "goldeen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/goldeen.png"
+  },
+  {
+    "name": "golduck",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golduck.png"
+  },
+  {
+    "name": "golem-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golem-alola.png"
+  },
+  {
+    "name": "golem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golem.png"
+  },
+  {
+    "name": "golett",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golett.png"
+  },
+  {
+    "name": "golisopod",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golisopod.png"
+  },
+  {
+    "name": "golurk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/golurk.png"
+  },
+  {
+    "name": "goodra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/goodra.png"
+  },
+  {
+    "name": "goomy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/goomy.png"
+  },
+  {
+    "name": "gorebyss",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gorebyss.png"
+  },
+  {
+    "name": "gossifleur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gossifleur.png"
+  },
+  {
+    "name": "gothita",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gothita.png"
+  },
+  {
+    "name": "gothitelle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gothitelle.png"
+  },
+  {
+    "name": "gothorita",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gothorita.png"
+  },
+  {
+    "name": "gourgeist-average",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gourgeist-average.png"
+  },
+  {
+    "name": "gourgeist-large",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gourgeist-large.png"
+  },
+  {
+    "name": "gourgeist-small",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gourgeist-small.png"
+  },
+  {
+    "name": "gourgeist-super",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gourgeist-super.png"
+  },
+  {
+    "name": "gourgeist",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gourgeist.png"
+  },
+  {
+    "name": "grafaiai",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grafaiai.png"
+  },
+  {
+    "name": "granbull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/granbull.png"
+  },
+  {
+    "name": "graveler-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/graveler-alola.png"
+  },
+  {
+    "name": "graveler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/graveler.png"
+  },
+  {
+    "name": "greattusk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/greattusk.png"
+  },
+  {
+    "name": "greavard",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/greavard.png"
+  },
+  {
+    "name": "greedent",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/greedent.png"
+  },
+  {
+    "name": "greninja-ash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/greninja-ash.png"
+  },
+  {
+    "name": "greninja",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/greninja.png"
+  },
+  {
+    "name": "grimer-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grimer-alola.png"
+  },
+  {
+    "name": "grimer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grimer.png"
+  },
+  {
+    "name": "grookey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grookey.png"
+  },
+  {
+    "name": "grotle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grotle.png"
+  },
+  {
+    "name": "groudon-primal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/groudon-primal.png"
+  },
+  {
+    "name": "groudon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/groudon.png"
+  },
+  {
+    "name": "grovyle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grovyle.png"
+  },
+  {
+    "name": "growlithe",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/growlithe.png"
+  },
+  {
+    "name": "grubbin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grubbin.png"
+  },
+  {
+    "name": "grumpig",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/grumpig.png"
+  },
+  {
+    "name": "gulpin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gulpin.png"
+  },
+  {
+    "name": "gumshoos-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gumshoos-totem.png"
+  },
+  {
+    "name": "gumshoos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gumshoos.png"
+  },
+  {
+    "name": "gurdurr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gurdurr.png"
+  },
+  {
+    "name": "guzzlord",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/guzzlord.png"
+  },
+  {
+    "name": "gyarados-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gyarados-mega.png"
+  },
+  {
+    "name": "gyarados",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/gyarados.png"
+  },
+  {
+    "name": "hakamoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hakamoo.png"
+  },
+  {
+    "name": "happiny",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/happiny.png"
+  },
+  {
+    "name": "hariyama",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hariyama.png"
+  },
+  {
+    "name": "haunter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/haunter.png"
+  },
+  {
+    "name": "hawlucha",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hawlucha.png"
+  },
+  {
+    "name": "haxorus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/haxorus.png"
+  },
+  {
+    "name": "heatmor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/heatmor.png"
+  },
+  {
+    "name": "heatran",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/heatran.png"
+  },
+  {
+    "name": "heliolisk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/heliolisk.png"
+  },
+  {
+    "name": "helioptile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/helioptile.png"
+  },
+  {
+    "name": "hemogoblin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hemogoblin.png"
+  },
+  {
+    "name": "heracross-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/heracross-mega.png"
+  },
+  {
+    "name": "heracross",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/heracross.png"
+  },
+  {
+    "name": "herdier",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/herdier.png"
+  },
+  {
+    "name": "hippopotas-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hippopotas-f.png"
+  },
+  {
+    "name": "hippopotas",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hippopotas.png"
+  },
+  {
+    "name": "hippowdon-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hippowdon-f.png"
+  },
+  {
+    "name": "hippowdon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hippowdon.png"
+  },
+  {
+    "name": "hitmonchan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hitmonchan.png"
+  },
+  {
+    "name": "hitmonlee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hitmonlee.png"
+  },
+  {
+    "name": "hitmontop",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hitmontop.png"
+  },
+  {
+    "name": "honchkrow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/honchkrow.png"
+  },
+  {
+    "name": "honedge",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/honedge.png"
+  },
+  {
+    "name": "hooh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hooh.png"
+  },
+  {
+    "name": "hoopa-confined",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hoopa-confined.png"
+  },
+  {
+    "name": "hoopa-unbound",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hoopa-unbound.png"
+  },
+  {
+    "name": "hoopa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hoopa.png"
+  },
+  {
+    "name": "hoothoot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hoothoot.png"
+  },
+  {
+    "name": "hoppip",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hoppip.png"
+  },
+  {
+    "name": "horsea",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/horsea.png"
+  },
+  {
+    "name": "houndoom-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/houndoom-mega.png"
+  },
+  {
+    "name": "houndoom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/houndoom.png"
+  },
+  {
+    "name": "houndour",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/houndour.png"
+  },
+  {
+    "name": "houndstone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/houndstone.png"
+  },
+  {
+    "name": "huntail",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/huntail.png"
+  },
+  {
+    "name": "hydreigon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hydreigon.png"
+  },
+  {
+    "name": "hypno",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/hypno.png"
+  },
+  {
+    "name": "igglybuff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/igglybuff.png"
+  },
+  {
+    "name": "illumise",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/illumise.png"
+  },
+  {
+    "name": "incineroar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/incineroar.png"
+  },
+  {
+    "name": "indeedee-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/indeedee-f.png"
+  },
+  {
+    "name": "indeedee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/indeedee.png"
+  },
+  {
+    "name": "infernape",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/infernape.png"
+  },
+  {
+    "name": "inkay",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/inkay.png"
+  },
+  {
+    "name": "inteleon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/inteleon.png"
+  },
+  {
+    "name": "ironbundle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironbundle.png"
+  },
+  {
+    "name": "ironhands",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironhands.png"
+  },
+  {
+    "name": "ironjugulis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironjugulis.png"
+  },
+  {
+    "name": "ironleaves",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironleaves.png"
+  },
+  {
+    "name": "ironmoth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironmoth.png"
+  },
+  {
+    "name": "ironthorns",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironthorns.png"
+  },
+  {
+    "name": "irontreads",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/irontreads.png"
+  },
+  {
+    "name": "ironvaliant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ironvaliant.png"
+  },
+  {
+    "name": "ivysaur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ivysaur.png"
+  },
+  {
+    "name": "jangmoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jangmoo.png"
+  },
+  {
+    "name": "jellicent-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jellicent-f.png"
+  },
+  {
+    "name": "jellicent",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jellicent.png"
+  },
+  {
+    "name": "jigglypuff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jigglypuff.png"
+  },
+  {
+    "name": "jirachi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jirachi.png"
+  },
+  {
+    "name": "jolteon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jolteon.png"
+  },
+  {
+    "name": "joltik",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/joltik.png"
+  },
+  {
+    "name": "jumbao",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jumbao.png"
+  },
+  {
+    "name": "jumpluff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jumpluff.png"
+  },
+  {
+    "name": "justyke",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/justyke.png"
+  },
+  {
+    "name": "jynx",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/jynx.png"
+  },
+  {
+    "name": "kabuto",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kabuto.png"
+  },
+  {
+    "name": "kabutops",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kabutops.png"
+  },
+  {
+    "name": "kadabra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kadabra.png"
+  },
+  {
+    "name": "kakuna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kakuna.png"
+  },
+  {
+    "name": "kangaskhan-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kangaskhan-mega.png"
+  },
+  {
+    "name": "kangaskhan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kangaskhan.png"
+  },
+  {
+    "name": "karrablast",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/karrablast.png"
+  },
+  {
+    "name": "kartana",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kartana.png"
+  },
+  {
+    "name": "kecleon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kecleon.png"
+  },
+  {
+    "name": "keldeo-ordinary",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/keldeo-ordinary.png"
+  },
+  {
+    "name": "keldeo-resolute",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/keldeo-resolute.png"
+  },
+  {
+    "name": "keldeo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/keldeo.png"
+  },
+  {
+    "name": "kerfluffle-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kerfluffle-f.png"
+  },
+  {
+    "name": "kerfluffle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kerfluffle.png"
+  },
+  {
+    "name": "kilowattrel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kilowattrel.png"
+  },
+  {
+    "name": "kingambit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kingambit.png"
+  },
+  {
+    "name": "kingdra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kingdra.png"
+  },
+  {
+    "name": "kingler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kingler.png"
+  },
+  {
+    "name": "kirlia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kirlia.png"
+  },
+  {
+    "name": "kitsunoh-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kitsunoh-f.png"
+  },
+  {
+    "name": "kitsunoh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kitsunoh.png"
+  },
+  {
+    "name": "klang",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/klang.png"
+  },
+  {
+    "name": "klawf",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/klawf.png"
+  },
+  {
+    "name": "klefki",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/klefki.png"
+  },
+  {
+    "name": "klink",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/klink.png"
+  },
+  {
+    "name": "klinklang",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/klinklang.png"
+  },
+  {
+    "name": "koffing",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/koffing.png"
+  },
+  {
+    "name": "komala",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/komala.png"
+  },
+  {
+    "name": "kommoo-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kommoo-totem.png"
+  },
+  {
+    "name": "kommoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kommoo.png"
+  },
+  {
+    "name": "koraidon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/koraidon.png"
+  },
+  {
+    "name": "krabby",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/krabby.png"
+  },
+  {
+    "name": "kricketot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kricketot.png"
+  },
+  {
+    "name": "kricketune",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kricketune.png"
+  },
+  {
+    "name": "krilowatt-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/krilowatt-f.png"
+  },
+  {
+    "name": "krilowatt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/krilowatt.png"
+  },
+  {
+    "name": "krokorok",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/krokorok.png"
+  },
+  {
+    "name": "krookodile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/krookodile.png"
+  },
+  {
+    "name": "kyogre-primal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kyogre-primal.png"
+  },
+  {
+    "name": "kyogre",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kyogre.png"
+  },
+  {
+    "name": "kyurem-black",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kyurem-black.png"
+  },
+  {
+    "name": "kyurem-white",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kyurem-white.png"
+  },
+  {
+    "name": "kyurem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/kyurem.png"
+  },
+  {
+    "name": "lairon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lairon.png"
+  },
+  {
+    "name": "lampent",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lampent.png"
+  },
+  {
+    "name": "landorus-incarnate",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/landorus-incarnate.png"
+  },
+  {
+    "name": "landorus-therian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/landorus-therian.png"
+  },
+  {
+    "name": "landorus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/landorus.png"
+  },
+  {
+    "name": "lanturn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lanturn.png"
+  },
+  {
+    "name": "lapras",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lapras.png"
+  },
+  {
+    "name": "larvesta",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/larvesta.png"
+  },
+  {
+    "name": "larvitar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/larvitar.png"
+  },
+  {
+    "name": "latias-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/latias-mega.png"
+  },
+  {
+    "name": "latias",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/latias.png"
+  },
+  {
+    "name": "latios-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/latios-mega.png"
+  },
+  {
+    "name": "latios",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/latios.png"
+  },
+  {
+    "name": "leafeon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/leafeon.png"
+  },
+  {
+    "name": "leavanny",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/leavanny.png"
+  },
+  {
+    "name": "lechonk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lechonk.png"
+  },
+  {
+    "name": "ledian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ledian.png"
+  },
+  {
+    "name": "ledyba",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ledyba.png"
+  },
+  {
+    "name": "lickilicky",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lickilicky.png"
+  },
+  {
+    "name": "lickitung",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lickitung.png"
+  },
+  {
+    "name": "liepard",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/liepard.png"
+  },
+  {
+    "name": "lileep",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lileep.png"
+  },
+  {
+    "name": "lilligant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lilligant.png"
+  },
+  {
+    "name": "lillipup",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lillipup.png"
+  },
+  {
+    "name": "linoone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/linoone.png"
+  },
+  {
+    "name": "litleo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/litleo.png"
+  },
+  {
+    "name": "litten",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/litten.png"
+  },
+  {
+    "name": "litwick",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/litwick.png"
+  },
+  {
+    "name": "lokix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lokix.png"
+  },
+  {
+    "name": "lombre",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lombre.png"
+  },
+  {
+    "name": "lopunny-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lopunny-mega.png"
+  },
+  {
+    "name": "lopunny",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lopunny.png"
+  },
+  {
+    "name": "lotad",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lotad.png"
+  },
+  {
+    "name": "loudred",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/loudred.png"
+  },
+  {
+    "name": "lucario-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lucario-mega.png"
+  },
+  {
+    "name": "lucario",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lucario.png"
+  },
+  {
+    "name": "ludicolo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ludicolo.png"
+  },
+  {
+    "name": "lugia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lugia.png"
+  },
+  {
+    "name": "lumineon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lumineon.png"
+  },
+  {
+    "name": "lunala",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lunala.png"
+  },
+  {
+    "name": "lunatone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lunatone.png"
+  },
+  {
+    "name": "lurantis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lurantis.png"
+  },
+  {
+    "name": "luvdisc",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/luvdisc.png"
+  },
+  {
+    "name": "luxio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/luxio.png"
+  },
+  {
+    "name": "luxray",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/luxray.png"
+  },
+  {
+    "name": "lycanroc-dusk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lycanroc-dusk.png"
+  },
+  {
+    "name": "lycanroc-midnight",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lycanroc-midnight.png"
+  },
+  {
+    "name": "lycanroc",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/lycanroc.png"
+  },
+  {
+    "name": "mabosstiff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mabosstiff.png"
+  },
+  {
+    "name": "machamp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/machamp.png"
+  },
+  {
+    "name": "machoke",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/machoke.png"
+  },
+  {
+    "name": "machop",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/machop.png"
+  },
+  {
+    "name": "magby",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magby.png"
+  },
+  {
+    "name": "magcargo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magcargo.png"
+  },
+  {
+    "name": "magearna-original",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magearna-original.png"
+  },
+  {
+    "name": "magearna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magearna.png"
+  },
+  {
+    "name": "magikarp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magikarp.png"
+  },
+  {
+    "name": "magmar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magmar.png"
+  },
+  {
+    "name": "magmortar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magmortar.png"
+  },
+  {
+    "name": "magnemite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magnemite.png"
+  },
+  {
+    "name": "magneton",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magneton.png"
+  },
+  {
+    "name": "magnezone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/magnezone.png"
+  },
+  {
+    "name": "makuhita",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/makuhita.png"
+  },
+  {
+    "name": "malaconda",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/malaconda.png"
+  },
+  {
+    "name": "malamar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/malamar.png"
+  },
+  {
+    "name": "mamoswine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mamoswine.png"
+  },
+  {
+    "name": "manaphy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/manaphy.png"
+  },
+  {
+    "name": "mandibuzz",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mandibuzz.png"
+  },
+  {
+    "name": "manectric-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/manectric-mega.png"
+  },
+  {
+    "name": "manectric",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/manectric.png"
+  },
+  {
+    "name": "mankey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mankey.png"
+  },
+  {
+    "name": "mantine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mantine.png"
+  },
+  {
+    "name": "mantyke",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mantyke.png"
+  },
+  {
+    "name": "maractus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/maractus.png"
+  },
+  {
+    "name": "mareanie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mareanie.png"
+  },
+  {
+    "name": "mareep",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mareep.png"
+  },
+  {
+    "name": "marill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/marill.png"
+  },
+  {
+    "name": "marowak-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/marowak-alola.png"
+  },
+  {
+    "name": "marowak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/marowak.png"
+  },
+  {
+    "name": "marshadow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/marshadow.png"
+  },
+  {
+    "name": "marshtomp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/marshtomp.png"
+  },
+  {
+    "name": "maschiff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/maschiff.png"
+  },
+  {
+    "name": "masquerain",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/masquerain.png"
+  },
+  {
+    "name": "maushold-four",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/maushold-four.png"
+  },
+  {
+    "name": "maushold",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/maushold.png"
+  },
+  {
+    "name": "mawile-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mawile-mega.png"
+  },
+  {
+    "name": "mawile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mawile.png"
+  },
+  {
+    "name": "medicham-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/medicham-mega.png"
+  },
+  {
+    "name": "medicham",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/medicham.png"
+  },
+  {
+    "name": "meditite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meditite.png"
+  },
+  {
+    "name": "meganium",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meganium.png"
+  },
+  {
+    "name": "melmetal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/melmetal.png"
+  },
+  {
+    "name": "meloetta-aria",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meloetta-aria.png"
+  },
+  {
+    "name": "meloetta-pirouette",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meloetta-pirouette.png"
+  },
+  {
+    "name": "meloetta",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meloetta.png"
+  },
+  {
+    "name": "meltan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meltan.png"
+  },
+  {
+    "name": "meowscarada",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meowscarada.png"
+  },
+  {
+    "name": "meowstic-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meowstic-f.png"
+  },
+  {
+    "name": "meowstic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meowstic.png"
+  },
+  {
+    "name": "meowth-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meowth-alola.png"
+  },
+  {
+    "name": "meowth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/meowth.png"
+  },
+  {
+    "name": "mesprit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mesprit.png"
+  },
+  {
+    "name": "metagross-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/metagross-mega.png"
+  },
+  {
+    "name": "metagross",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/metagross.png"
+  },
+  {
+    "name": "metang",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/metang.png"
+  },
+  {
+    "name": "metapod",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/metapod.png"
+  },
+  {
+    "name": "mew",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mew.png"
+  },
+  {
+    "name": "mewtwo-megax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mewtwo-megax.png"
+  },
+  {
+    "name": "mewtwo-megay",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mewtwo-megay.png"
+  },
+  {
+    "name": "mewtwo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mewtwo.png"
+  },
+  {
+    "name": "miasmaw",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/miasmaw.png"
+  },
+  {
+    "name": "miasmite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/miasmite.png"
+  },
+  {
+    "name": "mienfoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mienfoo.png"
+  },
+  {
+    "name": "mienshao",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mienshao.png"
+  },
+  {
+    "name": "mightyena",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mightyena.png"
+  },
+  {
+    "name": "milotic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/milotic.png"
+  },
+  {
+    "name": "miltank",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/miltank.png"
+  },
+  {
+    "name": "mimejr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mimejr.png"
+  },
+  {
+    "name": "mimikyu-busted-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mimikyu-busted-totem.png"
+  },
+  {
+    "name": "mimikyu-busted",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mimikyu-busted.png"
+  },
+  {
+    "name": "mimikyu-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mimikyu-totem.png"
+  },
+  {
+    "name": "mimikyu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mimikyu.png"
+  },
+  {
+    "name": "minccino",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minccino.png"
+  },
+  {
+    "name": "minior-blue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-blue.png"
+  },
+  {
+    "name": "minior-green",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-green.png"
+  },
+  {
+    "name": "minior-indigo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-indigo.png"
+  },
+  {
+    "name": "minior-meteor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-meteor.png"
+  },
+  {
+    "name": "minior-orange",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-orange.png"
+  },
+  {
+    "name": "minior-violet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-violet.png"
+  },
+  {
+    "name": "minior-yellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior-yellow.png"
+  },
+  {
+    "name": "minior",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minior.png"
+  },
+  {
+    "name": "minun",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/minun.png"
+  },
+  {
+    "name": "miraidon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/miraidon.png"
+  },
+  {
+    "name": "misdreavus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/misdreavus.png"
+  },
+  {
+    "name": "mismagius",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mismagius.png"
+  },
+  {
+    "name": "mollux",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mollux.png"
+  },
+  {
+    "name": "moltres",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/moltres.png"
+  },
+  {
+    "name": "monferno",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/monferno.png"
+  },
+  {
+    "name": "monohm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/monohm.png"
+  },
+  {
+    "name": "morelull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/morelull.png"
+  },
+  {
+    "name": "morpeko-hangry",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/morpeko-hangry.png"
+  },
+  {
+    "name": "morpeko",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/morpeko.png"
+  },
+  {
+    "name": "mothim",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mothim.png"
+  },
+  {
+    "name": "mrmime",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mrmime.png"
+  },
+  {
+    "name": "mudbray",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mudbray.png"
+  },
+  {
+    "name": "mudkip",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mudkip.png"
+  },
+  {
+    "name": "mudsdale",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mudsdale.png"
+  },
+  {
+    "name": "muk-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/muk-alola.png"
+  },
+  {
+    "name": "muk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/muk.png"
+  },
+  {
+    "name": "mumbao",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/mumbao.png"
+  },
+  {
+    "name": "munchlax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/munchlax.png"
+  },
+  {
+    "name": "munkidori",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/munkidori.png"
+  },
+  {
+    "name": "munna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/munna.png"
+  },
+  {
+    "name": "murkrow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/murkrow.png"
+  },
+  {
+    "name": "musharna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/musharna.png"
+  },
+  {
+    "name": "nacli",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nacli.png"
+  },
+  {
+    "name": "naclstack",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/naclstack.png"
+  },
+  {
+    "name": "naganadel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/naganadel.png"
+  },
+  {
+    "name": "natu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/natu.png"
+  },
+  {
+    "name": "naviathan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/naviathan.png"
+  },
+  {
+    "name": "necrozma-dawnwings",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necrozma-dawnwings.png"
+  },
+  {
+    "name": "necrozma-duskmane",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necrozma-duskmane.png"
+  },
+  {
+    "name": "necrozma-ultra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necrozma-ultra.png"
+  },
+  {
+    "name": "necrozma",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necrozma.png"
+  },
+  {
+    "name": "necturine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necturine.png"
+  },
+  {
+    "name": "necturna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/necturna.png"
+  },
+  {
+    "name": "nickit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nickit.png"
+  },
+  {
+    "name": "nidoking",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidoking.png"
+  },
+  {
+    "name": "nidoqueen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidoqueen.png"
+  },
+  {
+    "name": "nidoranf",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidoranf.png"
+  },
+  {
+    "name": "nidoranm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidoranm.png"
+  },
+  {
+    "name": "nidorina",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidorina.png"
+  },
+  {
+    "name": "nidorino",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nidorino.png"
+  },
+  {
+    "name": "nihilego",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nihilego.png"
+  },
+  {
+    "name": "nincada",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nincada.png"
+  },
+  {
+    "name": "ninetales-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ninetales-alola.png"
+  },
+  {
+    "name": "ninetales",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ninetales.png"
+  },
+  {
+    "name": "ninjask",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ninjask.png"
+  },
+  {
+    "name": "noctowl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/noctowl.png"
+  },
+  {
+    "name": "nohface",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nohface.png"
+  },
+  {
+    "name": "noibat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/noibat.png"
+  },
+  {
+    "name": "noivern",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/noivern.png"
+  },
+  {
+    "name": "nosepass",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nosepass.png"
+  },
+  {
+    "name": "numel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/numel.png"
+  },
+  {
+    "name": "nuzleaf",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nuzleaf.png"
+  },
+  {
+    "name": "nymble",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/nymble.png"
+  },
+  {
+    "name": "octillery",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/octillery.png"
+  },
+  {
+    "name": "oddish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oddish.png"
+  },
+  {
+    "name": "ogerpon-cornerstone",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-cornerstone.png"
+  },
+  {
+    "name": "ogerpon-cornerstonetera",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-cornerstonetera.png"
+  },
+  {
+    "name": "ogerpon-hearthflame",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-hearthflame.png"
+  },
+  {
+    "name": "ogerpon-hearthflametera",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-hearthflametera.png"
+  },
+  {
+    "name": "ogerpon-tealtera",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-tealtera.png"
+  },
+  {
+    "name": "ogerpon-wellspring",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-wellspring.png"
+  },
+  {
+    "name": "ogerpon-wellspringtera",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon-wellspringtera.png"
+  },
+  {
+    "name": "ogerpon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ogerpon.png"
+  },
+  {
+    "name": "oinkologne-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oinkologne-f.png"
+  },
+  {
+    "name": "oinkologne",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oinkologne.png"
+  },
+  {
+    "name": "okidogi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/okidogi.png"
+  },
+  {
+    "name": "omanyte",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/omanyte.png"
+  },
+  {
+    "name": "omastar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/omastar.png"
+  },
+  {
+    "name": "onix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/onix.png"
+  },
+  {
+    "name": "oranguru",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oranguru.png"
+  },
+  {
+    "name": "orbeetle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/orbeetle.png"
+  },
+  {
+    "name": "oricorio-pau",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oricorio-pau.png"
+  },
+  {
+    "name": "oricorio-pompom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oricorio-pompom.png"
+  },
+  {
+    "name": "oricorio-sensu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oricorio-sensu.png"
+  },
+  {
+    "name": "oricorio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oricorio.png"
+  },
+  {
+    "name": "orthworm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/orthworm.png"
+  },
+  {
+    "name": "oshawott",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/oshawott.png"
+  },
+  {
+    "name": "pachirisu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pachirisu.png"
+  },
+  {
+    "name": "pajantom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pajantom.png"
+  },
+  {
+    "name": "palafin-hero",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/palafin-hero.png"
+  },
+  {
+    "name": "palafin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/palafin.png"
+  },
+  {
+    "name": "palkia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/palkia.png"
+  },
+  {
+    "name": "palossand",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/palossand.png"
+  },
+  {
+    "name": "palpitoad",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/palpitoad.png"
+  },
+  {
+    "name": "pancham",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pancham.png"
+  },
+  {
+    "name": "pangoro",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pangoro.png"
+  },
+  {
+    "name": "panpour",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/panpour.png"
+  },
+  {
+    "name": "pansage",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pansage.png"
+  },
+  {
+    "name": "pansear",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pansear.png"
+  },
+  {
+    "name": "paras",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/paras.png"
+  },
+  {
+    "name": "parasect",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/parasect.png"
+  },
+  {
+    "name": "passimian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/passimian.png"
+  },
+  {
+    "name": "patrat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/patrat.png"
+  },
+  {
+    "name": "pawmi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pawmi.png"
+  },
+  {
+    "name": "pawmo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pawmo.png"
+  },
+  {
+    "name": "pawmot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pawmot.png"
+  },
+  {
+    "name": "pawniard",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pawniard.png"
+  },
+  {
+    "name": "pelipper",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pelipper.png"
+  },
+  {
+    "name": "persian-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/persian-alola.png"
+  },
+  {
+    "name": "persian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/persian.png"
+  },
+  {
+    "name": "petilil",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/petilil.png"
+  },
+  {
+    "name": "phanpy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/phanpy.png"
+  },
+  {
+    "name": "phantump",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/phantump.png"
+  },
+  {
+    "name": "pheromosa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pheromosa.png"
+  },
+  {
+    "name": "phione",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/phione.png"
+  },
+  {
+    "name": "pichu-spikyeared",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pichu-spikyeared.png"
+  },
+  {
+    "name": "pichu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pichu.png"
+  },
+  {
+    "name": "pidgeot-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pidgeot-mega.png"
+  },
+  {
+    "name": "pidgeot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pidgeot.png"
+  },
+  {
+    "name": "pidgeotto",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pidgeotto.png"
+  },
+  {
+    "name": "pidgey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pidgey.png"
+  },
+  {
+    "name": "pidove",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pidove.png"
+  },
+  {
+    "name": "pignite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pignite.png"
+  },
+  {
+    "name": "pikachu-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-alola.png"
+  },
+  {
+    "name": "pikachu-cosplay",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-cosplay.png"
+  },
+  {
+    "name": "pikachu-hoenn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-hoenn.png"
+  },
+  {
+    "name": "pikachu-kalos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-kalos.png"
+  },
+  {
+    "name": "pikachu-original",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-original.png"
+  },
+  {
+    "name": "pikachu-partner",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-partner.png"
+  },
+  {
+    "name": "pikachu-sinnoh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-sinnoh.png"
+  },
+  {
+    "name": "pikachu-starter-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-starter-f.png"
+  },
+  {
+    "name": "pikachu-starter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-starter.png"
+  },
+  {
+    "name": "pikachu-unova",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu-unova.png"
+  },
+  {
+    "name": "pikachu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikachu.png"
+  },
+  {
+    "name": "pikipek",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pikipek.png"
+  },
+  {
+    "name": "piloswine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/piloswine.png"
+  },
+  {
+    "name": "pineco",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pineco.png"
+  },
+  {
+    "name": "pinsir-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pinsir-mega.png"
+  },
+  {
+    "name": "pinsir",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pinsir.png"
+  },
+  {
+    "name": "piplup",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/piplup.png"
+  },
+  {
+    "name": "plasmanta",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/plasmanta.png"
+  },
+  {
+    "name": "pluffle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pluffle.png"
+  },
+  {
+    "name": "plusle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/plusle.png"
+  },
+  {
+    "name": "poipole",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poipole.png"
+  },
+  {
+    "name": "pokestarbrycenman",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarbrycenman.png"
+  },
+  {
+    "name": "pokestarf00",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarf00.png"
+  },
+  {
+    "name": "pokestarf002",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarf002.png"
+  },
+  {
+    "name": "pokestargiant-2",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestargiant-2.png"
+  },
+  {
+    "name": "pokestargiant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestargiant.png"
+  },
+  {
+    "name": "pokestarhumanoid",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarhumanoid.png"
+  },
+  {
+    "name": "pokestarmonster",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarmonster.png"
+  },
+  {
+    "name": "pokestarmt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarmt.png"
+  },
+  {
+    "name": "pokestarmt2",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarmt2.png"
+  },
+  {
+    "name": "pokestarspirit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarspirit.png"
+  },
+  {
+    "name": "pokestarufo-2",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarufo-2.png"
+  },
+  {
+    "name": "pokestarufo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pokestarufo.png"
+  },
+  {
+    "name": "politoed",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/politoed.png"
+  },
+  {
+    "name": "poliwag",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poliwag.png"
+  },
+  {
+    "name": "poliwhirl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poliwhirl.png"
+  },
+  {
+    "name": "poliwrath",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poliwrath.png"
+  },
+  {
+    "name": "poltchageist-artisan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poltchageist-artisan.png"
+  },
+  {
+    "name": "poltchageist",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poltchageist.png"
+  },
+  {
+    "name": "ponyta",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ponyta.png"
+  },
+  {
+    "name": "poochyena",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/poochyena.png"
+  },
+  {
+    "name": "popplio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/popplio.png"
+  },
+  {
+    "name": "porygon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/porygon.png"
+  },
+  {
+    "name": "porygon2",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/porygon2.png"
+  },
+  {
+    "name": "porygonz",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/porygonz.png"
+  },
+  {
+    "name": "primarina",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/primarina.png"
+  },
+  {
+    "name": "primeape",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/primeape.png"
+  },
+  {
+    "name": "prinplup",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/prinplup.png"
+  },
+  {
+    "name": "privatyke",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/privatyke.png"
+  },
+  {
+    "name": "probopass",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/probopass.png"
+  },
+  {
+    "name": "protowatt-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/protowatt-f.png"
+  },
+  {
+    "name": "protowatt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/protowatt.png"
+  },
+  {
+    "name": "psyduck",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/psyduck.png"
+  },
+  {
+    "name": "pumpkaboo-average",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pumpkaboo-average.png"
+  },
+  {
+    "name": "pumpkaboo-large",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pumpkaboo-large.png"
+  },
+  {
+    "name": "pumpkaboo-small",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pumpkaboo-small.png"
+  },
+  {
+    "name": "pumpkaboo-super",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pumpkaboo-super.png"
+  },
+  {
+    "name": "pumpkaboo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pumpkaboo.png"
+  },
+  {
+    "name": "pupitar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pupitar.png"
+  },
+  {
+    "name": "purrloin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/purrloin.png"
+  },
+  {
+    "name": "purugly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/purugly.png"
+  },
+  {
+    "name": "pyroak-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pyroak-f.png"
+  },
+  {
+    "name": "pyroak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pyroak.png"
+  },
+  {
+    "name": "pyroar-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pyroar-f.png"
+  },
+  {
+    "name": "pyroar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pyroar.png"
+  },
+  {
+    "name": "pyukumuku",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/pyukumuku.png"
+  },
+  {
+    "name": "quagsire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quagsire.png"
+  },
+  {
+    "name": "quaquaval",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quaquaval.png"
+  },
+  {
+    "name": "quaxly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quaxly.png"
+  },
+  {
+    "name": "quaxwell",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quaxwell.png"
+  },
+  {
+    "name": "quilava",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quilava.png"
+  },
+  {
+    "name": "quilladin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/quilladin.png"
+  },
+  {
+    "name": "qwilfish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/qwilfish.png"
+  },
+  {
+    "name": "raboot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raboot.png"
+  },
+  {
+    "name": "rabsca",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rabsca.png"
+  },
+  {
+    "name": "raichu-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raichu-alola.png"
+  },
+  {
+    "name": "raichu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raichu.png"
+  },
+  {
+    "name": "raikou",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raikou.png"
+  },
+  {
+    "name": "ralts",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ralts.png"
+  },
+  {
+    "name": "rampardos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rampardos.png"
+  },
+  {
+    "name": "rapidash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rapidash.png"
+  },
+  {
+    "name": "raticate-alola-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raticate-alola-totem.png"
+  },
+  {
+    "name": "raticate-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raticate-alola.png"
+  },
+  {
+    "name": "raticate",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/raticate.png"
+  },
+  {
+    "name": "rattata-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rattata-alola.png"
+  },
+  {
+    "name": "rattata",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rattata.png"
+  },
+  {
+    "name": "rayquaza-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rayquaza-mega.png"
+  },
+  {
+    "name": "rayquaza",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rayquaza.png"
+  },
+  {
+    "name": "rebble",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rebble.png"
+  },
+  {
+    "name": "regice",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/regice.png"
+  },
+  {
+    "name": "regigigas",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/regigigas.png"
+  },
+  {
+    "name": "regirock",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/regirock.png"
+  },
+  {
+    "name": "registeel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/registeel.png"
+  },
+  {
+    "name": "relicanth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/relicanth.png"
+  },
+  {
+    "name": "rellor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rellor.png"
+  },
+  {
+    "name": "remoraid",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/remoraid.png"
+  },
+  {
+    "name": "reshiram",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/reshiram.png"
+  },
+  {
+    "name": "reuniclus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/reuniclus.png"
+  },
+  {
+    "name": "revavroom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/revavroom.png"
+  },
+  {
+    "name": "revenankh-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/revenankh-f.png"
+  },
+  {
+    "name": "revenankh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/revenankh.png"
+  },
+  {
+    "name": "rhydon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rhydon.png"
+  },
+  {
+    "name": "rhyhorn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rhyhorn.png"
+  },
+  {
+    "name": "rhyperior",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rhyperior.png"
+  },
+  {
+    "name": "ribombee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ribombee.png"
+  },
+  {
+    "name": "rillaboom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rillaboom.png"
+  },
+  {
+    "name": "riolu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/riolu.png"
+  },
+  {
+    "name": "roaringmoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/roaringmoon.png"
+  },
+  {
+    "name": "rockruff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rockruff.png"
+  },
+  {
+    "name": "roggenrola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/roggenrola.png"
+  },
+  {
+    "name": "rolycoly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rolycoly.png"
+  },
+  {
+    "name": "rookidee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rookidee.png"
+  },
+  {
+    "name": "roselia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/roselia.png"
+  },
+  {
+    "name": "roserade",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/roserade.png"
+  },
+  {
+    "name": "rotom-fan",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom-fan.png"
+  },
+  {
+    "name": "rotom-frost",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom-frost.png"
+  },
+  {
+    "name": "rotom-heat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom-heat.png"
+  },
+  {
+    "name": "rotom-mow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom-mow.png"
+  },
+  {
+    "name": "rotom-wash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom-wash.png"
+  },
+  {
+    "name": "rotom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rotom.png"
+  },
+  {
+    "name": "rowlet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rowlet.png"
+  },
+  {
+    "name": "rufflet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/rufflet.png"
+  },
+  {
+    "name": "sableye-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sableye-mega.png"
+  },
+  {
+    "name": "sableye",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sableye.png"
+  },
+  {
+    "name": "saharaja",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/saharaja.png"
+  },
+  {
+    "name": "saharascal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/saharascal.png"
+  },
+  {
+    "name": "salamence-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/salamence-mega.png"
+  },
+  {
+    "name": "salamence",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/salamence.png"
+  },
+  {
+    "name": "salandit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/salandit.png"
+  },
+  {
+    "name": "salazzle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/salazzle.png"
+  },
+  {
+    "name": "samurott",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/samurott.png"
+  },
+  {
+    "name": "sandaconda",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandaconda.png"
+  },
+  {
+    "name": "sandile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandile.png"
+  },
+  {
+    "name": "sandshrew-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandshrew-alola.png"
+  },
+  {
+    "name": "sandshrew",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandshrew.png"
+  },
+  {
+    "name": "sandslash-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandslash-alola.png"
+  },
+  {
+    "name": "sandslash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandslash.png"
+  },
+  {
+    "name": "sandygast",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandygast.png"
+  },
+  {
+    "name": "sandyshocks",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sandyshocks.png"
+  },
+  {
+    "name": "sawk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawk.png"
+  },
+  {
+    "name": "sawsbuck-autumn",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawsbuck-autumn.png"
+  },
+  {
+    "name": "sawsbuck-sprint",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawsbuck-sprint.png"
+  },
+  {
+    "name": "sawsbuck-summer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawsbuck-summer.png"
+  },
+  {
+    "name": "sawsbuck-winter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawsbuck-winter.png"
+  },
+  {
+    "name": "sawsbuck",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sawsbuck.png"
+  },
+  {
+    "name": "scatterbug",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scatterbug.png"
+  },
+  {
+    "name": "scattervein",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scattervein.png"
+  },
+  {
+    "name": "sceptile-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sceptile-mega.png"
+  },
+  {
+    "name": "sceptile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sceptile.png"
+  },
+  {
+    "name": "scizor-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scizor-mega.png"
+  },
+  {
+    "name": "scizor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scizor.png"
+  },
+  {
+    "name": "scolipede",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scolipede.png"
+  },
+  {
+    "name": "scorbunny",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scorbunny.png"
+  },
+  {
+    "name": "scovillain",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scovillain.png"
+  },
+  {
+    "name": "scrafty",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scrafty.png"
+  },
+  {
+    "name": "scraggy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scraggy.png"
+  },
+  {
+    "name": "scratchet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scratchet.png"
+  },
+  {
+    "name": "screamtail",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/screamtail.png"
+  },
+  {
+    "name": "scyther",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/scyther.png"
+  },
+  {
+    "name": "seadra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seadra.png"
+  },
+  {
+    "name": "seaking",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seaking.png"
+  },
+  {
+    "name": "sealeo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sealeo.png"
+  },
+  {
+    "name": "seedot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seedot.png"
+  },
+  {
+    "name": "seel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seel.png"
+  },
+  {
+    "name": "seismitoad",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seismitoad.png"
+  },
+  {
+    "name": "sentret",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sentret.png"
+  },
+  {
+    "name": "serperior",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/serperior.png"
+  },
+  {
+    "name": "servine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/servine.png"
+  },
+  {
+    "name": "seviper",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/seviper.png"
+  },
+  {
+    "name": "sewaddle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sewaddle.png"
+  },
+  {
+    "name": "sharpedo-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sharpedo-mega.png"
+  },
+  {
+    "name": "sharpedo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sharpedo.png"
+  },
+  {
+    "name": "shaymin-land",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shaymin-land.png"
+  },
+  {
+    "name": "shaymin-sky",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shaymin-sky.png"
+  },
+  {
+    "name": "shaymin",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shaymin.png"
+  },
+  {
+    "name": "shedinja",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shedinja.png"
+  },
+  {
+    "name": "shelgon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shelgon.png"
+  },
+  {
+    "name": "shellder",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shellder.png"
+  },
+  {
+    "name": "shellos-east",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shellos-east.png"
+  },
+  {
+    "name": "shellos-west",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shellos-west.png"
+  },
+  {
+    "name": "shellos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shellos.png"
+  },
+  {
+    "name": "shelmet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shelmet.png"
+  },
+  {
+    "name": "shieldon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shieldon.png"
+  },
+  {
+    "name": "shiftry",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shiftry.png"
+  },
+  {
+    "name": "shiinotic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shiinotic.png"
+  },
+  {
+    "name": "shinx",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shinx.png"
+  },
+  {
+    "name": "shox",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shox.png"
+  },
+  {
+    "name": "shroodle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shroodle.png"
+  },
+  {
+    "name": "shroomish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shroomish.png"
+  },
+  {
+    "name": "shuckle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shuckle.png"
+  },
+  {
+    "name": "shuppet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/shuppet.png"
+  },
+  {
+    "name": "sigilyph",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sigilyph.png"
+  },
+  {
+    "name": "silcoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silcoon.png"
+  },
+  {
+    "name": "silicobra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silicobra.png"
+  },
+  {
+    "name": "silvally-bug",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-bug.png"
+  },
+  {
+    "name": "silvally-dark",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-dark.png"
+  },
+  {
+    "name": "silvally-dragon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-dragon.png"
+  },
+  {
+    "name": "silvally-electric",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-electric.png"
+  },
+  {
+    "name": "silvally-fairy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-fairy.png"
+  },
+  {
+    "name": "silvally-fighting",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-fighting.png"
+  },
+  {
+    "name": "silvally-fire",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-fire.png"
+  },
+  {
+    "name": "silvally-flying",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-flying.png"
+  },
+  {
+    "name": "silvally-ghost",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-ghost.png"
+  },
+  {
+    "name": "silvally-grass",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-grass.png"
+  },
+  {
+    "name": "silvally-ground",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-ground.png"
+  },
+  {
+    "name": "silvally-ice",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-ice.png"
+  },
+  {
+    "name": "silvally-poison",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-poison.png"
+  },
+  {
+    "name": "silvally-psychic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-psychic.png"
+  },
+  {
+    "name": "silvally-rock",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-rock.png"
+  },
+  {
+    "name": "silvally-steel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-steel.png"
+  },
+  {
+    "name": "silvally-water",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally-water.png"
+  },
+  {
+    "name": "silvally",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/silvally.png"
+  },
+  {
+    "name": "simipour",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/simipour.png"
+  },
+  {
+    "name": "simisage",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/simisage.png"
+  },
+  {
+    "name": "simisear",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/simisear.png"
+  },
+  {
+    "name": "sinistcha-masterpiece",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sinistcha-masterpiece.png"
+  },
+  {
+    "name": "sinistcha",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sinistcha.png"
+  },
+  {
+    "name": "sinsitcha-masterpiece",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sinsitcha-masterpiece.png"
+  },
+  {
+    "name": "sinsitcha",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sinsitcha.png"
+  },
+  {
+    "name": "sizzlipede",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sizzlipede.png"
+  },
+  {
+    "name": "skarmory",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skarmory.png"
+  },
+  {
+    "name": "skeledirge",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skeledirge.png"
+  },
+  {
+    "name": "skiddo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skiddo.png"
+  },
+  {
+    "name": "skiploom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skiploom.png"
+  },
+  {
+    "name": "skitty",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skitty.png"
+  },
+  {
+    "name": "skorupi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skorupi.png"
+  },
+  {
+    "name": "skrelp",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skrelp.png"
+  },
+  {
+    "name": "skuntank",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skuntank.png"
+  },
+  {
+    "name": "skwovet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/skwovet.png"
+  },
+  {
+    "name": "slaking",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slaking.png"
+  },
+  {
+    "name": "slakoth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slakoth.png"
+  },
+  {
+    "name": "sliggoo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sliggoo.png"
+  },
+  {
+    "name": "slitherwing",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slitherwing.png"
+  },
+  {
+    "name": "slowbro-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slowbro-mega.png"
+  },
+  {
+    "name": "slowbro",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slowbro.png"
+  },
+  {
+    "name": "slowking",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slowking.png"
+  },
+  {
+    "name": "slowpoke",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slowpoke.png"
+  },
+  {
+    "name": "slugma",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slugma.png"
+  },
+  {
+    "name": "slurpuff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/slurpuff.png"
+  },
+  {
+    "name": "smeargle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smeargle.png"
+  },
+  {
+    "name": "smogecko",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smogecko.png"
+  },
+  {
+    "name": "smoguana",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smoguana.png"
+  },
+  {
+    "name": "smokomodo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smokomodo.png"
+  },
+  {
+    "name": "smoliv",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smoliv.png"
+  },
+  {
+    "name": "smoochum",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/smoochum.png"
+  },
+  {
+    "name": "snaelstrom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snaelstrom.png"
+  },
+  {
+    "name": "sneasel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sneasel.png"
+  },
+  {
+    "name": "snivy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snivy.png"
+  },
+  {
+    "name": "snorlax",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snorlax.png"
+  },
+  {
+    "name": "snorunt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snorunt.png"
+  },
+  {
+    "name": "snover",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snover.png"
+  },
+  {
+    "name": "snubbull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snubbull.png"
+  },
+  {
+    "name": "snugglow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/snugglow.png"
+  },
+  {
+    "name": "sobble",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sobble.png"
+  },
+  {
+    "name": "solgaleo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/solgaleo.png"
+  },
+  {
+    "name": "solosis",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/solosis.png"
+  },
+  {
+    "name": "solotl",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/solotl.png"
+  },
+  {
+    "name": "solrock",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/solrock.png"
+  },
+  {
+    "name": "spearow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spearow.png"
+  },
+  {
+    "name": "spewpa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spewpa.png"
+  },
+  {
+    "name": "spheal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spheal.png"
+  },
+  {
+    "name": "spidops",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spidops.png"
+  },
+  {
+    "name": "spinarak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spinarak.png"
+  },
+  {
+    "name": "spinda",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spinda.png"
+  },
+  {
+    "name": "spiritomb",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spiritomb.png"
+  },
+  {
+    "name": "spoink",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spoink.png"
+  },
+  {
+    "name": "sprigatito",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sprigatito.png"
+  },
+  {
+    "name": "spritzee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/spritzee.png"
+  },
+  {
+    "name": "squawkabilly-blue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/squawkabilly-blue.png"
+  },
+  {
+    "name": "squawkabilly-white",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/squawkabilly-white.png"
+  },
+  {
+    "name": "squawkabilly-yellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/squawkabilly-yellow.png"
+  },
+  {
+    "name": "squawkabilly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/squawkabilly.png"
+  },
+  {
+    "name": "squirtle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/squirtle.png"
+  },
+  {
+    "name": "stakataka",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stakataka.png"
+  },
+  {
+    "name": "stantler",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stantler.png"
+  },
+  {
+    "name": "staraptor",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/staraptor.png"
+  },
+  {
+    "name": "staravia",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/staravia.png"
+  },
+  {
+    "name": "starly",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/starly.png"
+  },
+  {
+    "name": "starmie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/starmie.png"
+  },
+  {
+    "name": "staryu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/staryu.png"
+  },
+  {
+    "name": "steelix-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/steelix-mega.png"
+  },
+  {
+    "name": "steelix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/steelix.png"
+  },
+  {
+    "name": "steenee",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/steenee.png"
+  },
+  {
+    "name": "stonjourner",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stonjourner.png"
+  },
+  {
+    "name": "stoutland",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stoutland.png"
+  },
+  {
+    "name": "stratagem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stratagem.png"
+  },
+  {
+    "name": "stufful",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stufful.png"
+  },
+  {
+    "name": "stunfisk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stunfisk.png"
+  },
+  {
+    "name": "stunky",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/stunky.png"
+  },
+  {
+    "name": "sudowoodo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sudowoodo.png"
+  },
+  {
+    "name": "suicune",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/suicune.png"
+  },
+  {
+    "name": "sunflora",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sunflora.png"
+  },
+  {
+    "name": "sunkern",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sunkern.png"
+  },
+  {
+    "name": "surskit",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/surskit.png"
+  },
+  {
+    "name": "swablu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swablu.png"
+  },
+  {
+    "name": "swadloon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swadloon.png"
+  },
+  {
+    "name": "swalot",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swalot.png"
+  },
+  {
+    "name": "swampert-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swampert-mega.png"
+  },
+  {
+    "name": "swampert",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swampert.png"
+  },
+  {
+    "name": "swanna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swanna.png"
+  },
+  {
+    "name": "swellow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swellow.png"
+  },
+  {
+    "name": "swinub",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swinub.png"
+  },
+  {
+    "name": "swirlix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swirlix.png"
+  },
+  {
+    "name": "swirlpool",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swirlpool.png"
+  },
+  {
+    "name": "swoobat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/swoobat.png"
+  },
+  {
+    "name": "syclant-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/syclant-f.png"
+  },
+  {
+    "name": "syclant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/syclant.png"
+  },
+  {
+    "name": "syclar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/syclar.png"
+  },
+  {
+    "name": "sylveon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/sylveon.png"
+  },
+  {
+    "name": "tactite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tactite.png"
+  },
+  {
+    "name": "tadbulb",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tadbulb.png"
+  },
+  {
+    "name": "taillow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/taillow.png"
+  },
+  {
+    "name": "talonflame",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/talonflame.png"
+  },
+  {
+    "name": "tandemaus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tandemaus.png"
+  },
+  {
+    "name": "tangela",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tangela.png"
+  },
+  {
+    "name": "tangrowth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tangrowth.png"
+  },
+  {
+    "name": "tapubulu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tapubulu.png"
+  },
+  {
+    "name": "tapufini",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tapufini.png"
+  },
+  {
+    "name": "tapukoko",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tapukoko.png"
+  },
+  {
+    "name": "tapulele",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tapulele.png"
+  },
+  {
+    "name": "tarountula",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tarountula.png"
+  },
+  {
+    "name": "tatsugiri-droopy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tatsugiri-droopy.png"
+  },
+  {
+    "name": "tatsugiri-stretchy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tatsugiri-stretchy.png"
+  },
+  {
+    "name": "tatsugiri",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tatsugiri.png"
+  },
+  {
+    "name": "tauros-paldeaaqua",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tauros-paldeaaqua.png"
+  },
+  {
+    "name": "tauros-paldeablaze",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tauros-paldeablaze.png"
+  },
+  {
+    "name": "tauros-paldeacombat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tauros-paldeacombat.png"
+  },
+  {
+    "name": "tauros",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tauros.png"
+  },
+  {
+    "name": "teddiursa",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/teddiursa.png"
+  },
+  {
+    "name": "tentacool",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tentacool.png"
+  },
+  {
+    "name": "tentacruel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tentacruel.png"
+  },
+  {
+    "name": "tepig",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tepig.png"
+  },
+  {
+    "name": "terrakion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/terrakion.png"
+  },
+  {
+    "name": "thievul",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/thievul.png"
+  },
+  {
+    "name": "throh",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/throh.png"
+  },
+  {
+    "name": "thundurus-incarnate",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/thundurus-incarnate.png"
+  },
+  {
+    "name": "thundurus-therian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/thundurus-therian.png"
+  },
+  {
+    "name": "thundurus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/thundurus.png"
+  },
+  {
+    "name": "thwackey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/thwackey.png"
+  },
+  {
+    "name": "timburr",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/timburr.png"
+  },
+  {
+    "name": "tinglu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tinglu.png"
+  },
+  {
+    "name": "tinkatink",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tinkatink.png"
+  },
+  {
+    "name": "tinkaton",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tinkaton.png"
+  },
+  {
+    "name": "tinkatuff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tinkatuff.png"
+  },
+  {
+    "name": "tirtouga",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tirtouga.png"
+  },
+  {
+    "name": "toedscool",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toedscool.png"
+  },
+  {
+    "name": "toedscruel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toedscruel.png"
+  },
+  {
+    "name": "togedemaru",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/togedemaru.png"
+  },
+  {
+    "name": "togekiss",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/togekiss.png"
+  },
+  {
+    "name": "togepi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/togepi.png"
+  },
+  {
+    "name": "togetic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/togetic.png"
+  },
+  {
+    "name": "tomohawk",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tomohawk.png"
+  },
+  {
+    "name": "torchic",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/torchic.png"
+  },
+  {
+    "name": "torkoal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/torkoal.png"
+  },
+  {
+    "name": "tornadus-incarnate",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tornadus-incarnate.png"
+  },
+  {
+    "name": "tornadus-therian",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tornadus-therian.png"
+  },
+  {
+    "name": "tornadus",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tornadus.png"
+  },
+  {
+    "name": "torracat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/torracat.png"
+  },
+  {
+    "name": "torterra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/torterra.png"
+  },
+  {
+    "name": "totodile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/totodile.png"
+  },
+  {
+    "name": "toucannon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toucannon.png"
+  },
+  {
+    "name": "toxapex",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toxapex.png"
+  },
+  {
+    "name": "toxel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toxel.png"
+  },
+  {
+    "name": "toxicroak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toxicroak.png"
+  },
+  {
+    "name": "toxtricity-lowkey",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toxtricity-lowkey.png"
+  },
+  {
+    "name": "toxtricity",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/toxtricity.png"
+  },
+  {
+    "name": "tranquill",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tranquill.png"
+  },
+  {
+    "name": "trapinch",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/trapinch.png"
+  },
+  {
+    "name": "treecko",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/treecko.png"
+  },
+  {
+    "name": "trevenant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/trevenant.png"
+  },
+  {
+    "name": "tropius",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tropius.png"
+  },
+  {
+    "name": "trubbish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/trubbish.png"
+  },
+  {
+    "name": "trumbeak",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/trumbeak.png"
+  },
+  {
+    "name": "tsareena",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tsareena.png"
+  },
+  {
+    "name": "turtonator",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/turtonator.png"
+  },
+  {
+    "name": "turtwig",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/turtwig.png"
+  },
+  {
+    "name": "tympole",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tympole.png"
+  },
+  {
+    "name": "tynamo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tynamo.png"
+  },
+  {
+    "name": "typenull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/typenull.png"
+  },
+  {
+    "name": "typhlosion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/typhlosion.png"
+  },
+  {
+    "name": "tyranitar-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tyranitar-mega.png"
+  },
+  {
+    "name": "tyranitar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tyranitar.png"
+  },
+  {
+    "name": "tyrantrum",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tyrantrum.png"
+  },
+  {
+    "name": "tyrogue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tyrogue.png"
+  },
+  {
+    "name": "tyrunt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/tyrunt.png"
+  },
+  {
+    "name": "umbreon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/umbreon.png"
+  },
+  {
+    "name": "unfezant-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unfezant-f.png"
+  },
+  {
+    "name": "unfezant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unfezant.png"
+  },
+  {
+    "name": "unown-a",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-a.png"
+  },
+  {
+    "name": "unown-b",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-b.png"
+  },
+  {
+    "name": "unown-c",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-c.png"
+  },
+  {
+    "name": "unown-d",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-d.png"
+  },
+  {
+    "name": "unown-e",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-e.png"
+  },
+  {
+    "name": "unown-exclamation",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-exclamation.png"
+  },
+  {
+    "name": "unown-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-f.png"
+  },
+  {
+    "name": "unown-g",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-g.png"
+  },
+  {
+    "name": "unown-h",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-h.png"
+  },
+  {
+    "name": "unown-i",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-i.png"
+  },
+  {
+    "name": "unown-j",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-j.png"
+  },
+  {
+    "name": "unown-k",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-k.png"
+  },
+  {
+    "name": "unown-l",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-l.png"
+  },
+  {
+    "name": "unown-m",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-m.png"
+  },
+  {
+    "name": "unown-n",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-n.png"
+  },
+  {
+    "name": "unown-o",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-o.png"
+  },
+  {
+    "name": "unown-p",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-p.png"
+  },
+  {
+    "name": "unown-q",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-q.png"
+  },
+  {
+    "name": "unown-question",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-question.png"
+  },
+  {
+    "name": "unown-r",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-r.png"
+  },
+  {
+    "name": "unown-s",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-s.png"
+  },
+  {
+    "name": "unown-t",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-t.png"
+  },
+  {
+    "name": "unown-u",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-u.png"
+  },
+  {
+    "name": "unown-v",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-v.png"
+  },
+  {
+    "name": "unown-w",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-w.png"
+  },
+  {
+    "name": "unown-x",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-x.png"
+  },
+  {
+    "name": "unown-y",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-y.png"
+  },
+  {
+    "name": "unown-z",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown-z.png"
+  },
+  {
+    "name": "unown",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/unown.png"
+  },
+  {
+    "name": "ursaluna-bloodmoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ursaluna-bloodmoon.png"
+  },
+  {
+    "name": "ursaring",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/ursaring.png"
+  },
+  {
+    "name": "uxie",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/uxie.png"
+  },
+  {
+    "name": "vanillish",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vanillish.png"
+  },
+  {
+    "name": "vanillite",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vanillite.png"
+  },
+  {
+    "name": "vanilluxe",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vanilluxe.png"
+  },
+  {
+    "name": "vaporeon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vaporeon.png"
+  },
+  {
+    "name": "varoom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/varoom.png"
+  },
+  {
+    "name": "veluza",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/veluza.png"
+  },
+  {
+    "name": "venipede",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venipede.png"
+  },
+  {
+    "name": "venomicon-epilogue",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venomicon-epilogue.png"
+  },
+  {
+    "name": "venomicon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venomicon.png"
+  },
+  {
+    "name": "venomoth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venomoth.png"
+  },
+  {
+    "name": "venonat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venonat.png"
+  },
+  {
+    "name": "venusaur-mega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venusaur-mega.png"
+  },
+  {
+    "name": "venusaur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/venusaur.png"
+  },
+  {
+    "name": "vespiquen",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vespiquen.png"
+  },
+  {
+    "name": "vibrava",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vibrava.png"
+  },
+  {
+    "name": "victini",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/victini.png"
+  },
+  {
+    "name": "victreebel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/victreebel.png"
+  },
+  {
+    "name": "vigoroth",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vigoroth.png"
+  },
+  {
+    "name": "vikavolt-totem",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vikavolt-totem.png"
+  },
+  {
+    "name": "vikavolt",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vikavolt.png"
+  },
+  {
+    "name": "vileplume",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vileplume.png"
+  },
+  {
+    "name": "virizion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/virizion.png"
+  },
+  {
+    "name": "vivillon-archipelago",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-archipelago.png"
+  },
+  {
+    "name": "vivillon-continental",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-continental.png"
+  },
+  {
+    "name": "vivillon-elegant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-elegant.png"
+  },
+  {
+    "name": "vivillon-fancy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-fancy.png"
+  },
+  {
+    "name": "vivillon-garden",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-garden.png"
+  },
+  {
+    "name": "vivillon-highplains",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-highplains.png"
+  },
+  {
+    "name": "vivillon-icysnow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-icysnow.png"
+  },
+  {
+    "name": "vivillon-jungle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-jungle.png"
+  },
+  {
+    "name": "vivillon-marine",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-marine.png"
+  },
+  {
+    "name": "vivillon-meadow",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-meadow.png"
+  },
+  {
+    "name": "vivillon-modern",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-modern.png"
+  },
+  {
+    "name": "vivillon-monsoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-monsoon.png"
+  },
+  {
+    "name": "vivillon-ocean",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-ocean.png"
+  },
+  {
+    "name": "vivillon-pokeball",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-pokeball.png"
+  },
+  {
+    "name": "vivillon-polar",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-polar.png"
+  },
+  {
+    "name": "vivillon-river",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-river.png"
+  },
+  {
+    "name": "vivillon-sandstorm",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-sandstorm.png"
+  },
+  {
+    "name": "vivillon-savanna",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-savanna.png"
+  },
+  {
+    "name": "vivillon-sun",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-sun.png"
+  },
+  {
+    "name": "vivillon-tundra",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon-tundra.png"
+  },
+  {
+    "name": "vivillon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vivillon.png"
+  },
+  {
+    "name": "volbeat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/volbeat.png"
+  },
+  {
+    "name": "volcanion",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/volcanion.png"
+  },
+  {
+    "name": "volcarona",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/volcarona.png"
+  },
+  {
+    "name": "volkraken",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/volkraken.png"
+  },
+  {
+    "name": "volkritter",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/volkritter.png"
+  },
+  {
+    "name": "voltorb",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/voltorb.png"
+  },
+  {
+    "name": "voodoll",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/voodoll.png"
+  },
+  {
+    "name": "voodoom-f",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/voodoom-f.png"
+  },
+  {
+    "name": "voodoom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/voodoom.png"
+  },
+  {
+    "name": "vullaby",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vullaby.png"
+  },
+  {
+    "name": "vulpix-alola",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vulpix-alola.png"
+  },
+  {
+    "name": "vulpix",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/vulpix.png"
+  },
+  {
+    "name": "wailmer",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wailmer.png"
+  },
+  {
+    "name": "wailord",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wailord.png"
+  },
+  {
+    "name": "walkingwake",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/walkingwake.png"
+  },
+  {
+    "name": "walrein",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/walrein.png"
+  },
+  {
+    "name": "wartortle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wartortle.png"
+  },
+  {
+    "name": "watchog",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/watchog.png"
+  },
+  {
+    "name": "wattrel",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wattrel.png"
+  },
+  {
+    "name": "weavile",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/weavile.png"
+  },
+  {
+    "name": "weedle",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/weedle.png"
+  },
+  {
+    "name": "weepinbell",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/weepinbell.png"
+  },
+  {
+    "name": "weezing",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/weezing.png"
+  },
+  {
+    "name": "whimsicott",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/whimsicott.png"
+  },
+  {
+    "name": "whirlipede",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/whirlipede.png"
+  },
+  {
+    "name": "whiscash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/whiscash.png"
+  },
+  {
+    "name": "whismur",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/whismur.png"
+  },
+  {
+    "name": "wigglytuff",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wigglytuff.png"
+  },
+  {
+    "name": "wiglett",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wiglett.png"
+  },
+  {
+    "name": "wimpod",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wimpod.png"
+  },
+  {
+    "name": "wingull",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wingull.png"
+  },
+  {
+    "name": "wishiwashi-school",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wishiwashi-school.png"
+  },
+  {
+    "name": "wishiwashi",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wishiwashi.png"
+  },
+  {
+    "name": "wobbuffet",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wobbuffet.png"
+  },
+  {
+    "name": "wochien",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wochien.png"
+  },
+  {
+    "name": "woobat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/woobat.png"
+  },
+  {
+    "name": "wooloo",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wooloo.png"
+  },
+  {
+    "name": "wooper-paldea",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wooper-paldea.png"
+  },
+  {
+    "name": "wooper",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wooper.png"
+  },
+  {
+    "name": "wormadam-plant",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wormadam-plant.png"
+  },
+  {
+    "name": "wormadam-sandy",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wormadam-sandy.png"
+  },
+  {
+    "name": "wormadam-trash",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wormadam-trash.png"
+  },
+  {
+    "name": "wormadam",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wormadam.png"
+  },
+  {
+    "name": "wugtrio",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wugtrio.png"
+  },
+  {
+    "name": "wurmple",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wurmple.png"
+  },
+  {
+    "name": "wynaut",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/wynaut.png"
+  },
+  {
+    "name": "xatu",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/xatu.png"
+  },
+  {
+    "name": "xerneas-active",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/xerneas-active.png"
+  },
+  {
+    "name": "xerneas-neutral",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/xerneas-neutral.png"
+  },
+  {
+    "name": "xerneas",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/xerneas.png"
+  },
+  {
+    "name": "xurkitree",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/xurkitree.png"
+  },
+  {
+    "name": "yamask",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yamask.png"
+  },
+  {
+    "name": "yamper",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yamper.png"
+  },
+  {
+    "name": "yanma",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yanma.png"
+  },
+  {
+    "name": "yanmega",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yanmega.png"
+  },
+  {
+    "name": "yungoos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yungoos.png"
+  },
+  {
+    "name": "yveltal",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/yveltal.png"
+  },
+  {
+    "name": "zangoose",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zangoose.png"
+  },
+  {
+    "name": "zapdos",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zapdos.png"
+  },
+  {
+    "name": "zebstrika",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zebstrika.png"
+  },
+  {
+    "name": "zekrom",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zekrom.png"
+  },
+  {
+    "name": "zeraora",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zeraora.png"
+  },
+  {
+    "name": "zigzagoon",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zigzagoon.png"
+  },
+  {
+    "name": "zoroark",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zoroark.png"
+  },
+  {
+    "name": "zorua",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zorua.png"
+  },
+  {
+    "name": "zubat",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zubat.png"
+  },
+  {
+    "name": "zweilous",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zweilous.png"
+  },
+  {
+    "name": "zygarde-10",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zygarde-10.png"
+  },
+  {
+    "name": "zygarde-complete",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zygarde-complete.png"
+  },
+  {
+    "name": "zygarde",
+    "url": "https://play.pokemonshowdown.com/sprites/dex/zygarde.png"
+  }
+]

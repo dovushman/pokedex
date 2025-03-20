@@ -1,7 +1,16 @@
-import React from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, StyleSheet, Switch } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import Ability from './Ability';
 
-const BottomSection = ({ pokemon }) => {
+const BottomSection = ({ pokemon, onShinyChange, onGenderChange }) => {
+  const [selectedGender, setSelectedGender] = useState(pokemon.gender || 'random');
+
+  const handleGenderChange = (itemValue) => {
+    setSelectedGender(itemValue);
+    onGenderChange(itemValue);
+  };
+
   return (
     <View style={styles.tabContent}>
       <View style={styles.detailsGrid}>
@@ -13,15 +22,24 @@ const BottomSection = ({ pokemon }) => {
         </View>
         <View style={styles.detailItem}>
           <Text style={styles.detailLabel}>Gender</Text>
-          <View style={styles.detailValue}>
-            <Text style={styles.detailValueText}>{pokemon.gender || '—'}</Text>
+          <View style={styles.pickerContainer}>
+            <Picker
+              selectedValue={selectedGender}
+              onValueChange={handleGenderChange}
+              style={styles.picker}
+            >
+              <Picker.Item label="—" value="random" />
+              <Picker.Item label="Male" value="male" />
+              <Picker.Item label="Female" value="female" />
+            </Picker>
           </View>
         </View>
         <View style={styles.detailItem}>
           <Text style={styles.detailLabel}>Shiny</Text>
-          <View style={styles.detailValue}>
-            <Text style={styles.detailValueText}>{pokemon.shiny ? 'Yes' : 'No'}</Text>
-          </View>
+          <Switch
+            value={pokemon.shiny}
+            onValueChange={onShinyChange}
+          />
         </View>
         <View style={styles.detailItem}>
           <Text style={styles.detailLabel}>Tera Type</Text>
@@ -39,17 +57,7 @@ const BottomSection = ({ pokemon }) => {
             editable={false}
           />
         </View>
-        <View style={styles.halfWidth}>
-          <Text style={styles.detailLabel}>Ability</Text>
-          <TextInput
-            style={styles.input}
-            value={pokemon.ability || 'Static'}
-            editable={false}
-          />
-        </View>
-      </View>
-      <View style={styles.typeTag}>
-        <Text style={styles.typeTagText}>{pokemon.types ? pokemon.types.join(', ') : 'ELECTR'}</Text>
+        <Ability pokemon={pokemon} />
       </View>
     </View>
   );
@@ -58,8 +66,6 @@ const BottomSection = ({ pokemon }) => {
 const styles = StyleSheet.create({
   tabContent: {
     backgroundColor: '#e5343d', // Adjusted background color
-    borderWidth: 1,
-    borderColor: '#a0a8b8',
     borderBottomLeftRadius: 4,
     borderBottomRightRadius: 4,
     padding: 12,
@@ -88,10 +94,24 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     padding: 8,
     alignItems: 'center',
+    height: 40, // Ensure consistent height
+    justifyContent: 'center', // Center content vertically
   },
   detailValueText: {
     fontSize: 14,
     color: '#333',
+  },
+  pickerContainer: {
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#a0a8b8',
+    borderRadius: 4,
+    height: 40, // Ensure consistent height
+    justifyContent: 'center', // Center content vertically
+  },
+  picker: {
+    height: 40,
+    width: '100%',
   },
   abilityItemContainer: {
     flexDirection: 'row',
