@@ -8,7 +8,7 @@ import FetchDataSplashScreen from './screens/FetchDataSplashScreen';
 import PokemonInformation from './screens/PokemonInformation';
 import TeamBuilderHomeScreen from './screens/TeamBuilderHomeScreen';
 import TeamEditorScreen from './screens/TeamEditorScreen';
-import ShowdownSpriteTest from './screens/ShowdownSpriteTest';
+// import ShowdownSpriteTest from './screens/ShowdownSpriteTest';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -21,7 +21,7 @@ const MainTabs = ({ route }) => {
       <Tab.Screen name="Home" component={HomeScreen} initialParams={params} />
       <Tab.Screen name="Search" component={SearchScreen} />
       <Tab.Screen name="Team Builder" component={TeamBuilderHomeScreen} />
-      <Tab.Screen name="Showdown Sprites" component={ShowdownSpriteTest} />
+      {/* <Tab.Screen name="Showdown Sprites" component={ShowdownSpriteTest} /> */}
     </Tab.Navigator>
   );
 };
