@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View, Text } from 'react-native';
 import TopSection from './TopSection';
 import BottomSection from './BottomSection';
 import Moves from './Moves';
-import Stats from './Stats';
+import Stats from '../Stats';
 import typeColors from '../../utils/typeColors';
 
 const PokemonDetails = ({ pokemon, onNicknameChange }) => {
@@ -28,7 +28,7 @@ const PokemonDetails = ({ pokemon, onNicknameChange }) => {
       case 'moves':
         return <Moves styles={styles} moves={pokemon.moves} />;
       case 'stats':
-        return <Stats styles={styles} stats={pokemon.stats} />;
+        return <Stats styles={styles} pokemon={pokemon} />;
       default:
         return null;
     }

@@ -269,11 +269,11 @@ const TeamEditorScreen = ({ navigation, route }) => {
           <>
             <CurrentTeam team={pokemonList} onAddPokemon={openPokemonListView} onSelectPokemon={handleSelectPokemon} />
             {selectedPokemon && (
-              <PokemonDetails
-                pokemon={selectedPokemon}
-                onChange={(key, value) => handlePokemonChange(pokemonList.indexOf(selectedPokemon), key, value)}
-              />
-            )}
+  <PokemonDetails
+    pokemon={selectedPokemon}
+    onChange={(key, value) => handlePokemonChange(pokemonList.indexOf(selectedPokemon), key, value)}
+  />
+)}
           </>
         )}
         {pokemonList.length === 0 ? (
