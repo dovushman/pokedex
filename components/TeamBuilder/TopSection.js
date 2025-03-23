@@ -3,13 +3,15 @@ import { View, Text, TextInput, Image, TouchableOpacity, StyleSheet } from 'reac
 import { Feather } from '@expo/vector-icons';
 import { capitalizeWords } from '../../utils/capitalize';
 import typeColors from '../../utils/typeColors';
+import PokemonDeleteConfirmationModal from './PokemonDeleteConfirmationModal';
 
-const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
+const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange, onDelete }) => {
   const [nickname, setNickname] = useState(pokemon.nickname || '');
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleNicknameChange = (text) => {
     setNickname(text);
-    onNicknameChange(text);
+    onNicknameChange(pokemon.id, text); // Pass the unique id
   };
 
   const capitalizedPokemonName = capitalizeWords(pokemon.name);
@@ -21,6 +23,19 @@ const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
         {type}
       </Text>
     ));
+  };
+
+  const handleDeletePress = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleConfirmDelete = () => {
+    setIsModalVisible(false);
+    onDelete(pokemon.uniqueId); // Pass the unique id
+  };
+
+  const handleCancelDelete = () => {
+    setIsModalVisible(false);
   };
 
   return (
@@ -61,7 +76,7 @@ const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
             <Feather name="download" size={16} color="#fff" />
             <Text style={styles.actionButtonText}>Import/Export</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.actionButton}>
+          <TouchableOpacity style={styles.actionButton} onPress={handleDeletePress}>
             <Feather name="trash-2" size={16} color="#fff" />
             <Text style={styles.actionButtonText}>Delete</Text>
           </TouchableOpacity>
@@ -87,6 +102,13 @@ const TopSection = ({ activeTab, setActiveTab, pokemon, onNicknameChange }) => {
           </TouchableOpacity>
         </View>
       </View>
+
+      {/* Confirmation Modal */}
+      <PokemonDeleteConfirmationModal
+        visible={isModalVisible}
+        onConfirm={handleConfirmDelete}
+        onCancel={handleCancelDelete}
+      />
     </View>
   );
 };
@@ -101,7 +123,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingRight: 10,
-    paddingLeft: 10, // Added padding to move the sprite and types to the right
+    paddingLeft: 10,
   },
   sprite: {
     width: 150,
@@ -111,7 +133,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     marginVertical: 10,
-    paddingLeft: 10, // Added padding to move the types to the right
+    paddingLeft: 10,
   },
   type: {
     fontSize: 14,
@@ -126,11 +148,11 @@ const styles = StyleSheet.create({
   rightContent: {
     width: '60%',
     justifyContent: 'space-between',
-    paddingRight: 10, // Added padding to the right side
+    paddingRight: 10,
   },
   fieldsContainer: {
     marginBottom: 10,
-    paddingRight: 10, // Added padding to the right side
+    paddingRight: 10,
   },
   fieldWrapper: {
     marginBottom: 8,

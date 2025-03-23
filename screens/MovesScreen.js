@@ -1,14 +1,18 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Text, View, StyleSheet, FlatList, SafeAreaView, TouchableOpacity, Animated, Dimensions, Keyboard, TextInput, Image } from 'react-native';
-import itemsData from '../assets/itemsData.json';
+import movesData from '../assets/movesData.json';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import typeColors from '../utils/typeColors';
 
 const { width } = Dimensions.get('window');
+const physicalIcon = require('../assets/icons/PhysicalMoveIcon.png');
+const specialIcon = require('../assets/icons/SpecialMoveIcon.png');
+const statusIcon = require('../assets/icons/StatusMoveIcon.png');
 
 const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '-';
 
-const ItemScreen = () => {
-    const [items, setItems] = useState([]);
+const MovesScreen = () => {
+    const [moves, setMoves] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [isSearchVisible, setIsSearchVisible] = useState(false);
 
@@ -16,8 +20,8 @@ const ItemScreen = () => {
     const searchBarOpacity = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
-        const sortedItems = itemsData.sort((a, b) => a.name.localeCompare(b.name));
-        setItems(sortedItems);
+        const sortedMoves = movesData.sort((a, b) => a.move_name.localeCompare(b.move_name));
+        setMoves(sortedMoves);
     }, []);
 
     useEffect(() => {
@@ -72,17 +76,44 @@ const ItemScreen = () => {
         }
     };
 
-    const filteredItems = items.filter(item =>
-        searchQuery === '' || item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    const filteredMoves = moves.filter(move =>
+        searchQuery === '' || move.move_name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    const renderItem = ({ item }) => (
-        <View style={styles.item}>
-            <Image source={{ uri: item.sprite }} style={styles.sprite} />
-            <View style={styles.itemDetails}>
-                <Text style={styles.title}>{capitalize(item.name)}</Text>
+    const renderMove = ({ item }) => (
+        <View style={styles.move}>
+            <View style={styles.moveDetails}>
+                <Text style={styles.title}>{capitalize(item.move_name)}</Text>
+                <View style={styles.typeContainer}>
+                    <Text style={[styles.type, { backgroundColor: typeColors[item.type] }]}>
+                        {capitalize(item.type)}
+                    </Text>
+                    {item.damage_class === 'physical' && (
+                        <Image source={physicalIcon} style={styles.moveIcon} />
+                    )}
+                    {item.damage_class === 'special' && (
+                        <Image source={specialIcon} style={styles.moveIcon} />
+                    )}
+                    {item.damage_class === 'status' && (
+                        <Image source={statusIcon} style={styles.moveIcon} />
+                    )}
+                </View>
+                <View style={styles.statsContainer}>
+                    <View style={styles.stat}>
+                        <Text style={styles.detail}>Power</Text>
+                        <Text style={styles.detail}>{item.power !== null ? item.power : '-'}</Text>
+                    </View>
+                    <View style={styles.stat}>
+                        <Text style={styles.detail}>Accuracy</Text>
+                        <Text style={styles.detail}>{item.accuracy !== null ? `${item.accuracy}%` : '-'}</Text>
+                    </View>
+                    <View style={styles.stat}>
+                        <Text style={styles.detail}>PP</Text>
+                        <Text style={styles.detail}>{item.pp !== null ? item.pp : 'N/A'}</Text>
+                    </View>
+                </View>
                 <Text style={styles.effect}>
-                    {item.effect ? item.effect : (item.description ? item.description.replace(/\n/g, ' ') : '')}
+                    {item.flavor_text_entries ? item.flavor_text_entries.replace(/\n/g, ' ') : ''}
                 </Text>
             </View>
         </View>
@@ -91,7 +122,7 @@ const ItemScreen = () => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.headerContainer}>
-                <Text style={styles.classicHeader}>Items</Text>
+                <Text style={styles.classicHeader}>Moves</Text>
                 <View style={styles.searchIconContainer}>
                     <TouchableOpacity onPress={() => setIsSearchVisible(!isSearchVisible)}>
                         <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
@@ -99,7 +130,7 @@ const ItemScreen = () => {
                     <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
                         <TextInput
                             style={styles.searchInput}
-                            placeholder="Search Items"
+                            placeholder="Search Moves"
                             placeholderTextColor="#999"
                             value={searchQuery}
                             onChangeText={setSearchQuery}
@@ -111,8 +142,8 @@ const ItemScreen = () => {
                 </View>
             </View>
             <FlatList
-                data={filteredItems}
-                renderItem={renderItem}
+                data={filteredMoves}
+                renderItem={renderMove}
                 keyExtractor={(item) => item.id.toString()}
             />
         </SafeAreaView>
@@ -124,7 +155,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#e5343d',
     },
-    item: {
+    move: {
         padding: 16,
         borderRadius: 12,
         marginBottom: 12,
@@ -139,12 +170,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
-    sprite: {
-        width: 50,
-        height: 50,
-        marginRight: 16,
-    },
-    itemDetails: {
+    moveDetails: {
         flex: 1,
     },
     title: {
@@ -152,9 +178,29 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
     },
+    detail: {
+        fontSize: 14,
+        color: 'white',
+    },
     effect: {
         fontSize: 14,
         color: 'white',
+    },
+    typeContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: -8,
+        marginBottom: 0,
+    },
+    type: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        textTransform: 'capitalize',
+        color: '#fff',
+        paddingHorizontal: 8,
+        paddingVertical: 4,
+        borderRadius: 4,
+        marginRight: 4,
     },
     searchIconContainer: {
         flexDirection: 'row',
@@ -193,6 +239,27 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
     },
+    iconContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 4,
+    },
+    moveIcon: {
+        width: 50,
+        height: 50,
+        marginLeft: 8,
+        marginBottom: 0,
+    },
+    statsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 0,
+        marginBottom: 15,
+    },
+    stat: {
+        flex: 1,
+        alignItems: 'center',
+    },
 });
 
-export default ItemScreen;
+export default MovesScreen;

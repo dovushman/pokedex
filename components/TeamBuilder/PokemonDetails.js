@@ -1,15 +1,21 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ScrollView, StyleSheet, View, Text } from 'react-native';
 import TopSection from './TopSection';
 import BottomSection from './BottomSection';
 import Moves from './Moves';
 import Stats from '../Stats';
+import EvIvEditor from './EvIvEditor';
 import typeColors from '../../utils/typeColors';
 
-const PokemonDetails = ({ pokemon, onNicknameChange }) => {
+const PokemonDetails = ({ pokemon, onNicknameChange, onEvsChange, onDelete }) => {
   const [activeTab, setActiveTab] = useState('details');
   const [isShiny, setIsShiny] = useState(pokemon.shiny);
   const [gender, setGender] = useState(pokemon.gender);
+  const [evs, setEvs] = useState(pokemon.evs || { hp: 0, attack: 0, defense: 0, 'special-attack': 0, 'special-defense': 0, speed: 0 });
+
+  useEffect(() => {
+    setEvs(pokemon.evs || { hp: 0, attack: 0, defense: 0, 'special-attack': 0, 'special-defense': 0, speed: 0 });
+  }, [pokemon]);
 
   const handleShinyChange = (value) => {
     setIsShiny(value);
@@ -21,6 +27,11 @@ const PokemonDetails = ({ pokemon, onNicknameChange }) => {
     pokemon.gender = value;
   };
 
+  const handleEvsChange = (newEvs) => {
+    setEvs(newEvs);
+    onEvsChange(newEvs);
+  };
+
   const renderTabContent = () => {
     switch (activeTab) {
       case 'details':
@@ -28,7 +39,12 @@ const PokemonDetails = ({ pokemon, onNicknameChange }) => {
       case 'moves':
         return <Moves styles={styles} moves={pokemon.moves} />;
       case 'stats':
-        return <Stats styles={styles} pokemon={pokemon} />;
+        return (
+          <>
+            <Stats styles={styles} pokemon={pokemon} evs={evs} />
+            <EvIvEditor pokemon={pokemon} onEvsChange={handleEvsChange} />
+          </>
+        );
       default:
         return null;
     }
@@ -36,12 +52,12 @@ const PokemonDetails = ({ pokemon, onNicknameChange }) => {
 
   return (
     <ScrollView style={styles.container}>
-      <TopSection 
-        activeTab={activeTab} 
-        setActiveTab={setActiveTab} 
-        styles={styles} 
-        pokemon={pokemon} 
-        onNicknameChange={onNicknameChange} 
+      <TopSection
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        pokemon={pokemon}
+        onNicknameChange={onNicknameChange}
+        onDelete={onDelete} // Pass the delete function as a prop
       />
       {renderTabContent()}
     </ScrollView>

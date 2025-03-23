@@ -17,6 +17,8 @@ const typeColors = {
     dark: '#705746',
     steel: '#B7B7CE',
     fairy: '#D685AD',
+    shadow: '#403246',
+    unknown: '#6D6D6D',
   };
   
   export default typeColors;

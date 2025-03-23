@@ -1,14 +1,17 @@
+import fs from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-const fs = require('fs');
-const path = require('path');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const MOVES_DATA_FILE = path.join(__dirname, '../../assets/movesData.json');
 const BATCH_SIZE = 100; // Fetch 100 moves at a time
 
 const fetchAndSaveMovesData = async () => {
   try {
-    const fetch = await import('node-fetch').then(mod => mod.default);
-
     let allMovesData = [];
     let offset = 0;
 
@@ -71,7 +74,7 @@ const fetchAndSaveMovesData = async () => {
             description: description,
             generation_details: generationDetails,
             past_values: pastValues,
-            flavor_text_entries: flavorTextEntries
+            flavor_text_entries: flavorTextEntries.length > 0 ? flavorTextEntries[0].flavor_text : null // Get the first flavor text entry
           };
 
           return moveData;

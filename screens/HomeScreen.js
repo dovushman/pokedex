@@ -23,6 +23,7 @@ import FABMenu from '../components/FABMenu';
 import SearchBar from '../components/SearchBar';
 import NaturesList from '../components/NaturesList';
 import ItemScreen from './ItemScreen';
+import MovesScreen from './MovesScreen';
 
 const { width } = Dimensions.get('window');
 const Stack = createStackNavigator();
@@ -250,6 +251,11 @@ const HomeScreen = ({ route }) => {
         name="Pokedex"
         component={HomeScreenComponent}
         initialParams={route.params}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Moves"
+        component={MovesScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen
