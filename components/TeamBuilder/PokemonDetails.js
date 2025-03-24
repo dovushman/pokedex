@@ -7,7 +7,7 @@ import Stats from '../Stats';
 import EvIvEditor from './EvIvEditor';
 import typeColors from '../../utils/typeColors';
 
-const PokemonDetails = ({ pokemon, onNicknameChange, onEvsChange, onDelete }) => {
+const PokemonDetails = ({ pokemon, onNicknameChange, onEvsChange, onDelete, onItemChange }) => {
   const [activeTab, setActiveTab] = useState('details');
   const [isShiny, setIsShiny] = useState(pokemon.shiny);
   const [gender, setGender] = useState(pokemon.gender);
@@ -35,7 +35,7 @@ const PokemonDetails = ({ pokemon, onNicknameChange, onEvsChange, onDelete }) =>
   const renderTabContent = () => {
     switch (activeTab) {
       case 'details':
-        return <BottomSection styles={styles} pokemon={pokemon} onShinyChange={handleShinyChange} onGenderChange={handleGenderChange} />;
+        return <BottomSection styles={styles} pokemon={pokemon} onShinyChange={handleShinyChange} onGenderChange={handleGenderChange} onItemChange={onItemChange} />;
       case 'moves':
         return <Moves styles={styles} moves={pokemon.moves} />;
       case 'stats':

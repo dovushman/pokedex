@@ -69,6 +69,13 @@ const TeamEditorScreen = ({ navigation, route }) => {
     setSelectedPokemon(updatedPokemon);
   };
 
+  const handleItemChange = (itemName) => {
+    const updatedPokemon = { ...selectedPokemon, item: itemName };
+    const updatedPokemonList = pokemonList.map(p => p.uniqueId === updatedPokemon.uniqueId ? updatedPokemon : p);
+    setPokemonList(updatedPokemonList);
+    setSelectedPokemon(updatedPokemon);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -104,6 +111,7 @@ const TeamEditorScreen = ({ navigation, route }) => {
                 onNicknameChange={(key, value) => handlePokemonChange(pokemonList.indexOf(selectedPokemon), key, value)}
                 onEvsChange={handleEvsChange}
                 onDelete={() => handleDeletePokemon(selectedPokemon.uniqueId)} // Pass the delete function as a prop
+                onItemChange={handleItemChange} // Pass the item change function as a prop
               />
             )}
           </>
@@ -125,11 +133,9 @@ const TeamEditorScreen = ({ navigation, route }) => {
       <Modal visible={isModalVisible} animationType="slide" transparent={true}>
         <TouchableWithoutFeedback onPress={() => setIsModalVisible(false)}>
           <View style={styles.modalContainer}>
-            <TouchableWithoutFeedback>
-              <View style={styles.modalContent}>
-                <PokemonListView onSelectPokemon={handleAddPokemon} onClose={() => setIsModalVisible(false)} />
-              </View>
-            </TouchableWithoutFeedback>
+            <View style={styles.modalContent}>
+              <PokemonListView onSelectPokemon={handleAddPokemon} onClose={() => setIsModalVisible(false)} />
+            </View>
           </View>
         </TouchableWithoutFeedback>
       </Modal>
