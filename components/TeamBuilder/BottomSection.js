@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Switch, ScrollView, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Switch, ScrollView, TouchableWithoutFeedback, Keyboard, Modal, TouchableOpacity } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import Ability from './Ability';
+import ItemListView from './ItemListView';
 
-const BottomSection = ({ pokemon, onShinyChange }) => {
+const BottomSection = ({ pokemon, onShinyChange, onItemChange }) => {
   const [selectedGender, setSelectedGender] = useState(pokemon.gender || 'random');
   const [selectedTeraType, setSelectedTeraType] = useState(pokemon.teraType || 'Electric');
   const [genderOpen, setGenderOpen] = useState(false);
   const [teraTypeOpen, setTeraTypeOpen] = useState(false);
+  const [isItemModalVisible, setIsItemModalVisible] = useState(false);
 
   const genderItems = [
     { label: 'Male', value: 'male' },
@@ -20,6 +22,22 @@ const BottomSection = ({ pokemon, onShinyChange }) => {
     { label: 'Fire', value: 'fire' },
     { label: 'Water', value: 'water' },
   ];
+
+  const handleSelectItem = (item) => {
+    console.log('Item selected:', item);
+    onItemChange(item.name);
+    setIsItemModalVisible(false);
+  };
+
+  const handleItemPress = () => {
+    console.log('Item box pressed');
+    setIsItemModalVisible(true);
+  };
+
+  const handleModalClose = () => {
+    console.log('Modal closed');
+    setIsItemModalVisible(false);
+  };
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -81,15 +99,27 @@ const BottomSection = ({ pokemon, onShinyChange }) => {
           <View style={styles.abilityItemContainer}>
             <View style={styles.halfWidth}>
               <Text style={styles.detailLabel}>Item</Text>
-              <TextInput
-                style={styles.input}
-                value={pokemon.item || ''}
-                editable={false}
-              />
+              <TouchableOpacity onPress={handleItemPress}>
+                <TextInput
+                  style={styles.input}
+                  value={pokemon.item || ''}
+                  editable={false}
+                  pointerEvents="none" // Ensure the TextInput is not focusable
+                />
+              </TouchableOpacity>
             </View>
             <Ability pokemon={pokemon} />
           </View>
         </View>
+        <Modal visible={isItemModalVisible} animationType="slide" transparent={true}>
+          <TouchableWithoutFeedback onPress={handleModalClose}>
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <ItemListView onSelectItem={handleSelectItem} onClose={handleModalClose} />
+              </View>
+            </View>
+          </TouchableWithoutFeedback>
+        </Modal>
       </ScrollView>
     </TouchableWithoutFeedback>
   );
@@ -193,6 +223,17 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
     color: '#333',
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    height: '60%',
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    padding: 16,
   },
 });
 

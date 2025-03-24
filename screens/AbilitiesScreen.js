@@ -1,16 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Text, View, StyleSheet, FlatList, SafeAreaView, TouchableOpacity, Animated, Dimensions, Keyboard, TextInput } from 'react-native';
-import naturesData from '../assets/naturesData.json';
+import abilitiesData from '../assets/abilitiesData.json';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const { width } = Dimensions.get('window');
 
 const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '-';
 
-const NaturesList = () => {
-    const [natures, setNatures] = useState([]);
-    const [filterIncreasedStat, setFilterIncreasedStat] = useState('');
-    const [filterDecreasedStat, setFilterDecreasedStat] = useState('');
+const AbilitiesScreen = () => {
+    const [abilities, setAbilities] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [isSearchVisible, setIsSearchVisible] = useState(false);
 
@@ -18,8 +16,8 @@ const NaturesList = () => {
     const searchBarOpacity = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
-        const sortedNatures = naturesData.sort((a, b) => a.name.localeCompare(b.name));
-        setNatures(sortedNatures);
+        const sortedAbilities = abilitiesData.sort((a, b) => a.name.localeCompare(b.name));
+        setAbilities(sortedAbilities);
     }, []);
 
     useEffect(() => {
@@ -74,26 +72,21 @@ const NaturesList = () => {
         }
     };
 
-    const filteredNatures = natures.filter(nature =>
-        (filterIncreasedStat === '' || nature.increased_stat.toLowerCase().includes(filterIncreasedStat.toLowerCase())) &&
-        (filterDecreasedStat === '' || nature.decreased_stat.toLowerCase().includes(filterDecreasedStat.toLowerCase())) &&
-        (searchQuery === '' || nature.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    const filteredAbilities = abilities.filter(ability =>
+        searchQuery === '' || ability.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     const renderItem = ({ item }) => (
         <View style={styles.item}>
             <Text style={styles.title}>{capitalize(item.name)}</Text>
-            <Text style={styles.statGold}>Increased Stat: {capitalize(item.increased_stat)}</Text>
-            <Text style={styles.flavorGold}>Likes Flavor: {capitalize(item.likes_flavor)}</Text>
-            <Text style={styles.stat}>Decreased Stat: {capitalize(item.decreased_stat)}</Text>
-            <Text style={styles.flavor}>Hates Flavor: {capitalize(item.hates_flavor)}</Text>
+            <Text style={styles.detail}>{item.effect_entries.length > 0 ? item.effect_entries[0].short_effect : 'No effect available'}</Text>
         </View>
     );
 
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.headerContainer}>
-                <Text style={styles.classicHeader}>Natures</Text>
+                <Text style={styles.classicHeader}>Abilities</Text>
                 <View style={styles.searchIconContainer}>
                     <TouchableOpacity onPress={() => setIsSearchVisible(!isSearchVisible)}>
                         <Icon name="search" size={25} color="#fff" style={styles.searchIcon} />
@@ -101,7 +94,7 @@ const NaturesList = () => {
                     <Animated.View style={[styles.searchContainer, { width: searchBarWidth, opacity: searchBarOpacity }]}>
                         <TextInput
                             style={styles.searchInput}
-                            placeholder="Search Natures"
+                            placeholder="Search Abilities"
                             placeholderTextColor="#999"
                             value={searchQuery}
                             onChangeText={setSearchQuery}
@@ -110,18 +103,10 @@ const NaturesList = () => {
                             <Icon name="times" size={20} color="#333" style={styles.closeIcon} />
                         </TouchableOpacity>
                     </Animated.View>
-                    <View style={styles.iconContainer}>
-                        <TouchableOpacity onPress={() => setFilterIncreasedStat('')}>
-                            <Icon name="arrow-up" size={25} color="#fff" style={styles.filterIcon} />
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={() => setFilterDecreasedStat('')}>
-                            <Icon name="arrow-down" size={25} color="#fff" style={styles.filterIcon} />
-                        </TouchableOpacity>
-                    </View>
                 </View>
             </View>
             <FlatList
-                data={filteredNatures}
+                data={filteredAbilities}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id.toString()}
             />
@@ -153,44 +138,10 @@ const styles = StyleSheet.create({
         color: 'white',
         marginBottom: 8,
     },
-    stat: {
+    detail: {
         fontSize: 14,
         color: 'white',
         marginBottom: 4,
-    },
-    statGold: {
-        fontSize: 14,
-        color: '#FFD700',
-        marginBottom: 4,
-    },
-    flavor: {
-        fontSize: 14,
-        color: 'white',
-        marginBottom: 4,
-    },
-    flavorGold: {
-        fontSize: 14,
-        color: '#FFD700',
-        marginBottom: 4,
-    },
-    filterIcon: {
-        marginLeft: 10, // Adjust this value to bring the icons closer together
-    },
-    iconContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    headerContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        paddingHorizontal: 16,
-        marginBottom: 16,
-    },
-    classicHeader: {
-        color: 'white',
-        fontSize: 24,
-        fontWeight: 'bold',
     },
     searchIconContainer: {
         flexDirection: 'row',
@@ -217,6 +168,18 @@ const styles = StyleSheet.create({
     closeIcon: {
         marginLeft: 10,
     },
+    headerContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 16,
+        marginBottom: 16,
+    },
+    classicHeader: {
+        color: 'white',
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
 });
 
-export default NaturesList;
+export default AbilitiesScreen;
