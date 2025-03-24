@@ -9,8 +9,10 @@ const physicalIcon = require('../assets/icons/PhysicalMoveIcon.png');
 const specialIcon = require('../assets/icons/SpecialMoveIcon.png');
 const statusIcon = require('../assets/icons/StatusMoveIcon.png');
 
-const capitalize = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : '-';
-
+const capitalize = (str) => {
+    if (!str) return '-';
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
 const MovesScreen = () => {
     const [moves, setMoves] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
@@ -88,13 +90,13 @@ const MovesScreen = () => {
                     <Text style={[styles.type, { backgroundColor: typeColors[item.type] }]}>
                         {capitalize(item.type)}
                     </Text>
-                    {item.damage_class === 'physical' && (
+                    {item.damage_class.includes('physical') && (
                         <Image source={physicalIcon} style={styles.moveIcon} />
                     )}
-                    {item.damage_class === 'special' && (
+                    {item.damage_class.includes('special') && (
                         <Image source={specialIcon} style={styles.moveIcon} />
                     )}
-                    {item.damage_class === 'status' && (
+                    {item.damage_class.includes('status') && (
                         <Image source={statusIcon} style={styles.moveIcon} />
                     )}
                 </View>
@@ -245,9 +247,9 @@ const styles = StyleSheet.create({
         marginTop: 4,
     },
     moveIcon: {
-        width: 50,
-        height: 50,
-        marginLeft: 8,
+        width: 60,
+        height: 60,
+        marginLeft: 0,
         marginBottom: 0,
     },
     statsContainer: {

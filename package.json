@@ -1,7 +1,7 @@
 {
   "name": "pokedex",
   "version": "1.0.0",
-  "type": "commonjs",
+  "type": "mpdule",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
